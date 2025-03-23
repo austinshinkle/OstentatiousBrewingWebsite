@@ -1,0 +1,92 @@
+{
+    "name": "Monk Juice",
+    "style": "Belgian Dubble",
+    "description": "The first beer after living in Germany for 3 years! Belgians are typically forgiving, taste excellent and are an ale, which means it will be ready earlier. It should be a light bodied, golden ale with a typical Belgian profile. Start small. Prost!",
+    "ingredients": {
+      "malts": [
+        {
+          "name": "Franco-Belges Pilsner Malt",
+          "amount": "3.18 kg",
+          "srm": "1.7"
+        },
+        {
+          "name": "Vienna Malt",
+          "amount": "1.81 kg",
+          "srm": "3.5"
+        },
+        {
+          "name": "Munich Malt",
+          "amount": "0.45 kg",
+          "srm": "9.0"
+        },
+        {
+          "name": "Carafoam",
+          "amount": "0.45 kg",
+          "srm": "2.0"
+        }
+      ],
+      "hops": [
+        {
+          "name": "Hallertauer Mittelfrüh",
+          "amount": "28 g",
+          "alpha_acid": "4.0%",
+          "time": "0 minutes",
+          "use": "boil"
+        },
+        {
+          "name": "Hallertauer Mittelfrüh",
+          "amount": "15 g",
+          "alpha_acid": "4.0%",
+          "time": "40 minutes",
+          "use": "boil"
+        },
+        {
+          "name": "Hallertauer Mittelfrüh",
+          "amount": "28 g",
+          "alpha_acid": "4.0%",
+          "time": "50 minutes",
+          "use": "boil"
+        }
+      ],
+      "yeast": {
+        "name": "Belgian Ale Yeast",
+        "type": "WLP550",
+        "amount": "1 pack"
+      },
+      "other_ingredients": [
+        {
+          "name": "FermCap",
+          "amount": "15 drops",
+          "time": "0 minutes",
+          "use": "boil"
+        },
+        {
+          "name": "Candi Sugar",
+          "amount": "0.45 kg",
+          "time": "40 minutes",
+          "srm": "0.5"
+        },
+        {
+          "name": "Irish Moss",
+          "amount": "1 tsp",
+          "time": "50 minutes",
+          "use": "boil"
+        }
+      ]
+    },
+    "brewing_instructions": [
+      "Mash the grains at 65°C (149°F) for 60 minutes.",
+      "Boil the wort for 60 minutes, adding hops as per the schedule.",
+      "Cool the wort to 20°C (68°F) and pitch the yeast.",
+      "Ferment at 20°C (68°F) for two weeks.",
+      "Dry hop for the last 5 days of fermentation.",
+      "Bottle or keg the beer and carbonate to desired levels."
+    ],
+    "starter_brewing_instructions": [
+      "Prepare a 1-liter starter wort with a gravity of 1.040.",
+      "Boil the starter wort for 10 minutes and cool to 20°C (68°F).",
+      "Pitch the yeast into the starter wort and let it ferment for 24-36 hours.",
+      "Decant the spent wort and pitch the active yeast into the main batch."
+    ]
+  }
+  

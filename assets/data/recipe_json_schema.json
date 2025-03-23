@@ -1,0 +1,93 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Beer Recipe",
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string",
+        "description": "The name of the beer."
+      },
+      "style": {
+        "type": "string",
+        "description": "The style of beer (e.g., IPA, Stout, Pilsner)."
+      },
+      "logo": {
+        "type": "string",
+        "alt_text": "Monk drinking beer at an abbey",
+        "description": "The logo of the beer"
+      },
+      "description": {
+        "type": "string",
+        "description": "A brief description of the beer, its flavor profile, and characteristics."
+      },
+      "ingredients": {
+        "type": "object",
+        "properties": {
+          "malts": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": { "type": "string" },
+                "amount": { "type": "string", "description": "Amount with unit (e.g., kg, lb)." },
+                "srm": {"type": "string" }
+              },
+              "required": ["name", "amount", "srm"]
+            }
+          },
+          "hops": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": { "type": "string" },
+                "amount": { "type": "string" },
+                "alpha_acid": { "type": "string" },
+                "time": { "type": "string", "description": "Boil time or dry hop duration." },
+                "use": { "type": "string", "enum": ["boil", "dry hop", "whirlpool"] }
+              },
+              "required": ["name", "amount", "alpha_acid", "time", "use"]
+            }
+          },
+          "yeast": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string" },
+              "type": { "type": "string" },
+              "amount": { "type": "string", "description": "Pack size or number of cells." }
+            },
+            "required": ["name", "type", "amount"]
+          },
+          "other_ingredients": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": { "type": "string" },
+                "amount": { "type": "string" },
+                "time": { "type": "string" },
+                "use": { "type": "string", "description": "How it's used (e.g., priming, flavoring)." }
+              },
+              "required": ["name", "amount", "time", "use"]
+            }
+          }
+        }
+      },
+      "brewing_instructions": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "description": "Step-by-step brewing instructions."
+        }
+      },
+      "starter_brewing_instructions": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "description": "Instructions for preparing the yeast starter."
+        }
+      }
+    },
+    "required": ["name", "style", "logo", "description", "ingredients", "brewing_instructions", "starter_brewing_instructions"]
+  }
+  
