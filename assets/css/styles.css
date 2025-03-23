@@ -10,11 +10,17 @@ body {
 
 /* Header styles */
 header {
+    position: sticky;       /* Make the header sticky */
+    top: 0;                 /* Stick the header to the top of the page */
+    z-index: 1000;  
+    white-space: nowrap;
+    overflow-x: auto;
     background-color: #555555; /* Medium Gray */
     padding: 0px 0;
     display: flex;
     align-items: center; /* Align logo, text, and nav horizontally */
     justify-content: flex-start; /* Align starting on the left for logo, text, and nav */
+    width: 100%; 
 }
 
 /* Logo Container */
@@ -136,6 +142,40 @@ a:hover {
     padding: 20px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+}
+/* Beer Box Styles */
+.beer-box {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.beer-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.beer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.beer-info h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+.beer-style {
+    font-size: 18px;
+    color: #777;
 }
 
 /* Footer Styles */
