@@ -11,10 +11,10 @@ body {
 /* Header styles */
 header {
     background-color: #555555; /* Medium Gray */
-    padding: 10px 0;
+    padding: 0px 0;
     display: flex;
-    align-items: center; /* Align logo and nav horizontally */
-    justify-content: space-between;
+    align-items: center; /* Align logo, text, and nav horizontally */
+    justify-content: flex-start; /* Align starting on the left for logo, text, and nav */
 }
 
 /* Logo Container */
@@ -33,9 +33,20 @@ header {
     border: 0px solid #ffffff; /* No border around the logo */
 }
 
+/* Title Text */
+.header_text {
+    font-size: 36px;
+    font-weight: bold;
+    color: #FFFFFF; /* White */
+    text-transform: uppercase; /* All caps */
+    margin-left: 10px; /* Small margin between the logo and the text */
+    margin-right: 20px; /* Optional: adjust space to the right of the text */
+}
+
 /* Horizontal Menu */
 nav {
     text-align: center;
+    margin-left: auto; /* Push the nav menu to the right */
 }
 
 nav ul {
@@ -43,7 +54,7 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center;
+    gap: 5px; /* Adds space between each item */
 }
 
 nav ul li {
@@ -60,14 +71,6 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: underline;
-}
-
-/* Title */
-header_text {
-    font-size: 36px;
-    font-weight: bold;
-    color: #FFFFFF; /* White */
-    text-transform: uppercase; /* All caps */
 }
 
 /* Headings */
@@ -160,7 +163,8 @@ footer p {
 .instagram-logo {
     width: 30px;  /* Adjust size as needed */
     height: 30px;
-    margin-top: 10px;
+    margin-top: 5px;
+    margin-left: auto;
 }
 
 .instagram-logo:hover {
