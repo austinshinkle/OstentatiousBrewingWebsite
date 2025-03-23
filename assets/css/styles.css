@@ -1,0 +1,74 @@
+/* Set base font */
+body {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 16px;
+    color: #555555; /* Medium Gray */
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Headings */
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000000; /* Black */
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333333; /* Dark Gray */
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333; /* Dark Gray */
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333333; /* Dark Gray */
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333; /* Dark Gray */
+}
+
+h6 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333; /* Dark Gray */
+}
+
+/* Paragraph and general text styling */
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555555; /* Medium Gray */
+    margin-bottom: 15px;
+}
+
+/* Links */
+a {
+    color: #0056b3; /* Darker Blue */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Container for better layout */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
