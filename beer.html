@@ -49,7 +49,7 @@
         <script>
 
             // Load the Past Beers index file
-            fetch("/assets/data/recipes/index_in_production.json") 
+            fetch("/assets/data/recipes/index/index_in_production.json") 
                 .then(response => response.json())
                 .then(indexData => {
                     console.log("Amout of Index Data: ", indexData)
@@ -132,7 +132,7 @@
         <script>
 
             // Load the Past Beers index file
-            fetch("/assets/data/recipes/index_past_beers.json") 
+            fetch("/assets/data/recipes/index/index_past_beers.json") 
                 .then(response => response.json())
                 .then(indexData => {
             
