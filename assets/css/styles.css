@@ -41,7 +41,7 @@ header {
 
 /* Title Text */
 .header_text {
-    font-size: 36px;
+    font-size: 24px;
     font-weight: bold;
     color: #FFFFFF; /* White */
     text-transform: uppercase; /* All caps */

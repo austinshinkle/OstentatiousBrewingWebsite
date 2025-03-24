@@ -18,7 +18,7 @@
     </div>
 
     <div>
-        <h2 style="color: white; margin-left: 10px;">OSTENTATIOUS BREWING</h2>
+        <h5 style="color: white; margin-left: 10px;">OSTENTATIOUS BREWING</h5>
     </div>
 
     <!-- Horizontal Menu -->
@@ -67,10 +67,9 @@
 
                                 // create the link element and the path to the subpage
                                 const beerLink = document.createElement('a');
-                                const beerPageLink = "www.ostentatiousbrewing.com" + beer_data.page;
-                                console.log("The path to the subpage is: ", beerPageLink)
+                                console.log("The path to the subpage is: ", beer_data.page)
 
-                                beerLink.href = beerPageLink;  // Set the link to the desired URL
+                                beerLink.href = beer_data.page;  // Set the link to the desired URL
                                 beerLink.target = '_blank';  // This will open the link in a new tab
 
                                 const beerLogo = document.createElement('img');
