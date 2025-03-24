@@ -40,8 +40,94 @@
 
 <body>
 
-    <div id="beer-container" class="container">
-        <h2>Our Beers</h2>
+
+    <!-- ----------------------------- In Production ------------------------------ -->
+
+    <div id="beer-container-in-production" class="container">
+        <h2>In Production</h2>
+
+        <script>
+
+            // Load the Past Beers index file
+            fetch("/assets/data/recipes/index_in_production.json") 
+                .then(response => response.json())
+                .then(indexData => {
+                    console.log("Amout of Index Data: ", indexData)
+
+                    // if there is nothing in production
+                    if (indexData.files.length === 0) {
+                        
+                        // set beer style
+                        const noBeer = document.createElement('p');
+                        noBeer.textContent = "NOTHING CURRENTLY IN PRODUCTION";
+                        document.getElementById('beer-container-in-production').appendChild(noBeer);
+                        
+                    } else {
+                    
+                        // Loop through the beers and create HTML elements for each
+                        indexData.files.forEach(beer => {
+                            const filePath = `assets/data/recipes/${beer}`;
+                            fetch(filePath)
+                                .then(response => response.json())
+                                .then(beer_data => {
+
+                                    console.log("Found json file: ", beer_data);
+
+                                    // create a container
+                                    const beerList = document.createElement('div');
+                                    beerList.classList.add('beer-box');
+
+                                    document.getElementById('beer-container-in-production').appendChild(beerList);
+
+                                    // create the link element and the path to the subpage
+                                    const beerLink = document.createElement('a');
+                                    console.log("The path to the subpage is: ", beer_data.page)
+
+                                    beerLink.href = beer_data.page;  // Set the link to the desired URL
+                                    beerLink.target = '_blank';  // This will open the link in a new tab
+
+                                    const beerLogo = document.createElement('img');
+                                    beerLogo.src = beer_data.logo;
+                                    beerLogo.classList.add("beer-image");
+                                    
+                                    beerLink.appendChild(beerLogo);
+
+                                    beerList.appendChild(beerLink);
+                                    
+
+                                    // Create the beer info container
+                                    const beerInfo = document.createElement('div');
+                                    beerInfo.classList.add('beer-info');
+                                    beerList.appendChild(beerInfo);
+
+
+                                    // Create the beer name
+                                    const beerName = document.createElement('h3');
+                                    beerName.textContent = beer_data.name;
+                                    console.log("Found beer name: ", beer_data.name)
+                                    beerInfo.appendChild(beerName);
+
+                                    // set beer style
+                                    const beerStyle = document.createElement('p');
+                                    beerStyle.textContent = "Style: " + beer_data.style;
+                                    beerInfo.appendChild(beerStyle);
+                                    
+
+                                })
+                    .catch(error => console.error('Error loading beer JSON:', error));
+                    });
+                }
+             })
+            .catch(error => console.error("Error loading index.json:", error));
+
+        </script>
+    
+    </div>
+
+    <!-- ----------------------------- Past Beers ------------------------------ -->
+
+    <div id="beer-container-past-beers" class="container">
+        <h2>Past Beers</h2>
 
         <script>
 
@@ -63,7 +149,7 @@
                                 const beerList = document.createElement('div');
                                 beerList.classList.add('beer-box');
 
-                                document.getElementById('beer-container').appendChild(beerList);
+                                document.getElementById('beer-container-past-beers').appendChild(beerList);
 
                                 // create the link element and the path to the subpage
                                 const beerLink = document.createElement('a');
