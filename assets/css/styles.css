@@ -70,13 +70,14 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 14px;
     text-transform: uppercase; /* All caps */
     font-weight: bold;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    color: black;
+    text-decoration: none;
 }
 
 /* Headings */
