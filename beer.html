@@ -36,7 +36,66 @@
 
 <!-- ---------------------------   BEGIN PAGE CONTENT  ------------------------------------- -->
 
+
+
 <body>
+
+<script>
+fetch("/assets/data/recipes/_index_past_beers.json") // Load the Past Beers index file
+    .then(response => response.json())
+    .then(indexData => {
+
+        const beerList = document.createElement('div');
+        beerList.classList.add('container');
+
+        // Loop through the beers and create HTML elements for each
+        indexData.files.forEach(beer => {
+            const filePath = `assets/data/recipes/${beer}`;
+            fetch(filePath)
+                .then(response => response.json())
+                .then(data => {
+                        
+                    // Create the beer box container
+                    const beerBox = document.createElement('div');
+                    beerBox.classList.add('beer-box');
+
+                    // Create the link
+                    //const beerLink = document.createElement('a');
+                    //beerLink.href = beer.link;
+
+                    // Create the image
+                    //const beerImage = document.createElement('img');
+                    //beerImage.src = beer.image;
+                    //beerImage.alt = `${beer.name} - ${beer.style}`;
+                    //beerImage.classList.add('beer-image');
+                    //beerLink.appendChild(beerImage);
+
+                    // Create the beer info container
+                    const beerInfo = document.createElement('div');
+                    beerInfo.classList.add('beer-info');
+
+                    // Create the beer name
+                    const beerName = document.createElement('h3');
+                    beerName.textContent = beer.name;
+                    beerInfo.appendChild(beerName);
+
+                    // Create the beer style
+                    const beerStyle = document.createElement('p');
+                    beerStyle.textContent = `Style: ${beer.style}`;
+                    beerStyle.classList.add('beer-style');
+                    beerInfo.appendChild(beerStyle);
+
+                    // Append the link and info to the beer box
+                    //beerBox.appendChild(beerLink);
+                    beerBox.appendChild(beerInfo);
+                })
+                .catch(error => console.error('Error loading JSON:', error));
+        });
+    })
+    .catch(error => console.error("Error loading index.json:", error));
+</script>
+
+
     <div class="container">
         <h2>Our Beers</h2>
         
@@ -75,6 +134,7 @@
 
     </div>
 </body>
+
 
 <!-- ---------------------------   END PAGE CONTENT  ------------------------------------- -->
 
