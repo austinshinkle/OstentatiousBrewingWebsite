@@ -13,7 +13,6 @@
       },
       "logo": {
         "type": "string",
-        "alt_text": "Monk drinking beer at an abbey",
         "description": "The logo of the beer"
       },
       "description": {
@@ -88,6 +87,6 @@
         }
       }
     },
-    "required": ["name", "style", "logo", "description", "ingredients", "brewing_instructions", "starter_brewing_instructions"]
+    "required": ["name", "style", "logo", "page", "description", "ingredients", "brewing_instructions", "starter_brewing_instructions"]
   }
   
