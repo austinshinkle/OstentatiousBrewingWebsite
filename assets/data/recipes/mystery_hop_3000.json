@@ -66,6 +66,19 @@
       "Boil the starter wort for 10 minutes and cool to 20°C (68°F).",
       "Pitch the yeast into the starter wort and let it ferment for 24-36 hours.",
       "Decant the spent wort and pitch the active yeast into the main batch."
+    ],
+    "beer_statistics": [
+      {
+        "target_og": "TBD",
+        "actual_og": "TBD",
+        "target_fg": "TBD",
+        "actual_fg": "TBD",
+        "target_abv": "TBD",
+        "actual_abv": "TBD",
+        "calculated_ibu": "TBD",
+        "calculated_srm": "TBD",
+        "cost": "TBD"
+      }
     ]
   }
   

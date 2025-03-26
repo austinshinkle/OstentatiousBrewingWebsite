@@ -1,48 +1,82 @@
 {
     "name": "Best of Both Worlds",
-    "style": "IPA",
+    "style": "Double IPA",
     "logo": "/assets/images/beer/best_of_both_worlds.png",
     "page": "/beers/best-of-both-worlds.html",
-    "description": "THIS DESCRIPTION NEEDS UPDATED!!!!",
+    "description": "This double IPA will be an experiment to overdo it. Usually, my IPA designs seem like what I want but they end up falling short. Maybe this is because I don't get the IBU I expect from them or the yeast performance isn't up to par or maybe something entirely different. This recipe is more of everything: malt, a different yeast and a ton of hops from the US and Southern Hemisphere...hopefully it truly will be the best of both worlds.",
     "ingredients": {
       "malts": [
         {
-          "name": "Pale Malt",
-          "amount": "5 kg"
+          "name": "2-Row Pilsner Malt",
+          "amount": "2.27 kg"
         },
         {
-          "name": "Caramel Malt",
-          "amount": "0.5 kg"
+          "name": "Pale Malt",
+          "amount": "3.16 kg"
+        },
+        {
+          "name": "Pale High Color Malt",
+          "amount": "2.95 kg"
+        },
+        {
+          "name": "Carapils Malt",
+          "amount": "113 g"
         }
       ],
       "hops": [
         {
-          "name": "Mystery Hop",
-          "amount": "50 g",
-          "time": "60 minutes",
-          "use": "boil"
-        },
-        {
-          "name": "Mystery Hop",
-          "amount": "25 g",
-          "time": "15 minutes",
-          "use": "boil"
-        },
-        {
-          "name": "Mystery Hop",
-          "amount": "25 g",
+          "name": "Galaxy Hops",
+          "amount": "5.7 g",
+          "alpha_acid": "15.9%",
           "time": "0 minutes",
-          "use": "whirlpool"
+          "use": "boil"
         },
         {
-          "name": "Mystery Hop",
-          "amount": "50 g",
-          "time": "5 days",
-          "use": "dry hop"
+          "name": "Ella Hops",
+          "amount": "8.5 g",
+          "alpha_acid": "16.3%",
+          "time": "0 minutes",
+          "use": "boil"
+        },
+        {
+          "name": "Rakau Hops",
+          "amount": "8.5 g",
+          "alpha_acid": "9.2%",
+          "time": "0 minutes",
+          "use": "boil"
+        },
+        {
+          "name": "Pahto Hops",
+          "amount": "14.2 g",
+          "alpha_acid": "17.5%",
+          "time": "0 minutes",
+          "use": "boil"
+        },
+        {
+          "name": "Loral Hops",
+          "amount": "28.4 g",
+          "alpha_acid": "10.4%",
+          "time": "50 minutes",
+          "use": "boil"
+        },
+        {
+          "name": "Green Bullet Hops",
+          "amount": "28.4 g",
+          "alpha_acid": "13.5%",
+          "time": "0 minutes",
+          "use": "boil"
+        },
+        {
+          "name": "Nugget Hops",
+          "amount": "28.34g",
+          "alpha_acid": "13.7%",
+          "time": "0 minutes",
+          "use": "boil"
         }
       ],
       "yeast": {
-        "name": "American Ale Yeast",
+        "name": "Imperial Labs Loki Ale Yeast",
+        "type": "A43",
         "amount": "1 pack"
       },
       "other_ingredients": [
@@ -66,6 +100,19 @@
       "Boil the starter wort for 10 minutes and cool to 20°C (68°F).",
       "Pitch the yeast into the starter wort and let it ferment for 24-36 hours.",
       "Decant the spent wort and pitch the active yeast into the main batch."
+    ],
+    "beer_statistics": [
+      {
+        "target_og": "TBD",
+        "actual_og": "TBD",
+        "target_fg": "TBD",
+        "actual_fg": "TBD",
+        "target_abv": "TBD",
+        "actual_abv": "TBD",
+        "calculated_ibu": "TBD",
+        "calculated_srm": "TBD",
+        "cost": "TBD"
+      }
     ]
   }
   

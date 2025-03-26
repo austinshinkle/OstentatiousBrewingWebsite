@@ -3,7 +3,7 @@
     "style": "Belgian Dubbel",
     "logo": "/assets/images/beer/monk_juice.jpeg",
     "page": "/beers/monk-juice.html",
-    "description": "The first beer after living in Germany for 3 years! Belgians are typically forgiving, taste excellent and are an ale, which means it will be ready earlier. It should be a light bodied, golden ale with a typical Belgian profile. Start small. Prost!",
+    "description": "The first beer after living in Germany for 3 years! Belgian beers are typically forgiving, taste excellent and are an ale, which means it will be ready earlier. It should be a light bodied, golden ale with a typical Belgian profile. Start small. Prost!",
     "ingredients": {
       "malts": [
         {
@@ -67,12 +67,6 @@
           "amount": "0.45 kg",
           "time": "40 minutes",
           "srm": "0.5"
-        },
-        {
-          "name": "Irish Moss",
-          "amount": "1 tsp",
-          "time": "50 minutes",
-          "use": "boil"
         }
       ]
     },
@@ -81,7 +75,6 @@
       "Boil the wort for 60 minutes, adding hops as per the schedule.",
       "Cool the wort to 20°C (68°F) and pitch the yeast.",
       "Ferment at 20°C (68°F) for two weeks.",
-      "Dry hop for the last 5 days of fermentation.",
       "Bottle or keg the beer and carbonate to desired levels."
     ],
     "starter_brewing_instructions": [
@@ -89,6 +82,24 @@
       "Boil the starter wort for 10 minutes and cool to 20°C (68°F).",
       "Pitch the yeast into the starter wort and let it ferment for 24-36 hours.",
       "Decant the spent wort and pitch the active yeast into the main batch."
+    ],
+    "beer_statistics": [
+      {
+        "target_og": "1.064",
+        "actual_og": "TBD",
+        "target_fg": "1.008",
+        "actual_fg": "TBD",
+        "target_abv": "7.4%",
+        "actual_abv": "TBD",
+        "calculated_ibu": "19.8",
+        "calculated_srm": "5.2",
+        "cost": "TBD"
+      }
+    ],
+      "brew_statistics": [
+      {
+        "brew_date": "TBD"
+      }
     ]
   }
   

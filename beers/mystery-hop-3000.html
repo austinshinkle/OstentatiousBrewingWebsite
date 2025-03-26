@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OSTENTATIOUS BREWING</title>
-    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
 <header>
     <!-- Logo inside a circle -->
     <div class="logo-container">
-        <img src="../assets/images/logo/ostentatious-brewing.jpeg" alt="Ostentatious Brewing Logo" class="logo">
+        <img src="/assets/images/logo/ostentatious-brewing.jpeg" alt="Ostentatious Brewing Logo" class="logo">
     </div>
 
     <div>
@@ -24,11 +24,11 @@
     <!-- Horizontal Menu -->
     <nav>
         <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../about.html">About</a></li>
-            <li><a href="../beer.html">Beers</a></li>
-            <li><a href="../brew-setup.html">Brew Setup</a></li>
-            <li><a href="../cellar.html">Cellar</a></li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/beer.html">Beers</a></li>
+            <li><a href="/brew-setup.html">Brew Setup</a></li>
+            <li><a href="/cellar.html">Cellar</a></li>
             <li><a href="https://github.com/austinshinkle">GitHub</a></li>
         </ul>
     </nav>
@@ -36,18 +36,72 @@
 
 <!-- ---------------------------   BEGIN PAGE CONTENT  ------------------------------------- -->
 
+
+
 <body>
 
-    <div class="container">
+    <div id="beer-container" class="container">
 
-        <h3 style="text-align: center;">MONK JUICE</h2>
 
-        <!-- Image -->
-        <img src="../assets/images/beer/monk_juice.jpeg" alt="Monk Juice" width="60%" style="border-radius: 8px; margin-bottom: 20px; display: block; margin: 0 auto;">
+        <!-- ----------------------------- In Production ------------------------------ -->
+        <script>
 
-        <p style="text-align: center;">IT'S A BEER.</p>
+            // Load the Past Beers index file
+            fetch("/assets/data/recipes/mystery_hop_3000.json") 
+                .then(response => response.json())
+                .then(beerData => {
+
+                    console.log("Amout of Index Data: ", beerData);
+
+                    const beerTitle = document.createElement('h1');
+                    beerTitle.textContent = beerData.name;
+                    document.getElementById('beer-container').appendChild(beerTitle);          
+
+                    const beerStyle = document.createElement('h4');
+                    beerStyle.textContent = beerData.style;
+                    document.getElementById('beer-container').appendChild(beerStyle);  
+
+                    const beerDescription = document.createElement('p');
+                    beerDescription.textContent = beerData.description;
+                    beerDescription.classList.add("beer-page-description");
+                    document.getElementById('beer-container').appendChild(beerDescription);   
+
+                    const beerSectionImageStatistics = document.createElement('div');
+                    beerSectionImageStatistics.style.marginTop = "30px"
+                    document.getElementById('beer-container').appendChild(beerSectionImageStatistics);  
+
+                    const beerLogo = document.createElement('img');
+                    beerLogo.classList.add('beer-page-image')
+                    beerLogo.src = beerData.logo;
+                    beerSectionImageStatistics.appendChild(beerLogo);    
+
+                    const beerStatsTargetOg = document.createElement('p');
+                    beerStatsTargetOg.textContent = "TARGET OG: " + beerData.beer_statistics[0].target_og;
+                    beerSectionImageStatistics.appendChild(beerStatsTargetOg);    
+
+                    const beerStatsActualOg = document.createElement('p');
+                    beerStatsActualOg.textContent = "ACTUAL OG: " + beerData.beer_statistics[0].actual_og;
+                    beerSectionImageStatistics.appendChild(beerStatsActualOg);    
+
+                    const beerStatsTargetFg = document.createElement('p');
+                    beerStatsTargetFg.textContent = "TARGET FG: " + beerData.beer_statistics[0].target_fg;
+                    beerSectionImageStatistics.appendChild(beerStatsTargetFg);    
+
+                    const beerStatsActualFg = document.createElement('p');
+                    beerStatsActualFg.textContent = "ACTUAL FG: " + beerData.beer_statistics[0].actual_fg;
+                    beerSectionImageStatistics.appendChild(beerStatsActualFg);    
+
+
+
+                    })
+                    .catch(error => console.error('Error loading beer JSON:', error));
+    
+        </script>
+        
     </div>
+
 </body>
+
 
 <!-- ---------------------------   END PAGE CONTENT  ------------------------------------- -->
 
@@ -55,7 +109,7 @@
     <div class="footer-content">
         <p>&copy; 2025 OSTENTATIOUS BREWING</p>
         <a href="https://www.instagram.com/ostentatiousbrewmaster" target="_blank">
-            <img src="../assets/images/icons/instagram-icon.png" alt="Instagram" class="instagram-logo">
+            <img src="/assets/images/icons/instagram-icon.png" alt="Instagram" class="instagram-logo">
         </a>
     </div>
 </footer>

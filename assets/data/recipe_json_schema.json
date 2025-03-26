@@ -85,8 +85,36 @@
           "type": "string",
           "description": "Instructions for preparing the yeast starter."
         }
+      },
+      "beer_statistics": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "target_og": { "type": "string" },
+            "actual_og": { "type": "string" },
+            "target_fg": { "type": "string" },
+            "actual_fg": { "type": "string" },
+            "target_abv": { "type": "string" },
+            "actual_abv": { "type": "string" },
+            "calculated_ibu": { "type": "string" },
+            "calculated_srm": { "type": "string" },
+            "cost": { "type": "string"}
+          },
+          "required": ["target_og", "actual_og", "target_fg", "actual_fg", "target_abv", "actual_abv", "calculated_ibu", "calculated_srm", "cost"]
+        }
+      },
+      "brew_statistics": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "brew_date": { "type": "string" }
+          },
+          "required": ["brew_date"]
+        }
       }
     },
-    "required": ["name", "style", "logo", "page", "description", "ingredients", "brewing_instructions", "starter_brewing_instructions"]
+    "required": ["name", "style", "logo", "page", "description", "ingredients", "brewing_instructions", "starter_brewing_instructions, beer_statistics, brew_statistics"]
   }
   
