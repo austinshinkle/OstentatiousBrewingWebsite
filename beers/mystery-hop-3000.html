@@ -66,32 +66,74 @@
                     beerDescription.classList.add("beer-page-description");
                     document.getElementById('beer-container').appendChild(beerDescription);   
 
-                    const beerSectionImageStatistics = document.createElement('div');
-                    beerSectionImageStatistics.style.marginTop = "30px"
-                    document.getElementById('beer-container').appendChild(beerSectionImageStatistics);  
+                    const beerColumnLeft = document.createElement('div');
+                    beerColumnLeft.style.width = "50%";
+                    beerColumnLeft.style.marginRight = "20px";
+                    beerColumnLeft.style.marginLeft = "20px";
+                    beerColumnLeft.style.marginTop = "50px";
+                    document.getElementById('beer-container').appendChild(beerColumnLeft);
 
-                    const beerLogo = document.createElement('img');
-                    beerLogo.classList.add('beer-page-image')
-                    beerLogo.src = beerData.logo;
-                    beerSectionImageStatistics.appendChild(beerLogo);    
+                        const beerLogo = document.createElement('img');
+                        beerLogo.classList.add('beer-page-image')
+                        beerLogo.src = beerData.logo;
+                        beerLogo.style.display = "flex";
+                        beerLogo.style.justifyContent = "center";
+                        beerLogo.style.alignContent = "center"
+                        beerColumnLeft.appendChild(beerLogo); 
+                        
+                        const beerStatsLabel = document.createElement('h4');
+                        beerStatsLabel.textContent = "BEER STATISTICS"
+                        beerStatsLabel.style.marginBottom = "5px";
+                        beerStatsLabel.style.textAlign = "center";
+                        beerColumnLeft.appendChild(beerStatsLabel);
+                    
+                        // create a table
+                        const beerStatsTable = document.createElement('table');
+                        beerStatsTable.style.marginTop = "0px";
+                        beerStatsTable.style.textAlign = "center";
+                        beerStatsTable.style.margin = "0 auto";
 
-                    const beerStatsTargetOg = document.createElement('p');
-                    beerStatsTargetOg.textContent = "TARGET OG: " + beerData.beer_statistics[0].target_og;
-                    beerSectionImageStatistics.appendChild(beerStatsTargetOg);    
+                        // create the first row and append it to the table
+                        const beerStatsTableRow_1 = document.createElement('tr');
 
-                    const beerStatsActualOg = document.createElement('p');
-                    beerStatsActualOg.textContent = "ACTUAL OG: " + beerData.beer_statistics[0].actual_og;
-                    beerSectionImageStatistics.appendChild(beerStatsActualOg);    
+                        // create the first columns
+                        beerStatsTableCell_1 = document.createElement('td');
+                        beerStatsTableCell_2 = document.createElement('td');
+                        beerStatsTableCell_3 = document.createElement('td');
 
-                    const beerStatsTargetFg = document.createElement('p');
-                    beerStatsTargetFg.textContent = "TARGET FG: " + beerData.beer_statistics[0].target_fg;
-                    beerSectionImageStatistics.appendChild(beerStatsTargetFg);    
-
-                    const beerStatsActualFg = document.createElement('p');
-                    beerStatsActualFg.textContent = "ACTUAL FG: " + beerData.beer_statistics[0].actual_fg;
-                    beerSectionImageStatistics.appendChild(beerStatsActualFg);    
+                        beerStatsTableCell_1.innerHTML = `<span class="stat-title">Target OG</span><br><span class="stat-value">${beerData.beer_statistics[0].target_og}</span>`;
+                        beerStatsTableCell_2.innerHTML = `<span class="stat-title">Target FG</span><br><span class="stat-value">${beerData.beer_statistics[0].target_fg}</span>`;
+                        beerStatsTableCell_3.innerHTML = `<span class="stat-title">Target ABV</span><br><span class="stat-value">${beerData.beer_statistics[0].target_abv}</span>`;
 
 
+                        beerStatsTableRow_1.appendChild(beerStatsTableCell_1);
+                        beerStatsTableRow_1.appendChild(beerStatsTableCell_2);
+                        beerStatsTableRow_1.appendChild(beerStatsTableCell_3);
+
+                        beerStatsTable.appendChild(beerStatsTableRow_1);
+
+
+                        // create the first row and append it to the table
+                        const beerStatsTableRow_2 = document.createElement('tr');
+
+
+                        // create the first columns
+                        beerStatsTableCell_1 = document.createElement('td');
+                        beerStatsTableCell_2 = document.createElement('td');
+                        beerStatsTableCell_3 = document.createElement('td');
+
+                        beerStatsTableCell_1.innerHTML = `<span class="stat-title">Actual OG</span><br><span class="stat-value">${beerData.beer_statistics[0].actual_og}</span>`;
+                        beerStatsTableCell_2.innerHTML = `<span class="stat-title">Actual FG</span><br><span class="stat-value">${beerData.beer_statistics[0].actual_fg}</span>`;
+                        beerStatsTableCell_3.innerHTML = `<span class="stat-title">Actual ABV</span><br><span class="stat-value">${beerData.beer_statistics[0].actual_abv}</span>`;
+
+
+                        beerStatsTableRow_2.appendChild(beerStatsTableCell_1);
+                        beerStatsTableRow_2.appendChild(beerStatsTableCell_2);
+                        beerStatsTableRow_2.appendChild(beerStatsTableCell_3);
+
+                        beerStatsTable.appendChild(beerStatsTableRow_2); 
+
+                        beerColumnLeft.appendChild(beerStatsTable); 
 
                     })
                     .catch(error => console.error('Error loading beer JSON:', error));

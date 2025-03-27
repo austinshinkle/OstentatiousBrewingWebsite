@@ -169,7 +169,7 @@ a:hover {
 
 .beer-page-image {        
     width: 100%; 
-    max-width: 300px;
+    max-width: 500px;
     object-fit: scale-down;
     border-radius: 8px;
     margin-right: 20px;
@@ -230,7 +230,25 @@ footer p {
     line-height: 1.5;
     color: #555555; /* Medium Gray */
     margin-bottom: 14px;
-    text-transform: uppercase;
+    text-transform: uppercase;   
+}
 
-    
+td {
+    text-align: center; /* Centers text horizontally */
+    vertical-align: middle; /* Centers text vertically */
+    padding: 10px; /* Adds spacing inside the cell */
+}
+
+.stat-title {
+    font-weight: bold; /* Make top line bold */
+    font-size: 14px; /* Slightly larger text */
+    display: block; /* Ensures it stays on its own line */
+    margin: 0; /* No gap between top and bottom */
+}
+
+.stat-value {
+    font-size: 14px; /* Keep normal size for values */
+    color: #999999; /* Slightly lighter text for differentiation */
+    display: block; /* Keep it on its own line */
+    margin: 0; /* No gap between top and bottom */
 }
