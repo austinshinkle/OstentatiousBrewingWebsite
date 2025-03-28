@@ -96,14 +96,14 @@
                         // create the first row and append it to the table
                         const beerStatsTableRow_1 = document.createElement('tr');
 
-                        // create the first columns
+                        // create the columns
                         beerStatsTableCell_1 = document.createElement('td');
                         beerStatsTableCell_2 = document.createElement('td');
                         beerStatsTableCell_3 = document.createElement('td');
 
-                        beerStatsTableCell_1.innerHTML = `<span class="stat-title">Target OG</span><br><span class="stat-value">${beerData.beer_statistics[0].target_og}</span>`;
-                        beerStatsTableCell_2.innerHTML = `<span class="stat-title">Target FG</span><br><span class="stat-value">${beerData.beer_statistics[0].target_fg}</span>`;
-                        beerStatsTableCell_3.innerHTML = `<span class="stat-title">Target ABV</span><br><span class="stat-value">${beerData.beer_statistics[0].target_abv}</span>`;
+                        beerStatsTableCell_1.innerHTML = `<span class="stat-title">TARGET OG</span><br><span class="stat-value">${beerData.beer_statistics[0].target_og}</span>`;
+                        beerStatsTableCell_2.innerHTML = `<span class="stat-title">TARGET FG</span><br><span class="stat-value">${beerData.beer_statistics[0].target_fg}</span>`;
+                        beerStatsTableCell_3.innerHTML = `<span class="stat-title">TARGET ABV</span><br><span class="stat-value">${beerData.beer_statistics[0].target_abv}</span>`;
 
 
                         beerStatsTableRow_1.appendChild(beerStatsTableCell_1);
@@ -112,19 +112,17 @@
 
                         beerStatsTable.appendChild(beerStatsTableRow_1);
 
-
-                        // create the first row and append it to the table
+                        // create the second row and append it to the table
                         const beerStatsTableRow_2 = document.createElement('tr');
 
-
-                        // create the first columns
+                        // create the columns
                         beerStatsTableCell_1 = document.createElement('td');
                         beerStatsTableCell_2 = document.createElement('td');
                         beerStatsTableCell_3 = document.createElement('td');
 
-                        beerStatsTableCell_1.innerHTML = `<span class="stat-title">Actual OG</span><br><span class="stat-value">${beerData.beer_statistics[0].actual_og}</span>`;
-                        beerStatsTableCell_2.innerHTML = `<span class="stat-title">Actual FG</span><br><span class="stat-value">${beerData.beer_statistics[0].actual_fg}</span>`;
-                        beerStatsTableCell_3.innerHTML = `<span class="stat-title">Actual ABV</span><br><span class="stat-value">${beerData.beer_statistics[0].actual_abv}</span>`;
+                        beerStatsTableCell_1.innerHTML = `<span class="stat-title">ACTUAL OG</span><br><span class="stat-value">${beerData.beer_statistics[0].actual_og}</span>`;
+                        beerStatsTableCell_2.innerHTML = `<span class="stat-title">ACTUAL FG</span><br><span class="stat-value">${beerData.beer_statistics[0].actual_fg}</span>`;
+                        beerStatsTableCell_3.innerHTML = `<span class="stat-title">ACTUAL ABV</span><br><span class="stat-value">${beerData.beer_statistics[0].actual_abv}</span>`;
 
 
                         beerStatsTableRow_2.appendChild(beerStatsTableCell_1);
@@ -132,6 +130,24 @@
                         beerStatsTableRow_2.appendChild(beerStatsTableCell_3);
 
                         beerStatsTable.appendChild(beerStatsTableRow_2); 
+
+                        // create the second row and append it to the table
+                        const beerStatsTableRow_3 = document.createElement('tr');
+
+                        // create the columns
+                        beerStatsTableCell_1 = document.createElement('td');
+                        beerStatsTableCell_2 = document.createElement('td');
+                        beerStatsTableCell_3 = document.createElement('td');
+
+                        beerStatsTableCell_1.innerHTML = `<span class="stat-title">CALC IBU OG</span><br><span class="stat-value">${beerData.beer_statistics[0].calculated_ibu}</span>`;
+                        beerStatsTableCell_2.innerHTML = `<span class="stat-title">CALC SRM FG</span><br><span class="stat-value">${beerData.beer_statistics[0].calculated_srm}</span>`;
+                        beerStatsTableCell_3.innerHTML = `<span class="stat-title">COST</span><br><span class="stat-value">${beerData.beer_statistics[0].cost}</span>`;
+
+                        beerStatsTableRow_3.appendChild(beerStatsTableCell_1);
+                        beerStatsTableRow_3.appendChild(beerStatsTableCell_2);
+                        beerStatsTableRow_3.appendChild(beerStatsTableCell_3);
+
+                        beerStatsTable.appendChild(beerStatsTableRow_3); 
 
                         beerColumnLeft.appendChild(beerStatsTable); 
 
