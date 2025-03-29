@@ -66,12 +66,26 @@
                     beerDescription.classList.add("beer-page-description");
                     document.getElementById('beer-container').appendChild(beerDescription);   
 
+                    // create the flexible box
+                    const beerColumnContainer = document.createElement('div');
+                    beerColumnContainer.style.width = "100%";
+                    beerColumnContainer.style.marginRight = "20px";
+                    beerColumnContainer.style.marginLeft = "20px";
+                    beerColumnContainer.style.marginTop = "50px";
+                    beerColumnContainer.style.display = "flex";
+                    beerColumnContainer.style.flexDirection = "row";
+                    document.getElementById('beer-container').appendChild(beerColumnContainer);
+
+
+
+                    // create the left column
                     const beerColumnLeft = document.createElement('div');
                     beerColumnLeft.style.width = "50%";
-                    beerColumnLeft.style.marginRight = "20px";
-                    beerColumnLeft.style.marginLeft = "20px";
-                    beerColumnLeft.style.marginTop = "50px";
-                    document.getElementById('beer-container').appendChild(beerColumnLeft);
+                    beerColumnLeft.style.marginRight = "10px";
+                    beerColumnLeft.style.marginLeft = "10px";
+                    beerColumnLeft.style.marginTop = "10px";
+                    beerColumnLeft.style.displayflex = "1";
+                    beerColumnContainer.appendChild(beerColumnLeft);
 
                         const beerLogo = document.createElement('img');
                         beerLogo.classList.add('beer-page-image')
@@ -150,6 +164,22 @@
                         beerStatsTable.appendChild(beerStatsTableRow_3); 
 
                         beerColumnLeft.appendChild(beerStatsTable); 
+
+
+                    // create the right column
+                    const beerColumnRight = document.createElement('div');
+                    beerColumnRight.style.width = "50%";
+                    beerColumnRight.style.marginRight = "10px";
+                    beerColumnRight.style.marginLeft = "10px";
+                    beerColumnRight.style.marginTop = "10px";
+                    beerColumnRight.style.flex = "1";
+                    beerColumnContainer.appendChild(beerColumnRight);
+
+                        const beerTestText = document.createElement('h4');
+                        beerTestText.textContent = "This is a test!"
+                        beerTestText.style.marginBottom = "5px";
+                        beerTestText.style.textAlign = "center";
+                        beerColumnRight.appendChild(beerTestText);
 
                     })
                     .catch(error => console.error('Error loading beer JSON:', error));
