@@ -175,11 +175,52 @@
                     beerColumnRight.style.flex = "1";
                     beerColumnContainer.appendChild(beerColumnRight);
 
-                        const beerTestText = document.createElement('h4');
-                        beerTestText.textContent = "This is a test!"
-                        beerTestText.style.marginBottom = "5px";
-                        beerTestText.style.textAlign = "center";
-                        beerColumnRight.appendChild(beerTestText);
+                        // Create a container for the brewing instructions
+                        const beerBrewingInstructionsTitle = document.createElement('h4');
+                        beerBrewingInstructionsTitle.textContent = "BREWING INSTRUCTIONS";
+                        beerBrewingInstructionsTitle.style.marginBottom = "5px";
+                        beerBrewingInstructionsTitle.style.textAlign = "center";
+                        beerColumnRight.appendChild(beerBrewingInstructionsTitle);
+
+                        // Create a container for the brewing instructions
+                        const brewingInstructionsContainer = document.createElement("div");
+                        brewingInstructionsContainer.style.marginTop = "20px";
+
+                        // Iterate through the array and add each instruction
+                        beerData.brewing_instructions.forEach(instruction => {
+                            const brewingInstructionItem = document.createElement("p");
+                            brewingInstructionItem.classList.add('beer-brewing-instruction')
+                            brewingInstructionItem.textContent = instruction; // Set text
+                            brewingInstructionItem.style.marginBottom = "1px"; // Add spacing between lines
+                            brewingInstructionsContainer.appendChild(brewingInstructionItem); // Append to container
+                        });
+
+                        // Append the container to the document (for example, inside a div with ID 'beer-container')
+                        beerColumnRight.appendChild(brewingInstructionsContainer);
+
+                        // Create a container for the starter instructions
+                        const beerStarterInstructionsTitle = document.createElement('h4');
+                        beerStarterInstructionsTitle.textContent = "YEAST STARTER INSTRUCTIONS";
+                        beerStarterInstructionsTitle.style.marginBottom = "5px";
+                        beerStarterInstructionsTitle.style.marginTop = "50px";
+                        beerStarterInstructionsTitle.style.textAlign = "center";
+                        beerColumnRight.appendChild(beerStarterInstructionsTitle);
+
+                        // Create a container for the brewing instructions
+                        const starterInstructionsContainer = document.createElement("div");
+                        starterInstructionsContainer.style.marginTop = "20px";
+
+                        // Iterate through the array and add each instruction
+                        beerData.starter_brewing_instructions.forEach(instruction => {
+                            const starterBrewingInstructionItem = document.createElement("p");
+                            starterBrewingInstructionItem.classList.add('beer-brewing-instruction')
+                            starterBrewingInstructionItem.textContent = instruction; // Set text
+                            starterBrewingInstructionItem.style.marginBottom = "1px"; // Add spacing between lines
+                            starterInstructionsContainer.appendChild(starterBrewingInstructionItem); // Append to container
+                        });
+
+                        // Append the container to the document (for example, inside a div with ID 'beer-container')
+                        beerColumnRight.appendChild(starterInstructionsContainer);
 
                     })
                     .catch(error => console.error('Error loading beer JSON:', error));

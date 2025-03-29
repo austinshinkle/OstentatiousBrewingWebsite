@@ -66,12 +66,26 @@
                     beerDescription.classList.add("beer-page-description");
                     document.getElementById('beer-container').appendChild(beerDescription);   
 
+                    // create the flexible box
+                    const beerColumnContainer = document.createElement('div');
+                    beerColumnContainer.style.width = "100%";
+                    beerColumnContainer.style.marginRight = "20px";
+                    beerColumnContainer.style.marginLeft = "20px";
+                    beerColumnContainer.style.marginTop = "50px";
+                    beerColumnContainer.style.display = "flex";
+                    beerColumnContainer.style.flexDirection = "row";
+                    document.getElementById('beer-container').appendChild(beerColumnContainer);
+
+
+
+                    // create the left column
                     const beerColumnLeft = document.createElement('div');
                     beerColumnLeft.style.width = "50%";
-                    beerColumnLeft.style.marginRight = "20px";
-                    beerColumnLeft.style.marginLeft = "20px";
-                    beerColumnLeft.style.marginTop = "50px";
-                    document.getElementById('beer-container').appendChild(beerColumnLeft);
+                    beerColumnLeft.style.marginRight = "10px";
+                    beerColumnLeft.style.marginLeft = "10px";
+                    beerColumnLeft.style.marginTop = "10px";
+                    beerColumnLeft.style.displayflex = "1";
+                    beerColumnContainer.appendChild(beerColumnLeft);
 
                         const beerLogo = document.createElement('img');
                         beerLogo.classList.add('beer-page-image')
@@ -96,14 +110,14 @@
                         // create the first row and append it to the table
                         const beerStatsTableRow_1 = document.createElement('tr');
 
-                        // create the first columns
+                        // create the columns
                         beerStatsTableCell_1 = document.createElement('td');
                         beerStatsTableCell_2 = document.createElement('td');
                         beerStatsTableCell_3 = document.createElement('td');
 
-                        beerStatsTableCell_1.innerHTML = `<span class="stat-title">Target OG</span><br><span class="stat-value">${beerData.beer_statistics[0].target_og}</span>`;
-                        beerStatsTableCell_2.innerHTML = `<span class="stat-title">Target FG</span><br><span class="stat-value">${beerData.beer_statistics[0].target_fg}</span>`;
-                        beerStatsTableCell_3.innerHTML = `<span class="stat-title">Target ABV</span><br><span class="stat-value">${beerData.beer_statistics[0].target_abv}</span>`;
+                        beerStatsTableCell_1.innerHTML = `<span class="stat-title">TARGET OG</span><br><span class="stat-value">${beerData.beer_statistics[0].target_og}</span>`;
+                        beerStatsTableCell_2.innerHTML = `<span class="stat-title">TARGET FG</span><br><span class="stat-value">${beerData.beer_statistics[0].target_fg}</span>`;
+                        beerStatsTableCell_3.innerHTML = `<span class="stat-title">TARGET ABV</span><br><span class="stat-value">${beerData.beer_statistics[0].target_abv}</span>`;
 
 
                         beerStatsTableRow_1.appendChild(beerStatsTableCell_1);
@@ -112,19 +126,17 @@
 
                         beerStatsTable.appendChild(beerStatsTableRow_1);
 
-
-                        // create the first row and append it to the table
+                        // create the second row and append it to the table
                         const beerStatsTableRow_2 = document.createElement('tr');
 
-
-                        // create the first columns
+                        // create the columns
                         beerStatsTableCell_1 = document.createElement('td');
                         beerStatsTableCell_2 = document.createElement('td');
                         beerStatsTableCell_3 = document.createElement('td');
 
-                        beerStatsTableCell_1.innerHTML = `<span class="stat-title">Actual OG</span><br><span class="stat-value">${beerData.beer_statistics[0].actual_og}</span>`;
-                        beerStatsTableCell_2.innerHTML = `<span class="stat-title">Actual FG</span><br><span class="stat-value">${beerData.beer_statistics[0].actual_fg}</span>`;
-                        beerStatsTableCell_3.innerHTML = `<span class="stat-title">Actual ABV</span><br><span class="stat-value">${beerData.beer_statistics[0].actual_abv}</span>`;
+                        beerStatsTableCell_1.innerHTML = `<span class="stat-title">ACTUAL OG</span><br><span class="stat-value">${beerData.beer_statistics[0].actual_og}</span>`;
+                        beerStatsTableCell_2.innerHTML = `<span class="stat-title">ACTUAL FG</span><br><span class="stat-value">${beerData.beer_statistics[0].actual_fg}</span>`;
+                        beerStatsTableCell_3.innerHTML = `<span class="stat-title">ACTUAL ABV</span><br><span class="stat-value">${beerData.beer_statistics[0].actual_abv}</span>`;
 
 
                         beerStatsTableRow_2.appendChild(beerStatsTableCell_1);
@@ -133,7 +145,82 @@
 
                         beerStatsTable.appendChild(beerStatsTableRow_2); 
 
+                        // create the second row and append it to the table
+                        const beerStatsTableRow_3 = document.createElement('tr');
+
+                        // create the columns
+                        beerStatsTableCell_1 = document.createElement('td');
+                        beerStatsTableCell_2 = document.createElement('td');
+                        beerStatsTableCell_3 = document.createElement('td');
+
+                        beerStatsTableCell_1.innerHTML = `<span class="stat-title">CALC IBU OG</span><br><span class="stat-value">${beerData.beer_statistics[0].calculated_ibu}</span>`;
+                        beerStatsTableCell_2.innerHTML = `<span class="stat-title">CALC SRM FG</span><br><span class="stat-value">${beerData.beer_statistics[0].calculated_srm}</span>`;
+                        beerStatsTableCell_3.innerHTML = `<span class="stat-title">COST</span><br><span class="stat-value">${beerData.beer_statistics[0].cost}</span>`;
+
+                        beerStatsTableRow_3.appendChild(beerStatsTableCell_1);
+                        beerStatsTableRow_3.appendChild(beerStatsTableCell_2);
+                        beerStatsTableRow_3.appendChild(beerStatsTableCell_3);
+
+                        beerStatsTable.appendChild(beerStatsTableRow_3); 
+
                         beerColumnLeft.appendChild(beerStatsTable); 
+
+
+                    // create the right column
+                    const beerColumnRight = document.createElement('div');
+                    beerColumnRight.style.width = "50%";
+                    beerColumnRight.style.marginRight = "10px";
+                    beerColumnRight.style.marginLeft = "10px";
+                    beerColumnRight.style.marginTop = "10px";
+                    beerColumnRight.style.flex = "1";
+                    beerColumnContainer.appendChild(beerColumnRight);
+
+                        // Create a container for the brewing instructions
+                        const beerBrewingInstructionsTitle = document.createElement('h4');
+                        beerBrewingInstructionsTitle.textContent = "BREWING INSTRUCTIONS";
+                        beerBrewingInstructionsTitle.style.marginBottom = "5px";
+                        beerBrewingInstructionsTitle.style.textAlign = "center";
+                        beerColumnRight.appendChild(beerBrewingInstructionsTitle);
+
+                        // Create a container for the brewing instructions
+                        const brewingInstructionsContainer = document.createElement("div");
+                        brewingInstructionsContainer.style.marginTop = "20px";
+
+                        // Iterate through the array and add each instruction
+                        beerData.brewing_instructions.forEach(instruction => {
+                            const brewingInstructionItem = document.createElement("p");
+                            brewingInstructionItem.classList.add('beer-brewing-instruction')
+                            brewingInstructionItem.textContent = instruction; // Set text
+                            brewingInstructionItem.style.marginBottom = "1px"; // Add spacing between lines
+                            brewingInstructionsContainer.appendChild(brewingInstructionItem); // Append to container
+                        });
+
+                        // Append the container to the document (for example, inside a div with ID 'beer-container')
+                        beerColumnRight.appendChild(brewingInstructionsContainer);
+
+                        // Create a container for the starter instructions
+                        const beerStarterInstructionsTitle = document.createElement('h4');
+                        beerStarterInstructionsTitle.textContent = "YEAST STARTER INSTRUCTIONS";
+                        beerStarterInstructionsTitle.style.marginBottom = "5px";
+                        beerStarterInstructionsTitle.style.marginTop = "50px";
+                        beerStarterInstructionsTitle.style.textAlign = "center";
+                        beerColumnRight.appendChild(beerStarterInstructionsTitle);
+
+                        // Create a container for the brewing instructions
+                        const starterInstructionsContainer = document.createElement("div");
+                        starterInstructionsContainer.style.marginTop = "20px";
+
+                        // Iterate through the array and add each instruction
+                        beerData.starter_brewing_instructions.forEach(instruction => {
+                            const starterBrewingInstructionItem = document.createElement("p");
+                            starterBrewingInstructionItem.classList.add('beer-brewing-instruction')
+                            starterBrewingInstructionItem.textContent = instruction; // Set text
+                            starterBrewingInstructionItem.style.marginBottom = "1px"; // Add spacing between lines
+                            starterInstructionsContainer.appendChild(starterBrewingInstructionItem); // Append to container
+                        });
+
+                        // Append the container to the document (for example, inside a div with ID 'beer-container')
+                        beerColumnRight.appendChild(starterInstructionsContainer);
 
                     })
                     .catch(error => console.error('Error loading beer JSON:', error));
