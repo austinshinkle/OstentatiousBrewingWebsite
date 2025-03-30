@@ -8,43 +8,43 @@
       "malts": [
         {
           "name": "Franco-Belges Pilsner Malt",
-          "amount": "3.18 kg",
+          "amount": "7 lbs",
           "srm": "1.7"
         },
         {
           "name": "Vienna Malt",
-          "amount": "1.81 kg",
+          "amount": "4 lbs",
           "srm": "3.5"
         },
         {
           "name": "Munich Malt",
-          "amount": "0.45 kg",
+          "amount": "1 lb",
           "srm": "9.0"
         },
         {
           "name": "Carafoam",
-          "amount": "0.45 kg",
+          "amount": "1 lb",
           "srm": "2.0"
         }
       ],
       "hops": [
         {
           "name": "Hallertauer Mittelfrüh",
-          "amount": "28 g",
+          "amount": "1 oz",
           "alpha_acid": "4.0%",
           "time": "0 minutes",
           "use": "boil"
         },
         {
           "name": "Hallertauer Mittelfrüh",
-          "amount": "15 g",
+          "amount": "0.5 oz",
           "alpha_acid": "4.0%",
           "time": "40 minutes",
           "use": "boil"
         },
         {
           "name": "Hallertauer Mittelfrüh",
-          "amount": "28 g",
+          "amount": "1 oz",
           "alpha_acid": "4.0%",
           "time": "50 minutes",
           "use": "boil"
@@ -64,24 +64,48 @@
         },
         {
           "name": "Candi Sugar",
-          "amount": "0.45 kg",
+          "amount": "1 lb",
           "time": "40 minutes",
           "srm": "0.5"
         }
       ]
     },
     "brewing_instructions": [
-      "Mash the grains at 65°C (149°F) for 60 minutes.",
-      "Boil the wort for 60 minutes, adding hops as per the schedule.",
-      "Cool the wort to 20°C (68°F) and pitch the yeast.",
-      "Ferment at 20°C (68°F) for two weeks.",
-      "Bottle or keg the beer and carbonate to desired levels."
+      "Add 6 gallons of water to the kettler and add 1 tablet of xxx",
+      "Heat 6 gallons of strike water to 161°F",
+      "Add 6 gallons of water to the mash tun",
+      "Add all grains to the mash tun and confirm mash temperature of 153°F",
+      "Steep grains for 60 minutes",
+      "While steeping grains, heat 4 gallons of water for lautering to 170 °F",
+      "Fly spage until wort volume of 7.3 gallons is reached",
+      "Begin boil and wait for hot break",
+      "At 0 minutes, add 15 drops of FermCap to reduce foaming",
+      "At 0 minutes, add 1 oz Hallertauer Mittelfrüh hops",
+      "At 40 minutes, add 0.5 oz Hallertauer Mittelfrüh hops",
+      "At 45 minutes, add 1 lb Candi Sugar",
+      "At 50 minutes, add 1 oz Hallertauer Mittelfrüh hops",
+      "At 50 minutes, add 1 tablet Whirlfloc",
+      "At 50 minutes, add 0.5 tsp of yeast nutrient",
+      "At 60 minutes, chil the wort to 60°F",
+      "Aerate with pure oxygen for 1 minute",
+      "Move wort to primary fermenter",
+      "Pitch yeast",
+      "Ferment at 67°F for 7 days",
+      "Ferment at 72°F for 2 days",
+      "Ferment at 65°F for 2 days",
+      "Cold crash to 36°F for 7 days",
+      "Move to keg and carbonate"
     ],
     "starter_brewing_instructions": [
-      "Prepare a 1-liter starter wort with a gravity of 1.040.",
-      "Boil the starter wort for 10 minutes and cool to 20°C (68°F).",
-      "Pitch the yeast into the starter wort and let it ferment for 24-36 hours.",
-      "Decant the spent wort and pitch the active yeast into the main batch."
+      "Add 3L of water to Ehrlenmeyer Flask",
+      "Add 6 oz Extra Light Dry Malt Extract",
+      "Begin boil",
+      "Add 5 drops FermCap to reduce foaming as needed",
+      "At 10 minutes, chill wort to 72°F",
+      "Add stir bar to wort",
+      "Pitch yeast",
+      "Place on stir plate",
+      "Allow yeast to multiply for 36-48 hours"
     ],
     "beer_statistics": [
       {
