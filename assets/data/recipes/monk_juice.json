@@ -6,106 +6,61 @@
     "description": "The first beer after living in Germany for 3 years! Belgian beers are typically forgiving, taste excellent and are an ale, which means it will be ready earlier. It should be a light bodied, golden ale with a typical Belgian profile. Start small. Prost!",
     "ingredients": {
       "malts": [
-        {
-          "name": "Franco-Belges Pilsner Malt",
-          "amount": "7 lbs",
-          "srm": "1.7"
-        },
-        {
-          "name": "Vienna Malt",
-          "amount": "4 lbs",
-          "srm": "3.5"
-        },
-        {
-          "name": "Munich Malt",
-          "amount": "1 lb",
-          "srm": "9.0"
-        },
-        {
-          "name": "Carafoam",
-          "amount": "1 lb",
-          "srm": "2.0"
-        }
+        "7 lbs Franco-Belges Pilsner Malt",
+        "4 lbs Vienna Malt",
+        "1 lb Munich Malt",
+        "1 lb Carafoam Malt"
       ],
       "hops": [
-        {
-          "name": "Hallertauer Mittelfrüh",
-          "amount": "1 oz",
-          "alpha_acid": "4.0%",
-          "time": "0 minutes",
-          "use": "boil"
-        },
-        {
-          "name": "Hallertauer Mittelfrüh",
-          "amount": "0.5 oz",
-          "alpha_acid": "4.0%",
-          "time": "40 minutes",
-          "use": "boil"
-        },
-        {
-          "name": "Hallertauer Mittelfrüh",
-          "amount": "1 oz",
-          "alpha_acid": "4.0%",
-          "time": "50 minutes",
-          "use": "boil"
-        }
+        "2.5 oz Hallertauer Mittelfrüh hops (4.0% AA)"
       ],
-      "yeast": {
-        "name": "Belgian Ale Yeast",
-        "type": "WLP550",
-        "amount": "1 pack"
-      },
+      "yeast": [
+        "1 package WLP550 Belgian Ale Yeast"
+      ],
       "other_ingredients": [
-        {
-          "name": "FermCap",
-          "amount": "15 drops",
-          "time": "0 minutes",
-          "use": "boil"
-        },
-        {
-          "name": "Candi Sugar",
-          "amount": "1 lb",
-          "time": "40 minutes",
-          "srm": "0.5"
-        }
+        "1 lb Extra Light Candi Sugar",
+        "15 drops FermCap",
+        "0.5 tsp Yeast Nutrient",
+        "1 tablet Whilfloc",
+        "xxx tablet ??? water additive"
       ]
     },
     "brewing_instructions": [
-      "Add 6 gallons of water to the kettler and add 1 tablet of xxx",
-      "Heat 6 gallons of strike water to 161°F",
-      "Add 6 gallons of water to the mash tun",
-      "Add all grains to the mash tun and confirm mash temperature of 153°F",
-      "Steep grains for 60 minutes",
-      "While steeping grains, heat 4 gallons of water for lautering to 170 °F",
-      "Fly spage until wort volume of 7.3 gallons is reached",
-      "Begin boil and wait for hot break",
-      "At 0 minutes, add 15 drops of FermCap to reduce foaming",
-      "At 0 minutes, add 1 oz Hallertauer Mittelfrüh hops",
-      "At 40 minutes, add 0.5 oz Hallertauer Mittelfrüh hops",
-      "At 45 minutes, add 1 lb Candi Sugar",
-      "At 50 minutes, add 1 oz Hallertauer Mittelfrüh hops",
-      "At 50 minutes, add 1 tablet Whirlfloc",
-      "At 50 minutes, add 0.5 tsp of yeast nutrient",
-      "At 60 minutes, chil the wort to 60°F",
-      "Aerate with pure oxygen for 1 minute",
-      "Move wort to primary fermenter",
-      "Pitch yeast",
-      "Ferment at 67°F for 7 days",
-      "Ferment at 72°F for 2 days",
-      "Ferment at 65°F for 2 days",
-      "Cold crash to 36°F for 7 days",
-      "Move to keg and carbonate"
+      "• Add 6 gallons of water to the kettler and add 1 tablet of xxx",
+      "• Heat 6 gallons of strike water to 161°F",
+      "• Add 6 gallons of water to the mash tun",
+      "• Add all grains to the mash tun and confirm mash temperature of 153°F",
+      "• Steep grains for 60 minutes",
+      "• While steeping grains, heat 4 gallons of water for lautering to 170 °F",
+      "• Fly spage until wort volume of 7.3 gallons is reached",
+      "• Begin boil and wait for hot break",
+      "• At 0 minutes, add 15 drops of FermCap to reduce foaming",
+      "• At 0 minutes, add 1 oz Hallertauer Mittelfrüh hops",
+      "• At 40 minutes, add 0.5 oz Hallertauer Mittelfrüh hops",
+      "• At 45 minutes, add 1 lb Candi Sugar",
+      "• At 50 minutes, add 1 oz Hallertauer Mittelfrüh hops",
+      "• At 50 minutes, add 1 tablet Whirlfloc",
+      "• At 50 minutes, add 0.5 tsp of yeast nutrient",
+      "• At 60 minutes, chil the wort to 60°F",
+      "• Aerate with pure oxygen for 1 minute",
+      "• Move wort to primary fermenter",
+      "• Pitch yeast",
+      "• Ferment at 67°F for 7 days",
+      "• Ferment at 72°F for 2 days",
+      "• Ferment at 65°F for 2 days",
+      "• Cold crash to 36°F for 7 days",
+      "• Move to keg and carbonate"
     ],
     "starter_brewing_instructions": [
-      "Add 3L of water to Ehrlenmeyer Flask",
-      "Add 6 oz Extra Light Dry Malt Extract",
-      "Begin boil",
-      "Add 5 drops FermCap to reduce foaming as needed",
-      "At 10 minutes, chill wort to 72°F",
-      "Add stir bar to wort",
-      "Pitch yeast",
-      "Place on stir plate",
-      "Allow yeast to multiply for 36-48 hours"
+      "• Add 3L of water to Ehrlenmeyer Flask",
+      "• Add 6 oz Extra Light Dry Malt Extract",
+      "• Begin boil",
+      "• Add 5 drops FermCap to reduce foaming as needed",
+      "• At 10 minutes, chill wort to 72°F",
+      "• Add stir bar to wort",
+      "• Pitch yeast",
+      "• Place on stir plate",
+      "• Allow yeast to multiply for 36-48 hours"
     ],
     "beer_statistics": [
       {

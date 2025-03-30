@@ -222,6 +222,48 @@
                         // Append the container to the document (for example, inside a div with ID 'beer-container')
                         beerColumnRight.appendChild(starterInstructionsContainer);
 
+                        // Create a container for the ingredients list
+                        const IngredientsListContainer = document.createElement("div");
+                        IngredientsListContainer.style.marginTop = "20px";
+
+                        // Create a container for the ingredients list
+                        const IngredientsListContainerTitle = document.createElement('h4');
+                        IngredientsListContainerTitle.textContent = "INGREDIENTS LIST";
+                        IngredientsListContainerTitle.style.marginBottom = "5px";
+                        IngredientsListContainerTitle.style.marginTop = "50px";
+                        IngredientsListContainerTitle.style.textAlign = "center";
+                        IngredientsListContainer.appendChild(IngredientsListContainerTitle);
+
+                        // Iterate through the array and add each instruction
+                        beerData.ingredients.malts.forEach(item => {
+                            const maltList = document.createElement("p");
+                            maltList.classList.add('beer-brewing-instruction')
+                            maltList.textContent = item; // Set text
+                            maltList.style.marginBottom = "1px"; // Add spacing between lines
+                            IngredientsListContainer.appendChild(maltList); // Append to container
+                        });
+
+                        // Iterate through the array and add each instruction
+                        beerData.ingredients.hops.forEach(item => {
+                            const hopList = document.createElement("p");
+                            hopList.classList.add('beer-brewing-instruction')
+                            hopList.textContent = item; // Set text
+                            hopList.style.marginBottom = "1px"; // Add spacing between lines
+                            IngredientsListContainer.appendChild(hopList); // Append to container
+                        });
+
+                        // Iterate through the array and add each instruction
+                        beerData.ingredients.other_ingredients.forEach(item => {
+                            const otherIngredientList = document.createElement("p");
+                            otherIngredientList.classList.add('beer-brewing-instruction')
+                            otherIngredientList.textContent = item; // Set text
+                            otherIngredientList.style.marginBottom = "1px"; // Add spacing between lines
+                            IngredientsListContainer.appendChild(otherIngredientList); // Append to container
+                        });
+
+                        // Append the container to the document (for example, inside a div with ID 'beer-container')
+                        beerColumnRight.appendChild(IngredientsListContainer);
+
                     })
                     .catch(error => console.error('Error loading beer JSON:', error));
     

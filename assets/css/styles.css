@@ -149,7 +149,7 @@ a:hover {
 
 /* Container for better layout */
 .container {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 2px auto;
     background: white;
     padding: 20px;
