@@ -45,6 +45,7 @@
             "items": {
               "type": "string"
             }
+          }
         }
       },
       "brewing_instructions": {
