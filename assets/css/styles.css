@@ -129,6 +129,16 @@ p {
     
 }
 
+/* Beer Page Title Style */
+.beer-title-container {
+    margin: 5px 0 0 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+    gap: 2rem;  
+
+}
+
 /* Paragraph and general text styling */
 .beer-brewing-instruction {
     font-size: 14px;
@@ -194,8 +204,14 @@ a:hover {
     color: #333;
 }
 
+.beer-info-item{
+    font-size: 12px;
+    color:#999999;
+    margin: auto;
+}
+
 .beer-style {
-    font-size: 18px;
+    font-size: 20px;
     color: #777;
 }
 
@@ -241,22 +257,115 @@ footer p {
     text-transform: uppercase;   
 }
 
-td {
-    text-align: center; /* Centers text horizontally */
-    vertical-align: middle; /* Centers text vertically */
-    padding: 10px; /* Adds spacing inside the cell */
+.site-title{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-left: 10px;
+    text-transform: uppercase;
 }
 
-.stat-title {
+.beer-details {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: nowrap; 
+    margin-top: 20px;
+    align-items: flex-start;
+}
+
+.beer-column {
+    flex: 0 1 calc(33.333% - 5px);
+    box-sizing: border-box;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.section-title{
+    font-size: 20px;
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.beer-stats-table{
+    margin: 0;
+    text-align: center;
+}
+
+.image-stats-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.image-stats-wrapper > * {
+    width: 50%;
+}
+
+.beer-page-image {
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/*** START - Beer Statistics grid style ***/
+
+.beer-stats-grid {
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.beer-stats-grid td {
+    padding: 0.5rem;
+}
+
+.beer-stat-title {
     font-weight: bold; /* Make top line bold */
-    font-size: 14px; /* Slightly larger text */
+    font-size: 16px; /* Slightly larger text */
     display: block; /* Ensures it stays on its own line */
     margin: 0; /* No gap between top and bottom */
+    text-transform: uppercase;
+    line-height: 1.3; /* Tighten line spacing */
 }
 
-.stat-value {
+.beer-stat-value {
     font-size: 14px; /* Keep normal size for values */
     color: #999999; /* Slightly lighter text for differentiation */
     display: block; /* Keep it on its own line */
-    margin: 0; /* No gap between top and bottom */
+    margin-bottom: 0px; /* No gap between top and bottom */
+    line-height: 1;
+}
+
+/*** END - Beer Statistics grid style ***/
+
+/*** START - Horizontal Line ***/
+.horizontal-line {
+    width: 75%;
+    margin-top: 50px;
+    border: 0.5px solid #ddd;
+    
+}
+
+/*** END - Horizontal Line ***/
+
+/*** START - Ingredients List ***/
+
+.ingredients-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.ingredients-list-item {
+    margin-bottom: 2px;
+    margin-left: 25px;
+    text-align: left;
+    color:#999999;
+    font-size: 14px;
 }

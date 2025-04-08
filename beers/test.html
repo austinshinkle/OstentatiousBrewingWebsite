@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beer Recipe Layout</title>
+  <style>
+    body {
+      font-family: 'Overpass', sans-serif;
+      margin: 2rem;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+
+    .top-section {
+      display: flex;
+      gap: 2rem;
+      margin-bottom: 2rem;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    .beer-image {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .beer-stats {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .stats-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    .stats-table td {
+      padding: 0.5rem;
+      border-bottom: 1px solid #ccc;
+      text-align: center;
+    }
+
+    .bottom-section {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .ingredients-column,
+    .instructions-column {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    h3, h4 {
+      margin-bottom: 0.5rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="top-section">
+    <img class="beer-image" src="/assets/images/monk-juice.jpg" alt="Beer Image">
+    <div class="beer-stats">
+      <h3>Beer Statistics</h3>
+      <table class="stats-table">
+        <tr><td>Target OG</td><td>1.065</td><td>Target FG</td><td>1.012</td></tr>
+        <tr><td>ABV</td><td>6.9%</td><td>IBU</td><td>45</td></tr>
+        <tr><td>SRM</td><td>6</td><td>Cost</td><td>$30</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="bottom-section">
+    <div class="ingredients-column">
+      <h4>Ingredients</h4>
+      <ul>
+        <li>5 kg Pale Malt</li>
+        <li>500 g Munich</li>
+        <li>100 g Citra Hops</li>
+        <li>Yeast: Wyeast 1056</li>
+        <li>Orange Peel</li>
+      </ul>
+    </div>
+
+    <div class="instructions-column">
+      <h4>Brewing Instructions</h4>
+      <p>Mash at 67°C for 60 minutes.</p>
+      <p>Boil for 60 minutes, add hops accordingly.</p>
+      <p>Cool to 20°C and pitch yeast.</p>
+      <p>Ferment for 2 weeks at 19°C.</p>
+      <h4>Yeast Starter Instructions</h4>
+      <p>Make a 1.5L starter 2 days prior to brew day.</p>
+    </div>
+  </div>
+</body>
+</html>
