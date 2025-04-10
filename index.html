@@ -21,6 +21,8 @@
         <h5 style="color: white; margin-left: 10px;">OSTENTATIOUS BREWING</h5>
     </div>
 
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+
     <!-- Horizontal Menu -->
     <nav>
         <ul>
@@ -33,6 +35,14 @@
         </ul>
     </nav>
 </header>
+
+<script>
+    function toggleMenu() {
+        const nav = document.querySelector('nav');
+        nav.classList.toggle('nav-open');
+    }
+</script>
+    
 
 <!-- ---------------------------   BEGIN PAGE CONTENT  ------------------------------------- -->
 

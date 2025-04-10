@@ -442,3 +442,44 @@ footer p {
         justify-content: center;
     }
 }
+/* Hide hamburger on desktop */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    background: none;
+    color: white;
+    border: none;
+    margin-left: auto;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+/* Collapse nav on mobile */
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #555555;
+        margin-top: 10px;
+        padding: 10px 0;
+    }
+
+    nav.nav-open {
+        display: flex;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+}
