@@ -369,3 +369,76 @@ footer p {
     color:#999999;
     font-size: 14px;
 }
+
+/* === Mobile Responsive Adjustments === */
+@media screen and (max-width: 768px) {
+    .image-stats-container,
+    .beer-details {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .beer-column {
+        width: 100%;
+    }
+
+    .beer-page-image {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .beer-stats-grid {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .beer-stats-grid td {
+        padding: 0.3rem;
+    }
+
+    .ingredients-list {
+        grid-template-columns: 1fr;
+    }
+
+    .ingredients-list-item {
+        margin-left: 0;
+        font-size: 15px;
+        padding: 0.2rem 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-left: 0;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .site-title,
+    .section-title,
+    .header_text {
+        text-align: center;
+    }
+
+    .logo-container {
+        margin-left: 10px;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
