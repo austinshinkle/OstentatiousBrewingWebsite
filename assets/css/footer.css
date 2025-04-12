@@ -1,0 +1,32 @@
+/* Footer Styles */
+footer {
+    background-color: #555555; /* Same as header color */
+    padding: 10px 0;
+    text-align: center;
+    color: #ffffff; /* White text */
+}
+
+.footer-content {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between the text and icon */
+    align-items: center; /* Align text and icon vertically centered */
+    padding: 0 20px; /* Small padding on left and right */
+}
+
+footer p {
+    font-size: 12px;
+    margin: 0;
+    font-family: 'Overpass', sans-serif;
+    color: white;
+}
+
+.instagram-logo {
+    width: 30px;  /* Adjust size as needed */
+    height: 30px;
+    margin-top: 5px;
+    margin-left: auto;
+}
+
+.instagram-logo:hover {
+    opacity: 0.7; /* Add hover effect if desired */
+}

@@ -1,0 +1,226 @@
+.beer-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333333; /* Dark Gray */
+}
+
+.beer-style {
+    font-size: 20px;
+    color: #777;
+}
+
+
+/* Paragraph and general text styling */
+.beer-page-description {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555555; /* Medium Gray */
+    margin-bottom: 14px;
+    text-transform: uppercase;   
+}
+
+.site-title{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+
+.beer-details {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: nowrap; 
+    margin-top: 20px;
+    align-items: flex-start;
+}
+
+.beer-column {
+    flex: 0 1 calc(33.333% - 5px);
+    box-sizing: border-box;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.section-title{
+    font-size: 20px;
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.beer-stats-table{
+    margin: 0;
+    text-align: center;
+}
+
+.image-stats-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.image-stats-wrapper > * {
+    width: 50%;
+}
+
+.beer-page-image {
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/*** START - Beer Statistics grid style ***/
+
+.beer-stats-grid {
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.beer-stats-grid td {
+    padding: 0.5rem;
+}
+
+.beer-stat-title {
+    font-weight: bold; /* Make top line bold */
+    font-size: 16px; /* Slightly larger text */
+    display: block; /* Ensures it stays on its own line */
+    margin: 0; /* No gap between top and bottom */
+    text-transform: uppercase;
+    line-height: 1.3; /* Tighten line spacing */
+}
+
+.beer-stat-value {
+    font-size: 14px; /* Keep normal size for values */
+    color: #999999; /* Slightly lighter text for differentiation */
+    display: block; /* Keep it on its own line */
+    margin-bottom: 0px; /* No gap between top and bottom */
+    line-height: 1;
+}
+
+/*** END - Beer Statistics grid style ***/
+
+/*** START - Horizontal Line ***/
+.horizontal-line {
+    width: 75%;
+    margin-top: 50px;
+    border: 0.5px solid #ddd;
+    
+}
+
+/*** END - Horizontal Line ***/
+
+/*** START - Ingredients List ***/
+
+.ingredients-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.ingredients-list-item {
+    margin-bottom: 2px;
+    margin-left: 25px;
+    text-align: left;
+    color:#999999;
+    font-size: 14px;
+}
+
+/* === Mobile Responsive Adjustments === */
+@media screen and (max-width: 768px) {
+    
+    .image-stats-container,
+    .beer-details {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .beer-column {
+        width: 100%;
+    }
+
+    .beer-page-image {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .beer-stats-grid {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .beer-stats-grid td {
+        padding: 0.3rem;
+    }
+
+    .ingredients-list {
+        grid-template-columns: 1fr;
+    }
+
+    .ingredients-list-item {
+        margin-left: 0;
+        font-size: 15px;
+        padding: 0.2rem 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-left: 0;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .site-title,
+    .section-title,
+    .header_text {
+        text-align: center;
+    }
+
+    .logo-container {
+        margin-left: 10px;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* Paragraph and general text styling */
+.beer-brewing-instruction {
+    font-size: 14px;
+    line-height: 1;
+    margin: 0 0 0 20px; /* set margin TOP RIGHT BOTTOM LEFT */
+    color: #999999; /* Medium Gray */    
+}
+
+
+/* Container for better layout */
+.container {
+    max-width: 1000px;
+    margin: 2px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}

@@ -3,33 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ostentatious Brewing</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <title>OSTENTATIOUS BREWING</title>
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="/assets/css/beer-detail.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <!-- Header Section -->
-    <header>
-        <div class="logo-container">
-            <img src="/assets/images/logo/ostentatious-brewing.jpeg" alt="Ostentatious Brewing Logo" class="logo">
-        </div>
-        <div>
-            <h5 class="site-title">Ostentatious Brewing</h5>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/about.html">About</a></li>
-                <li><a href="/beer.html">Beers</a></li>
-                <li><a href="/brew-setup.html">Brew Setup</a></li>
-                <li><a href="/cellar.html">Cellar</a></li>
-                <li><a href="https://github.com/austinshinkle">GitHub</a></li>
-            </ul>
-        </nav>
-    </header>
+<!-- Header - MUST BE MANUALLY UPDATED!!! -->
+<header>
+    <!-- Logo inside a circle -->
+    <div class="logo-container">
+        <img src="/assets/images/logo/ostentatious-brewing.jpeg" alt="Ostentatious Brewing Logo" class="logo">
+    </div>
+
+    <div>
+        <h5 class="header_text">OSTENTATIOUS BREWING</h5>
+    </div>
+
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+    <!-- Horizontal Menu -->
+    <nav>
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/beer.html">Beers</a></li>
+            <li><a href="/brew-setup.html">Brew Setup</a></li>
+            <li><a href="/cellar.html">Cellar</a></li>
+            <li><a href="https://github.com/austinshinkle">GitHub</a></li>
+        </ul>
+    </nav>
+</header>
+
+<script>
+    function toggleMenu() {
+        const nav = document.querySelector('nav');
+        nav.classList.toggle('nav-open');
+    }
+
+    // Close mobile menu if screen gets resized wider
+    window.addEventListener('resize', () => {
+        const nav = document.querySelector('nav');
+        if (window.innerWidth > 1024 && nav.classList.contains('nav-open')) {
+            nav.classList.remove('nav-open');
+        }
+    });
+</script>
 
     <!-- Main Content -->
     <div id="beer-container" class="container"></div>
@@ -52,6 +75,7 @@
                 
                 const beerTitle = document.createElement('h1');
                 beerTitle.textContent = beerData.name;
+                beerTitle.classList.add("beer-title");
                 beerTitleContainer.appendChild(beerTitle);
 
                 const beerStyle = document.createElement('h4');
