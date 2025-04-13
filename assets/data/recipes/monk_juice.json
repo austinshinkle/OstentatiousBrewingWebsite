@@ -12,7 +12,7 @@
         "1 lb Carafoam Malt"
       ],
       "hops": [
-        "2.5 oz Hallertauer Mittelfrüh hops (3.1% AA)"
+        "3 oz Hallertauer Mittelfrüh hops (3.1% AA)"
       ],
       "yeast": [
         "1 package WLP550 Belgian Ale Yeast"
@@ -26,7 +26,7 @@
       ]
     },
     "brewing_instructions": [
-      "Add 6 gallons of water to the kettler and add 1 tablet of xxx",
+      "Add 6 gallons of water to the kettle and add 1 Campden Tablet",
       "Heat 6 gallons of strike water to 161°F",
       "Add 6 gallons of water to the mash tun",
       "Add all grains to the mash tun and confirm mash temperature of 153°F",
@@ -42,7 +42,7 @@
       "At 50 minutes, add 1 tablet Whirlfloc",
       "At 50 minutes, add 0.5 tsp of yeast nutrient",
       "At 60 minutes, chil the wort to 60°F",
-      "Aerate with pure oxygen for 1 minute",
+      "Shake fermenter to aerate wort",
       "Move wort to primary fermenter",
       "Pitch yeast",
       "Ferment at 67°F for 7 days",
