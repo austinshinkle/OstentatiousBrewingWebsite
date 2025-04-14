@@ -34,11 +34,11 @@
       "While steeping grains, heat 4 gallons of water for lautering to 170 °F",
       "Fly spage until wort volume of 7.3 gallons is reached",
       "Begin boil and wait for hot break",
-      "At 0 minutes, add 15 drops of FermCap to reduce foaming",
-      "At 0 minutes, add 1 oz Hallertauer Mittelfrüh hops",
+      "At 0 minutes, add 7 drops of FermCap to reduce foaming",
+      "At 0 minutes, add 1.0 oz Hallertauer Mittelfrüh hops",
       "At 40 minutes, add 1.0 oz Hallertauer Mittelfrüh hops",
-      "At 45 minutes, add 1 lb Candi Sugar",
-      "At 50 minutes, add 1 oz Hallertauer Mittelfrüh hops",
+      "At 45 minutes, add 1.0 lb Candi Sugar",
+      "At 50 minutes, add 1.0 oz Hallertauer Mittelfrüh hops",
       "At 50 minutes, add 1 tablet Whirlfloc",
       "At 50 minutes, add 0.5 tsp of yeast nutrient",
       "At 60 minutes, chil the wort to 68°F",
@@ -55,12 +55,13 @@
       "Add 3L of water to Ehrlenmeyer Flask",
       "Add 6 oz Extra Light Dry Malt Extract",
       "Begin boil",
-      "Add 5 drops FermCap to reduce foaming as needed",
+      "Add 2 drops FermCap to reduce foaming as needed",
       "At 10 minutes, chill wort to 72°F",
       "Add stir bar to wort",
       "Pitch yeast",
       "Place on stir plate",
-      "Allow yeast to multiply for 36-48 hours"
+      "Allow yeast to multiply for 24 hours",
+      "Chill to 36°F for 18 hours"
     ],
     "beer_statistics": [
       {
@@ -72,7 +73,7 @@
         "actual_abv": "TBD",
         "calculated_ibu": "18.1",
         "calculated_srm": "5.2",
-        "cost": "TBD"
+        "cost": "$63.12"
       }
     ],
       "brew_statistics": [
