@@ -80,6 +80,13 @@
       {
         "brew_date": "04/13/2025"
       }
+    ],
+    "fermentation_profile": [
+        { "day": 1, "temp": 67 },
+        { "day": 6, "temp": 72 },
+        { "day": 8, "temp": 65 },
+        { "day": 14, "temp": 36 },
+        { "day": 21, "temp": 36 }
     ]
   }
   

@@ -221,49 +221,49 @@
                 FermentationProfileCanvas.id = 'fermentation-profile';
                 beerContainer.appendChild(FermentationProfileCanvas);
 
+
+                const fermentationData = beerData.fermentation_profile.map(entry => ({
+                x: entry.day,
+                y: entry.temp
+                }));
+
                 const ctx = document.getElementById('fermentation-profile').getContext('2d');
 
                 new Chart(ctx, {
-                type: 'line',
-                data: {
-                    datasets: [{
-                    label: 'Fermentation Temp (°F)',
-                    data: [
-                        { x: 1, y: 67 },
-                        { x: 8, y: 72 },
-                        { x: 10, y: 65 },
-                        { x: 12, y: 36 },
-                        { x: 14, y: 36 }
-                    ],
-                    borderColor: 'rgba(75, 192, 192, 1)',
-                    borderWidth: 2,
-                    fill: false,
-                    tension: 0.3,
-                    stepped: true
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    scales: {
-                    x: {
-                        type: 'linear',
-                        title: {
-                        display: true,
-                        text: 'Days'
-                        },
-                        ticks: {
-                        stepSize: 1
-                        }
+                    type: 'line',
+                    data: {
+                        datasets: [{
+                            label: 'Fermentation Temp (°F)',
+                            data: fermentationData,
+                            borderColor: 'rgba(75, 192, 192, 1)',
+                            borderWidth: 2,
+                            fill: false,
+                            tension: 0.3,
+                            stepped: true
+                        }]
                     },
-                    y: {
-                        beginAtZero: false,
-                        title: {
-                        display: true,
-                        text: 'Temperature (°F)'
+                    options: {
+                        responsive: true,
+                        scales: {
+                            x: {
+                                type: 'linear',
+                                title: {
+                                    display: true,
+                                    text: 'Day'
+                                },
+                                ticks: {
+                                    stepSize: 1
+                                }
+                            },
+                            y: {
+                                beginAtZero: false,
+                                title: {
+                                    display: true,
+                                    text: 'Temperature (°F)'
+                                }
+                            }
                         }
                     }
-                    }
-                }
                 });
 
 
