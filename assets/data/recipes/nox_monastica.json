@@ -1,0 +1,92 @@
+{
+    "name": "Nox Monastica",
+    "style": "Belgian Strong Dark Ale",
+    "logo": "/assets/images/beer/nox_monastica.jpeg",
+    "page": "/beers/nox_monastica.html",
+    "description": "Recipe and stats to be updated! - A strong Belgian Dark Ale brewed using the yeast from the fermentation of Monk Juice. A clean and rich beer with flavors of dried fruit. Strong but clean alcohol flavor.",
+    "ingredients": {
+      "malts": [
+        "7 lbs Franco-Belges Pilsner Malt",
+        "4 lbs Vienna Malt",
+        "1 lb Munich Malt",
+        "1 lb Carafoam Malt"
+      ],
+      "hops": [
+        "3 oz Hallertauer Mittelfrüh hops (3.1% AA)"
+      ],
+      "yeast": [
+        "1 package WLP550 Belgian Ale Yeast"
+      ],
+      "other_ingredients": [
+        "1 lb Extra Light Candi Sugar",
+        "15 drops FermCap",
+        "0.5 tsp Yeast Nutrient",
+        "1 tablet Whilfloc",
+        "1 Campden Tablet (water additive)"
+      ]
+    },
+    "brewing_instructions": [
+      "Add 6 gallons of water to the kettle and add 1 Campden Tablet",
+      "Heat 6 gallons of strike water to 161°F",
+      "Add 6 gallons of water to the mash tun",
+      "Add all grains to the mash tun and confirm mash temperature of 153°F",
+      "Steep grains for 60 minutes",
+      "While steeping grains, heat 4 gallons of water for lautering to 170 °F",
+      "Fly spage until wort volume of 7.3 gallons is reached",
+      "Begin boil and wait for hot break",
+      "At 0 minutes, add 7 drops of FermCap to reduce foaming",
+      "At 0 minutes, add 1.0 oz Hallertauer Mittelfrüh hops",
+      "At 40 minutes, add 1.0 oz Hallertauer Mittelfrüh hops",
+      "At 45 minutes, add 1.0 lb Candi Sugar",
+      "At 50 minutes, add 1.0 oz Hallertauer Mittelfrüh hops",
+      "At 50 minutes, add 1 tablet Whirlfloc",
+      "At 50 minutes, add 0.5 tsp of yeast nutrient",
+      "At 60 minutes, chil the wort to 68°F",
+      "Shake fermenter to aerate wort",
+      "Move wort to primary fermenter",
+      "Pitch yeast",
+      "Ferment at 67°F for 7 days",
+      "Ferment at 72°F for 2 days",
+      "Ferment at 65°F for 2 days",
+      "Cold crash to 36°F for 7 days",
+      "Move to keg and carbonate"
+    ],
+    "starter_brewing_instructions": [
+      "Add 3L of water to Ehrlenmeyer Flask",
+      "Add 6 oz Extra Light Dry Malt Extract",
+      "Begin boil",
+      "Add 2 drops FermCap to reduce foaming as needed",
+      "At 10 minutes, chill wort to 72°F",
+      "Add stir bar to wort",
+      "Pitch yeast",
+      "Place on stir plate",
+      "Allow yeast to multiply for 24 hours",
+      "Chill to 36°F for 18 hours"
+    ],
+    "beer_statistics": [
+      {
+        "target_og": "1.093",
+        "actual_og": "TBD",
+        "target_fg": "1.018",
+        "actual_fg": "TBD",
+        "target_abv": "10.0%",
+        "actual_abv": "TBD",
+        "calculated_ibu": "29.7",
+        "calculated_srm": "17.1",
+        "cost": "$xxx"
+      }
+    ],
+      "brew_statistics": [
+      {
+        "brew_date": "TBD"
+      }
+    ],
+    "fermentation_profile": [
+        { "day": 1, "temp": 67 },
+        { "day": 6, "temp": 72 },
+        { "day": 8, "temp": 65 },
+        { "day": 14, "temp": 36 },
+        { "day": 21, "temp": 36 }
+    ]
+  }
+  
