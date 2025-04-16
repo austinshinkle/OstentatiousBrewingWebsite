@@ -12,7 +12,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.4.0"></script>
 </head>
 
 <!-- Header - MUST BE MANUALLY UPDATED!!! -->
@@ -213,7 +212,7 @@
 
                 // Create the fermentation graph
                 const FermentationProfileTitle = document.createElement('h4');
-                FermentationProfileTitle.textContent = "Fermentation Profile";
+                FermentationProfileTitle.textContent = "Fermentation Temperature Profile";
                 FermentationProfileTitle.classList.add("section-title");
                 beerContainer.appendChild(FermentationProfileTitle)
 
@@ -222,20 +221,20 @@
                 beerContainer.appendChild(FermentationProfileCanvas);
 
 
-                const fermentationData = beerData.fermentation_profile.map(entry => ({
+                const FermentationTemp = beerData.fermentation_profile.map(entry => ({
                 x: entry.day,
                 y: entry.temp
                 }));
 
-                const ctx = document.getElementById('fermentation-profile').getContext('2d');
+                const FermentationProfileChart = document.getElementById('fermentation-profile').getContext('2d');
 
-                new Chart(ctx, {
+                new Chart(FermentationProfileChart, {
                     type: 'line',
                     data: {
                         datasets: [{
                             label: 'Fermentation Temp (°F)',
-                            data: fermentationData,
-                            borderColor: 'rgba(75, 192, 192, 1)',
+                            data: FermentationTemp,
+                            borderColor: 'rgba(85, 85, 85, 1)',
                             borderWidth: 2,
                             fill: false,
                             tension: 0.3,
@@ -260,6 +259,60 @@
                                 title: {
                                     display: true,
                                     text: 'Temperature (°F)'
+                                }
+                            }
+                        }
+                    }
+                });
+
+
+                // Create the fermentation graph
+                const FermentationDataTitle = document.createElement('h4');
+                FermentationDataTitle.textContent = "Fermentation Specific Gravity Data";
+                FermentationDataTitle.classList.add("section-title");
+                beerContainer.appendChild(FermentationDataTitle)
+
+                const FermentationDataCanvas = document.createElement('canvas');
+                FermentationDataCanvas.id = 'fermentation-data';
+                beerContainer.appendChild(FermentationDataCanvas);
+
+                const FermentationData = beerData.fermentation_data.map(entry => ({
+                x: entry.day,
+                y: entry.SG
+                }));
+
+                const FermentationDataChart = document.getElementById('fermentation-data').getContext('2d');
+
+                new Chart(FermentationDataChart, {
+                    type: 'line',
+                    data: {
+                        datasets: [{
+                            label: 'Actual Specific Gravity',
+                            data: FermentationData,
+                            borderColor: 'rgba(85, 85, 85, 1)',
+                            borderWidth: 2,
+                            fill: true,
+                            tension: 0.1
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        scales: {
+                            x: {
+                                type: 'linear',
+                                title: {
+                                    display: true,
+                                    text: 'Day'
+                                },
+                                ticks: {
+                                    stepSize: 1
+                                }
+                            },
+                            y: {
+                                beginAtZero: false,
+                                title: {
+                                    display: true,
+                                    text: 'Specific Gravity'
                                 }
                             }
                         }
