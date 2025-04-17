@@ -6,19 +6,19 @@
     "description": "Recipe and stats to be updated! - A strong Belgian Dark Ale brewed using the yeast from the fermentation of Monk Juice. A clean and rich beer with flavors of dried fruit. Strong but clean alcohol flavor.",
     "ingredients": {
       "malts": [
-        "7 lbs Franco-Belges Pilsner Malt",
-        "4 lbs Vienna Malt",
-        "1 lb Munich Malt",
-        "1 lb Carafoam Malt"
+        "15 lbs 2 Row Pilsner Malt",
+        "1.5 lbs Caramunich Malt",
+        "1 lb Munich Malt"
       ],
       "hops": [
         "3 oz Hallertauer Mittelfrüh hops (3.1% AA)"
       ],
       "yeast": [
-        "1 package WLP550 Belgian Ale Yeast"
+        "1 yeast cake WLP550 Belgian Ale Yeast"
       ],
       "other_ingredients": [
-        "1 lb Extra Light Candi Sugar",
+        "1 lb Brown Sugar",
+        "0.5lb Molasses",
         "15 drops FermCap",
         "0.5 tsp Yeast Nutrient",
         "1 tablet Whilfloc",
@@ -27,52 +27,43 @@
     },
     "brewing_instructions": [
       "Add 6 gallons of water to the kettle and add 1 Campden Tablet",
-      "Heat 6 gallons of strike water to 161°F",
+      "Heat 6 gallons of strike water to 164°F",
       "Add 6 gallons of water to the mash tun",
       "Add all grains to the mash tun and confirm mash temperature of 153°F",
       "Steep grains for 60 minutes",
       "While steeping grains, heat 4 gallons of water for lautering to 170 °F",
-      "Fly spage until wort volume of 7.3 gallons is reached",
+      "Fly spage until wort volume of 7.4 gallons is reached",
       "Begin boil and wait for hot break",
       "At 0 minutes, add 7 drops of FermCap to reduce foaming",
-      "At 0 minutes, add 1.0 oz Hallertauer Mittelfrüh hops",
-      "At 40 minutes, add 1.0 oz Hallertauer Mittelfrüh hops",
-      "At 45 minutes, add 1.0 lb Candi Sugar",
-      "At 50 minutes, add 1.0 oz Hallertauer Mittelfrüh hops",
-      "At 50 minutes, add 1 tablet Whirlfloc",
-      "At 50 minutes, add 0.5 tsp of yeast nutrient",
-      "At 60 minutes, chil the wort to 68°F",
+      "At 0 minutes, add 2.0 oz Hallertauer Mittelfrüh hops",
+      "At 10 minutes, add 1.0 oz Hallertauer Mittelfrüh hops",
+      "At 55 minutes, add 1.0 lb Brown Sugar",
+      "At 60 minutes, add 0,5 lb Molasses",
+      "At 65 minutes, add 1 tablet Whirlfloc",
+      "At 65 minutes, add 0.5 tsp of yeast nutrient",
+      "At 75 minutes, chil the wort to 68°F",
       "Shake fermenter to aerate wort",
       "Move wort to primary fermenter",
       "Pitch yeast",
-      "Ferment at 67°F for 7 days",
+      "Ferment at 67°F for 5 days",
       "Ferment at 72°F for 2 days",
-      "Ferment at 65°F for 2 days",
+      "Ferment at 65°F for 7 days",
       "Cold crash to 36°F for 7 days",
       "Move to keg and carbonate"
     ],
     "starter_brewing_instructions": [
-      "Add 3L of water to Ehrlenmeyer Flask",
-      "Add 6 oz Extra Light Dry Malt Extract",
-      "Begin boil",
-      "Add 2 drops FermCap to reduce foaming as needed",
-      "At 10 minutes, chill wort to 72°F",
-      "Add stir bar to wort",
-      "Pitch yeast",
-      "Place on stir plate",
-      "Allow yeast to multiply for 24 hours",
-      "Chill to 36°F for 18 hours"
+      "None - Pitch onto yeast cake from Monk Juice"
     ],
     "beer_statistics": [
       {
-        "target_og": "1.093",
+        "target_og": "1.088",
         "actual_og": "TBD",
-        "target_fg": "1.018",
+        "target_fg": "1.013",
         "actual_fg": "TBD",
         "target_abv": "10.0%",
         "actual_abv": "TBD",
-        "calculated_ibu": "29.7",
-        "calculated_srm": "17.1",
+        "calculated_ibu": "30.9",
+        "calculated_srm": "17.9",
         "cost": "$xxx"
       }
     ],
@@ -87,6 +78,30 @@
         { "day": 8, "temp": 65 },
         { "day": 14, "temp": 36 },
         { "day": 21, "temp": 36 }
+    ],
+    "fermentation_data": [
+        { "day": 0, "SG": 1.000 },
+        { "day": 1, "SG": 1.000 },
+        { "day": 2, "SG": 1.000 },
+        { "day": 3, "SG": 1.000 },
+        { "day": 4, "SG": 1.000 },
+        { "day": 5, "SG": 1.000 },
+        { "day": 6, "SG": 1.000 },
+        { "day": 7, "SG": 1.000 },
+        { "day": 8, "SG": 1.000 },
+        { "day": 9, "SG": 1.000 },
+        { "day": 10, "SG": 1.000 },
+        { "day": 11, "SG": 1.000 },
+        { "day": 12, "SG": 1.000 },
+        { "day": 13, "SG": 1.000 },
+        { "day": 14, "SG": 1.000 },
+        { "day": 15, "SG": 1.000 },
+        { "day": 16, "SG": 1.000 },
+        { "day": 17, "SG": 1.000 },
+        { "day": 18, "SG": 1.000 },
+        { "day": 19, "SG": 1.000 },
+        { "day": 20, "SG": 1.000 },
+        { "day": 21, "SG": 1.000 }
     ]
   }
   
