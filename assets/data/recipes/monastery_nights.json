@@ -11,7 +11,7 @@
         "1 lb Munich Malt"
       ],
       "hops": [
-        "3 oz Hallertauer Mittelfrüh hops (3.1% AA)"
+        "5 oz Hallertauer Mittelfrüh hops (3.1% AA)"
       ],
       "yeast": [
         "1 yeast cake WLP550 Belgian Ale Yeast"
@@ -27,27 +27,27 @@
     },
     "brewing_instructions": [
       "Add 6 gallons of water to the kettle and add 1 Campden Tablet",
-      "Heat 6 gallons of strike water to 164°F",
+      "Heat 6 gallons of strike water to 159°F",
       "Add 6 gallons of water to the mash tun",
-      "Add all grains to the mash tun and confirm mash temperature of 153°F",
+      "Add all grains to the mash tun and confirm mash temperature of 149°F",
       "Steep grains for 60 minutes",
       "While steeping grains, heat 4 gallons of water for lautering to 170 °F",
       "Fly spage until wort volume of 7.4 gallons is reached",
       "Begin boil and wait for hot break",
       "At 0 minutes, add 7 drops of FermCap to reduce foaming",
       "At 0 minutes, add 2.0 oz Hallertauer Mittelfrüh hops",
-      "At 10 minutes, add 1.0 oz Hallertauer Mittelfrüh hops",
+      "At 45 minutes, add 2.0 oz Hallertauer Mittelfrüh hops",
       "At 55 minutes, add 1.0 lb Brown Sugar",
-      "At 60 minutes, add 0,5 lb Molasses",
+      "At 60 minutes, add 0.5 lb Molasses",
       "At 65 minutes, add 1 tablet Whirlfloc",
       "At 65 minutes, add 0.5 tsp of yeast nutrient",
+      "At 65 minutes, add 1 oz Hallertauer Mittelfrüh hops",
       "At 75 minutes, chil the wort to 68°F",
       "Shake fermenter to aerate wort",
       "Move wort to primary fermenter",
       "Pitch yeast",
       "Ferment at 67°F for 5 days",
-      "Ferment at 72°F for 2 days",
-      "Ferment at 65°F for 7 days",
+      "Ferment at 72°F for 9 days",
       "Cold crash to 36°F for 7 days",
       "Move to keg and carbonate"
     ],
@@ -56,14 +56,14 @@
     ],
     "beer_statistics": [
       {
-        "target_og": "1.088",
+        "target_og": "1.085",
         "actual_og": "TBD",
-        "target_fg": "1.013",
+        "target_fg": "1.011",
         "actual_fg": "TBD",
         "target_abv": "10.0%",
         "actual_abv": "TBD",
-        "calculated_ibu": "30.9",
-        "calculated_srm": "17.9",
+        "calculated_ibu": "31.3",
+        "calculated_srm": "17.8",
         "cost": "$xxx"
       }
     ],
@@ -75,7 +75,6 @@
     "fermentation_profile": [
         { "day": 1, "temp": 67 },
         { "day": 6, "temp": 72 },
-        { "day": 8, "temp": 65 },
         { "day": 14, "temp": 36 },
         { "day": 21, "temp": 36 }
     ],
