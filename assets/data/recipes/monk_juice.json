@@ -84,7 +84,7 @@
     "fermentation_profile": [
         { "day": 0, "temp": 67 },
         { "day": 6, "temp": 72 },
-        { "day": 8, "temp": 65 },
+        { "day": 8, "temp": 72 },
         { "day": 14, "temp": 36 },
         { "day": 21, "temp": 36 }
     ],
