@@ -6,19 +6,19 @@
     "description": "Recipe and stats to be updated! - MAKE SURE TO MASH AT A LOW TEMP FOR A DRY FINISH! A light bock lager, perfect for a summer day in the sun.",
     "ingredients": {
       "malts": [
-        "15 lbs 2 Row Pilsner Malt",
-        "1.5 lbs Caramunich Malt",
-        "1 lb Munich Malt"
+        "7.5 lbs 2 Row Pilsner Malt",
+        "3.5 lbs Vienna Malt",
+        "1 lb Munich Malt",
+        "0.5 lb Melanoiden Malt",
+        "0.5 lb Cara-Pils/Dextrine"
       ],
       "hops": [
-        "5 oz Hallertauer Mittelfrüh hops (3.1% AA)"
+        "4 oz Hallertauer Mittelfrüh hops (3.1% AA)"
       ],
       "yeast": [
-        "1 yeast cake WLP550 Belgian Ale Yeast"
+        "1 package WLP833 German Bock Lager Yeast"
       ],
       "other_ingredients": [
-        "1 lb Brown Sugar",
-        "0.5lb Molasses",
         "15 drops FermCap",
         "0.5 tsp Yeast Nutrient",
         "1 tablet Whilfloc",
@@ -35,35 +35,43 @@
       "Fly spage until wort volume of 7.4 gallons is reached",
       "Begin boil and wait for hot break",
       "At 0 minutes, add 7 drops of FermCap to reduce foaming",
-      "At 0 minutes, add 2.0 oz Hallertauer Mittelfrüh hops",
+      "At 0 minutes, add 1.0 oz Hallertauer Mittelfrüh hops",
+      "At 30 minutes, add 1.0 oz Hallertauer Mittelfrüh hops",
       "At 45 minutes, add 2.0 oz Hallertauer Mittelfrüh hops",
-      "At 55 minutes, add 1.0 lb Brown Sugar",
-      "At 60 minutes, add 0.5 lb Molasses",
-      "At 65 minutes, add 1 tablet Whirlfloc",
-      "At 65 minutes, add 0.5 tsp of yeast nutrient",
-      "At 65 minutes, add 1 oz Hallertauer Mittelfrüh hops",
-      "At 75 minutes, chil the wort to 68°F",
+      "At 50 minutes, add 1 tablet Whirlfloc",
+      "At 50 minutes, add 0.5 tsp of yeast nutrient",
+      "At 50 minutes, add 2 oz Hallertauer Mittelfrüh hops",
+      "At 60 minutes, chil the wort to 68°F",
       "Shake fermenter to aerate wort",
       "Move wort to primary fermenter",
       "Pitch yeast",
-      "Ferment at 67°F for 5 days",
-      "Ferment at 72°F for 9 days",
-      "Cold crash to 36°F for 7 days",
+      "Ferment at 52°F for 14 days",
+      "Ferment at 60°F for 97 days",
+      "Lower temp by -4°F daily to reach 34°F over 7 days",
+      "Condition at 34°F for 14 days",
       "Move to keg and carbonate"
     ],
     "starter_brewing_instructions": [
-      "None - Pitch onto yeast cake from Monk Juice"
-    ],
+      "Add 3L of water to Ehrlenmeyer Flask",
+      "Add 6 oz Extra Light Dry Malt Extract",
+      "Begin boil",
+      "Add 2 drops FermCap to reduce foaming as needed",
+      "At 10 minutes, chill wort to 72°F",
+      "Add stir bar to wort",
+      "Pitch yeast",
+      "Place on stir plate",
+      "Allow yeast to multiply for 48 hours",
+      "Chill to 36°F for 24 hours"    ],
     "beer_statistics": [
       {
-        "target_og": "1.085",
+        "target_og": "1.052",
         "actual_og": "TBD",
         "target_fg": "1.011",
         "actual_fg": "TBD",
-        "target_abv": "10.0%",
+        "target_abv": "5.4%",
         "actual_abv": "TBD",
-        "calculated_ibu": "31.3",
-        "calculated_srm": "17.8",
+        "calculated_ibu": "27.8",
+        "calculated_srm": "6.4",
         "cost": "$xxx"
       }
     ],
@@ -73,10 +81,16 @@
       }
     ],
     "fermentation_profile": [
-        { "day": 1, "temp": 67 },
-        { "day": 6, "temp": 72 },
-        { "day": 14, "temp": 36 },
-        { "day": 21, "temp": 36 }
+        { "day": 0, "temp": 52 },
+        { "day": 15, "temp": 60 },
+        { "day": 22, "temp": 56 },
+        { "day": 17, "temp": 52 },
+        { "day": 18, "temp": 48 },
+        { "day": 19, "temp": 44 },
+        { "day": 20, "temp": 40 },
+        { "day": 21, "temp": 36 },
+        { "day": 21, "temp": 34 },
+        { "day": 35, "temp": 34 }
     ],
     "fermentation_data": [
         { "day": 0, "SG": 1.000 },
