@@ -65,6 +65,7 @@
     ],
     "beer_statistics": [
       {
+        "brew_date": "04/13/2025",
         "target_og": "1.064",
         "actual_og": "1.062",
         "target_fg": "1.008",
@@ -74,11 +75,6 @@
         "calculated_ibu": "18.1",
         "calculated_srm": "5.2",
         "cost": "$63.12"
-      }
-    ],
-      "brew_statistics": [
-      {
-        "brew_date": "04/13/2025"
       }
     ],
     "fermentation_profile": [

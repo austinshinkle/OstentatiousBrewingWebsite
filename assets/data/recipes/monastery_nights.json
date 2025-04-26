@@ -56,6 +56,8 @@
     ],
     "beer_statistics": [
       {
+        
+        "brew_date": "TBD",
         "target_og": "1.085",
         "actual_og": "TBD",
         "target_fg": "1.011",
@@ -65,11 +67,6 @@
         "calculated_ibu": "31.3",
         "calculated_srm": "17.8",
         "cost": "$xxx"
-      }
-    ],
-      "brew_statistics": [
-      {
-        "brew_date": "TBD"
       }
     ],
     "fermentation_profile": [

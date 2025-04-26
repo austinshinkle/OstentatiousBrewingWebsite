@@ -69,6 +69,7 @@
     ],
     "beer_statistics": [
       {
+        "brew_date": "TBA",
         "target_og": "TBD",
         "actual_og": "TBD",
         "target_fg": "TBD",

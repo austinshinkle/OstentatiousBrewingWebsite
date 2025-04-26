@@ -3,7 +3,7 @@
     "style": "German Export Bock Lager",
     "logo": "/assets/images/beer/sommerbock.jpeg",
     "page": "/beers/sommerbock.html",
-    "description": "Recipe and stats to be updated! - MAKE SURE TO MASH AT A LOW TEMP FOR A DRY FINISH! A light bock lager, perfect for a summer day in the sun.",
+    "description": "A light bock lager, perfect for a summer day in the sun.",
     "ingredients": {
       "malts": [
         "7.5 lbs 2 Row Pilsner Malt",
@@ -63,7 +63,8 @@
       "Allow yeast to multiply for 48 hours",
       "Chill to 36°F for 24 hours"    ],
     "beer_statistics": [
-      {
+      {      
+        "brew_date": "TBD",
         "target_og": "1.052",
         "actual_og": "TBD",
         "target_fg": "1.011",
@@ -73,11 +74,6 @@
         "calculated_ibu": "27.8",
         "calculated_srm": "6.4",
         "cost": "$xxx"
-      }
-    ],
-      "brew_statistics": [
-      {
-        "brew_date": "TBD"
       }
     ],
     "fermentation_profile": [
