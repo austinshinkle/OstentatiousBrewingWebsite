@@ -204,6 +204,19 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+
+    .beer-title {
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .beer-style {
+        font-size: 18px;
+        text-align: center;
+        display: block;
+        margin-bottom: 20px;
+    }
 }
 
 /* Paragraph and general text styling */
