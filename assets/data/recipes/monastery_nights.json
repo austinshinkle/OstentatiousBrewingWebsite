@@ -3,7 +3,7 @@
     "style": "Belgian Strong Dark Ale",
     "logo": "/assets/images/beer/monastery_nights.jpeg",
     "page": "/beers/monastery-nights.html",
-    "description": "Recipe and stats to be updated! - MAKE SURE TO MASH AT A LOW TEMP FOR A DRY FINISH! A strong Belgian Dark Ale brewed using the yeast from the fermentation of Monk Juice. A clean and rich beer with flavors of dried fruit. Strong but clean alcohol flavor.",
+    "description": "The big brother to Monk Juice. A Strong Belgian Dark Ale brewed using the yeast from the fermentation of Monk Juice. A clean and rich beer with flavors of dried fruit. Strong but dry with clean alcohol flavor.",
     "ingredients": {
       "malts": [
         "15 lbs 2 Row Pilsner Malt",
@@ -17,8 +17,8 @@
         "1 yeast cake WLP550 Belgian Ale Yeast"
       ],
       "other_ingredients": [
-        "1 lb Brown Sugar",
-        "0.5lb Molasses",
+        "1 lb Amber Candi Sugar",
+        "0.5 lb Table Sugar",
         "15 drops FermCap",
         "0.5 tsp Yeast Nutrient",
         "1 tablet Whilfloc",
@@ -36,9 +36,9 @@
       "Begin boil and wait for hot break",
       "At 0 minutes, add 7 drops of FermCap to reduce foaming",
       "At 0 minutes, add 2.0 oz Hallertauer Mittelfrüh hops",
+      "At 40 minutes, add 1.0 lb Amber Candi Sugar",
+      "At 40 minutes, add 0.5 lb Table Sugar",
       "At 45 minutes, add 2.0 oz Hallertauer Mittelfrüh hops",
-      "At 55 minutes, add 1.0 lb Brown Sugar",
-      "At 60 minutes, add 0.5 lb Molasses",
       "At 65 minutes, add 1 tablet Whirlfloc",
       "At 65 minutes, add 0.5 tsp of yeast nutrient",
       "At 65 minutes, add 1 oz Hallertauer Mittelfrüh hops",
@@ -100,4 +100,3 @@
         { "day": 21, "SG": 1.000 }
     ]
   }
-  
