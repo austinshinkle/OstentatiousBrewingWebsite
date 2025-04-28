@@ -113,11 +113,18 @@ nav ul li a:hover {
 @media screen and (max-width: 768px) {
 
     .hamburger {
-        font-size: 56px;
+        font-size: 36px;
     }
 
     .header_text {
-        font-size: 24;
+        font-size: 24px;
+    }
+
+    .logo {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        object-fit: cover;
     }
 
 }
