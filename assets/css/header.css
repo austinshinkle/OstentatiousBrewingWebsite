@@ -1,6 +1,7 @@
 /* === HEADER + NAV === */
 header {
     position: sticky;
+    top: 0;
     z-index: 1000;
     background-color: #555555;
     padding: 0;
