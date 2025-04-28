@@ -110,6 +110,14 @@ nav ul li a:hover {
 }
 
 /* === MOBILE NAVIGATION === */
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 768px) {
+
+    .hamburger {
+        font-size: 56px;
+    }
+
+    .header_text {
+        font-size: 24;
+    }
 
 }
