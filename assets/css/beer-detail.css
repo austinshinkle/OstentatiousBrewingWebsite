@@ -101,7 +101,7 @@
     font-size: 14px; /* Keep normal size for values */
     color: #999999; /* Slightly lighter text for differentiation */
     display: block; /* Keep it on its own line */
-    margin-bottom: 0px; /* No gap between top and bottom */
+    margin-bottom: 0; /* No gap between top and bottom */
     line-height: 1;
 }
 
@@ -171,13 +171,6 @@
         padding: 0.2rem 0;
     }
 
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        margin-left: 0;
-    }
-
     .footer-content {
         flex-direction: column;
         align-items: center;
@@ -186,23 +179,8 @@
     }
 
     .site-title,
-    .section-title,
-    .header_text {
+    .section-title{
         text-align: center;
-    }
-
-    .logo-container {
-        margin-left: 10px;
-    }
-
-    .logo {
-        width: 40px;
-        height: 40px;
-    }
-
-    header {
-        flex-wrap: wrap;
-        justify-content: center;
     }
 
     .beer-title {
@@ -234,6 +212,6 @@
     margin: 2px auto;
     background: white;
     padding: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
