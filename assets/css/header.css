@@ -127,4 +127,16 @@ nav ul li a:hover {
         object-fit: cover;
     }
 
+    nav {
+        top: 45px;
+    }
+
+    nav ul{
+        gap: 5px;
+    }
+
+    nav ul li a {
+        font-size: 10px;
+    }
+
 }
