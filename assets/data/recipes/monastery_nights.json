@@ -6,7 +6,7 @@
     "description": "The big brother to Monk Juice. A Strong Belgian Dark Ale brewed using the yeast from the fermentation of Monk Juice. A clean and rich beer with flavors of dried fruit. Strong but dry with clean alcohol flavor.",
     "ingredients": {
       "malts": [
-        "15 lbs 2 Row Pilsner Malt",
+        "15 lbs German Pilsner Malt",
         "1.5 lbs Caramunich Malt",
         "1 lb Munich Malt"
       ],
@@ -58,14 +58,14 @@
       {
         
         "brew_date": "TBD",
-        "target_og": "1.085",
+        "target_og": "1.086",
         "actual_og": "TBD",
-        "target_fg": "1.011",
+        "target_fg": "1.012",
         "actual_fg": "TBD",
         "target_abv": "10.0%",
         "actual_abv": "TBD",
-        "calculated_ibu": "31.3",
-        "calculated_srm": "17.8",
+        "calculated_ibu": "30.9",
+        "calculated_srm": "25.8",
         "cost": "$xxx"
       }
     ],
