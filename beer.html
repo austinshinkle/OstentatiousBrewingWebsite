@@ -192,12 +192,14 @@
                                 // Create the beer name
                                 const beerName = document.createElement('h3');
                                 beerName.textContent = beer_data.name;
+                                beerName.classList.add('beer-list-title');
                                 console.log("Found beer name: ", beer_data.name)
                                 beerInfo.appendChild(beerName);
 
                                 // set beer style
                                 const beerStyle = document.createElement('p');
                                 beerStyle.textContent = "Style: " + beer_data.style;
+                                beerStyle.classList.add('beer-list-style');
                                 beerInfo.appendChild(beerStyle);
                                 
 
