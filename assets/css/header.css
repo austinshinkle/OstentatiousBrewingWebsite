@@ -131,15 +131,19 @@ nav ul li a:hover {
     }
 
     nav {
+        position: fixed;
         top: 45px;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
     }
 
     nav ul{
-        gap: 5px;
+        gap: 15px;
     }
 
     nav ul li a {
-        font-size: 12px;
+        font-size: 24px;
         padding: 5px;
     }
 
