@@ -112,7 +112,7 @@ nav ul li a:hover {
     text-decoration: none;
 }
 
-/* === MOBILE NAVIGATION === */
+/* === MOBILE  === */
 @media screen and (max-width: 768px) {
 
     .hamburger {
