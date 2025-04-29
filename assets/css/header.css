@@ -9,6 +9,7 @@ header {
     align-items: center;
     justify-content: space-between;
     width: 100vw;
+    min-height: 50px;
     flex-wrap: nowrap;
     overflow-x: hidden;
     margin: 0;
@@ -132,7 +133,7 @@ nav ul li a:hover {
 
     nav {
         position: fixed;
-        top: 45px;
+        top: 50px;
         left: 0;
         width: 100vw;
         height: 100vh;
