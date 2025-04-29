@@ -1,7 +1,7 @@
 /* Container for better layout */
 .container {
     max-width: 1000px;
-    margin: 2px auto;
+    margin: 5px 0 10px  0;
     background: white;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -20,9 +20,10 @@
 }
 
 .beer-image {        
-    width: 175px;
-    height: 175px;
+    width: 200px;
+    height: 200px;
     border-radius: 8px;
+    align-items: center;
 }
 
 .beer-info {
@@ -34,7 +35,7 @@
 
 .beer-list-title{
 
-    font-size: 32px;
+    font-size: 28px;
     margin-top: 20px;
     margin-bottom: 20px;
     font-weight: bold;
@@ -45,6 +46,15 @@
 .beer-list-style{
 
     font-size: 16px;
+    line-height: 1.5;
+    color: #555555; /* Medium Gray */
+    margin-top: 0;
+
+}
+
+.beer-list-description{
+
+    font-size: 12px;
     line-height: 1.5;
     color: #555555; /* Medium Gray */
     margin-top: 0;
@@ -71,6 +81,11 @@
 
     .beer-list-style{
         font-size: 12px;
+    }
+
+    .beer-list-description{
+        display: none;
+    }
     }
 
 }
