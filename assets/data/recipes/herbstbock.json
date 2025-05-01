@@ -50,7 +50,7 @@
       "Ferment at 60°F for 7 days",
       "Lower temperature to 34°F over 7 days",
       "Rack to secondary and lager at 34°F for 14 days",
-      "Package and carbonate",
+      "Package and carbonate"
     ],
     "starter_brewing_instructions": [
       "Add 3L of water to Ehrlenmeyer Flask",
@@ -75,13 +75,5 @@
         { "day": 27, "temp": 36 },
         { "day": 28, "temp": 34 },
         { "day": 42, "temp": 34 }
-    ],
-    "fermentation_profile": [
-        { "day": 0, "temp": 52 },
-        { "day": 15, "temp": 60 },
-        { "day": 8, "temp": 72 },
-        { "day": 14, "temp": 36 },
-        { "day": 21, "temp": 36 }
     ]
-  }
 }
