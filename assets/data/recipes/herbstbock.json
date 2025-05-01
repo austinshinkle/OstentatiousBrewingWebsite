@@ -64,6 +64,20 @@
       "Allow yeast to multiply for 24 hours",
       "Chill to 36°F for 18 hours"
     ],
+    "beer_statistics": [
+      {
+        "brew_date": "09/12/2021",
+        "target_og": "1.072",
+        "actual_og": "1.076",
+        "target_fg": "1.018",
+        "actual_fg": "1.021",
+        "target_abv": "7.2%",
+        "actual_abv": "7.4%",
+        "calculated_ibu": "24.",
+        "calculated_srm": "16.8",
+        "cost": "$23.80"
+      }
+    ],
     "fermentation_profile": [
         { "day": 0, "temp": 52 },
         { "day": 15, "temp": 60 },
