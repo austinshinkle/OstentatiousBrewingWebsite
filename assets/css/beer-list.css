@@ -1,16 +1,15 @@
 /* Container for better layout */
+
+/* Container for better layout */
 .container {
     max-width: 1000px;
-    display: inline-flexbox;                /* makes it a flex container */
-    flex-direction: column;       /* optional: stacks children vertically */
-    justify-content: center;      /* center items vertically inside (if there's height) */
-    align-items: center;
-    margin: 5px 0 10px  0;
+    margin: 2px auto;
     background: white;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
+
 /* Beer Box Styles */
 .beer-box {
     display: flex;
