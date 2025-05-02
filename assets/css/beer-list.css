@@ -3,6 +3,7 @@
 /* Container for better layout */
 .container {
     max-width: 1000px;
+    width: 70vw;
     margin: 2px auto;
     background: white;
     padding: 20px;
@@ -66,7 +67,9 @@
 
 /* === MOBILE  === */
 @media screen and (max-width: 768px) {
-
+    .container{
+        width: 100vw;
+    }
     .beer-info {
         margin-left: 20px;
     }
