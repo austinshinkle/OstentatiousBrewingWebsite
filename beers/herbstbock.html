@@ -32,12 +32,14 @@
             <!-- Horizontal Menu -->
             <nav>
                 <ul>
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/about.html">About</a></li>
-                    <li><a href="/beer.html">Beers</a></li>
-                    <li><a href="/brew-setup.html">Brew Setup</a></li>
-                    <li><a href="/cellar.html">Cellar</a></li>
-                    <li><a href="https://github.com/austinshinkle">GitHub</a></li>
+                    <li><a href="/index.html">HOME</a></li>
+                    <li><a href="/about.html">ABOUT</a></li>
+                    <li><a href="/on-tap.html">ON TAP</a></li>
+                    <li><a href="/in-production.html">IN PRODUCTION</a></li>
+                    <li><a href="/past-beers.html">PAST BEERS</a></li>
+                    <li><a href="/brew-setup.html">BREW SETUP</a></li>
+                    <li><a href="/cellar.html">CELLAR</a></li>
+                    <li><a href="https://github.com/austinshinkle">GITHUB</a></li>
                 </ul>
             </nav>
         </header>
@@ -73,10 +75,11 @@
                 const beerTitleContainer = document.createElement('div');
                 beerTitleContainer.classList.add("beer-title-container");
 
-
                 const backLink = document.createElement('a');
                 backLink.textContent = "<< BEERS";
-                backLink.href = "/beer.html";
+                backLink.addEventListener("click", function() {
+                    window.history.back();
+                    });
                 beerContainer.appendChild(backLink);
 
 
