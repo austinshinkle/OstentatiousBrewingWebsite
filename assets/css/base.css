@@ -68,12 +68,3 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Beer Page Title Style */
-.beer-title-container {
-    margin: 5px 0 0 5px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center; 
-    gap: 2rem;  
-
-}

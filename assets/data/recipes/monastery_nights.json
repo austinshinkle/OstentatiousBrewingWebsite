@@ -35,10 +35,10 @@
       "Fly spage until wort volume of 7.4 gallons is reached",
       "Begin boil and wait for hot break",
       "At 0 minutes, add 7 drops of FermCap to reduce foaming",
-      "At 0 minutes, add 2.0 oz Hallertauer Mittelfrüh hops",
+      "At 0 minutes, add 3.0 oz Hallertauer Mittelfrüh hops",
       "At 40 minutes, add 1.0 lb Amber Candi Sugar",
       "At 40 minutes, add 0.5 lb Table Sugar",
-      "At 45 minutes, add 2.0 oz Hallertauer Mittelfrüh hops",
+      "At 45 minutes, add 1.0 oz Hallertauer Mittelfrüh hops",
       "At 65 minutes, add 1 tablet Whirlfloc",
       "At 65 minutes, add 0.5 tsp of yeast nutrient",
       "At 65 minutes, add 1 oz Hallertauer Mittelfrüh hops",
@@ -64,7 +64,7 @@
         "actual_fg": "TBD",
         "target_abv": "10.0%",
         "actual_abv": "TBD",
-        "calculated_ibu": "30.9",
+        "calculated_ibu": "26.6",
         "calculated_srm": "25.8",
         "cost": "$xxx"
       }

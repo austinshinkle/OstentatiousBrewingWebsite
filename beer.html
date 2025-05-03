@@ -60,7 +60,7 @@
 
         <div id="beer-container-in-production" class="container">
 
-            <h2>In Production</h2>
+        <h2>In Production</h2>
 
         <script>
 
@@ -161,7 +161,7 @@
             
                     // Loop through the beers and create HTML elements for each
                     indexData.files.forEach(beer => {
-                        const filePath = `assets/data/recipes/${beer}`;
+                        const filePath = `/assets/data/recipes/${beer}`;
                         fetch(filePath)
                             .then(response => response.json())
                             .then(beer_data => {
