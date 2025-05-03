@@ -1,0 +1,81 @@
+{
+    "name": "Oceania IPA",
+    "style": "Southern Hemisphere IPA",
+    "logo": "/assets/images/beer/oceania_ipa.png",
+    "page": "/beers/oceania-ipa.html",
+    "description": "This IPA uses all Australian and New Zealand hops bought from Yakima Valley Hops. It will have a light backbone to showcase the southern hemisphere hops which tend to be more juicy and fruit forward.",
+    "ingredients": {
+      "malts": [
+        "8.75 lbs Great Western 2 Row Malt",
+        "6 lbs Great Western Pale High Color Malt",
+        "1/2 lb Cara-pils Malt"
+      ],
+      "hops": [
+        "1.3 oz Rakau Hops (9.2% AA)",
+        "0.3 oz Galaxy Hops (15.9% AA)",
+        "1 oz Enigma Hops (18.5% AA)",
+        "0.3 oz Ella Hops (16.3% AA)",
+        "1.0 oz Dr. Rudi Hops (10.7% AA)"
+      ],
+      "yeast": [
+        "WLP001 California Ale Yeast Cake"
+      ],
+      "other_ingredients": [
+        "1 lb Extra Light Candi Sugar",
+        "15 drops FermCap",
+        "0.5 tsp Yeast Nutrient",
+        "1 tablet Whilfloc",
+        "1 Campden Tablet (water additive)"
+      ]
+    },
+    "brewing_instructions": [
+      "Add 6 gallons of water to the kettle and add 1 Campden Tablet",
+      "Heat 6 gallons of strike water to 161°F",
+      "Add 6 gallons of water to the mash tun",
+      "Add all grains to the mash tun and confirm mash temperature of 153°F",
+      "Steep grains for 60 minutes",
+      "While steeping grains, heat 4 gallons of water for lautering to 170 °F",
+      "Fly spage until wort volume of 7.3 gallons is reached",
+      "Begin boil and wait for hot break",
+      "At 0 minutes, add 7 drops of FermCap to reduce foaming",
+      "At 0 minutes, add 1.0 oz Hallertauer Mittelfrüh hops",
+      "At 40 minutes, add 1.0 oz Hallertauer Mittelfrüh hops",
+      "At 45 minutes, add 1.0 lb Candi Sugar",
+      "At 50 minutes, add 1.0 oz Hallertauer Mittelfrüh hops",
+      "At 50 minutes, add 1 tablet Whirlfloc",
+      "At 50 minutes, add 0.5 tsp of yeast nutrient",
+      "At 60 minutes, chil the wort to 68°F",
+      "Shake fermenter to aerate wort",
+      "Move wort to primary fermenter",
+      "Pitch yeast",
+      "Ferment at 67°F for 5 days",
+      "Ferment at 72°F for 2 days",
+      "Ferment at 65°F for 7 days",
+      "Cold crash to 36°F for 7 days",
+      "Move to keg and carbonate"
+    ],
+    "starter_brewing_instructions": [
+      "None. Yeast cake from Yakima IPA"
+    ],
+    "beer_statistics": [
+      {
+        "brew_date": "08/13/2021",
+        "target_og": "1.064",
+        "actual_og": "1.069",
+        "target_fg": "1.014",
+        "actual_fg": "1.024",
+        "target_abv": "6.7%",
+        "actual_abv": "6.0%",
+        "calculated_ibu": "66.0",
+        "calculated_srm": "5.1",
+        "cost": "$25.50"
+      }
+    ],
+    "fermentation_profile": [
+        { "day": 0, "temp": 67 },
+        { "day": 8, "temp": 72 },
+        { "day": 10, "temp": 67 },
+        { "day": 12, "temp": 36 },
+        { "day": 19, "temp": 36 }
+    ]
+  }
