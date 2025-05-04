@@ -1,0 +1,93 @@
+{
+    "name": "Sommerbock",
+    "style": "Helles Bock",
+    "logo": "/assets/images/beer/sommerbock_2021.png",
+    "page": "/beers/sommerbock-2021.html",
+    "description": "Another light lager for the summer months that will utilize a harvested lager strain that fermented Helles Bock and Doppelbock V2. While German Pils is fermenting I want to get another beer started to keep up with the summer. This should be a crisp, light lager that is easy drinking but still flavorful.",
+    "ingredients": {
+      "malts": [
+    "7.5 lbs Pilsner Malt",
+    "3.5 lbs Vienna Malt",
+    "1 lb Munich Malt",
+    "8 oz Melanoiden Malt",
+    "8 oz Carapils Malt"
+      ],
+      "hops": [
+        "2.7 oz Hallertauer Mittelfrüh Hops (4.5% AA)"
+      ],
+      "yeast": [
+        "WLP833 German Bock Lager Yeast (harvested)"
+      ],
+      "other_ingredients": [
+        "15 drops FermCap",
+        "0.5 tsp Yeast Nutrient",
+        "1 tablet Whilfloc",
+        "1 Campden Tablet (water additive)"
+      ]
+    },
+    "brewing_instructions": [
+      "Heat 5.2 gallons of strike water to 159°F",
+      "Add 5.2 gallons of water to the mash tun",
+      "Add all grains to mash tun and confirm temperature of ~150°F",
+      "Steep grains for 60 minutes",
+      "While steeping, heat 4.0 gallons of water to 170°F for lautering",
+      "Extract first runnings into boil kettle",
+      "Add 4.0 gallons water and vorlauf",
+      "Extract second runnings into boil kettle",
+      "Total wort volume should be 7.36 gallons (7.25 actual)",
+      "Bring water to a boil and wait for the hot break",
+      "Begin boil",
+      "At 0 minutes add 15 drops FermCap to reduce foaming",
+      "At 15 minutes, add 1 oz Hallertau Middelfrüh hops",
+      "At 50 minutes, add one tablet Whirlfloc",
+      "At 50 minutes, add 1/2 tsp of yeast nutrient",
+      "At 50 minutes, add 1.7 oz Hallertau Middelfrüh hops",
+      "At 60 minutes, chill the wort to approx. 68°F",
+      "Aerate with pure oxygen for 1 minute",
+      "Move to the primary fermenter (6.0 gal actual)",
+      "Pitch yeast",
+      "Ferment at 52°F for 14 days",
+      "Ferment at 60°F for 7 days",
+      "Lower temperature to 34°F over 7 days",
+      "Rack to secondary and lager at 34°F for 14 days",
+      "Package and carbonate"
+    ],
+    "starter_brewing_instructions": [
+      "Add 3L of water to Ehrlenmeyer Flask",
+      "Add 6 oz Extra Light Dry Malt Extract",
+      "Begin boil",
+      "Add 2 drops FermCap to reduce foaming as needed",
+      "At 10 minutes, chill wort to 72°F",
+      "Add stir bar to wort",
+      "Pitch yeast",
+      "Place on stir plate",
+      "Allow yeast to multiply for 24 hours",
+      "Chill to 36°F for 18 hours"
+    ],
+    "beer_statistics": [
+      {
+        "brew_date": "05/29/2021",
+        "target_og": "1.052",
+        "actual_og": "1.062",
+        "target_fg": "1.012",
+        "actual_fg": "1.014",
+        "target_abv": "5.3%",
+        "actual_abv": "6.4%",
+        "calculated_ibu": "25",
+        "calculated_srm": "6.4",
+        "cost": "$19.20"
+      }
+    ],
+    "fermentation_profile": [
+        { "day": 0, "temp": 52 },
+        { "day": 15, "temp": 60 },
+        { "day": 22, "temp": 56 },
+        { "day": 23, "temp": 52 },
+        { "day": 24, "temp": 48 },
+        { "day": 25, "temp": 44 },
+        { "day": 26, "temp": 40 },
+        { "day": 27, "temp": 36 },
+        { "day": 28, "temp": 34 },
+        { "day": 42, "temp": 34 }
+    ]
+  }
