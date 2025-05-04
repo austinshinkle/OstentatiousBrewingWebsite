@@ -46,7 +46,8 @@
       "Shake fermenter to aerate wort",
       "Move wort to primary fermenter",
       "Pitch yeast",
-      "Ferment at 67°F for 5 days",
+      "Ferment at 67°F for 2 days",
+      "Ferment at 70°F for 3 days",
       "Ferment at 72°F for 9 days",
       "Cold crash to 36°F for 7 days",
       "Move to keg and carbonate"
@@ -71,6 +72,7 @@
     ],
     "fermentation_profile": [
         { "day": 1, "temp": 67 },
+        { "day": 3, "temp": 70 },
         { "day": 6, "temp": 72 },
         { "day": 14, "temp": 36 },
         { "day": 21, "temp": 36 }
