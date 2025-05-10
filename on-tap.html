@@ -60,7 +60,7 @@
 
         <!-- ----------------------------- In Production ------------------------------ -->
 
-        <div id="beer-container-in-production" class="container">
+        <div id="beer-container-on-tap" class="container">
 
         <h2>ON TAP</h2>
 
@@ -78,7 +78,7 @@
                         // set beer style
                         const noBeer = document.createElement('p');
                         noBeer.textContent = "NOTHING CURRENTLY ON TAP :(";
-                        document.getElementById('beer-container-in-production').appendChild(noBeer);
+                        document.getElementById('beer-container-on-tap').appendChild(noBeer);
 
                     } else {
 
@@ -95,7 +95,7 @@
                                     const beerList = document.createElement('div');
                                     beerList.classList.add('beer-box');
 
-                                    document.getElementById('beer-container-in-production').appendChild(beerList);
+                                    document.getElementById('beer-container-on-tap').appendChild(beerList);
 
                                     // create the link element and the path to the subpage
                                     const beerLink = document.createElement('a');
@@ -118,12 +118,34 @@
                                     beerList.appendChild(beerInfo);
 
 
+                                    // Create the beer info container
+                                    const beerTitleAndStats = document.createElement('div');
+                                    beerTitleAndStats.classList.add('beer-title-stats');
+                                    beerInfo.appendChild(beerTitleAndStats);
+
+
                                     // Create the beer name
                                     const beerName = document.createElement('h3');
                                     beerName.textContent = beer_data.name;
                                     beerName.classList.add('beer-list-title');
-                                    console.log("Found beer name: ", beer_data.name)
-                                    beerInfo.appendChild(beerName);
+                                    beerTitleAndStats.appendChild(beerName);
+
+                                    // Create the beer stats container
+                                    const beerStats = document.createElement('div');
+                                    beerStats.classList.add('beer-stats');
+                                    beerTitleAndStats.appendChild(beerStats);
+
+                                    // Create the beer ABV
+                                    const beerABV = document.createElement('p');
+                                    beerABV.textContent = beer_data.beer_statistics[0].actual_abv + " ABV";
+                                    beerABV.classList.add('beer-stats-text');
+                                    beerStats.appendChild(beerABV);
+
+                                    // Create the beer IBU
+                                    const beerIBU = document.createElement('p');
+                                    beerIBU.textContent = beer_data.beer_statistics[0].calculated_ibu + " IBU";
+                                    beerIBU.classList.add('beer-stats-text');
+                                    beerStats.appendChild(beerIBU);
 
                                     // set beer style
                                     const beerStyle = document.createElement('p');
