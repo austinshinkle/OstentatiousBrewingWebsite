@@ -1,16 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>OSTENTATIOUS BREWING</title>
-        <link rel="stylesheet" href="/assets/css/base.css">
-        <link rel="stylesheet" href="/assets/css/header.css">
-        <link rel="stylesheet" href="/assets/css/footer.css">
-        <link rel="stylesheet" href="/assets/css/beer-list.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/css/base.css" />
+        <link rel="stylesheet" href="/assets/css/header.css" />
+        <link rel="stylesheet" href="/assets/css/footer.css" />
+        <link rel="stylesheet" href="/assets/css/beer-list.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet" />
     </head>
 
     <body>
@@ -18,7 +20,7 @@
         <header>
             <!-- Logo inside a circle -->
             <div class="logo-container">
-                <img src="/assets/images/logo/ostentatious-brewing.png" alt="Ostentatious Brewing Logo" class="logo">
+                <img src="/assets/images/logo/ostentatious-brewing.png" alt="Ostentatious Brewing Logo" class="logo" />
             </div>
 
             <div>
@@ -44,15 +46,15 @@
 
         <script>
             function toggleMenu() {
-                const nav = document.querySelector('nav');
-                nav.classList.toggle('nav-open');
+                const nav = document.querySelector("nav");
+                nav.classList.toggle("nav-open");
             }
 
             // Close mobile menu if screen gets resized wider
-            window.addEventListener('resize', () => {
-                const nav = document.querySelector('nav');
-                if (window.innerWidth > 1024 && nav.classList.contains('nav-open')) {
-                    nav.classList.remove('nav-open');
+            window.addEventListener("resize", () => {
+                const nav = document.querySelector("nav");
+                if (window.innerWidth > 1024 && nav.classList.contains("nav-open")) {
+                    nav.classList.remove("nav-open");
                 }
             });
         </script>
@@ -61,125 +63,111 @@
         <!-- ----------------------------- In Production ------------------------------ -->
 
         <div id="beer-container-on-tap" class="container">
+            <h2>ON TAP</h2>
 
-        <h2>ON TAP</h2>
+            <script>
+                // Load the Past Beers index file
+                fetch("/assets/data/recipes/index/index_on_tap.json")
+                    .then((response) => response.json())
+                    .then((indexData) => {
+                        console.log("Amout of Index Data: ", indexData);
 
-        <script>
+                        // if there is nothing in production
+                        if (indexData.files.length === 0) {
+                            // set beer style
+                            const noBeer = document.createElement("p");
+                            noBeer.textContent = "NOTHING CURRENTLY ON TAP :(";
+                            document.getElementById("beer-container-on-tap").appendChild(noBeer);
+                        } else {
+                            // Loop through the beers and create HTML elements for each
+                            indexData.files.forEach((beer) => {
+                                const filePath = `assets/data/recipes/${beer}`;
+                                fetch(filePath)
+                                    .then((response) => response.json())
+                                    .then((beer_data) => {
+                                        console.log("Found json file: ", beer_data);
 
-            // Load the Past Beers index file
-            fetch("/assets/data/recipes/index/index_on_tap.json")
-                .then(response => response.json())
-                .then(indexData => {
-                    console.log("Amout of Index Data: ", indexData)
+                                        // create a container
+                                        const beerList = document.createElement("div");
+                                        beerList.classList.add("beer-box");
 
-                    // if there is nothing in production
-                    if (indexData.files.length === 0) {
+                                        document.getElementById("beer-container-on-tap").appendChild(beerList);
 
-                        // set beer style
-                        const noBeer = document.createElement('p');
-                        noBeer.textContent = "NOTHING CURRENTLY ON TAP :(";
-                        document.getElementById('beer-container-on-tap').appendChild(noBeer);
+                                        // create the link element and the path to the subpage
+                                        const beerLink = document.createElement("a");
+                                        console.log("The path to the subpage is: ", beer_data.page);
 
-                    } else {
+                                        beerLink.href = beer_data.page; // Set the link to the desired URL
 
-                        // Loop through the beers and create HTML elements for each
-                        indexData.files.forEach(beer => {
-                            const filePath = `assets/data/recipes/${beer}`;
-                            fetch(filePath)
-                                .then(response => response.json())
-                                .then(beer_data => {
+                                        const beerLogo = document.createElement("img");
+                                        beerLogo.src = beer_data.logo;
+                                        beerLogo.classList.add("beer-image");
 
-                                    console.log("Found json file: ", beer_data);
+                                        beerLink.appendChild(beerLogo);
 
-                                    // create a container
-                                    const beerList = document.createElement('div');
-                                    beerList.classList.add('beer-box');
+                                        beerList.appendChild(beerLink);
 
-                                    document.getElementById('beer-container-on-tap').appendChild(beerList);
+                                        // Create the beer info container
+                                        const beerInfo = document.createElement("div");
+                                        beerInfo.classList.add("beer-info");
+                                        beerList.appendChild(beerInfo);
 
-                                    // create the link element and the path to the subpage
-                                    const beerLink = document.createElement('a');
-                                    console.log("The path to the subpage is: ", beer_data.page)
+                                        // Create the beer info container
+                                        const beerTitleAndStats = document.createElement("div");
+                                        beerTitleAndStats.classList.add("beer-title-stats");
+                                        beerInfo.appendChild(beerTitleAndStats);
 
-                                    beerLink.href = beer_data.page;  // Set the link to the desired URL
+                                        // Create the beer name
+                                        const beerName = document.createElement("h3");
+                                        beerName.textContent = beer_data.name;
+                                        beerName.classList.add("beer-list-title");
+                                        beerTitleAndStats.appendChild(beerName);
 
-                                    const beerLogo = document.createElement('img');
-                                    beerLogo.src = beer_data.logo;
-                                    beerLogo.classList.add("beer-image");
+                                        // Create the beer stats container
+                                        const beerStats = document.createElement("div");
+                                        beerStats.classList.add("beer-stats");
+                                        beerTitleAndStats.appendChild(beerStats);
 
-                                    beerLink.appendChild(beerLogo);
+                                        // Create the beer ABV
+                                        const beerABV = document.createElement("p");
+                                        beerABV.textContent = beer_data.beer_statistics[0].actual_abv + " ABV";
+                                        beerABV.classList.add("beer-stats-text");
+                                        beerStats.appendChild(beerABV);
 
-                                    beerList.appendChild(beerLink);
+                                        // Create the beer IBU
+                                        const beerIBU = document.createElement("p");
+                                        beerIBU.textContent = beer_data.beer_statistics[0].calculated_ibu + " IBU";
+                                        beerIBU.classList.add("beer-stats-text");
+                                        beerStats.appendChild(beerIBU);
 
+                                        // set beer style
+                                        const beerStyle = document.createElement("p");
+                                        beerStyle.textContent = beer_data.style;
+                                        beerStyle.classList.add("beer-list-style");
+                                        beerInfo.appendChild(beerStyle);
 
-                                    // Create the beer info container
-                                    const beerInfo = document.createElement('div');
-                                    beerInfo.classList.add('beer-info');
-                                    beerList.appendChild(beerInfo);
-
-
-                                    // Create the beer info container
-                                    const beerTitleAndStats = document.createElement('div');
-                                    beerTitleAndStats.classList.add('beer-title-stats');
-                                    beerInfo.appendChild(beerTitleAndStats);
-
-
-                                    // Create the beer name
-                                    const beerName = document.createElement('h3');
-                                    beerName.textContent = beer_data.name;
-                                    beerName.classList.add('beer-list-title');
-                                    beerTitleAndStats.appendChild(beerName);
-
-                                    // Create the beer stats container
-                                    const beerStats = document.createElement('div');
-                                    beerStats.classList.add('beer-stats');
-                                    beerTitleAndStats.appendChild(beerStats);
-
-                                    // Create the beer ABV
-                                    const beerABV = document.createElement('p');
-                                    beerABV.textContent = beer_data.beer_statistics[0].actual_abv + " ABV";
-                                    beerABV.classList.add('beer-stats-text');
-                                    beerStats.appendChild(beerABV);
-
-                                    // Create the beer IBU
-                                    const beerIBU = document.createElement('p');
-                                    beerIBU.textContent = beer_data.beer_statistics[0].calculated_ibu + " IBU";
-                                    beerIBU.classList.add('beer-stats-text');
-                                    beerStats.appendChild(beerIBU);
-
-                                    // set beer style
-                                    const beerStyle = document.createElement('p');
-                                    beerStyle.textContent = "Style: " + beer_data.style;
-                                    beerStyle.classList.add('beer-list-style');
-                                    beerInfo.appendChild(beerStyle);
-
-                                    // get beer description
-                                    const beerDescription = document.createElement('p');
-                                    beerDescription.textContent = beer_data.description;
-                                    beerDescription.classList.add('beer-list-description');
-                                    beerInfo.appendChild(beerDescription);
-
-
-                                })
-                    .catch(error => console.error('Error loading beer JSON:', error));
-                    });
-                }
-             })
-            .catch(error => console.error("Error loading index.json:", error));
-
-        </script>
-
-    </div>
+                                        // get beer description
+                                        const beerDescription = document.createElement("p");
+                                        beerDescription.textContent = beer_data.description;
+                                        beerDescription.classList.add("beer-list-description");
+                                        beerInfo.appendChild(beerDescription);
+                                    })
+                                    .catch((error) => console.error("Error loading beer JSON:", error));
+                            });
+                        }
+                    })
+                    .catch((error) => console.error("Error loading index.json:", error));
+            </script>
+        </div>
         <!-- ---------------------------   END PAGE CONTENT  ------------------------------------- -->
 
         <footer>
             <div class="footer-content">
                 <p>&copy; 2025 OSTENTATIOUS BREWING</p>
                 <a href="https://www.instagram.com/ostentatiousbrewmaster" target="_blank">
-                    <img src="assets/images/icons/instagram-icon.png" alt="Instagram" class="instagram-logo">
+                    <img src="assets/images/icons/instagram-icon.png" alt="Instagram" class="instagram-logo" />
                 </a>
             </div>
         </footer>
     </body>
-
 </html>
