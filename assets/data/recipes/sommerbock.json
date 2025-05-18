@@ -52,8 +52,8 @@
       "Move to keg and carbonate"
     ],
     "starter_brewing_instructions": [
-      "Add 3L of water to Ehrlenmeyer Flask",
-      "Add 6 oz Extra Light Dry Malt Extract",
+      "Add 2.5L of water to Ehrlenmeyer Flask",
+      "Add 8 oz Extra Light Dry Malt Extract",
       "Begin boil",
       "Add 2 drops FermCap to reduce foaming as needed",
       "At 10 minutes, chill wort to 72°F",
@@ -113,4 +113,3 @@
         { "day": 21, "SG": 1.000 }
     ]
   }
-  
