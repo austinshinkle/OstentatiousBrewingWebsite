@@ -61,9 +61,9 @@
       "target_og": "1.086",
       "actual_og": "1.090",
       "target_fg": "1.012",
-      "actual_fg": "TBD",
+      "actual_fg": "1.013",
       "target_abv": "10.0%",
-      "actual_abv": "TBD",
+      "actual_abv": "10.4%",
       "calculated_ibu": "26.6",
       "calculated_srm": "25.8",
       "cost": "$46.96"
@@ -146,7 +146,7 @@
     },
     {
       "day": 13,
-      "SG": 1
+      "SG": 1.013
     },
     {
       "day": 14,
