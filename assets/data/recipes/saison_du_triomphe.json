@@ -6,14 +6,14 @@
     "description": "A light fruity ale, made with Triumph hops.",
     "ingredients": {
         "malts": [
-            "9.5 lbs 2 Row Pilsner Malt",
+            "10 lbs 2 Row Pilsner Malt",
             "2 lbs Vienna Malt"
         ],
         "hops": [
             "2 oz Triumph hops (7.9% AA)"
         ],
         "yeast": [
-            "1 package WLP565 Saison Ale Yeast"
+            "1 package WLP590 French Saison Ale Yeast"
         ],
         "other_ingredients": [
             "15 drops FermCap",
@@ -24,34 +24,34 @@
         ]
     },
     "brewing_instructions": [
-        "UPDATE ME!!!!",
         "Add 6 gallons of water to the kettle and add 1 Campden Tablet",
-        "Heat 6 gallons of strike water to 159°F",
+        "Heat 6 gallons of strike water to 155.4°F",
         "Add 6 gallons of water to the mash tun",
         "Add all grains to the mash tun and confirm mash temperature of 149°F",
-        "Steep grains for 60 minutes",
+        "Steep grains for 75 minutes",
         "While steeping grains, heat 4 gallons of water for lautering to 170 °F",
-        "Fly spage until wort volume of 7.4 gallons is reached",
+        "Fly spage until wort volume of 7.1 gallons is reached",
         "Begin boil and wait for hot break",
         "At 0 minutes, add 7 drops of FermCap to reduce foaming",
-        "At 0 minutes, add 1.0 oz Hallertauer Mittelfrüh hops",
-        "At 30 minutes, add 1.0 oz Hallertauer Mittelfrüh hops",
-        "At 45 minutes, add 2.0 oz Hallertauer Mittelfrüh hops",
+        "At 0 minutes, add 1.0 oz Triumph hops",
+        "At 40 minutes, add 8 oz Table Sugar",
         "At 50 minutes, add 1 tablet Whirlfloc",
         "At 50 minutes, add 0.5 tsp of yeast nutrient",
-        "At 50 minutes, add 2 oz Hallertauer Mittelfrüh hops",
-        "At 60 minutes, chil the wort to 68°F",
+        "At 50 minutes, add 1 oz Triumph hops",
+        "At 60 minutes, chill the wort to 68°F",
         "Shake fermenter to aerate wort",
         "Move wort to primary fermenter",
         "Pitch yeast",
-        "Ferment at 52°F for 14 days",
-        "Ferment at 60°F for 97 days",
-        "Lower temp by -4°F daily to reach 34°F over 7 days",
-        "Condition at 34°F for 14 days",
+        "Ferment at 70°F for 2 days",
+        "Ferment at 72°F for 2 days",
+        "Ferment at 74°F for 2 days",
+        "Ferment at 76°F for 2 days",
+        "Ferment at 72°F for 6 days",
+        "Cold crash to 36°F for 7 days",
         "Move to keg and carbonate"
     ],
     "starter_brewing_instructions": [
-        "Add 2.5L of water to Ehrlenmeyer Flask",
+        "Add 3L of water to Ehrlenmeyer Flask",
         "Add 8 oz Extra Light Dry Malt Extract",
         "Begin boil",
         "Add 2 drops FermCap to reduce foaming as needed",
@@ -65,23 +65,46 @@
     "beer_statistics": [
         {
             "brew_date": "TBD",
-            "target_og": "1.060",
+            "target_og": "1.057",
             "actual_og": "TBD",
-            "target_fg": "1.013",
+            "target_fg": "1.010",
             "actual_fg": "TBD",
-            "target_abv": "6.2%",
+            "target_abv": "6.3%",
             "actual_abv": "TBD",
-            "calculated_ibu": "31.7",
-            "calculated_srm": "4.0",
+            "calculated_ibu": "32.3",
+            "calculated_srm": "3.9",
             "cost": "$xxx"
         }
     ],
     "fermentation_profile": [
-        { "day": 0, "temp": 67 },
-        { "day": 6, "temp": 72 },
-        { "day": 8, "temp": 72 },
-        { "day": 14, "temp": 36 },
-        { "day": 21, "temp": 36 }
+        {
+            "day": 0,
+            "temp": 70
+        },
+        {
+            "day": 3,
+            "temp": 72
+        },
+        {
+            "day": 5,
+            "temp": 74
+        },
+        {
+            "day": 7,
+            "temp": 76
+        },
+        {
+            "day": 9,
+            "temp": 72
+        },
+        {
+            "day": 15,
+            "temp": 36
+        },
+        {
+            "day": 21,
+            "temp": 36
+        }
     ],
     "fermentation_data": [
         {
