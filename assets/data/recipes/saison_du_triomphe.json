@@ -62,14 +62,14 @@
     "beer_statistics": [
         {
             "brew_date": "TBD",
-            "target_og": "1.058",
+            "target_og": "1.056",
             "actual_og": "TBD",
             "target_fg": "1.014",
             "actual_fg": "TBD",
-            "target_abv": "5.9%",
+            "target_abv": "6.0%",
             "actual_abv": "TBD",
-            "calculated_ibu": "32.2",
-            "calculated_srm": "4.1",
+            "calculated_ibu": "32.6",
+            "calculated_srm": "3.9",
             "cost": "$xxx"
         }
     ],
