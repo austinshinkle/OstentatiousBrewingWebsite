@@ -76,7 +76,15 @@
     "fermentation_profile": [
         {
             "day": 0,
-            "temp": 80
+            "temp": 68
+        },
+        {
+            "day": 5,
+            "temp": 70
+        },
+        {
+            "day": 7,
+            "temp": 68
         },
         {
             "day": 15,
