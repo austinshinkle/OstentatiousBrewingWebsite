@@ -6,14 +6,15 @@
     "description": "A light dry saision which provides the perfect canvas for the delicate fruit flavor of Triumph hops.",
     "ingredients": {
         "malts": [
-            "6 lbs 2 Row Pilsner Malt (US)",
-            "4 lbs Pale High Color Malt"
+            "10 lbs Chateau Belgian Pilsner Malt",
+            "0.5 lbs Aromatic Malt",
+            "0.5 lbs Caravienna Malt"
         ],
         "hops": [
             "2 oz Triumph hops (7.9% AA)"
         ],
         "yeast": [
-            "1 package WLP590 French Saison Ale Yeast"
+            "1 package Imperial Labs Napolean French Saison Ale Yeast"
         ],
         "other_ingredients": [
             "15 drops FermCap",
@@ -25,9 +26,9 @@
     },
     "brewing_instructions": [
         "Add 6 gallons of water to the kettle and add 1 Campden Tablet",
-        "Heat 6 gallons of strike water to 157°F",
+        "Heat 6 gallons of strike water to 156°F",
         "Add 6 gallons of water to the mash tun",
-        "Add all grains to the mash tun and confirm mash temperature of 151°F",
+        "Add all grains to the mash tun and confirm mash temperature of 150°F",
         "Steep grains for 75 minutes",
         "While steeping grains, heat 4 gallons of water for lautering to 170 °F",
         "Fly spage until wort volume of 7.1 gallons is reached",
@@ -61,14 +62,14 @@
     "beer_statistics": [
         {
             "brew_date": "TBD",
-            "target_og": "1.056",
+            "target_og": "1.053",
             "actual_og": "TBD",
-            "target_fg": "1.014",
+            "target_fg": "1.005",
             "actual_fg": "TBD",
-            "target_abv": "6.0%",
+            "target_abv": "6.4%",
             "actual_abv": "TBD",
-            "calculated_ibu": "32.6",
-            "calculated_srm": "3.9",
+            "calculated_ibu": "35",
+            "calculated_srm": "6.0",
             "cost": "$xxx"
         }
     ],
