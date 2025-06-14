@@ -32,7 +32,7 @@
         "Steep grains for 75 minutes",
         "While steeping grains, heat 4 gallons of water for lautering to 170 °F",
         "Fly spage until wort volume of 7.1 gallons is reached",
-        "Add 8 oz Table Sugar",
+        "Add 1 lb Table Sugar",
         "Begin boil and wait for hot break",
         "At 0 minutes, add 7 drops of FermCap to reduce foaming",
         "At 0 minutes, add 1.0 oz Triumph hops",
@@ -43,7 +43,9 @@
         "Shake fermenter to aerate wort",
         "Move wort to primary fermenter",
         "Pitch yeast",
-        "Ferment at 80°F for 14 days",
+        "Ferment at 68°F for 5 days",
+        "Ferment at 70°F for 2 days",
+        "Ferment at 68°F for 7 days",
         "Cold crash to 36°F for 14 days",
         "Move to keg and carbonate"
     ],
@@ -61,16 +63,16 @@
     ],
     "beer_statistics": [
         {
-            "brew_date": "TBD",
+            "brew_date": "6/9/2025",
             "target_og": "1.053",
-            "actual_og": "TBD",
+            "actual_og": "1.060",
             "target_fg": "1.005",
             "actual_fg": "TBD",
             "target_abv": "6.4%",
             "actual_abv": "TBD",
             "calculated_ibu": "35",
             "calculated_srm": "6.0",
-            "cost": "$xxx"
+            "cost": "$39.00"
         }
     ],
     "fermentation_profile": [
@@ -91,38 +93,38 @@
             "temp": 36
         },
         {
-            "day": 21,
+            "day": 28,
             "temp": 36
         }
     ],
     "fermentation_data": [
         {
             "day": 0,
-            "SG": 1
+            "SG": 1.06
         },
         {
             "day": 1,
-            "SG": 1
+            "SG": 1.038
         },
         {
             "day": 2,
-            "SG": 1
+            "SG": 1.031
         },
         {
             "day": 3,
-            "SG": 1
+            "SG": 1.02
         },
         {
             "day": 4,
-            "SG": 1
+            "SG": 1.014
         },
         {
             "day": 5,
-            "SG": 1
+            "SG": 1.009
         },
         {
             "day": 6,
-            "SG": 1
+            "SG": 1.006
         },
         {
             "day": 7,
@@ -182,6 +184,34 @@
         },
         {
             "day": 21,
+            "SG": 1
+        },
+        {
+            "day": 22,
+            "SG": 1
+        },
+        {
+            "day": 23,
+            "SG": 1
+        },
+        {
+            "day": 24,
+            "SG": 1
+        },
+        {
+            "day": 25,
+            "SG": 1
+        },
+        {
+            "day": 26,
+            "SG": 1
+        },
+        {
+            "day": 27,
+            "SG": 1
+        },
+        {
+            "day": 28,
             "SG": 1
         }
     ]
