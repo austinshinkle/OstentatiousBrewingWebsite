@@ -67,9 +67,9 @@
             "target_og": "1.053",
             "actual_og": "1.060",
             "target_fg": "1.005",
-            "actual_fg": "TBD",
+            "actual_fg": "1.001",
             "target_abv": "6.4%",
-            "actual_abv": "TBD",
+            "actual_abv": "7.8%",
             "calculated_ibu": "35",
             "calculated_srm": "6.0",
             "cost": "$39.00"
@@ -128,91 +128,92 @@
         },
         {
             "day": 7,
-            "SG": 1
+            "SG": 1.003
         },
         {
             "day": 8,
-            "SG": 1
+            "SG": 1.002
         },
         {
             "day": 9,
-            "SG": 1
+            "SG": 1.002
         },
         {
             "day": 10,
-            "SG": 1
+            "SG": 1.002
         },
         {
             "day": 11,
-            "SG": 1
+            "SG": 1.001
         },
         {
             "day": 12,
-            "SG": 1
+            "SG": 1.001
         },
         {
             "day": 13,
-            "SG": 1
+            "SG": 1.001
         },
         {
             "day": 14,
-            "SG": 1
+            "SG": 1.001
         },
         {
             "day": 15,
-            "SG": 1
+            "SG": 1.001
         },
         {
             "day": 16,
-            "SG": 1
+            "SG": 1.001
         },
         {
             "day": 17,
-            "SG": 1
+            "SG": 1.001
         },
         {
             "day": 18,
-            "SG": 1
+            "SG": 1.001
         },
         {
             "day": 19,
-            "SG": 1
+            "SG": 1.001
         },
         {
             "day": 20,
-            "SG": 1
+            "SG": 1.001
         },
         {
             "day": 21,
-            "SG": 1
+            "SG": 1.001
         },
         {
             "day": 22,
-            "SG": 1
+            "SG": 1.001
         },
         {
             "day": 23,
-            "SG": 1
+            "SG": 1.001
         },
         {
             "day": 24,
-            "SG": 1
+            "SG": 1.001
         },
         {
             "day": 25,
-            "SG": 1
+            "SG": 1.001
         },
         {
             "day": 26,
-            "SG": 1
+            "SG": 1.001
         },
         {
             "day": 27,
-            "SG": 1
+            "SG": 1.001
         },
         {
             "day": 28,
-            "SG": 1
+            "SG": 1.001
         }
-    ]
+    ],
+    "tasting_notes": "Quite thin and not too sour. Light and refreshing, but not as much funk as I wanted. Could be a touch hoppier and also try to get move of the peppercorn flavor"
 }
