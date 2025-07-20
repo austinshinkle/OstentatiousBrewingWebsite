@@ -58,7 +58,7 @@
     "beer_statistics": [
         {
             "brew_date": "TBD",
-            "target_og": "1.071",
+            "target_og": "1.074",
             "actual_og": "TBD",
             "target_fg": "1.016",
             "actual_fg": "TBD",
@@ -66,139 +66,139 @@
             "actual_abv": "TBD%",
             "calculated_ibu": "24",
             "calculated_srm": "17",
-            "cost": "$TBD"
+            "cost": "$36.00"
         }
     ],
-  "fermentation_profile": [
+    "fermentation_profile": [
         {
-          "day": 0,
-          "temp": 52
+            "day": 0,
+            "temp": 52
         },
         {
-          "day": 8,
-          "temp": 65
+            "day": 8,
+            "temp": 65
         },
         {
-          "day": 12,
-          "temp": 52
+            "day": 12,
+            "temp": 52
         },
         {
-          "day": 22,
-          "temp": 56
+            "day": 22,
+            "temp": 56
         },
         {
-          "day": 23,
-          "temp": 48
+            "day": 23,
+            "temp": 48
         },
         {
-          "day": 24,
-          "temp": 44
+            "day": 24,
+            "temp": 44
         },
         {
-          "day": 25,
-          "temp": 40
+            "day": 25,
+            "temp": 40
         },
         {
-          "day": 26,
-          "temp": 36
+            "day": 26,
+            "temp": 36
         },
         {
-          "day": 27,
-          "temp": 34
+            "day": 27,
+            "temp": 34
         },
         {
-          "day": 42,
-          "temp": 34
+            "day": 42,
+            "temp": 34
         }
     ],
     "fermentation_data": [
         {
             "day": 0,
-            "SG": 1.00
+            "SG": 1
         },
         {
             "day": 1,
-            "SG": 1.0
+            "SG": 1
         },
         {
             "day": 2,
-            "SG": 1.0
+            "SG": 1
         },
         {
             "day": 3,
-            "SG": 1.0
+            "SG": 1
         },
         {
             "day": 4,
-            "SG": 1.0
+            "SG": 1
         },
         {
             "day": 5,
-            "SG": 1.0
+            "SG": 1
         },
         {
             "day": 6,
-            "SG": 1.0
+            "SG": 1
         },
         {
             "day": 7,
-            "SG": 1.0
+            "SG": 1
         },
         {
             "day": 8,
-            "SG": 1.0
+            "SG": 1
         },
         {
             "day": 9,
-            "SG": 1.0
+            "SG": 1
         },
         {
             "day": 10,
-            "SG": 1.0
+            "SG": 1
         },
         {
             "day": 11,
-            "SG": 1.0
+            "SG": 1
         },
         {
             "day": 12,
-            "SG": 1.0
+            "SG": 1
         },
         {
             "day": 13,
-            "SG": 1.0
+            "SG": 1
         },
         {
             "day": 14,
-            "SG": 1.0
+            "SG": 1
         },
         {
             "day": 15,
-            "SG": 1.0
+            "SG": 1
         },
         {
             "day": 16,
-            "SG": 1.0
+            "SG": 1
         },
         {
             "day": 17,
-            "SG": 1.0
+            "SG": 1
         },
         {
             "day": 18,
-            "SG": 1.0
+            "SG": 1
         },
         {
             "day": 19,
-            "SG": 1.0
+            "SG": 1
         },
         {
             "day": 20,
-            "SG": 1.0
+            "SG": 1
         },
         {
             "day": 21,
-            "SG": 1.0
+            "SG": 1
         }
     ],
     "tasting_notes": "TBD"
