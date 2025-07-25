@@ -45,10 +45,10 @@
         "Shake fermenter to aerate wort",
         "Move wort to primary fermenter",
         "Pitch yeast",
-        "Ferment at 52°F for 7 days",
-        "Ferment at 65°F for 4 days",
+        "Ferment at 58°F for 4 days",
+        "Ferment at 65°F for 2 days",
         "Ferment at 52°F for 4 days",
-        "Lower temp by -4°F daily to reach 34°F over 7 days",
+        "Lower temp by -3°F daily to reach 34°F over 7 days",
         "Condition at 34°F for 14 days",
         "Move to keg and carbonate"
     ],
@@ -72,42 +72,22 @@
     "fermentation_profile": [
         {
             "day": 0,
-            "temp": 52
+            "temp": 55
         },
         {
-            "day": 8,
+            "day": 5,
             "temp": 65
         },
         {
-            "day": 12,
+            "day": 7,
             "temp": 52
         },
         {
-            "day": 22,
-            "temp": 56
-        },
-        {
-            "day": 23,
-            "temp": 48
-        },
-        {
-            "day": 24,
-            "temp": 44
-        },
-        {
-            "day": 25,
-            "temp": 40
-        },
-        {
-            "day": 26,
-            "temp": 36
-        },
-        {
-            "day": 27,
+            "day": 10,
             "temp": 34
         },
         {
-            "day": 42,
+            "day": 31,
             "temp": 34
         }
     ],
