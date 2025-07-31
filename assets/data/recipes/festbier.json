@@ -6,19 +6,15 @@
     "description": "A crisp lager brewed in the traditional style of Oktoberfest. Ostentatious version of a classic. Prost!",
     "ingredients": {
         "malts": [
-            "2 lbs German Pilsner Malt",
-            "9 lbs Vienna Malt",
-            "4 lb Munich Malt",
-            "1 lb Melanoiden Malt",
-            "4 oz Carapils/Dextrine",
-            "2 oz Carafa II",
-            "2 oz Carafa III"
+            "11 lbs German Pilsner Malt",
+            "2 lbs Vienna Malt",
+            "4 oz Victory Malt"
         ],
         "hops": [
-            "4 oz Hallertauer Mittelfrüh hops (3.1% AA)"
+            "3 oz Hallertauer Mittelfrüh hops (3.1% AA)"
         ],
         "yeast": [
-            "1 yeast cake WLP833 German Bock Lager Yeast"
+            "1 package Imperial Labs Harvest Yeast (L17)"
         ],
         "other_ingredients": [
             "15 drops FermCap",
@@ -28,10 +24,10 @@
         ]
     },
     "brewing_instructions": [
-        "Add 6.5 gallons of water to the kettle and add 1 Campden Tablet",
-        "Heat 6.5 gallons of strike water to 158°F",
-        "Add 6.5 gallons of water to the mash tun",
-        "Add all grains to the mash tun and confirm mash temperature of 150°F",
+        "Add 6 gallons of water to the kettle and add 1 Campden Tablet",
+        "Heat 6 gallons of strike water to 159°F",
+        "Add 6 gallons of water to the mash tun",
+        "Add all grains to the mash tun and confirm mash temperature of 151°F",
         "Steep grains for 60 minutes",
         "While steeping grains, heat 4 gallons of water for lautering to 170 °F",
         "Fly spage until wort volume of 7.4 gallons is reached",
@@ -40,7 +36,7 @@
         "At 0 minutes, add 2 oz Hallertauer Mittelfrüh hops",
         "At 50 minutes, add 1 tablet Whirlfloc",
         "At 50 minutes, add 2 tbsp of yeast nutrient",
-        "At 50 minutes, add 2 oz Hallertauer Mittelfrüh hops",
+        "At 50 minutes, add 1 oz Hallertauer Mittelfrüh hops",
         "At 60 minutes, chil the wort to 68°F",
         "Shake fermenter to aerate wort",
         "Move wort to primary fermenter",
@@ -53,20 +49,29 @@
         "Move to keg and carbonate"
     ],
     "starter_brewing_instructions": [
-        "None - Pitch onto yeast cake from Sommerbock"
+        "Add 3L of water to Ehrlenmeyer Flask",
+        "Add 8 oz Extra Light Dry Malt Extract",
+        "Begin boil",
+        "Add 2 drops FermCap to reduce foaming as needed",
+        "At 10 minutes, chill wort to 72°F",
+        "Add stir bar to wort",
+        "Pitch yeast",
+        "Place on stir plate",
+        "Allow yeast to multiply for 48 hours",
+        "Chill to 36°F for 24 hours"
     ],
     "beer_statistics": [
         {
             "brew_date": "TBD",
-            "target_og": "1.074",
+            "target_og": "1.058",
             "actual_og": "TBD",
-            "target_fg": "1.016",
+            "target_fg": "1.014",
             "actual_fg": "TBD",
-            "target_abv": "7.1%",
+            "target_abv": "5.8%",
             "actual_abv": "TBD%",
-            "calculated_ibu": "24",
-            "calculated_srm": "17",
-            "cost": "$36.00"
+            "calculated_ibu": "18",
+            "calculated_srm": "5.0",
+            "cost": "TBD"
         }
     ],
     "fermentation_profile": [
