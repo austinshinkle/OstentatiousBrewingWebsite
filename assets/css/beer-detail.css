@@ -1,70 +1,128 @@
+/* ========================================
+   CSS CUSTOM PROPERTIES (VARIABLES)
+======================================== */
 
-/* Beer Page Title Style */
+:root {
+    /* Colors */
+    --color-primary: #333333;
+    --color-secondary: #555555;
+    --color-muted: #999999;
+    --color-border: #ddd;
+    --color-white: white;
+
+    /* Typography */
+    --font-size-small: 14px;
+    --font-size-base: 16px;
+    --font-size-large: 18px;
+    --font-size-xl: 20px;
+    --font-size-xxl: 28px;
+
+    /* Spacing */
+    --spacing-xs: 2px;
+    --spacing-sm: 5px;
+    --spacing-md: 10px;
+    --spacing-lg: 20px;
+    --spacing-xl: 30px;
+    --spacing-xxl: 50px;
+
+    /* Layout */
+    --container-max-width: 1000px;
+    --border-radius: 8px;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ========================================
+   CONTAINER & LAYOUT
+======================================== */
+
+.container {
+    max-width: var(--container-max-width);
+    margin: var(--spacing-xs) auto;
+    background: var(--color-white);
+    padding: var(--spacing-lg);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+
+/* ========================================
+   TYPOGRAPHY & TITLES
+======================================== */
+
+.site-title {
+    font-size: var(--font-size-large);
+    font-weight: bold;
+    color: var(--color-white);
+    margin-left: var(--spacing-md);
+    text-transform: uppercase;
+}
+
+.section-title {
+    font-size: var(--font-size-xl);
+    font-weight: bold;
+    color: var(--color-primary);
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+    text-transform: uppercase;
+}
+
+/* ========================================
+   BEER PAGE SPECIFIC ELEMENTS
+======================================== */
+
 .beer-title-container {
-    margin: 5px 0 0 5px;
+    margin: var(--spacing-sm) 0 0 var(--spacing-sm);
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 2rem;
-
 }
 
-
-
-/* Paragraph and general text styling */
 .beer-page-description {
-    font-size: 14px;
+    font-size: var(--font-size-small);
     line-height: 1.5;
-    color: #555555; /* Medium Gray */
+    color: var(--color-secondary);
     margin-bottom: 14px;
-    text-transform: uppercase;   
-}
-
-.site-title{
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
-    margin-left: 10px;
     text-transform: uppercase;
 }
+
+.beer-brewing-instruction {
+    font-size: var(--font-size-small);
+    line-height: 1.2;
+    margin: 0 0 0 var(--spacing-lg);
+    color: var(--color-muted);
+}
+
+/* ========================================
+   BEER DETAILS LAYOUT
+======================================== */
 
 .beer-details {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: var(--spacing-lg);
     justify-content: space-between;
-    flex-wrap: nowrap; 
-    margin-top: 20px;
+    flex-wrap: nowrap;
+    margin-top: var(--spacing-lg);
     align-items: flex-start;
 }
 
 .beer-column {
-    flex: 0 1 calc(33.333% - 5px);
+    flex: 0 1 calc(33.333% - var(--spacing-sm));
     box-sizing: border-box;
     word-wrap: break-word;
     overflow-wrap: break-word;
 }
 
-.section-title{
-    font-size: 20px;
-    font-weight: bold;
-    color: #333333;
-    text-align: center;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-}
-
-.beer-stats-table{
-    margin: 0;
-    text-align: center;
-}
+/* ========================================
+   IMAGE & STATISTICS LAYOUT
+======================================== */
 
 .image-stats-container {
     display: flex;
     justify-content: center;
     gap: 2rem;
     align-items: center;
-    margin-top: 50px;
+    margin-top: var(--spacing-xxl);
 }
 
 .image-stats-wrapper > * {
@@ -74,10 +132,22 @@
 .beer-page-image {
     width: 400px;
     height: auto;
-    border-radius: 8px;
+    border-radius: var(--border-radius);
+    transition: transform 0.3s ease;
 }
 
-/*** START - Beer Statistics grid style ***/
+.beer-page-image:hover {
+    transform: scale(1.02);
+}
+
+/* ========================================
+   BEER STATISTICS
+======================================== */
+
+.beer-stats-table {
+    margin: 0;
+    text-align: center;
+}
 
 .beer-stats-grid {
     margin: 0 auto;
@@ -90,57 +160,65 @@
 }
 
 .beer-stat-title {
-    font-weight: bold; /* Make top line bold */
-    font-size: 16px; /* Slightly larger text */
-    display: block; /* Ensures it stays on its own line */
-    margin: 0; /* No gap between top and bottom */
+    font-weight: bold;
+    font-size: var(--font-size-base);
+    display: block;
+    margin: 0;
     text-transform: uppercase;
-    line-height: 1.3; /* Tighten line spacing */
+    line-height: 1.3;
 }
 
 .beer-stat-value {
-    font-size: 14px; /* Keep normal size for values */
-    color: #999999; /* Slightly lighter text for differentiation */
-    display: block; /* Keep it on its own line */
-    margin-bottom: 0; /* No gap between top and bottom */
-    line-height: 1;
+    font-size: var(--font-size-small);
+    color: var(--color-muted);
+    display: block;
+    margin-bottom: 0;
+    line-height: 1.2;
 }
 
-/*** END - Beer Statistics grid style ***/
-
-/*** START - Horizontal Line ***/
-.horizontal-line {
-    width: 75%;
-    margin-top: 50px;
-    border: 0.5px solid #ddd;
-    
-}
-
-/*** END - Horizontal Line ***/
-
-/*** START - Ingredients List ***/
+/* ========================================
+   INGREDIENTS
+======================================== */
 
 .ingredients-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-xs);
 }
 
 .ingredients-list-item {
-    margin-bottom: 2px;
+    margin-bottom: var(--spacing-xs);
     margin-left: 25px;
     text-align: left;
-    color:#999999;
-    font-size: 14px;
+    color: var(--color-muted);
+    font-size: var(--font-size-small);
+    transition: color 0.2s ease;
 }
 
-/* === Mobile Responsive Adjustments === */
+.ingredients-list-item:hover {
+    color: var(--color-secondary);
+}
+
+/* ========================================
+   VISUAL ELEMENTS
+======================================== */
+
+.horizontal-line {
+    width: 75%;
+    margin-top: var(--spacing-xxl);
+    border: 0.5px solid var(--color-border);
+}
+
+/* ========================================
+   MOBILE RESPONSIVE
+======================================== */
+
 @media screen and (max-width: 768px) {
-    
     .image-stats-container,
     .beer-details {
         flex-direction: column;
         align-items: center;
-        gap: 30px;
+        gap: var(--spacing-xl);
     }
 
     .beer-column {
@@ -155,7 +233,7 @@
 
     .beer-stats-grid {
         width: 100%;
-        font-size: 14px;
+        font-size: var(--font-size-small);
     }
 
     .beer-stats-grid td {
@@ -175,44 +253,25 @@
     .footer-content {
         flex-direction: column;
         align-items: center;
-        gap: 10px;
+        gap: var(--spacing-md);
         text-align: center;
     }
 
     .site-title,
-    .section-title{
+    .section-title {
         text-align: center;
     }
 
     .beer-title {
-        font-size: 28px;
+        font-size: var(--font-size-xxl);
         text-align: center;
-        margin-bottom: 10px;
+        margin-bottom: var(--spacing-md);
     }
 
     .beer-style {
-        font-size: 18px;
+        font-size: var(--font-size-large);
         text-align: center;
         display: block;
-        margin-bottom: 20px;
+        margin-bottom: var(--spacing-lg);
     }
-}
-
-/* Paragraph and general text styling */
-.beer-brewing-instruction {
-    font-size: 14px;
-    line-height: 1;
-    margin: 0 0 0 20px; /* set margin TOP RIGHT BOTTOM LEFT */
-    color: #999999; /* Medium Gray */    
-}
-
-
-/* Container for better layout */
-.container {
-    max-width: 1000px;
-    margin: 2px auto;
-    background: white;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
 }
