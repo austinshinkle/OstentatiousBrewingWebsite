@@ -11,7 +11,7 @@
             "4 oz Victory Malt"
         ],
         "hops": [
-            "3 oz Hallertauer Mittelfrüh hops (3.1% AA)"
+            "4 oz Hallertauer Mittelfrüh hops (3.1% AA)"
         ],
         "yeast": [
             "1 package Imperial Labs Harvest Yeast (L17)"
@@ -33,10 +33,10 @@
         "Fly spage until wort volume of 7.4 gallons is reached",
         "Begin boil and wait for hot break",
         "At 0 minutes, add 15 drops of FermCap to reduce foaming",
-        "At 0 minutes, add 2 oz Hallertauer Mittelfrüh hops",
+        "At 0 minutes, add 2.5 oz Hallertauer Mittelfrüh hops",
         "At 50 minutes, add 1 tablet Whirlfloc",
         "At 50 minutes, add 2 tbsp of yeast nutrient",
-        "At 50 minutes, add 1 oz Hallertauer Mittelfrüh hops",
+        "At 50 minutes, add 1.5 oz Hallertauer Mittelfrüh hops",
         "At 60 minutes, chil the wort to 68°F",
         "Shake fermenter to aerate wort",
         "Move wort to primary fermenter",
@@ -69,9 +69,9 @@
             "actual_fg": "TBD",
             "target_abv": "5.8%",
             "actual_abv": "TBD%",
-            "calculated_ibu": "18",
+            "calculated_ibu": "24",
             "calculated_srm": "5.0",
-            "cost": "TBD"
+            "cost": "$38.00"
         }
     ],
     "fermentation_profile": [
