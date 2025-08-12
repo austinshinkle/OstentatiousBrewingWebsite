@@ -1,5 +1,5 @@
 ---
 layout: beer
-beer_key: zeltzeit
-title: Zeltzeit
+beer_key: herbstbock-2025
+title: Herbstbock (2025)
 ---
