@@ -4,136 +4,215 @@ layout: default
 
 {% assign beer_data = site.data.beers[page.beer_key] %}
 
-<article class="beer-recipe">
-  <header class="beer-header">
-    <h1>{{ beer_data.name }}</h1>
-    <p class="beer-style">{{ beer_data.style }}</p>
-    <img src="{{ beer_data.logo }}" alt="{{ beer_data.name }} logo" class="beer-logo">
-  </header>
+<div class="container">
+  <article class="beer-recipe">
 
-  <section class="beer-description">
-    <p>{{ beer_data.description }}</p>
-  </section>
-
-  <section class="beer-stats">
-    <h2>Beer Statistics</h2>
-    {% for stat in beer_data.beer_statistics %}
-    <div class="stats-grid">
-      <div class="stat">
-        <label>Target OG:</label>
-        <span>{{ stat.target_og }}</span>
+    <!-- Title and Style Section -->
+    <header class="beer-title-container">
+      <div>
+        <h1 class="beer-title">{{ beer_data.name }}</h1>
+        <span class="beer-style">{{ beer_data.style }}</span>
       </div>
-      <div class="stat">
-        <label>Actual OG:</label>
-        <span>{{ stat.actual_og }}</span>
+    </header>
+
+    <!-- Description -->
+    <section class="beer-page-description">
+      <p>{{ beer_data.description }}</p>
+    </section>
+
+    <hr class="horizontal-line">
+
+    <!-- Image and Statistics Section -->
+    <section class="image-stats-container">
+      <div class="beer-page-image">
+        <img src="{{ beer_data.logo }}" alt="{{ beer_data.name }} logo" class="beer-page-image">
       </div>
-      <div class="stat">
-        <label>Target ABV:</label>
-        <span>{{ stat.target_abv }}</span>
-      </div>
-      <div class="stat">
-        <label>IBU:</label>
-        <span>{{ stat.calculated_ibu }}</span>
-      </div>
-      <div class="stat">
-        <label>SRM:</label>
-        <span>{{ stat.calculated_srm }}</span>
-      </div>
-      <div class="stat">
-        <label>Cost:</label>
-        <span>{{ stat.cost }}</span>
-      </div>
-    </div>
-    {% endfor %}
-  </section>
 
-  <section class="ingredients">
-    <h2>Ingredients</h2>
-
-    <div class="ingredient-category">
-      <h3>Malts</h3>
-      <ul>
-        {% for malt in beer_data.ingredients.malts %}
-        <li>{{ malt }}</li>
-        {% endfor %}
-      </ul>
-    </div>
-
-    <div class="ingredient-category">
-      <h3>Hops</h3>
-      <ul>
-        {% for hop in beer_data.ingredients.hops %}
-        <li>{{ hop }}</li>
-        {% endfor %}
-      </ul>
-    </div>
-
-    <div class="ingredient-category">
-      <h3>Yeast</h3>
-      <ul>
-        {% for yeast in beer_data.ingredients.yeast %}
-        <li>{{ yeast }}</li>
-        {% endfor %}
-      </ul>
-    </div>
-
-    <div class="ingredient-category">
-      <h3>Other</h3>
-      <ul>
-        {% for ingredient in beer_data.ingredients.other_ingredients %}
-        <li>{{ ingredient }}</li>
-        {% endfor %}
-      </ul>
-    </div>
-  </section>
-
-  <section class="brewing-instructions">
-    <h2>Brewing Instructions</h2>
-    <ol>
-      {% for instruction in beer_data.brewing_instructions %}
-      <li>{{ instruction }}</li>
-      {% endfor %}
-    </ol>
-  </section>
-
-  {% if beer_data.starter_brewing_instructions %}
-  <section class="starter-instructions">
-    <h2>Yeast Starter Instructions</h2>
-    <ol>
-      {% for instruction in beer_data.starter_brewing_instructions %}
-      <li>{{ instruction }}</li>
-      {% endfor %}
-    </ol>
-  </section>
-  {% endif %}
-
-  <section class="fermentation-profile">
-    <h2>Fermentation Profile</h2>
-    <div class="fermentation-chart">
-      <!-- You could add Chart.js here for visualization -->
-      <table>
-        <thead>
+      <div class="beer-stats-table">
+        {% for stat in beer_data.beer_statistics %}
+        <table class="beer-stats-grid">
           <tr>
-            <th>Day</th>
-            <th>Temperature (°F)</th>
+            <td>
+              <span class="beer-stat-title">Target OG</span>
+              <span class="beer-stat-value">{{ stat.target_og }}</span>
+            </td>
+            <td>
+              <span class="beer-stat-title">Actual OG</span>
+              <span class="beer-stat-value">{{ stat.actual_og }}</span>
+            </td>
           </tr>
-        </thead>
-        <tbody>
-          {% for profile in beer_data.fermentation_profile %}
           <tr>
-            <td>{{ profile.day }}</td>
-            <td>{{ profile.temp }}°F</td>
+            <td>
+              <span class="beer-stat-title">Target FG</span>
+              <span class="beer-stat-value">{{ stat.target_fg }}</span>
+            </td>
+            <td>
+              <span class="beer-stat-title">Actual FG</span>
+              <span class="beer-stat-value">{{ stat.actual_fg | default: "TBD" }}</span>
+            </td>
           </tr>
+          <tr>
+            <td>
+              <span class="beer-stat-title">Target ABV</span>
+              <span class="beer-stat-value">{{ stat.target_abv }}</span>
+            </td>
+            <td>
+              <span class="beer-stat-title">Actual ABV</span>
+              <span class="beer-stat-value">{{ stat.actual_abv | default: "TBD" }}</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span class="beer-stat-title">IBU</span>
+              <span class="beer-stat-value">{{ stat.calculated_ibu }}</span>
+            </td>
+            <td>
+              <span class="beer-stat-title">SRM</span>
+              <span class="beer-stat-value">{{ stat.calculated_srm }}</span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <span class="beer-stat-title">Cost</span>
+              <span class="beer-stat-value">{{ stat.cost }}</span>
+            </td>
+          </tr>
+        </table>
+        {% endfor %}
+      </div>
+    </section>
+
+    <hr class="horizontal-line">
+
+    <!-- Three Column Section: Ingredients, Brewing Instructions, Starter Instructions -->
+    <section class="beer-details">
+
+      <!-- Ingredients Column -->
+      <div class="beer-column">
+        <h2 class="section-title">Ingredients</h2>
+
+        <h3>Malts</h3>
+        <div class="ingredients-list">
+          {% for malt in beer_data.ingredients.malts %}
+          <div class="ingredients-list-item">{{ malt }}</div>
           {% endfor %}
-        </tbody>
-      </table>
-    </div>
-  </section>
+        </div>
 
-  {% if beer_data.tasting_notes != "TBD" %}
-  <section class="tasting-notes">
-    <h2>Tasting Notes</h2>
-    <p>{{ beer_data.tasting_notes }}</p>
-  </section>
-  {% endif %}
-</article>
+        <h3>Hops</h3>
+        <div class="ingredients-list">
+          {% for hop in beer_data.ingredients.hops %}
+          <div class="ingredients-list-item">{{ hop }}</div>
+          {% endfor %}
+        </div>
+
+        <h3>Yeast</h3>
+        <div class="ingredients-list">
+          {% for yeast in beer_data.ingredients.yeast %}
+          <div class="ingredients-list-item">{{ yeast }}</div>
+          {% endfor %}
+        </div>
+
+        <h3>Other Ingredients</h3>
+        <div class="ingredients-list">
+          {% for ingredient in beer_data.ingredients.other_ingredients %}
+          <div class="ingredients-list-item">{{ ingredient }}</div>
+          {% endfor %}
+        </div>
+      </div>
+
+      <!-- Brewing Instructions Column -->
+      <div class="beer-column">
+        <h2 class="section-title">Brewing Instructions</h2>
+        {% for instruction in beer_data.brewing_instructions %}
+        <div class="beer-brewing-instruction">{{ forloop.index }}. {{ instruction }}</div>
+        {% endfor %}
+      </div>
+
+      <!-- Starter Instructions Column -->
+      <div class="beer-column">
+        {% if beer_data.starter_brewing_instructions %}
+        <h2 class="section-title">Yeast Starter</h2>
+        {% for instruction in beer_data.starter_brewing_instructions %}
+        <div class="beer-brewing-instruction">{{ forloop.index }}. {{ instruction }}</div>
+        {% endfor %}
+        {% else %}
+        <h2 class="section-title">Notes</h2>
+        {% if beer_data.tasting_notes != "TBD" %}
+        <div class="beer-brewing-instruction">
+          <strong>Tasting Notes:</strong><br>
+          {{ beer_data.tasting_notes }}
+        </div>
+        {% endif %}
+        {% endif %}
+      </div>
+    </section>
+
+    <hr class="horizontal-line">
+
+    <!-- Fermentation Profile Chart Section -->
+    <section class="fermentation-profile">
+      <h2 class="section-title">Fermentation Profile</h2>
+      <div class="fermentation-chart">
+        <canvas id="fermentationChart" width="800" height="400"></canvas>
+      </div>
+    </section>
+
+  </article>
+</div>
+
+<!-- Chart.js for Fermentation Profile -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const ctx = document.getElementById('fermentationChart').getContext('2d');
+
+    // Prepare data from Jekyll
+    const fermentationData = [
+        {% for profile in beer_data.fermentation_profile %}
+        { day: {{ profile.day }}, temp: {{ profile.temp }} }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+    ];
+
+    const chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: fermentationData.map(d => `Day ${d.day}`),
+            datasets: [{
+                label: 'Temperature (°F)',
+                data: fermentationData.map(d => d.temp),
+                borderColor: 'rgb(75, 192, 192)',
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                tension: 0.1,
+                fill: true
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Fermentation Temperature Schedule'
+                },
+                legend: {
+                    display: false
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: false,
+                    title: {
+                        display: true,
+                        text: 'Temperature (°F)'
+                    }
+                },
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Fermentation Day'
+                    }
+                }
+            }
+        }
+    });
+});
+</script>
