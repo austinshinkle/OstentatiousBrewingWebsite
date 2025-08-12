@@ -1,0 +1,35 @@
+---
+layout: default
+title: Beers On Tap
+---
+
+<h1>Beers On Tap</h1>
+<p class="category-description">Currently available for tasting!</p>
+
+<div class="beer-grid">
+    {% for beer_file in site.data.beers %} {% assign beer_name = beer_file[0] %} {% assign beer = beer_file[1] %} {% if
+    beer.status == "on_tap" %}
+
+    <div class="beer-card on-tap">
+        <a href="/beers/{{ beer_name }}/">
+            <img src="{{ beer.logo }}" alt="{{ beer.name }}" />
+            <h3>{{ beer.name }}</h3>
+            <p class="style">{{ beer.style }}</p>
+            <p class="description">{{ beer.description }}</p>
+            <span class="status-badge on-tap">On Tap</span>
+        </a>
+    </div>
+
+    {% endif %} {% endfor %}
+</div>
+
+{% comment %}Show message if no beers on tap{% endcomment %} {% assign on_tap_count = 0 %} {% for beer_file in
+site.data.beers %} {% assign beer = beer_file[1] %} {% if beer.status == "on_tap" %} {% assign on_tap_count =
+on_tap_count | plus: 1 %} {% endif %} {% endfor %} {% if on_tap_count == 0 %}
+<div class="no-beers-message">
+    <p>
+        No beers currently on tap. Check back soon or visit our <a href="/beers/in-production/">In Production</a> page
+        to see what's coming!
+    </p>
+</div>
+{% endif %}
