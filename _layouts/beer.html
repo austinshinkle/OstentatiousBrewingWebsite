@@ -1,0 +1,139 @@
+---
+layout: default
+---
+
+{% assign beer_data = site.data.beers[page.beer_key] %}
+
+<article class="beer-recipe">
+  <header class="beer-header">
+    <h1>{{ beer_data.name }}</h1>
+    <p class="beer-style">{{ beer_data.style }}</p>
+    <img src="{{ beer_data.logo }}" alt="{{ beer_data.name }} logo" class="beer-logo">
+  </header>
+
+  <section class="beer-description">
+    <p>{{ beer_data.description }}</p>
+  </section>
+
+  <section class="beer-stats">
+    <h2>Beer Statistics</h2>
+    {% for stat in beer_data.beer_statistics %}
+    <div class="stats-grid">
+      <div class="stat">
+        <label>Target OG:</label>
+        <span>{{ stat.target_og }}</span>
+      </div>
+      <div class="stat">
+        <label>Actual OG:</label>
+        <span>{{ stat.actual_og }}</span>
+      </div>
+      <div class="stat">
+        <label>Target ABV:</label>
+        <span>{{ stat.target_abv }}</span>
+      </div>
+      <div class="stat">
+        <label>IBU:</label>
+        <span>{{ stat.calculated_ibu }}</span>
+      </div>
+      <div class="stat">
+        <label>SRM:</label>
+        <span>{{ stat.calculated_srm }}</span>
+      </div>
+      <div class="stat">
+        <label>Cost:</label>
+        <span>{{ stat.cost }}</span>
+      </div>
+    </div>
+    {% endfor %}
+  </section>
+
+  <section class="ingredients">
+    <h2>Ingredients</h2>
+
+    <div class="ingredient-category">
+      <h3>Malts</h3>
+      <ul>
+        {% for malt in beer_data.ingredients.malts %}
+        <li>{{ malt }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="ingredient-category">
+      <h3>Hops</h3>
+      <ul>
+        {% for hop in beer_data.ingredients.hops %}
+        <li>{{ hop }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="ingredient-category">
+      <h3>Yeast</h3>
+      <ul>
+        {% for yeast in beer_data.ingredients.yeast %}
+        <li>{{ yeast }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="ingredient-category">
+      <h3>Other</h3>
+      <ul>
+        {% for ingredient in beer_data.ingredients.other_ingredients %}
+        <li>{{ ingredient }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+
+  <section class="brewing-instructions">
+    <h2>Brewing Instructions</h2>
+    <ol>
+      {% for instruction in beer_data.brewing_instructions %}
+      <li>{{ instruction }}</li>
+      {% endfor %}
+    </ol>
+  </section>
+
+  {% if beer_data.starter_brewing_instructions %}
+  <section class="starter-instructions">
+    <h2>Yeast Starter Instructions</h2>
+    <ol>
+      {% for instruction in beer_data.starter_brewing_instructions %}
+      <li>{{ instruction }}</li>
+      {% endfor %}
+    </ol>
+  </section>
+  {% endif %}
+
+  <section class="fermentation-profile">
+    <h2>Fermentation Profile</h2>
+    <div class="fermentation-chart">
+      <!-- You could add Chart.js here for visualization -->
+      <table>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Temperature (°F)</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for profile in beer_data.fermentation_profile %}
+          <tr>
+            <td>{{ profile.day }}</td>
+            <td>{{ profile.temp }}°F</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  {% if beer_data.tasting_notes != "TBD" %}
+  <section class="tasting-notes">
+    <h2>Tasting Notes</h2>
+    <p>{{ beer_data.tasting_notes }}</p>
+  </section>
+  {% endif %}
+</article>

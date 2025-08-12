@@ -1,7 +1,8 @@
 {
     "name": "Zeltzeit",
+    "status": "in_production",
     "style": "German Festbier",
-    "logo": "/assets/images/beer/festbier.jpeg",
+    "logo": "/assets/images/beer/zeltzeit.jpeg",
     "page": "/beers/festbier.html",
     "description": "A crisp lager brewed in the traditional style of Oktoberfest. Ostentatious version of a classic. Prost!",
     "ingredients": {
@@ -114,6 +115,96 @@
         {
             "day": 42,
             "temp": 34
+        }
+    ],
+    "fermentation_data": [
+        {
+            "day": 0,
+            "SG": 1
+        },
+        {
+            "day": 1,
+            "SG": 1
+        },
+        {
+            "day": 2,
+            "SG": 1
+        },
+        {
+            "day": 3,
+            "SG": 1
+        },
+        {
+            "day": 4,
+            "SG": 1
+        },
+        {
+            "day": 5,
+            "SG": 1
+        },
+        {
+            "day": 6,
+            "SG": 1
+        },
+        {
+            "day": 7,
+            "SG": 1
+        },
+        {
+            "day": 8,
+            "SG": 1
+        },
+        {
+            "day": 9,
+            "SG": 1
+        },
+        {
+            "day": 10,
+            "SG": 1
+        },
+        {
+            "day": 11,
+            "SG": 1
+        },
+        {
+            "day": 12,
+            "SG": 1
+        },
+        {
+            "day": 13,
+            "SG": 1
+        },
+        {
+            "day": 14,
+            "SG": 1
+        },
+        {
+            "day": 15,
+            "SG": 1
+        },
+        {
+            "day": 16,
+            "SG": 1
+        },
+        {
+            "day": 17,
+            "SG": 1
+        },
+        {
+            "day": 18,
+            "SG": 1
+        },
+        {
+            "day": 19,
+            "SG": 1
+        },
+        {
+            "day": 20,
+            "SG": 1
+        },
+        {
+            "day": 21,
+            "SG": 1
         }
     ],
     "tasting_notes": "TBD"

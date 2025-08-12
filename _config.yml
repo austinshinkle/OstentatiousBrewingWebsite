@@ -1,0 +1,23 @@
+title: Ostentatious Brewing
+description: Craft beer recipes and brewing notes
+url: "https://www.ostentatiousbrewing.com"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Collections for beer pages
+collections:
+  beers:
+    output: true
+    permalink: /beers/:name/
+
+defaults:
+  - scope:
+      path: "_beers"
+      type: "beers"
+    values:
+      layout: "beer"

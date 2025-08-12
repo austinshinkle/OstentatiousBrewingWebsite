@@ -1,0 +1,29 @@
+---
+layout: default
+title: Beers In Production
+---
+
+<h1>Beers In Production</h1>
+<p class="category-description">Currently brewing and fermenting - coming soon!</p>
+
+<div class="beer-grid">
+    {% for beer_file in site.data.beers %} {% assign beer_name = beer_file[0] %} {% assign beer = beer_file[1] %} {% if
+    beer.status == "in_production" %}
+
+    <div class="beer-card in-production">
+        <a href="/beers/{{ beer_name }}/">
+            <img src="{{ beer.logo }}" alt="{{ beer.name }}" />
+            <h3>{{ beer.name }}</h3>
+            <p class="style">{{ beer.style }}</p>
+            <p class="description">{{ beer.description }}</p>
+            <span class="status-badge in-production">In Production</span>
+
+            {% comment %}Show fermentation progress if available{% endcomment %} {% for stat in beer.beer_statistics %}
+            {% if stat.brew_date != "TBD" %}
+            <p class="brew-date">Brewed: {{ stat.brew_date }}</p>
+            {% endif %} {% endfor %}
+        </a>
+    </div>
+
+    {% endif %} {% endfor %}
+</div>
