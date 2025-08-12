@@ -158,56 +158,57 @@ layout: default
 <!-- Chart.js for Fermentation Profile -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const ctx = document.getElementById('fermentationChart').getContext('2d');
+document.addEventListener('DOMContentLoaded', function() {
+    const ctx = document.getElementById('fermentationChart').getContext('2d');
 
-        // Prepare data from Jekyll
-        const fermentationData = [
-            {% for profile in beer_data.fermentation_profile %}
-            { day: {{ profile.day }}, temp: {{ profile.temp }} }{% unless forloop.last %},{% endunless %}
-            {% endfor %}
-        ];
+    // Prepare data from Jekyll
+    const fermentationData = [
+        {% for profile in beer_data.fermentation_profile %}
+        { day: {{ profile.day }}, temp: {{ profile.temp }} }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+    ];
 
-        const chart = new Chart(ctx, {
-            type: 'line',
-            data: {
-                labels: fermentationData.map(d => `Day ${d.day}`),
-                datasets: [{
-                    label: 'Temperature (°F)',
-                    data: fermentationData.map(d => d.temp),
-                    borderColor: 'rgb(75, 192, 192)',
-                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                    tension: 0.1,
-                    fill: true
-                }]
+    const chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: fermentationData.map(d => `Day ${d.day}`),
+            datasets: [{
+                label: 'Temperature (°F)',
+                data: fermentationData.map(d => d.temp),
+                borderColor: 'rgb(75, 192, 192)',
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                tension: 0,              // Changed from 0.1 to 0 for straight lines
+                fill: true,
+                stepped: true            // Added this line for step chart
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Fermentation Temperature Schedule'
+                },
+                legend: {
+                    display: false
+                }
             },
-            options: {
-                responsive: true,
-                plugins: {
+            scales: {
+                y: {
+                    beginAtZero: false,
                     title: {
                         display: true,
-                        text: 'Fermentation Temperature Schedule'
-                    },
-                    legend: {
-                        display: false
+                        text: 'Temperature (°F)'
                     }
                 },
-                scales: {
-                    y: {
-                        beginAtZero: false,
-                        title: {
-                            display: true,
-                            text: 'Temperature (°F)'
-                        }
-                    },
-                    x: {
-                        title: {
-                            display: true,
-                            text: 'Fermentation Day'
-                        }
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Fermentation Day'
                     }
                 }
             }
-        });
+        }
     });
+});
 </script>
