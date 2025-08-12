@@ -1,0 +1,29 @@
+---
+layout: default
+title: Past Beers
+---
+
+<h1>Past Beers</h1>
+<p class="category-description">Previously brewed recipes and tasting notes.</p>
+
+<div class="beer-grid">
+    {% for beer_file in site.data.beers %} {% assign beer_name = beer_file[0] %} {% assign beer = beer_file[1] %} {% if
+    beer.status == "past" %}
+
+    <div class="beer-card past-beer">
+        <a href="/beers/{{ beer_name }}/">
+            <img src="{{ beer.logo }}" alt="{{ beer.name }}" />
+            <h3>{{ beer.name }}</h3>
+            <p class="style">{{ beer.style }}</p>
+            <p class="description">{{ beer.description }}</p>
+            <span class="status-badge past">Past Recipe</span>
+
+            {% comment %}Show final stats if available{% endcomment %} {% for stat in beer.beer_statistics %} {% if
+            stat.actual_abv != "TBD%" %}
+            <p class="final-abv">{{ stat.actual_abv }} ABV</p>
+            {% endif %} {% endfor %}
+        </a>
+    </div>
+
+    {% endif %} {% endfor %}
+</div>
