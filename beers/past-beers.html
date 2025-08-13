@@ -2,28 +2,83 @@
 layout: default
 title: Past Beers
 ---
-
 <h1>Past Beers</h1>
 <p class="category-description">Previously brewed recipes and tasting notes.</p>
-
 <div class="beer-grid">
-    {% for beer_file in site.data.beers %} {% assign beer_name = beer_file[0] %} {% assign beer = beer_file[1] %} {% if
-    beer.status == "past_beer" %}
+    {% comment %}
+    Create array to hold past beers with dates for sorting
+    {% endcomment %}
+    {% assign past_beers_with_dates = "" | split: "" %}
 
-    <div class="beer-card past-beer">
-        <a href="/beers/{{ beer_name }}/">
-            <img src="{{ beer.logo }}" alt="{{ beer.name }}" />
-            <h3>{{ beer.name }}</h3>
-            <p class="style">{{ beer.style }}</p>
-            <p class="description">{{ beer.description }}</p>
-            <span class="status-badge past">Past Recipe</span>
+    {% for beer_file in site.data.beers %}
+        {% assign beer_name = beer_file[0] %}
+        {% assign beer = beer_file[1] %}
+        {% if beer.status == "past_beer" %}
+            {% comment %}Get brew date from beer_statistics{% endcomment %}
+            {% assign brew_date_str = "" %}
+            {% for stat in beer.beer_statistics %}
+                {% if stat.brew_date %}
+                    {% assign brew_date_str = stat.brew_date %}
+                    {% break %}
+                {% endif %}
+            {% endfor %}
 
-            {% comment %}Show final stats if available{% endcomment %} {% for stat in beer.beer_statistics %} {% if
-            stat.actual_abv != "TBD%" %}
-            <p class="final-abv">{{ stat.actual_abv }} ABV</p>
-            {% endif %} {% endfor %}
-        </a>
-    </div>
+            {% comment %}Convert MM/DD/YYYY to YYYY-MM-DD for better sorting{% endcomment %}
+            {% if brew_date_str != "" %}
+                {% assign date_parts = brew_date_str | split: "/" %}
+                {% assign month = date_parts[0] %}
+                {% assign day = date_parts[1] %}
+                {% assign year = date_parts[2] %}
 
-    {% endif %} {% endfor %}
+                {% comment %}Pad month and day with leading zeros if needed{% endcomment %}
+                {% if month.size == 1 %}
+                    {% assign month = "0" | append: month %}
+                {% endif %}
+                {% if day.size == 1 %}
+                    {% assign day = "0" | append: day %}
+                {% endif %}
+
+                {% assign sortable_date = year | append: "-" | append: month | append: "-" | append: day %}
+            {% else %}
+                {% assign sortable_date = "0000-00-00" %}
+            {% endif %}
+
+            {% comment %}Create object with sortable date{% endcomment %}
+            {% assign beer_with_date = beer_name | append: "|" | append: sortable_date %}
+            {% assign past_beers_with_dates = past_beers_with_dates | push: beer_with_date %}
+        {% endif %}
+    {% endfor %}
+
+    {% comment %}Sort by the sortable date (newest first){% endcomment %}
+    {% assign sorted_beer_strings = past_beers_with_dates | sort | reverse %}
+
+    {% for beer_string in sorted_beer_strings %}
+        {% assign beer_parts = beer_string | split: "|" %}
+        {% assign beer_name = beer_parts[0] %}
+        {% assign beer = site.data.beers[beer_name] %}
+
+        <div class="beer-card past-beer">
+            <a href="/beers/{{ beer_name }}/">
+                <img src="{{ beer.logo }}" alt="{{ beer.name }}" />
+                <h3>{{ beer.name }}</h3>
+                <p class="style">{{ beer.style }}</p>
+                <p class="description">{{ beer.description }}</p>
+                <span class="status-badge past">Past Recipe</span>
+                {% comment %}Show brew date if available{% endcomment %}
+                {% for stat in beer.beer_statistics %}
+                    {% if stat.brew_date %}
+                        {% assign brew_date = stat.brew_date | date: "%B %d, %Y" %}
+                        <p class="brew-date">Brewed: {{ brew_date }}</p>
+                        {% break %}
+                    {% endif %}
+                {% endfor %}
+                {% comment %}Show final stats if available{% endcomment %}
+                {% for stat in beer.beer_statistics %}
+                    {% if stat.actual_abv != "TBD%" %}
+                    <p class="final-abv">{{ stat.actual_abv }} ABV</p>
+                    {% endif %}
+                {% endfor %}
+            </a>
+        </div>
+    {% endfor %}
 </div>
