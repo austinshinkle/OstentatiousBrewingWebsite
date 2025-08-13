@@ -1,5 +1,6 @@
 {
     "name": "Belgian Golden Ale",
+    "status": "past_beer",
     "style": "Belgian Golden Ale",
     "logo": "/assets/images/beer/belgian_golden_ale.png",
     "page": "/beers/belgian_golden_ale.html",
