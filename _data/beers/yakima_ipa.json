@@ -1,5 +1,6 @@
 {
     "name": "Yakima IPA",
+    "status": "past_beer",
     "style": "West Coast IPA",
     "logo": "/assets/images/beer/yakima_ipa.png",
     "page": "/beers/yakima-ipa.html",
