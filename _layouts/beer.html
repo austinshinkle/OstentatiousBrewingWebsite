@@ -2,6 +2,9 @@
 layout: default
 ---
 
+<!-- Link layout specific css -->
+<link rel="stylesheet" href="{{ '/assets/css/beer.css' | relative_url }}" />
+
 {% assign beer_data = site.data.beers[page.beer_key] %}
 
 <div class="container">
@@ -9,8 +12,8 @@ layout: default
         <!-- Title and Style Section -->
         <header>
             <div>
-                <h1 class="beer-title">{{ beer_data.name }}</h1>
-                <span class="beer-style">{{ beer_data.style }}</span>
+                <h1>{{ beer_data.name }}</h1>
+                <h4>{{ beer_data.style }}</h4>
             </div>
         </header>
 
@@ -158,57 +161,57 @@ layout: default
 <!-- Chart.js for Fermentation Profile -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-    const ctx = document.getElementById('fermentationChart').getContext('2d');
+    document.addEventListener('DOMContentLoaded', function() {
+        const ctx = document.getElementById('fermentationChart').getContext('2d');
 
-    // Prepare data from Jekyll
-    const fermentationData = [
-        {% for profile in beer_data.fermentation_profile %}
-        { day: {{ profile.day }}, temp: {{ profile.temp }} }{% unless forloop.last %},{% endunless %}
-        {% endfor %}
-    ];
+        // Prepare data from Jekyll
+        const fermentationData = [
+            {% for profile in beer_data.fermentation_profile %}
+            { day: {{ profile.day }}, temp: {{ profile.temp }} }{% unless forloop.last %},{% endunless %}
+            {% endfor %}
+        ];
 
-    const chart = new Chart(ctx, {
-        type: 'line',
-        data: {
-            labels: fermentationData.map(d => `Day ${d.day}`),
-            datasets: [{
-                label: 'Temperature (°F)',
-                data: fermentationData.map(d => d.temp),
-                borderColor: 'rgb(75, 192, 192)',
-                backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                tension: 0,              // Changed from 0.1 to 0 for straight lines
-                fill: true,
-                stepped: true            // Added this line for step chart
-            }]
-        },
-        options: {
-            responsive: true,
-            plugins: {
-                title: {
-                    display: true,
-                    text: 'Fermentation Temperature Schedule'
-                },
-                legend: {
-                    display: false
-                }
+        const chart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: fermentationData.map(d => `Day ${d.day}`),
+                datasets: [{
+                    label: 'Temperature (°F)',
+                    data: fermentationData.map(d => d.temp),
+                    borderColor: 'rgb(75, 192, 192)',
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    tension: 0,              // Changed from 0.1 to 0 for straight lines
+                    fill: true,
+                    stepped: true            // Added this line for step chart
+                }]
             },
-            scales: {
-                y: {
-                    beginAtZero: false,
+            options: {
+                responsive: true,
+                plugins: {
                     title: {
                         display: true,
-                        text: 'Temperature (°F)'
+                        text: 'Fermentation Temperature Schedule'
+                    },
+                    legend: {
+                        display: false
                     }
                 },
-                x: {
-                    title: {
-                        display: true,
-                        text: 'Fermentation Day'
+                scales: {
+                    y: {
+                        beginAtZero: false,
+                        title: {
+                            display: true,
+                            text: 'Temperature (°F)'
+                        }
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Fermentation Day'
+                        }
                     }
                 }
             }
-        }
+        });
     });
-});
 </script>
