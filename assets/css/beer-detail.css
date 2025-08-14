@@ -101,9 +101,10 @@ img {
 /* Flex wrapper for image + stats */
 .logo-beer-stats {
     display: flex;
-    flex-direction: column;
-    gap: var(--spacing-8);
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
+    gap: var(--spacing-8);
 }
 
 @media (min-width: 768px) {
