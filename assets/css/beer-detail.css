@@ -91,13 +91,6 @@ img {
     gap: 0.25rem;
 }
 
-.beer-detail-description {
-    font-size: var(--font-size-lg);
-    color: var(--color-light-gray);
-    max-width: 100%;
-    text-align: left;
-}
-
 /* Flex wrapper for image + stats */
 .logo-beer-stats {
     display: flex;
