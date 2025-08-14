@@ -179,7 +179,7 @@ img {
     font-size: var(--font-size-lg);
     color: var(--color-light-gray);
     max-width: 600px;
-    padding: var(--spacing-12) var(--spacing-8);
+    padding: 0 0 0 var(--spacing-12);
     font-weight: var(--font-weight-normal);
     position: relative;
 }
@@ -202,12 +202,10 @@ img {
     justify-content: center;
 }
 
-.beer-image {
-    width: 100%;
+.beer-detail-image {
     max-width: 320px;
     height: auto;
     border-radius: var(--border-radius-lg);
-    box-shadow: var(--shadow-lg);
     transition: transform var(--transition-normal);
     filter: grayscale(100%) contrast(1.1);
 }

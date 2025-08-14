@@ -22,12 +22,12 @@ layout: default
             <p>{{ beer_data.description }}</p>
         </section>
 
-        <section class=logo-beer-stats>
+        <div class=logo-beer-stats>
 
             <!-- Image and Statistics Section -->
             <section class="image-stats-container">
                 <div class="beer-page-image">
-                    <img src="{{ beer_data.logo }}" alt="{{ beer_data.name }} logo" class="beer-page-image" />
+                    <img src="{{ beer_data.logo }}" alt="{{ beer_data.name }} logo" class="beer-detail-image" />
                 </div>
 
                 <div class="beer-stats-table">
@@ -83,7 +83,7 @@ layout: default
                     {% endfor %}
                 </div>
             </section>
-        </section>
+        </div>
 
         <hr class="horizontal-line" />
 
