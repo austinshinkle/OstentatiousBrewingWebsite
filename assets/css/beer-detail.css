@@ -75,7 +75,7 @@ img {
 }
 
 /* Header section: title + description in one row */
-.beer-detail-header {
+.beer-detail-header, .beer-detail-description {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
