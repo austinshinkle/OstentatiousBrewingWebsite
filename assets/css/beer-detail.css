@@ -14,9 +14,9 @@
     --font-family-primary: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
     --font-family-mono: "SF Mono", Monaco, "Cascadia Code", "Roboto Mono", Consolas, monospace;
 
-    --font-size-base: 1rem; /* 16px */
-    --font-size-lg: 1.125rem; /* 18px */
-    --font-size-xl: 1.25rem; /* 20px */
+    --font-size-base: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.25rem;
 
     --font-weight-normal: 400;
     --font-weight-bold: 700;
@@ -73,43 +73,52 @@ img {
     overflow: hidden;
 }
 
-/* Flex wrapper for logo + stats */
+/* Header section: title + description in one row */
+.beer-detail-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--spacing-8);
+    padding: var(--spacing-12) var(--spacing-8);
+    background: var(--color-white);
+    flex-wrap: wrap; /* so it stacks nicely on small screens */
+}
+
+.beer-detail-title-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.beer-detail-description {
+    font-size: var(--font-size-lg);
+    color: var(--color-light-gray);
+    max-width: 400px;
+    text-align: right;
+}
+
+/* Flex wrapper for image + stats */
 .logo-beer-stats {
     display: flex;
-    flex-direction: column; /* stack by default */
-    align-items: center;
+    flex-direction: column;
     gap: var(--spacing-8);
+    align-items: center;
+    padding: var(--spacing-8);
 }
 
 @media (min-width: 768px) {
     .logo-beer-stats {
-        flex-direction: row; /* side by side on tablets/desktops */
-        justify-content: center;
+        flex-direction: row; /* image left, stats right */
+        justify-content: space-between;
         align-items: flex-start;
     }
 }
 
-/* Header section */
-.beer-detail-header {
-    text-align: center;
-    padding: var(--spacing-12) var(--spacing-8);
-    background: var(--color-white);
-}
-
-/* Beer description */
-.beer-detail-description {
-    font-size: var(--font-size-lg);
-    color: var(--color-light-gray);
-    max-width: 600px;
-    margin: var(--spacing-4) auto 0;
-}
-
-/* Beer image */
+/* Beer image (removed grayscale) */
 .beer-detail-image {
     max-width: 320px;
     height: auto;
     border-radius: var(--border-radius-lg);
-    filter: grayscale(100%) contrast(1.1);
 }
 
 /* Section titles */
