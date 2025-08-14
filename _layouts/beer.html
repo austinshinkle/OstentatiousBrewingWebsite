@@ -10,19 +10,18 @@ layout: default
 <div class="container">
     <article>
         <!-- Title and Style Section -->
-        <header class="beer-header">
+        <header class="beer-detail-header">
             <div>
                 <h1>{{ beer_data.name }}</h1>
-                <h4>{{ beer_data.style }}</h4>
+                <h3>{{ beer_data.style }}</h3>
             </div>
         </header>
 
         <!-- Description -->
-        <section class="beer-page-description">
+        <section class="beer-detail-description">
             <p>{{ beer_data.description }}</p>
         </section>
 
-        <hr class="horizontal-line" />
 
         <!-- Image and Statistics Section -->
         <section class="image-stats-container">
