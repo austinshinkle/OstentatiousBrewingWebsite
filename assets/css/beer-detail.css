@@ -84,12 +84,12 @@ img {
     flex-wrap: wrap;
 }
 
-.beer-detail-description {
+ .beer-detail-description {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: var(--spacing-8);
-    padding: 0 var(--spacing-8);
+    padding: var(--spacing-4) var(--spacing-8);
     background: var(--color-white);
     flex-wrap: wrap;
 }
