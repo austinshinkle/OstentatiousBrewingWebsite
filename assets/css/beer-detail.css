@@ -129,9 +129,10 @@ body {
 
 .beer-stats-grid {
     display: table;
-    border-collapse: collapse;
+    border-collapse: separate;
     grid-template-columns: none;
-    gap: var(--spacing-4);
+    border-spacing: var(--spacing-4) 0;
+    width: 50%;
 }
 
 .beer-stats-grid td{
@@ -150,8 +151,6 @@ body {
     color: var(--color-medium-gray);
     font-weight: var(--font-weight-bold);
     text-transform: uppercase;
-    padding-left: var(--spacing-4);
-    padding-right: var(--spacing-4)
 }
 
 .beer-stat-value {
