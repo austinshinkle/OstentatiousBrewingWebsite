@@ -52,18 +52,6 @@ body {
     min-height: 100vh;
 }
 
-h1,
-h2,
-h3 {
-    margin: 0;
-    line-height: var(--line-height-tight);
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
 /* Container */
 .container {
     max-width: var(--container-max-width);
@@ -118,7 +106,7 @@ img {
 
 /* Beer image */
 .beer-detail-image {
-    max-width: 320px;
+    max-width: 400px;
     height: auto;
     border-radius: var(--border-radius-lg);
     display: block;
