@@ -128,15 +128,23 @@ body {
 }
 
 .beer-stats-grid {
-    display: flex;
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: var(--spacing-4);
 }
 
+.beer-stats-grid td{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+}
+
 .beer-stat-title {
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-xl);
     color: var(--color-medium-gray);
     font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
 }
 
 .beer-stat-value {
