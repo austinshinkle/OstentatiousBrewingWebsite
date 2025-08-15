@@ -150,6 +150,8 @@ body {
     color: var(--color-medium-gray);
     font-weight: var(--font-weight-bold);
     text-transform: uppercase;
+    padding-left: var(--spacing-4);
+    padding-right: var(--spacing-4)
 }
 
 .beer-stat-value {
