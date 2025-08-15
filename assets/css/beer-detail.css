@@ -128,8 +128,9 @@ body {
 }
 
 .beer-stats-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    display: table;
+    border-collapse: collapse;
+    grid-template-columns: none;
     gap: var(--spacing-4);
 }
 
