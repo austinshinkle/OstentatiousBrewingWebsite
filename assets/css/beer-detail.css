@@ -101,7 +101,7 @@ body {
 
 /* Beer image */
 .beer-detail-image {
-    max-width: 400px;
+    max-width: 500px;
     height: auto;
     border-radius: var(--border-radius-lg);
     display: block;
