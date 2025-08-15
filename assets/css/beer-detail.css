@@ -1,3 +1,5 @@
+/* Build for desktop first: wrap mobile or small screen content using @media max-width rules */
+
 :root {
     /* Grayscale Color Palette */
     --color-black: #1a1a1a;
@@ -28,6 +30,7 @@
     --spacing-4: 1rem;
     --spacing-8: 2rem;
     --spacing-12: 3rem;
+    --spacing-24: 6rem;
 
     /* Layout */
     --container-max-width: 1200px;
@@ -91,17 +94,9 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: var(--spacing-12);
+    gap: var(--spacing-24);
     max-width: 100%;
     margin: 0 auto;
-}
-
-@media (min-width: 768px) {
-    .logo-beer-stats {
-        flex-direction: row; /* image left, stats right */
-        justify-content: center;
-        align-items: center;
-    }
 }
 
 /* Beer image */
@@ -129,12 +124,6 @@ body {
     flex-direction: column;
     gap: var(--spacing-4);
     text-align: center;
-}
-
-@media (min-width: 768px) {
-    .beer-stats-table {
-        text-align: left;
-    }
 }
 
 .beer-stats-grid {
