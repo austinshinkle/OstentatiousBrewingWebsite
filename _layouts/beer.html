@@ -30,8 +30,8 @@ layout: default
                 <table class="beer-stats-grid">
                     <tr>
                         <td>
-                            <span class="beer-stat-title">Target OG</span>
-                            <span class="beer-stat-value">{{ stat.target_og }}</span>
+                            <h3 class="beer-stat-title">Target OG</h3>
+                            <h4 class="beer-stat-value">{{ stat.target_og }}</h4>
                         </td>
                         <td>
                             <span class="beer-stat-title">Actual OG</span>
@@ -66,12 +66,6 @@ layout: default
                         <td>
                             <span class="beer-stat-title">SRM</span>
                             <span class="beer-stat-value">{{ stat.calculated_srm }}</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <span class="beer-stat-title">Cost</span>
-                            <span class="beer-stat-value">{{ stat.cost }}</span>
                         </td>
                     </tr>
                 </table>
