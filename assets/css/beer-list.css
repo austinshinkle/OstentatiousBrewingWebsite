@@ -1,6 +1,6 @@
 .beer-list-page-container{
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .beer-list-title {
@@ -15,7 +15,6 @@
 }
 
 .beer-list-container {
-    margin: 25px;
     box-shadow: 2 2 0 #DDDDDD;
 }
 
@@ -24,5 +23,5 @@
     border-radius: 5px;
     display: flex;
     flex-direction: row;
-    margin: 10px;
+    margin-bottom: 10px;
 }
