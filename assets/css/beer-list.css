@@ -2,7 +2,7 @@
     max-width: 300px;
 }
 
-.beer-card-past-beer, beer-card-on-tap{
+.beer-card-past-beer, .beer-card-on-tap{
 
     display: flex;
     flex-direction: row;
