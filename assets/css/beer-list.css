@@ -18,12 +18,13 @@
 }
 
 .beer-list-container {
-    background-color: white;
+    /*background-color: white;*/
 }
 
 .beer-list-item {
     border: 1px solid #bbbbbb;
     border-radius: 10px;
+    background-color: white;
     display: flex;
     flex-direction: row;
     margin-bottom: 10px;
