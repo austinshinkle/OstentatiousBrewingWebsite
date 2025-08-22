@@ -6,26 +6,35 @@ title: Beers In Production
 <!-- Link layout specific css -->
 <link rel="stylesheet" href="{{ '/assets/css/beer-list.css' | relative_url }}" />
 
-<h1>Beers In Production</h1>
-<p class="category-description">Currently brewing and fermenting - coming soon!</p>
+<h1>Beers On Tap</h1>
+<p class="category-description">This is what's currently brewing!</p>
 
-<div class="beer-grid">
+<div>
     {% for beer_file in site.data.beers %} {% assign beer_name = beer_file[0] %} {% assign beer = beer_file[1] %} {% if
     beer.status == "in_production" %}
 
     <div class="beer-card-in-production">
-        <a href="/beers/{{ beer_name }}/">
-            <img class="beer-list-image" src="{{ beer.logo }}" alt="{{ beer.name }}" />
-            <h3>{{ beer.name }}</h3>
-            <p class="style">{{ beer.style }}</p>
-            <p class="description">{{ beer.description }}</p>
-
-            {% comment %}Show fermentation progress if available{% endcomment %} {% for stat in beer.beer_statistics %}
-            {% if stat.brew_date != "TBD" %}
-            <p class="brew-date">Brewed: {{ stat.brew_date }}</p>
-            {% endif %} {% endfor %}
-        </a>
+        <div>
+            <a href="/beers/{{ beer_name }}/">
+                <img class="beer-list-image" src="{{ beer.logo }}" alt="{{ beer.name }}" />
+            </a>
+        </div>
+        <div>
+                <h3>{{ beer.name }}</h3>
+                <p class="style">{{ beer.style }}</p>
+                <p class="description">{{ beer.description }}</p>
+        </div>
     </div>
 
     {% endif %} {% endfor %}
 </div>
+
+{% comment %}Show message if no beers in production{% endcomment %} {% assign in_production_count = 0 %} {% for beer_file in
+site.data.beers %} {% assign beer = beer_file[1] %} {% if beer.status == "in_production" %} {% assign in_production_count =
+in_production_count | plus: 1 %} {% endif %} {% endfor %} {% if in_production_count == 0 %}
+<div class="no-beers-message">
+    <p>
+        No beers are currently in production. Check back soon!
+    </p>
+</div>
+{% endif %}
