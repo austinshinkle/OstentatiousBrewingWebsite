@@ -8,4 +8,6 @@
 .beer-list-item {
     border-radius: 2px;
     border-color: gray;
+    display: flex;
+    flex-direction: row;
 }
