@@ -39,14 +39,14 @@
 
     .beer-list-item {
         flex-direction: column;
-        /*text-align: center;*/
+        text-align: center;
     }
 
-    /* Center image on mobile
+    /* Center image on mobile */
     .beer-list-image-container {
         align-self: center;
         margin-bottom: 15px;
-    }*/
+    }
 
     .beer-list-image {
         max-width: 150px;
