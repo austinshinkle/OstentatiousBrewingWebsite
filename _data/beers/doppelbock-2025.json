@@ -9,9 +9,9 @@
       "8 lbs Vienna Malt",
       "12 lb Munich Malt",
       "1 lb Melanoiden Malt",
-      "0.5 lb Caravienna",
-      "0.5 lb Caramunich",
-      "0.25 lb Carafa II"
+      "0.5 lb Caravienna Malt",
+      "0.5 lb Aromatic Malt",
+      "0.25 lb Carafa II Malt"
     ],
     "hops": [
       "3.5 oz Mt. Hood  hops (5.2% AA)"
@@ -57,14 +57,14 @@
   "beer_statistics": [
     {
       "brew_date": "TBD",
-      "target_og": "1.095",
+      "target_og": "1.096",
       "actual_og": "TBD",
       "target_fg": "1.024",
       "actual_fg": "TBD",
-      "target_abv": "9.6%",
+      "target_abv": "9.7%",
       "actual_abv": "TBD",
       "calculated_ibu": "23",
-      "calculated_srm": "20.2",
+      "calculated_srm": "18.5",
       "cost": "TBD"
     }
   ],
