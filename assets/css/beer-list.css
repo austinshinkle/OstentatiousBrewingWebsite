@@ -1,9 +1,10 @@
-.beer-list-image {
+.beer-list-image-container {
     max-width: 300px;
+    margin: 10px;
 }
 
 .beer-list-container {
-    margin: 10px;
+    margin: 25px;
 }
 
 .beer-list-item {
@@ -11,4 +12,5 @@
     border-radius: 5px;
     display: flex;
     flex-direction: row;
+    margin: 10px;
 }

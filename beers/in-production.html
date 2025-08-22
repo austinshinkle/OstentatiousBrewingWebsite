@@ -14,9 +14,9 @@ title: Beers In Production
     beer.status == "in_production" %}
 
     <div class="beer-list-item">
-        <div>
+        <div class="beer-list-image-container">
             <a href="/beers/{{ beer_name }}/">
-                <img class="beer-list-image" src="{{ beer.logo }}" alt="{{ beer.name }}" />
+                <img src="{{ beer.logo }}" alt="{{ beer.name }}" />
             </a>
         </div>
         <div>
