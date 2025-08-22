@@ -9,11 +9,11 @@ title: Beers In Production
 <h1>Beers In Production</h1>
 <p>This is what's currently brewing!</p>
 
-<div>
+<div class="beer-list-container">
     {% for beer_file in site.data.beers %} {% assign beer_name = beer_file[0] %} {% assign beer = beer_file[1] %} {% if
     beer.status == "in_production" %}
 
-    <div >
+    <div class="beer-list-item">
         <div>
             <a href="/beers/{{ beer_name }}/">
                 <img class="beer-list-image" src="{{ beer.logo }}" alt="{{ beer.name }}" />
@@ -32,7 +32,5 @@ title: Beers In Production
 {% comment %}Show message if no beers in production{% endcomment %} {% assign in_production_count = 0 %} {% for
 beer_file in site.data.beers %} {% assign beer = beer_file[1] %} {% if beer.status == "in_production" %} {% assign
 in_production_count = in_production_count | plus: 1 %} {% endif %} {% endfor %} {% if in_production_count == 0 %}
-<div">
-    <p>No beers are currently in production. Check back soon!</p>
-</div>
+<p>No beers are currently in production. Check back soon!</p>
 {% endif %}
