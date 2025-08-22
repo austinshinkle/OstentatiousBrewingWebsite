@@ -9,12 +9,12 @@ title: Beers On Tap
 <h1>Beers On Tap</h1>
 <p class="category-description">This is what's currently pouring!</p>
 
-<div class="beer-grid">
+<div>
     {% for beer_file in site.data.beers %} {% assign beer_name = beer_file[0] %} {% assign beer = beer_file[1] %} {% if
     beer.status == "on_tap" %}
 
     <div class="beer-card-on-tap">
-        <div class="beer-card-image-container">
+        <div>
             <a href="/beers/{{ beer_name }}/">
                 <img class="beer-list-image" src="{{ beer.logo }}" alt="{{ beer.name }}" />
             </a>
