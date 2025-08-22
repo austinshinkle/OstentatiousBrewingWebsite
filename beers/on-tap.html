@@ -7,19 +7,23 @@ title: Beers On Tap
 <link rel="stylesheet" href="{{ '/assets/css/beer-list.css' | relative_url }}" />
 
 <h1>Beers On Tap</h1>
-<p class="category-description">Currently available for tasting!</p>
+<p class="category-description">This is what's currently pouring!</p>
 
 <div class="beer-grid">
     {% for beer_file in site.data.beers %} {% assign beer_name = beer_file[0] %} {% assign beer = beer_file[1] %} {% if
     beer.status == "on_tap" %}
 
-    <div class="beer-card on-tap">
-        <a href="/beers/{{ beer_name }}/">
-            <img class="beer-list-image" src="{{ beer.logo }}" alt="{{ beer.name }}" />
-            <h3>{{ beer.name }}</h3>
-            <p class="style">{{ beer.style }}</p>
-            <p class="description">{{ beer.description }}</p>
-        </a>
+    <div class="beer-card-on-tap">
+        <div class="beer-card-image-container">
+            <a href="/beers/{{ beer_name }}/">
+                <img class="beer-list-image" src="{{ beer.logo }}" alt="{{ beer.name }}" />
+            </a>
+        </div>
+        <div>
+                <h3>{{ beer.name }}</h3>
+                <p class="style">{{ beer.style }}</p>
+                <p class="description">{{ beer.description }}</p>
+        </div>
     </div>
 
     {% endif %} {% endfor %}

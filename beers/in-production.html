@@ -13,7 +13,7 @@ title: Beers In Production
     {% for beer_file in site.data.beers %} {% assign beer_name = beer_file[0] %} {% assign beer = beer_file[1] %} {% if
     beer.status == "in_production" %}
 
-    <div class="beer-card in-production">
+    <div class="beer-card-in-production">
         <a href="/beers/{{ beer_name }}/">
             <img class="beer-list-image" src="{{ beer.logo }}" alt="{{ beer.name }}" />
             <h3>{{ beer.name }}</h3>

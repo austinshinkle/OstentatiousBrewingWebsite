@@ -26,7 +26,7 @@ title: Past Beers
     reverse %} {% for beer_string in sorted_beer_strings %} {% assign beer_parts = beer_string | split: "|" %} {% assign
     beer_name = beer_parts[0] %} {% assign beer = site.data.beers[beer_name] %}
 
-    <div class="beer-card past-beer">
+    <div class="beer-card-past-beer">
         <a href="/beers/{{ beer_name }}/">
             <img class="beer-list-image" src="{{ beer.logo }}" alt="{{ beer.name }}" />
             <h3>{{ beer.name }}</h3>

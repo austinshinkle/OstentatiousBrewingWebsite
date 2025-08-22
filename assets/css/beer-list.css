@@ -1,3 +1,13 @@
 .beer-list-image {
     max-width: 300px;
 }
+
+.beer-card-past-beer, beer-card-on-tap{
+
+    display: flex;
+}
+
+.beer-card-in-production{
+
+    display: flex;
+}
