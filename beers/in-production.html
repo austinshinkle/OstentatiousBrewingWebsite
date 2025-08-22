@@ -19,7 +19,6 @@ title: Beers In Production
             <h3>{{ beer.name }}</h3>
             <p class="style">{{ beer.style }}</p>
             <p class="description">{{ beer.description }}</p>
-            <span class="status-badge in-production">In Production</span>
 
             {% comment %}Show fermentation progress if available{% endcomment %} {% for stat in beer.beer_statistics %}
             {% if stat.brew_date != "TBD" %}
