@@ -1,4 +1,4 @@
-.beer-list-page-container{
+.beer-list-page-container {
     margin-left: 100px;
     margin-right: 100px;
 }
@@ -15,12 +15,12 @@
 }
 
 .beer-list-container {
-    box-shadow: 2 2 0 #DDDDDD;
+    box-shadow: 2 2 0 #dddddd;
 }
 
 .beer-list-item {
-    border: 2px solid #DDDDDD;
-    border-radius: 5px;
+    border: 2px solid #dddddd;
+    border-radius: 10px;
     display: flex;
     flex-direction: row;
     margin-bottom: 10px;

@@ -1,33 +1,37 @@
 ---
 layout: default
-title: Past Beers
+title: Beers Recipe Archive
 ---
 
 <!-- Link layout specific css -->
 <link rel="stylesheet" href="{{ '/assets/css/beer-list.css' | relative_url }}" />
 
-<h1>Past Beers</h1>
-<p>These are the recipes we've brewed</p>
-
-<div class="beer-list-container">
-    {% for beer_file in site.data.beers %} {% assign beer_name = beer_file[0] %} {% assign beer = beer_file[1] %} {% if
-    beer.status == "past_beer" %}
-    <div class="beer-list-item">
-        <div>
-            <a href="/beers/{{ beer_name }}/">
-                <img class="beer-list-image" src="{{ beer.logo }}" alt="{{ beer.name }}" />
-            </a>
-        </div>
-        <div>
-            <h3>{{ beer.name }}</h3>
-            <p>{{ beer.style }}</p>
-            <p>{{ beer.description }}</p>
-        </div>
+<div class="beer-list-page-container">
+    <div class="beer-list-title">
+        <h1>Beer Recipe Archive</h1>
+        <p>This is a list of all the past recipes!</p>
     </div>
 
-    {% endif %} {% endfor %}
-</div>
+    <div class="beer-list-container">
+        {% for beer_file in site.data.beers %} {% assign beer_name = beer_file[0] %} {% assign beer = beer_file[1] %} {%
+        if beer.status == "past_beer" %}
 
+        <div class="beer-list-item">
+            <div class="beer-list-image-container">
+                <a href="/beers/{{ beer_name }}/">
+                    <img class="beer-list-image" src="{{ beer.logo }}" alt="{{ beer.name }}" />
+                </a>
+            </div>
+            <div>
+                <h3>{{ beer.name }}</h3>
+                <p>{{ beer.style }}</p>
+                <p>{{ beer.description }}</p>
+            </div>
+        </div>
+
+        {% endif %} {% endfor %}
+    </div>
+</div>
 {% comment %}Show message if no past beers...{% endcomment %} {% assign past_beer_count = 0 %} {% for beer_file in
 site.data.beers %} {% assign beer = beer_file[1] %} {% if beer.status == "past_beer" %} {% assign past_beer_count =
 past_beer_count | plus: 1 %} {% endif %} {% endfor %} {% if past_beer_count == 0 %}
