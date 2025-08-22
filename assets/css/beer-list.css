@@ -3,9 +3,11 @@
 }
 
 .beer-list-container {
+
 }
 
 .beer-list-item {
+    border: 5px;
     border-radius: 2px;
     border-color: gray;
     display: flex;
