@@ -1,3 +1,4 @@
+/* Desktop styles - DEFAULT */
 .beer-list-page-container {
     margin-left: 100px;
     margin-right: 100px;
@@ -11,11 +12,13 @@
 
 .beer-list-image {
     max-width: 300px;
+    width: 100%;
+    height: auto;
     border-radius: 10px;
 }
 
 .beer-list-container {
-    box-shadow: 2 2 0 #dddddd;
+    box-shadow: 2px 2px 0 #dddddd;
 }
 
 .beer-list-item {
@@ -24,4 +27,28 @@
     display: flex;
     flex-direction: row;
     margin-bottom: 10px;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+
+    .beer-list-page-container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .beer-list-item {
+        flex-direction: column;
+        /*text-align: center;*/
+    }
+
+    /* Center image on mobile
+    .beer-list-image-container {
+        align-self: center;
+        margin-bottom: 15px;
+    }*/
+
+    .beer-list-image {
+        max-width: 150px;
+    }
 }

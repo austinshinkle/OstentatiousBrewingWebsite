@@ -49,7 +49,6 @@ body {
     font-family: var(--font-family-primary);
     line-height: var(--line-height-normal);
     margin: 0;
-    padding: var(--spacing-8);
     background: linear-gradient(135deg, var(--color-off-white) 0%, var(--color-light-silver) 100%);
     color: var(--color-charcoal);
     min-height: 100vh;
