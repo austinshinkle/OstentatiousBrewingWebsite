@@ -7,22 +7,21 @@ title: Beers On Tap
 <link rel="stylesheet" href="{{ '/assets/css/beer-list.css' | relative_url }}" />
 
 <h1>Beers On Tap</h1>
-<p class="category-description">This is what's currently pouring!</p>
+<p>This is what's currently pouring!</p>
 
-<div>
+<div class="beer-list-container">
     {% for beer_file in site.data.beers %} {% assign beer_name = beer_file[0] %} {% assign beer = beer_file[1] %} {% if
-    beer.status == "on_tap" %}
-
-    <div class="beer-card-on-tap">
+    beer.status == "on_tap"
+    <div class="beer-list-item">
         <div>
             <a href="/beers/{{ beer_name }}/">
                 <img class="beer-list-image" src="{{ beer.logo }}" alt="{{ beer.name }}" />
             </a>
         </div>
         <div>
-                <h3>{{ beer.name }}</h3>
-                <p class="style">{{ beer.style }}</p>
-                <p class="description">{{ beer.description }}</p>
+            <h3>{{ beer.name }}</h3>
+            <p>{{ beer.style }}</p>
+            <p>{{ beer.description }}</p>
         </div>
     </div>
 
@@ -32,10 +31,5 @@ title: Beers On Tap
 {% comment %}Show message if no beers on tap{% endcomment %} {% assign on_tap_count = 0 %} {% for beer_file in
 site.data.beers %} {% assign beer = beer_file[1] %} {% if beer.status == "on_tap" %} {% assign on_tap_count =
 on_tap_count | plus: 1 %} {% endif %} {% endfor %} {% if on_tap_count == 0 %}
-<div class="no-beers-message">
-    <p>
-        No beers currently on tap. Check back soon or visit our <a href="/beers/in-production/">In Production</a> page
-        to see what's coming!
-    </p>
-</div>
+<p>No beers are currently on tap. Check back soon or see what's in production!</p>
 {% endif %}
