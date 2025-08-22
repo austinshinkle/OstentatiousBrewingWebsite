@@ -18,15 +18,16 @@
 }
 
 .beer-list-container {
-    box-shadow: 2px 2px 0 #dddddd;
+    background-color: white;
 }
 
 .beer-list-item {
-    border: 2px solid #dddddd;
+    border: 1px solid #bbbbbb;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
     margin-bottom: 10px;
+    box-shadow: 3px 3px 0 #eeeeee;
 }
 
 /* Mobile responsive styles */
