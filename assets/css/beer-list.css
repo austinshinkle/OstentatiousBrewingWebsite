@@ -7,9 +7,8 @@
 }
 
 .beer-list-item {
-    border: 5px;
+    border: 5px solid gray;
     border-radius: 2px;
-    border-color: gray;
     display: flex;
     flex-direction: row;
 }
