@@ -1,0 +1,113 @@
+/* Container for better layout */
+.container {
+    max-width: 1000px;
+    width: 70vw;
+    margin: 2px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Beer Box Styles */
+.beer-box {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.beer-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.beer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space;
+    margin-left: 30px;
+}
+
+.beer-title-stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+}
+
+.beer-stats {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+.beer-list-title {
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #333333; /* Dark Gray */
+    text-transform: uppercase;
+}
+
+.beer-stats-text {
+    font-size: 16px;
+    color: #555555;
+    margin-top: 0;
+    padding: 0;
+    line-height: 0.2;
+}
+
+.beer-list-style {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555555;
+    margin-top: 0;
+    text-transform: capitalize;
+}
+
+.beer-list-description {
+    font-size: 12px;
+    line-height: 1.5;
+    color: #555555; /* Medium Gray */
+    margin-top: 0;
+}
+
+/* === MOBILE  === */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100vw;
+    }
+    .beer-info {
+        margin-left: 20px;
+    }
+    .beer-image {
+        width: 120px;
+        height: 120px;
+    }
+    .beer-list-title {
+        font-size: 24px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .beer-stats-text {
+        font-size: 12px;
+        line-height: 0.1;
+    }
+    .beer-list-style {
+        font-size: 12px;
+    }
+    .beer-list-description {
+        display: none;
+    }
+}

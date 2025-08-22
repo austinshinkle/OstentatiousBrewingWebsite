@@ -3,6 +3,9 @@ layout: default
 title: Beers In Production
 ---
 
+<!-- Link layout specific css -->
+<link rel="stylesheet" href="{{ '/assets/css/beer-list.css' | relative_url }}" />
+
 <h1>Beers In Production</h1>
 <p class="category-description">Currently brewing and fermenting - coming soon!</p>
 
@@ -12,7 +15,7 @@ title: Beers In Production
 
     <div class="beer-card in-production">
         <a href="/beers/{{ beer_name }}/">
-            <img src="{{ beer.logo }}" alt="{{ beer.name }}" />
+            <img class="beer-list-image" src="{{ beer.logo }}" alt="{{ beer.name }}" />
             <h3>{{ beer.name }}</h3>
             <p class="style">{{ beer.style }}</p>
             <p class="description">{{ beer.description }}</p>
