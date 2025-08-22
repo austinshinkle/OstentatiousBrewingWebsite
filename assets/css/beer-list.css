@@ -1,5 +1,9 @@
+.beer-list-page-container{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
 .beer-list-title {
-    margin: 10px;
 }
 .beer-list-image-container {
     margin: 10px;
