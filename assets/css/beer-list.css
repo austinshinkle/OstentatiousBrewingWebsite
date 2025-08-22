@@ -2,17 +2,6 @@
     max-width: 300px;
 }
 
-.beer-card-past-beer,
-.beer-card-on-tap {
-    display: flex;
-    flex-direction: row;
-}
-
-.beer-card-in-production {
-    display: flex;
-    flex-direction: row;
-}
-
 .beer-list-container {
 }
 
