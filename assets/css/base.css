@@ -50,10 +50,10 @@ h6 {
 
 /* Paragraph and general text styling */
 p {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5;
     color: #555555; /* Medium Gray */
-    margin-bottom: 14px;
+    margin-bottom: 15px;
     text-transform: uppercase;
     
 }
