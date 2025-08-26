@@ -12,7 +12,7 @@
 
 .beer-list-image {
     max-width: 300px;
-    width: 100%;
+    width: auto;
     height: auto;
     border-radius: 10px;
 }
