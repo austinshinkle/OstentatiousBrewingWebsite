@@ -9,11 +9,15 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
 
-# Collections for beer pages
+# Collections for beer and brewry pages
 collections:
   beers:
     output: true
     permalink: /beers/:name/
+
+  brewery:
+    output: true
+    permalink: /brewery/:name/
 
 defaults:
   - scope:
@@ -21,3 +25,8 @@ defaults:
       type: "beers"
     values:
       layout: "beer"
+  - scope:
+      path: "_brewery"
+      type: "brewery"
+    values:
+      layout: "brewery"
