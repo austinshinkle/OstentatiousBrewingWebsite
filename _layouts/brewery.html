@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<!-- Link layout specific css -->
+<link rel="stylesheet" href="{{ '/assets/css/beer-list.css' | relative_url }}" />
+
+<!--{% assign brewery_page = site.data.brewery[page.brewery_key] %} -->
+
+<div class="beer-list-page-container">
+    <div class="beer-list-title">
+        <h1>{{% site.data.brewery[page.title] %}}</h1>
+        <p>{{% site.data.brewery[page.description] %}}</p>
+    </div>
+
+    <div class="beer-list-container">
+        {% for beer_file in site.data.beers %} {% assign beer_name = beer_file[0] %} {% assign beer = beer_file[1] %} {%
+        if beer.status == "in_production" %}
+
+        <div class="beer-list-item">
+            <div class="beer-list-image-container">
+                <a href="/beers/{{ beer_name }}/">
+                    <img class="beer-list-image" src="{{ beer.logo }}" alt="{{ beer.name }}" />
+                </a>
+            </div>
+            <div>
+                <h3>{{ beer.name }}</h3>
+                <h4>{{ beer.style }}</h4>
+                <p>{{ beer.description }}</p>
+            </div>
+        </div>
+
+        {% endif %} {% endfor %}
+    </div>
+</div>
+{% comment %}Show message if no beers in production{% endcomment %} {% assign in_production_count = 0 %} {% for
+beer_file in site.data.beers %} {% assign beer = beer_file[1] %} {% if beer.status == "in_production" %} {% assign
+in_production_count = in_production_count | plus: 1 %} {% endif %} {% endfor %} {% if in_production_count == 0 %}
+<p>No beers are currently in production. Check back soon!</p>
+{% endif %}
