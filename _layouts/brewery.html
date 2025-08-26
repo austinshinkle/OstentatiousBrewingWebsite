@@ -13,7 +13,7 @@ layout: default
 
     <div class="beer-list-container">
         {% for beer_file in site.data.beers %} {% assign beer_name = beer_file[0] %} {% assign beer = beer_file[1] %} {%
-        if beer.status == site.data.brewery[page.status]  %}
+        if beer.status == page.status  %}
 
         <div class="beer-list-item">
             <div class="beer-list-image-container">
