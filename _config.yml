@@ -9,7 +9,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
 
-# Collections for beer and brewry pages
+# Collections for beer and brewery pages
 collections:
   beers:
     output: true
