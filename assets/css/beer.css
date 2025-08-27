@@ -9,9 +9,14 @@
 }
 
 .logo-beer-stats-container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
 }
 
 .beer-detail-image {
     max-width: 400px;
     border-radius: 10px;
 }
+
+
