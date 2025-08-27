@@ -1,17 +1,11 @@
 /* Build for desktop first: wrap mobile or small screen content using @media max-width rules */
 
-.beer-detail-container {
-    max-width: 80%;
-    background: white;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.beer-detail-page-container {
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .beer-header-container {
-    margin-left: 100px;
-    margin-right: 100px;
 }
 
 .logo-beer-stats-container {
