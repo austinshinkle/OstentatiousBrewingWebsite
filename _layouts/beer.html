@@ -8,143 +8,142 @@ layout: default
 {% assign beer_data = site.data.beers[page.beer_key] %}
 
 <div class="beer-detail-container">
-    <article>
-        <!-- Title and Style Section -->
-        <div class="beer-header-container">
-            <div>
-                <h1>{{ beer_data.name }}</h1>
-                <h3>{{ beer_data.style }}</h3>
+    <!-- Title and Style Section -->
+    <div class="beer-header-container">
+        <div>
+            <h1>{{ beer_data.name }}</h1>
+            <h3>{{ beer_data.style }}</h3>
+        </div>
+    </div>
+    <!-- Description -->
+    <div class="beer-detail-description">
+        <p>{{ beer_data.description }}</p>
+    </div>
+
+    <!-- Image and Statistics Section -->
+    <div class="logo-beer-stats-container">
+        <img src="{{ beer_data.logo }}" alt="{{ beer_data.name }} logo" class="beer-detail-image" />
+
+        <div class="beer-stats-table">
+            {% for stat in beer_data.beer_statistics %}
+            <table class="beer-stats-grid">
+                <tr>
+                    <td>
+                        <span class="beer-stat-title">Target OG</span>
+                        <span class="beer-stat-value">{{ stat.target_og }}</span>
+                    </td>
+                    <td>
+                        <span class="beer-stat-title">Actual OG</span>
+                        <span class="beer-stat-value">{{ stat.actual_og }}</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="beer-stat-title">Target FG</span>
+                        <span class="beer-stat-value">{{ stat.target_fg }}</span>
+                    </td>
+                    <td>
+                        <span class="beer-stat-title">Actual FG</span>
+                        <span class="beer-stat-value">{{ stat.actual_fg | default: "TBD" }}</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="beer-stat-title">Target ABV</span>
+                        <span class="beer-stat-value">{{ stat.target_abv }}</span>
+                    </td>
+                    <td>
+                        <span class="beer-stat-title">Actual ABV</span>
+                        <span class="beer-stat-value">{{ stat.actual_abv | default: "TBD" }}</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="beer-stat-title">IBU</span>
+                        <span class="beer-stat-value">{{ stat.calculated_ibu }}</span>
+                    </td>
+                    <td>
+                        <span class="beer-stat-title">SRM</span>
+                        <span class="beer-stat-value">{{ stat.calculated_srm }}</span>
+                    </td>
+                </tr>
+            </table>
+            {% endfor %}
+        </div>
+    </div>
+
+    <hr class="horizontal-line" />
+
+    <!-- Three Column Section: Ingredients, Brewing Instructions, Starter Instructions -->
+    <section class="beer-details">
+        <!-- Ingredients Column -->
+        <div class="beer-column">
+            <h2 class="section-title">Ingredients</h2>
+
+            <h3>Malts</h3>
+            <div class="ingredients-list">
+                {% for malt in beer_data.ingredients.malts %}
+                <div class="ingredients-list-item">{{ malt }}</div>
+                {% endfor %}
             </div>
-        </div>
-        <!-- Description -->
-        <div class="beer-detail-description">
-            <p>{{ beer_data.description }}</p>
-        </div>
 
-        <!-- Image and Statistics Section -->
-        <div class="logo-beer-stats">
-            <img src="{{ beer_data.logo }}" alt="{{ beer_data.name }} logo" class="beer-detail-image" />
+            <h3>Hops</h3>
+            <div class="ingredients-list">
+                {% for hop in beer_data.ingredients.hops %}
+                <div class="ingredients-list-item">{{ hop }}</div>
+                {% endfor %}
+            </div>
 
-            <div class="beer-stats-table">
-                {% for stat in beer_data.beer_statistics %}
-                <table class="beer-stats-grid">
-                    <tr>
-                        <td>
-                            <span class="beer-stat-title">Target OG</span>
-                            <span class="beer-stat-value">{{ stat.target_og }}</span>
-                        </td>
-                        <td>
-                            <span class="beer-stat-title">Actual OG</span>
-                            <span class="beer-stat-value">{{ stat.actual_og }}</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="beer-stat-title">Target FG</span>
-                            <span class="beer-stat-value">{{ stat.target_fg }}</span>
-                        </td>
-                        <td>
-                            <span class="beer-stat-title">Actual FG</span>
-                            <span class="beer-stat-value">{{ stat.actual_fg | default: "TBD" }}</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="beer-stat-title">Target ABV</span>
-                            <span class="beer-stat-value">{{ stat.target_abv }}</span>
-                        </td>
-                        <td>
-                            <span class="beer-stat-title">Actual ABV</span>
-                            <span class="beer-stat-value">{{ stat.actual_abv | default: "TBD" }}</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="beer-stat-title">IBU</span>
-                            <span class="beer-stat-value">{{ stat.calculated_ibu }}</span>
-                        </td>
-                        <td>
-                            <span class="beer-stat-title">SRM</span>
-                            <span class="beer-stat-value">{{ stat.calculated_srm }}</span>
-                        </td>
-                    </tr>
-                </table>
+            <h3>Yeast</h3>
+            <div class="ingredients-list">
+                {% for yeast in beer_data.ingredients.yeast %}
+                <div class="ingredients-list-item">{{ yeast }}</div>
+                {% endfor %}
+            </div>
+
+            <h3>Other Ingredients</h3>
+            <div class="ingredients-list">
+                {% for ingredient in beer_data.ingredients.other_ingredients %}
+                <div class="ingredients-list-item">{{ ingredient }}</div>
                 {% endfor %}
             </div>
         </div>
 
-        <hr class="horizontal-line" />
+        <!-- Brewing Instructions Column -->
+        <div class="beer-column">
+            <h2 class="section-title">Brewing Instructions</h2>
+            {% for instruction in beer_data.brewing_instructions %}
+            <div class="beer-brewing-instruction">{{ forloop.index }}. {{ instruction }}</div>
+            {% endfor %}
+        </div>
 
-        <!-- Three Column Section: Ingredients, Brewing Instructions, Starter Instructions -->
-        <section class="beer-details">
-            <!-- Ingredients Column -->
-            <div class="beer-column">
-                <h2 class="section-title">Ingredients</h2>
-
-                <h3>Malts</h3>
-                <div class="ingredients-list">
-                    {% for malt in beer_data.ingredients.malts %}
-                    <div class="ingredients-list-item">{{ malt }}</div>
-                    {% endfor %}
-                </div>
-
-                <h3>Hops</h3>
-                <div class="ingredients-list">
-                    {% for hop in beer_data.ingredients.hops %}
-                    <div class="ingredients-list-item">{{ hop }}</div>
-                    {% endfor %}
-                </div>
-
-                <h3>Yeast</h3>
-                <div class="ingredients-list">
-                    {% for yeast in beer_data.ingredients.yeast %}
-                    <div class="ingredients-list-item">{{ yeast }}</div>
-                    {% endfor %}
-                </div>
-
-                <h3>Other Ingredients</h3>
-                <div class="ingredients-list">
-                    {% for ingredient in beer_data.ingredients.other_ingredients %}
-                    <div class="ingredients-list-item">{{ ingredient }}</div>
-                    {% endfor %}
-                </div>
+        <!-- Starter Instructions Column -->
+        <div class="beer-column">
+            {% if beer_data.starter_brewing_instructions %}
+            <h2 class="section-title">Yeast Starter</h2>
+            {% for instruction in beer_data.starter_brewing_instructions %}
+            <div class="beer-brewing-instruction">{{ forloop.index }}. {{ instruction }}</div>
+            {% endfor %} {% else %}
+            <h2 class="section-title">Notes</h2>
+            {% if beer_data.tasting_notes != "TBD" %}
+            <div class="beer-brewing-instruction">
+                <strong>Tasting Notes:</strong><br />
+                {{ beer_data.tasting_notes }}
             </div>
+            {% endif %} {% endif %}
+        </div>
+    </section>
 
-            <!-- Brewing Instructions Column -->
-            <div class="beer-column">
-                <h2 class="section-title">Brewing Instructions</h2>
-                {% for instruction in beer_data.brewing_instructions %}
-                <div class="beer-brewing-instruction">{{ forloop.index }}. {{ instruction }}</div>
-                {% endfor %}
-            </div>
+    <hr class="horizontal-line" />
 
-            <!-- Starter Instructions Column -->
-            <div class="beer-column">
-                {% if beer_data.starter_brewing_instructions %}
-                <h2 class="section-title">Yeast Starter</h2>
-                {% for instruction in beer_data.starter_brewing_instructions %}
-                <div class="beer-brewing-instruction">{{ forloop.index }}. {{ instruction }}</div>
-                {% endfor %} {% else %}
-                <h2 class="section-title">Notes</h2>
-                {% if beer_data.tasting_notes != "TBD" %}
-                <div class="beer-brewing-instruction">
-                    <strong>Tasting Notes:</strong><br />
-                    {{ beer_data.tasting_notes }}
-                </div>
-                {% endif %} {% endif %}
-            </div>
-        </section>
+    <!-- Fermentation Profile Chart Section -->
+    <section class="fermentation-profile">
+        <h2 class="section-title">Fermentation Profile</h2>
+        <div class="fermentation-chart">
+            <canvas id="fermentationChart" width="800" height="400"></canvas>
+        </div>
+    </section>
 
-        <hr class="horizontal-line" />
-
-        <!-- Fermentation Profile Chart Section -->
-        <section class="fermentation-profile">
-            <h2 class="section-title">Fermentation Profile</h2>
-            <div class="fermentation-chart">
-                <canvas id="fermentationChart" width="800" height="400"></canvas>
-            </div>
-        </section>
-    </article>
 </div>
 
 <!-- Chart.js for Fermentation Profile -->
