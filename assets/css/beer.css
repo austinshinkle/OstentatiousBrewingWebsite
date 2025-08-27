@@ -29,13 +29,18 @@
 .beer-stat-table-title {
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 24px;
     text-align: center;
 }
 
 .beer-stat-table-value {
     text-transform: uppercase;
     text-align: center;
-    font-size: 14px;
+    font-size: 18px;
     color: #777777; /* Dark Gray */
+}
+
+td{
+    display: flex;
+    flex-direction: column;
 }
