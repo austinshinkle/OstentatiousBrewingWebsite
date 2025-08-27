@@ -39,6 +39,10 @@
 @media (max-width: 768px) {
 
     .beer-list-page-container {
+        text-align: center;
+    }
+
+    .beer-list-page-container {
         margin-left: 20px;
         margin-right: 20px;
     }
