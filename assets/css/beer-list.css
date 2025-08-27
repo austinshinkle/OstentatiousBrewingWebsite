@@ -21,6 +21,10 @@
     /*background-color: white;*/
 }
 
+.beer-list-text-container{
+    margin: 0 10px 0 10px;
+}
+
 .beer-list-item {
     border: 1px solid #bbbbbb;
     border-radius: 10px;
