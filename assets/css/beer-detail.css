@@ -18,5 +18,6 @@
 }
 
 .beer-detail-image {
-    border-radius: 25px;
+    max-width: 400px;
+    border-radius: 10px;
 }
