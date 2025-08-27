@@ -21,7 +21,7 @@
 
 .beer-stats-grid {
     display: grid;
-    grid-template-columns: 2;
+    grid-template-columns: 100px 100px;
 }
 
 .beer-stat-cell{
