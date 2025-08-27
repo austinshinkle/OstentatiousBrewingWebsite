@@ -26,45 +26,45 @@ layout: default
 
         <div class="beer-stats-table">
             {% for stat in beer_data.beer_statistics %}
-            <table class="beer-stats-grid">
+            <table>
                 <tr>
                     <td>
-                        <span class="beer-stat-title">Target OG</span>
-                        <span class="beer-stat-value">{{ stat.target_og }}</span>
+                        <span class="beer-stat-table-title">Target OG</span>
+                        <span class="beer-stat-table-value">{{ stat.target_og }}</span>
                     </td>
                     <td>
-                        <span class="beer-stat-title">Actual OG</span>
-                        <span class="beer-stat-value">{{ stat.actual_og }}</span>
+                        <span class="beer-stat-table-title">Actual OG</span>
+                        <span class="beer-stat-table-value">{{ stat.actual_og }}</span>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <span class="beer-stat-title">Target FG</span>
-                        <span class="beer-stat-value">{{ stat.target_fg }}</span>
+                        <span class="beer-stat-table-title">Target FG</span>
+                        <span class="beer-stat-table-value">{{ stat.target_fg }}</span>
                     </td>
                     <td>
-                        <span class="beer-stat-title">Actual FG</span>
-                        <span class="beer-stat-value">{{ stat.actual_fg | default: "TBD" }}</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <span class="beer-stat-title">Target ABV</span>
-                        <span class="beer-stat-value">{{ stat.target_abv }}</span>
-                    </td>
-                    <td>
-                        <span class="beer-stat-title">Actual ABV</span>
-                        <span class="beer-stat-value">{{ stat.actual_abv | default: "TBD" }}</span>
+                        <span class="beer-stat-table-title">Actual FG</span>
+                        <span class="beer-stat-table-value">{{ stat.actual_fg | default: "TBD" }}</span>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <span class="beer-stat-title">IBU</span>
-                        <span class="beer-stat-value">{{ stat.calculated_ibu }}</span>
+                        <span class="beer-stat-table-title">Target ABV</span>
+                        <span class="beer-stat-table-value">{{ stat.target_abv }}</span>
                     </td>
                     <td>
-                        <span class="beer-stat-title">SRM</span>
-                        <span class="beer-stat-value">{{ stat.calculated_srm }}</span>
+                        <span class="beer-stat-table-title">Actual ABV</span>
+                        <span class="beer-stat-table-value">{{ stat.actual_abv | default: "TBD" }}</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="beer-stat-table-title">IBU</span>
+                        <span class="beer-stat-table-value">{{ stat.calculated_ibu }}</span>
+                    </td>
+                    <td>
+                        <span class="beer-stat-table-title">SRM</span>
+                        <span class="beer-stat-table-value">{{ stat.calculated_srm }}</span>
                     </td>
                 </tr>
             </table>

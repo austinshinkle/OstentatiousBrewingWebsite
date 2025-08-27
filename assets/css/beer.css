@@ -19,4 +19,23 @@
     border-radius: 10px;
 }
 
+.beer-stats-table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+/* Table Styling */
+.beer-stat-table-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+}
+
+.beer-stat-table-value {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+    color: #777777; /* Dark Gray */
+}
