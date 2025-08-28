@@ -21,10 +21,13 @@
 
 .beer-stats-grid {
     display: grid;
-    grid-template-columns: 100px 100px;
+    align-content: center;
+    row-gap: 15px;
+    column-gap: 25px;
+    grid-template-columns: 125px 125px;
 }
 
-.beer-stat-cell{
+.beer-stat-cell {
     display: flex;
     flex-direction: column;
 }
@@ -33,7 +36,7 @@
 .beer-stat-table-title {
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
 }
 
@@ -42,4 +45,11 @@
     text-align: center;
     font-size: 16px;
     color: #777777; /* Dark Gray */
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+    .logo-beer-stats-container {
+        flex-direction: column;
+    }
 }
