@@ -63,5 +63,6 @@
 
     .logo-beer-stats-container {
         flex-direction: column;
+        align-items: center;
     }
 }
