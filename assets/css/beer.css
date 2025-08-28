@@ -49,6 +49,11 @@
 
 /* Mobile responsive styles */
 @media (max-width: 768px) {
+
+    .beer-detail-page-container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
     .beer-header-container {
         text-align: center;
     }
