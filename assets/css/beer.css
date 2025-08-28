@@ -49,6 +49,18 @@
 
 /* Mobile responsive styles */
 @media (max-width: 768px) {
+    .beer-header-container {
+        text-align: center;
+    }
+
+    .beer-detail-description{
+        text-align: center;
+    }
+
+    .beer-detail-image {
+        max-width: 300;
+    }
+
     .logo-beer-stats-container {
         flex-direction: column;
     }
