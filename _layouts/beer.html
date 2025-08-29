@@ -68,23 +68,23 @@ layout: default
     <section class="beer-details">
         <!-- Ingredients Column -->
         <div class="beer-column">
-            <h2 class="section-title">Ingredients</h2>
+            <h3 class="section-title">Ingredients</h3>
 
-            <h3>Malts</h3>
+            <h4>Malts</h4>
             <div class="ingredients-list">
                 {% for malt in beer_data.ingredients.malts %}
-                <div class="ingredients-list-item">{{ malt }}</div>
+                <p>{{ malt }}</p>
                 {% endfor %}
             </div>
 
-            <h3>Hops</h3>
+            <h4>Hops</h4>
             <div class="ingredients-list">
                 {% for hop in beer_data.ingredients.hops %}
                 <div class="ingredients-list-item">{{ hop }}</div>
                 {% endfor %}
             </div>
 
-            <h3>Yeast</h3>
+            <h4>Yeast</h4>
             <div class="ingredients-list">
                 {% for yeast in beer_data.ingredients.yeast %}
                 <div class="ingredients-list-item">{{ yeast }}</div>
@@ -103,7 +103,7 @@ layout: default
         <div class="beer-column">
             <h2 class="section-title">Brewing Instructions</h2>
             {% for instruction in beer_data.brewing_instructions %}
-            <div class="beer-brewing-instruction">{{ forloop.index }}. {{ instruction }}</div>
+            <p>{{ forloop.index }}. {{ instruction }}</p>
             {% endfor %}
         </div>
 
@@ -133,7 +133,6 @@ layout: default
             <canvas id="fermentationChart" width="800" height="400"></canvas>
         </div>
     </section>
-
 </div>
 
 <!-- Chart.js for Fermentation Profile -->
