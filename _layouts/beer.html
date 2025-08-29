@@ -80,21 +80,21 @@ layout: default
             <h4>Hops</h4>
             <div class="ingredients-list">
                 {% for hop in beer_data.ingredients.hops %}
-                <div class="ingredients-list-item">{{ hop }}</div>
+                <p>{{ hop }}</p>
                 {% endfor %}
             </div>
 
             <h4>Yeast</h4>
             <div class="ingredients-list">
                 {% for yeast in beer_data.ingredients.yeast %}
-                <div class="ingredients-list-item">{{ yeast }}</div>
+                <p>{{ yeast }}</p>
                 {% endfor %}
             </div>
 
             <h3>Other Ingredients</h3>
             <div class="ingredients-list">
                 {% for ingredient in beer_data.ingredients.other_ingredients %}
-                <div class="ingredients-list-item">{{ ingredient }}</div>
+                <p>{{ ingredient }}</p>
                 {% endfor %}
             </div>
         </div>
@@ -112,15 +112,10 @@ layout: default
             {% if beer_data.starter_brewing_instructions %}
             <h2 class="section-title">Yeast Starter</h2>
             {% for instruction in beer_data.starter_brewing_instructions %}
-            <div class="beer-brewing-instruction">{{ forloop.index }}. {{ instruction }}</div>
+            <p>{{ forloop.index }}. {{ instruction }}</p>
             {% endfor %} {% else %}
             <h2 class="section-title">Notes</h2>
-            {% if beer_data.tasting_notes != "TBD" %}
-            <div class="beer-brewing-instruction">
-                <strong>Tasting Notes:</strong><br />
-                {{ beer_data.tasting_notes }}
-            </div>
-            {% endif %} {% endif %}
+            {% endif %}
         </div>
     </section>
 
@@ -133,6 +128,7 @@ layout: default
             <canvas id="fermentationChart" width="800" height="400"></canvas>
         </div>
     </section>
+
 </div>
 
 <!-- Chart.js for Fermentation Profile -->
