@@ -31,8 +31,8 @@ layout: default
         {% endif %} {% endfor %}
     </div>
 </div>
-{% comment %}Show message if no beers in production{% endcomment %} {% assign in_production_count = 0 %} {% for
-beer_file in site.data.beers %} {% assign beer = beer_file[1] %} {% if beer.status == "in_production" %} {% assign
-in_production_count = in_production_count | plus: 1 %} {% endif %} {% endfor %} {% if in_production_count == 0 %}
-<p>No beers are currently in production. Check back soon!</p>
+{% comment %}Show message if list is empty{% endcomment %} {% assign list_count = 0 %} {% for
+beer_file in site.data.beers %} {% assign beer = beer_file[1] %} {% if beer.status == page.status %} {% assign
+list_count = list_count | plus: 1 %} {% endif %} {% endfor %} {% if list_count == 0 %}
+<p>{{ page.empty_message }}</p>
 {% endif %}

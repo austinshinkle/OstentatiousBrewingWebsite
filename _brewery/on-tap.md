@@ -3,5 +3,5 @@ layout: brewery
 status: on_tap
 title: On Tap
 description: This is what's currently pouring!
-empty_text: The taps are empty. Check out what's in production.
+empty_message: The taps are empty. Check out what's in production.
 ---
