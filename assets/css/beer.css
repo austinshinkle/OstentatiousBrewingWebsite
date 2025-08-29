@@ -81,4 +81,8 @@
     .beer-details {
         flex-direction: column;
     }
+
+    .beer-column{
+        text-align: center;
+    }
 }
