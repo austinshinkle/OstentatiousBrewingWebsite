@@ -3,13 +3,29 @@ layout: default
 title: Beer Cellar
 ---
 
-<div class="container">
-    <h3 style="text-align: center">BEER CELLAR</h3>
-    <p style="text-align: center">THIS PAGE IS UNDER CONSTRUCTION. IT WILL CONTAIN A LIST OF BEERS I AM STORING FOR LATER ENJOYMENT!Í</p>
-    <!-- Image -->
-    <img
-        src="{{ '/assets/images/other/cellar.jpeg' | relative_url }}"
-        alt="Home Brewing Setup"
-        width="40%"
-        style="border-radius: 8px; margin-bottom: 20px; display: block; margin: 0 auto" />
+<!-- Link layout specific css -->
+<link rel="stylesheet" href="{{ '/assets/css/brewery.css' | relative_url }}" />
+
+<div class="beer-list-page-container">
+    <div class="beer-list-title">
+        <h1>BEER CELLAR</h1>
+        <p>THIS IS A LIST OF BEERS I AM STORING FOR LATER ENJOYMENT!</p>
+    </div>
+
+    <div class="beer-list-container">
+        {% for beer in site.data.cellar.cellar %}
+
+        <div class="beer-list-item">
+            <div class="beer-list-image-container">
+                <img class="beer-list-image" src="{{ beer.logo }}" alt="{{ beer.name }}" />
+            </div>
+            <div class="beer-list-text-container">
+                <h2>{{ beer.brewery }}</h2>
+                <h3>{{ beer.name }}</h3>
+                <h4>{{ beer.style }}</h4>
+            </div>
+        </div>
+
+        {% endif %} {% endfor %}
+    </div>
 </div>
