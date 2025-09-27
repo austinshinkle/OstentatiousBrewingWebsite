@@ -21,8 +21,15 @@ title: Beer Cellar
             </div>
             <div class="beer-list-text-container">
                 <h2>{{ beer.brewery }}</h2>
-                <h3>{{ beer.name }}</h3>
-                <h4>{{ beer.style }}</h4>
+                <h4>{{ beer.name }}</h4>
+                <h5>{{ beer.style }}</h5>
+            </div>
+            <div>
+                <p>{{ beer.cellar_date }}</p>
+                <p>{{ beer.vintage }}</p>
+                <p>{{ beer.volume }}</p>
+                <p>{{ beer.ABV }}</p>
+                <p>{{ beer.quantity }}</p>
             </div>
         </div>
         {% endfor %}
