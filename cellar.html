@@ -5,6 +5,7 @@ title: Beer Cellar
 
 <!-- Link layout specific css -->
 <link rel="stylesheet" href="{{ '/assets/css/brewery.css' | relative_url }}" />
+<link rel="stylesheet" href="{{ '/assets/css/cellar.css' | relative_url }}" />
 
 <div class="beer-list-page-container">
     <div class="beer-list-title">
@@ -20,16 +21,31 @@ title: Beer Cellar
                 <img class="beer-list-image" src="{{ beer.logo }}" alt="{{ beer.name }}" />
             </div>
             <div class="beer-list-text-container">
-                <h2>{{ beer.brewery }}</h2>
-                <h4>{{ beer.name }}</h4>
+                <h2>{{ beer.name }}</h2>
+                <h3>{{ beer.Brewery }}</h3>
                 <h5>{{ beer.style }}</h5>
             </div>
-            <div>
-                <p>{{ beer.cellar_date }}</p>
-                <p>{{ beer.vintage }}</p>
-                <p>{{ beer.volume }}</p>
-                <p>{{ beer.ABV }}</p>
-                <p>{{ beer.quantity }}</p>
+            <div class="cellar-stats-grid">
+                <div class="cellar-stat-cell">
+                    <span class="cellar-stat-table-title">CELLAR DATE</span>
+                    <span class="cellar-stat-table-value">{{ beer.cellar_date }}</span>
+                </div>
+                <div class="cellar-stat-cell">
+                    <span class="cellar-stat-table-title">VINTAGE</span>
+                    <span class="cellar-stat-table-value">{{ beer.vintage}}</span>
+                </div>
+                <div class="cellar-stat-cell">
+                    <span class="cellar-stat-table-title">VOLUME</span>
+                    <span class="cellar-stat-table-value">{{ beer.volume }}</span>
+                </div>
+                <div class="cellar-stat-cell">
+                    <span class="cellar-stat-table-title">ABV</span>
+                    <span class="cellar-stat-table-value">{{ beer.ABV }}</span>
+                </div>
+                <div class="cellar-stat-cell">
+                    <span class="cellar-stat-table-title">QUANTITY"</span>
+                    <span class="cellar-stat-table-value">{{ beer.quantity }}</span>
+                </div>
             </div>
         </div>
         {% endfor %}
