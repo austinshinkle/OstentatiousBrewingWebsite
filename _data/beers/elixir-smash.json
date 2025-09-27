@@ -20,12 +20,13 @@
       "2 tbsp Yeast Nutrient",
       "1 tablet Whilfloc",
       "1 Campden Tablet (water additive)",
-      "4 grams Table Salt (NaCl)",
-      "12 grams Gypsum (CaSO4)"
+      "4 grams Epsom Salt (MgSO4)",
+      "9 grams Gypsum (CaSO4)",
+      "5 grams Calcium Chloride (CaCl)"
     ]
   },
   "brewing_instructions": [
-    "Add 6 gallons of water to the kettle and add brewing salts (Campden Tablet, Salt and Gypsum)",
+    "Add 6 gallons of water to the kettle and add brewing salts (Campden Tablet, Epsom Salt, Calcium Chloride and Gypsum)",
     "Heat 6 gallons of strike water to 162°F",
     "Add 6 gallons of water to the mash tun",
     "Add all grains to the mash tun and confirm mash temperature of 151°F",
@@ -33,7 +34,7 @@
     "While steeping grains, heat 4 gallons of water for lautering to 170 °F",
     "Fly spage until wort volume of 7.3 gallons is reached",
     "Begin boil and wait for hot break",
-    "At 0 minutes, add 7 drops of FermCap to reduce foaming",
+    "At 0 minutes, add 7 drops of FermCap to reduce foaming",ß
     "At 0 minutes, add 2.0 oz Elixir hops",
     "At 30 minutes, add 2.0 oz Elixir hops",
     "At 50 minutes, add 1.0 oz Elixir hops",
