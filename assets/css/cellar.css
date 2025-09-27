@@ -1,12 +1,12 @@
 /* Build for desktop first: wrap mobile or small screen content using @media max-width rules */
 
-
 .cellar-stats-grid {
     display: grid;
     align-content: center;
     row-gap: 15px;
     column-gap: 25px;
     grid-template-columns: 125px 125px;
+    margin: 10px;
 }
 
 .cellar-stat-cell {
@@ -18,13 +18,13 @@
 .cellar-stat-table-title {
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
 }
 
 .cellar-stat-table-value {
     text-transform: uppercase;
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
     color: #777777; /* Dark Gray */
 }
