@@ -1,12 +1,12 @@
 /* Build for desktop first: wrap mobile or small screen content using @media max-width rules */
 
 .cellar-image-container {
-
 }
 .cellar-image {
-    max-width: 300px;
+    max-width: 200px;
     width: auto;
     height: auto;
+    margin: 10px;
 }
 .cellar-stats-grid {
     display: grid;
@@ -29,6 +29,10 @@
     flex-grow: 2;
 }
 
+.cellar-list-text-container {
+    align-items: center;
+}
+
 /* Table Styling */
 .cellar-stat-table-title {
     text-transform: uppercase;
@@ -47,7 +51,7 @@
 
 @media (max-width: 768px) {
     .cellar-image {
-        max-width: 300px;
+        max-width: 100px;
         margin-left: 5px;
         margin-right: 5px;
     }
