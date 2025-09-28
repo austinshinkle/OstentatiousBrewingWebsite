@@ -68,7 +68,7 @@ layout: default
     <section class="beer-details">
         <!-- Ingredients Column -->
         <div class="beer-column">
-            <h2 class="section-title">Ingredients</h2>
+            <h2 class="beer-column-section-title">Ingredients</h2>
 
             <h4>Malts</h4>
             <div class="ingredients-list">
@@ -101,7 +101,7 @@ layout: default
 
         <!-- Brewing Instructions Column -->
         <div class="beer-column">
-            <h2 class="section-title">Brewing Instructions</h2>
+            <h2 class="beer-column-section-title">Brewing Instructions</h2>
             {% for instruction in beer_data.brewing_instructions %}
             <p>{{ forloop.index }}. {{ instruction }}</p>
             {% endfor %}
@@ -110,7 +110,7 @@ layout: default
         <!-- Starter Instructions Column -->
         <div class="beer-column">
             {% if beer_data.starter_brewing_instructions %}
-            <h2 class="section-title">Yeast Starter</h2>
+            <h2 class="beer-column-section-title">Yeast Starter</h2>
             {% for instruction in beer_data.starter_brewing_instructions %}
             <p>{{ forloop.index }}. {{ instruction }}</p>
             {% endfor %} {% else %}

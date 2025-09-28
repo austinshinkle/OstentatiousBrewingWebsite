@@ -8,6 +8,10 @@
 .beer-header-container {
 }
 
+.beer-column-section-title {
+    text-align: center;
+}
+
 .logo-beer-stats-container {
     display: flex;
     flex-direction: row;
