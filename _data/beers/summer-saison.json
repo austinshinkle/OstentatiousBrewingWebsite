@@ -1,6 +1,6 @@
 {
     "name": "Summer Saison",
-    "status": "past-beer",
+    "status": "past_beer",
     "style": "Saison",
     "group": "Saison",
     "logo": "/assets/images/beer/summer_saison.png",

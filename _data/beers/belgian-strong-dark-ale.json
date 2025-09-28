@@ -1,6 +1,6 @@
 {
   "name": "Belgian Strong Dark Ale",
-  "status": "past-beer",
+  "status": "past_beer",
   "style": "Strong Ale",
   "group": "Belgian",
   "logo": "/assets/images/beer/belgian_strong_dark_ale.png",
