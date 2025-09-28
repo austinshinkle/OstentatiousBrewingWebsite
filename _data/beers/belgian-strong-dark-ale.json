@@ -1,0 +1,96 @@
+{
+  "name": "Belgian Strong Dark Ale",
+  "status": "archive",
+  "style": "Strong Ale",
+  "group": "Belgian",
+  "logo": "/assets/images/beer/belgian_strong_dark_ale.png",
+  "description": "I want to put my new Maelstrom stir plate to the test so I want to make a big beer. What better big beer than a strong Belgian.",
+  "ingredients": {
+    "malts": [
+      "13 lbs Franco-Belges Pilsen Malt",
+      "1 lb Munich Malt",
+      "1.5 lb Caramunich Malt"
+    ],
+    "hops": [
+      "4 oz Hallertau Middlefruh Hops (4.4% AA)"
+    ],
+    "yeast": [
+      "1 package WLP545 Belgian Strong Ale Yeast"
+    ],
+    "other_ingredients": [
+      "1 lb Candi Sugar (90 SRM)",
+      "1 lb Table Sugar",
+      "7 oz Extra Light DME",
+      "1 tablet Whirlfloc",
+      "1/2 tsp Wyest Yeast Nutrient"
+    ]
+  },
+  "brewing_instructions": [
+    "Heat 5 gallons of strike water to 161°F",
+    "Add 5 gallons of water to the mash tun",
+    "Add all grains to mash tun and confirm temperature of 148°F",
+    "Steep grains for 60 minutes",
+    "While steeping, heat 3.5 gallons of water to 170°F for lautering",
+    "Extract first runnings into boil kettle",
+    "Add 3.5 gallons water and wait 15 minutes",
+    "Extract second runnings into boil kettle",
+    "Total wort volume should be 6.5 gallons",
+    "Bring water to a boil and wait for the hot break",
+    "Begin boil",
+    "At 0 minutes add 15 drops FermCap to reduce foaming",
+    "At 0 minutes, add 1.5 oz Hallertau hops",
+    "At 45 minutes add 1 lb candi sugar",
+    "At 45 minutes add 1 lb table sugar",
+    "At 50 minutes, add 2.5 oz Hallertau hops",
+    "At 50 minutes, add one tablet Whirlfloc",
+    "At 50 minutes, add 1/2 tsp yeast nutrient",
+    "At 60 minutes, chill the wort to approx. 65°F",
+    "Aerate with pure oxygen for 1 minute",
+    "Move to the primary fermenter",
+    "Pitch yeast from yeast starter",
+    "Ferment at 68°F",
+    "At 6 days, raise fermentation temperature to 72°F",
+    "At 10 days, lower the temperature to 69°F",
+    "At 13 days, cold crash to 35°F",
+    "At 15 days, keg beer"
+  ],
+  "starter_brewing_instructions": [
+    "Boil 7 oz DME in 2 L of water for 10 minutes",
+    "Let cool to 68°F",
+    "Pitch 1 package WLP545",
+    "Start stir plate"
+  ],
+  "beer_statistics": [
+    {
+      "brew_date": "9/19/2020",
+      "target_og": "1.083",
+      "actual_og": "1.086",
+      "target_fg": "1.011",
+      "actual_fg": "1.011",
+      "target_abv": "9.6%",
+      "actual_abv": "10.2%",
+      "calculated_ibu": "27",
+      "calculated_srm": "N/A",
+      "cost": "$43.00"
+    }
+  ],
+  "fermentation_profile": [
+    {
+      "day": 0,
+      "temp": 68
+    },
+    {
+      "day": 6,
+      "temp": 72
+    },
+    {
+      "day": 10,
+      "temp": 69
+    },
+    {
+      "day": 13,
+      "temp": 35
+    }
+  ],
+  "tasting_notes": "The beer came out great! Good color, very dry and warming alcohol but not over the top. It has good Belgian flavor and could have used something a little more spicy. I am not sure what but all in all the beer came out very good!"
+}
