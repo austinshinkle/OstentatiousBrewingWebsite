@@ -27,6 +27,7 @@
     flex-direction: row;
     align-content: space-between;
     flex-grow: 2;
+    align-items: center;
 }
 
 .cellar-list-text-container {
