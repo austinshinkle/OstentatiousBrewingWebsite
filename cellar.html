@@ -17,13 +17,15 @@ title: Beer Cellar
         {% for beer in site.data.cellar.cellar %}
 
         <div class="beer-list-item">
-            <div class="beer-list-image-container">
-                <img class="beer-list-image" src="{{ beer.logo }}" alt="{{ beer.name }}" />
-            </div>
-            <div class="beer-list-text-container">
-                <h2>{{ beer.name }}</h2>
-                <h3>{{ beer.Brewery }}</h3>
-                <h5>{{ beer.style }}</h5>
+            <div>
+                <div class="beer-list-image-container">
+                    <img class="beer-list-image" src="{{ beer.logo }}" alt="{{ beer.name }}" />
+                </div>
+                <div class="beer-list-text-container">
+                    <h2>{{ beer.name }}</h2>
+                    <h3>{{ beer.Brewery }}</h3>
+                    <h5>{{ beer.style }}</h5>
+                </div>
             </div>
             <div class="cellar-stats-grid">
                 <div class="cellar-stat-cell">
