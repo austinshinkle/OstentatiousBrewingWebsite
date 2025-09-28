@@ -15,10 +15,10 @@
 }
 
 .cellar-image-name-container {
-
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-content: space-between;
+    flex-grow: 2;
 }
 
 /* Table Styling */
@@ -27,6 +27,7 @@
     font-weight: bold;
     font-size: 16px;
     text-align: center;
+    flex-grow: 1;
 }
 
 .cellar-stat-table-value {
