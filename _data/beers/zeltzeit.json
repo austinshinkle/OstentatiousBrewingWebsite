@@ -2,6 +2,7 @@
     "name": "Zeltzeit",
     "status": "in_production",
     "style": "German Festbier",
+    "group": "Lager",
     "logo": "/assets/images/beer/zeltzeit.jpeg",
     "page": "/beers/festbier.html",
     "description": "A crisp lager brewed in the traditional style of Oktoberfest. Ostentatious version of a classic. Prost!",

@@ -2,6 +2,7 @@
     "name": "Herbstbock",
     "status": "past_beer",
     "style": "Dunkles Bock",
+    "group": "Bock",
     "logo": "/assets/images/beer/herbstbock.png",
     "page": "/beers/herbstbock.html",
     "description": "This bock will be slightly stronger and darker for the upcoming fall months. Herbst means Fall in German so I figured the title was fitting. I have been wanting a little more of the roasty, bready flavor in the beer after Sommerbock so I figured I would go big and make a Dunkles Bock.",

@@ -2,6 +2,7 @@
     "name": "Oceania IPA",
     "status": "past_beer",
     "style": "Southern Hemisphere IPA",
+    "group": "India Pale Ale",
     "logo": "/assets/images/beer/oceania_ipa.png",
     "page": "/beers/oceania-ipa.html",
     "description": "This IPA uses all Australian and New Zealand hops bought from Yakima Valley Hops. It will have a light backbone to showcase the southern hemisphere hops which tend to be more juicy and fruit forward.",

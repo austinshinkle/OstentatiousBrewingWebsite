@@ -2,6 +2,7 @@
     "name": "Belgian Golden Ale",
     "status": "past_beer",
     "style": "Belgian Golden Ale",
+    "group": "Belgian",
     "logo": "/assets/images/beer/belgian_golden_ale.png",
     "page": "/beers/belgian_golden_ale.html",
     "description": "Medium strength Belgian style golden ale. Light and crisp for evening summer drinking. Hopped with French Elixir hops to provide additional subtle orange flavor.",

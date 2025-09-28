@@ -2,6 +2,7 @@
     "name": "Saison du Triomphe",
     "status": "past_beer",
     "style": "French Saison",
+    "group": "Saison",
     "logo": "/assets/images/beer/saison_du_triomphe.jpeg",
     "page": "/beers/saison-du-triomphe.html",
     "description": "A light dry saision which provides the perfect canvas for the delicate fruit flavor of Triumph hops.",

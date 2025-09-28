@@ -2,6 +2,7 @@
   "name": "Doppelbock (2025)",
   "status": "in_production",
   "style": "German Bock Lager",
+  "group": "Bock",
   "logo": "/assets/images/beer/doppelbock_2025.jpeg",
   "description": "Doppelbock is back! 2025 edition of a classic (and probably my favorite beer style)",
   "ingredients": {

@@ -2,6 +2,7 @@
   "name": "Sommerbock (2025)",
   "status": "past_beer",
   "style": "German Export Bock Lager",
+  "group": "Bock",
   "logo": "/assets/images/beer/sommerbock_2025.jpeg",
   "page": "/beers/sommerbock.html",
   "description": "A light bock lager, perfect for a summer day in the sun.",

@@ -2,6 +2,7 @@
     "name": "Sommerbock",
     "status": "past_beer",
     "style": "Helles Bock",
+    "group": "Bock",
     "logo": "/assets/images/beer/sommerbock.png",
     "page": "/beers/sommerbock-2021.html",
     "description": "Another light lager for the summer months that will utilize a harvested lager strain that fermented Helles Bock and Doppelbock V2. While German Pils is fermenting I want to get another beer started to keep up with the summer. This should be a crisp, light lager that is easy drinking but still flavorful.",
