@@ -1,5 +1,13 @@
 /* Build for desktop first: wrap mobile or small screen content using @media max-width rules */
 
+.cellar-image-container {
+
+}
+.cellar-image {
+    max-width: 300px;
+    width: auto;
+    height: auto;
+}
 .cellar-stats-grid {
     display: grid;
     align-content: center;
@@ -16,7 +24,7 @@
 
 .cellar-image-name-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-content: space-between;
     flex-grow: 2;
 }
@@ -35,4 +43,12 @@
     text-align: center;
     font-size: 14px;
     color: #777777; /* Dark Gray */
+}
+
+@media (max-width: 768px) {
+    .cellar-image {
+        max-width: 300px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
 }
