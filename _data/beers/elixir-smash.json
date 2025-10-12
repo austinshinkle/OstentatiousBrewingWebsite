@@ -14,7 +14,7 @@
       "5 oz Elixir hops (8.6% AA)"
     ],
     "yeast": [
-      "1 package Imperial Flagship Ale Yeast (A07)"
+      "1 package White Labs California Ale Yeast (WLP001)"
     ],
     "other_ingredients": [
       "15 drops FermCap",
@@ -65,16 +65,16 @@
   ],
   "beer_statistics": [
     {
-      "brew_date": "TBD",
+      "brew_date": "10/12/2025",
       "target_og": "1.079",
-      "actual_og": "TBD",
+      "actual_og": "1.078",
       "target_fg": "1.017",
       "actual_fg": "TBD",
       "target_abv": "8.3%",
       "actual_abv": "TBD",
       "calculated_ibu": "88",
       "calculated_srm": "6.7",
-      "cost": "TBD"
+      "cost": "$50.50"
     }
   ],
   "fermentation_profile": [
