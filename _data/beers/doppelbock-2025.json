@@ -61,12 +61,12 @@
       "target_og": "1.096",
       "actual_og": "1.090",
       "target_fg": "1.024",
-      "actual_fg": "TBD",
+      "actual_fg": "1.022",
       "target_abv": "9.7%",
-      "actual_abv": "TBD",
+      "actual_abv": "9.2%",
       "calculated_ibu": "23",
       "calculated_srm": "18.5",
-      "cost": "TBD"
+      "cost": "$40.00"
     }
   ],
   "fermentation_profile": [
