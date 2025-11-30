@@ -1,6 +1,6 @@
 {
     "name": "Mystery Hop 2025",
-    "status": "in_design",
+    "status": "in_production",
     "style": "Double IPA",
     "group": "India Pale Ale",
     "logo": "/assets/images/beer/mystery_hop_2025.jpg",
@@ -61,9 +61,9 @@
     ],
     "beer_statistics": [
         {
-            "brew_date": "TBD",
+            "brew_date": "11/30/2025",
             "target_og": "1.080",
-            "actual_og": "TBD",
+            "actual_og": "1.082",
             "target_fg": "1.017",
             "actual_fg": "TBD",
             "target_abv": "8.4%",
