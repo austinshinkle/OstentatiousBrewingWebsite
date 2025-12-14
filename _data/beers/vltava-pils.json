@@ -1,9 +1,9 @@
 {
-  "name": "Czech Pilsner",
+  "name": "Vltava Pils",
   "status": "in_design",
-  "style": "Czech Premium Pilsner",
+  "style": "Czech Pilsner",
   "group": "Pilsner",
-  "logo": "/assets/images/beer/czech-pilsner.jpg",
+  "logo": "/assets/images/beer/vltava-pils.jpg",
   "description": "A light Czech lager for every day drinking",
   "ingredients": {
     "malts": [
