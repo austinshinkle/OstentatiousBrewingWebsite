@@ -37,8 +37,7 @@
     "Begin boil and wait for hot break",
     "At 0 minutes, add 7 drops of FermCap to reduce foaming",
     "At 0 minutes, add 2.0 oz Tettnang hops",
-    "At 40 minutes, add 1.0 oz Tettnang hops",
-    "At 50 minutes, add 1.0 oz Tettnang hops",
+    "At 45 minutes, add 2.0 oz Tettnang hops",
     "At 50 minutes, add 1 tablet Whirlfloc",
     "At 50 minutes, add 0.5 tsp of yeast nutrient",
     "At 60 minutes, chil the wort to 68°F",
@@ -73,7 +72,7 @@
       "actual_fg": "TBD",
       "target_abv": "5.1%",
       "actual_abv": "TBD",
-      "calculated_ibu": "40.8",
+      "calculated_ibu": "41.1",
       "calculated_srm": "3.6",
       "cost": "$35.00"
     }
