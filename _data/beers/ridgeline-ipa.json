@@ -7,9 +7,10 @@
     "description": "Classic Northwest IPA with woody, pine and citrus flavors",
     "ingredients": {
         "malts": [
-            "13 lbs Great Western 2 Row Malt",
+            "11.5 lbs Great Western 2 Row Malt",
             "1 lb Crystal (20L) Malt",
-            "0.5 lb Crystal (60L) Malt"
+            "0.5 lb Crystal (60L) Malt",
+            "0.5 lb Corn Sugar"
         ],
         "hops": [
             "2 oz Citra hops (12.0% AA)",
@@ -32,7 +33,7 @@
     },
     "brewing_instructions": [
         "Add 6 gallons of water to the kettle and add brewing salts (Campden Tablet, Epsom Salt, Calcium Chloride and Gypsum)",
-        "Heat 6 gallons of strike water to 159°F",
+        "Heat 6 gallons of strike water to 158°F",
         "Add 6 gallons of water to the mash tun",
         "Add all grains to the mash tun and confirm mash temperature of 150°F",
         "Steep grains for 60 minutes",
@@ -40,6 +41,7 @@
         "Fly spage until wort volume of 7.3 gallons is reached",
         "Begin boil and wait for hot break",
         "Add 7 drops of FermCap to reduce foaming",
+        "At 0 minutes, add 0.5 lb Corn Sugar"
         "At 30 minutes, add 1.0 oz Citra hops",
         "At 45 minutes, add 1.0 oz Cascade hops",
         "At 45 minutes, add 1.0 oz McKimnzie hops",
@@ -63,14 +65,14 @@
     "beer_statistics": [
         {
             "brew_date": "TBD",
-            "target_og": "1.069",
+            "target_og": "1.063",
             "actual_og": "TBD",
-            "target_fg": "1.016",
+            "target_fg": "1.013",
             "actual_fg": "TBD",
-            "target_abv": "7.1%",
+            "target_abv": "7.0%",
             "actual_abv": "TBD",
-            "calculated_ibu": "66",
-            "calculated_srm": "8.5",
+            "calculated_ibu": "67",
+            "calculated_srm": "8.3",
             "cost": "TBD"
         }
     ],
