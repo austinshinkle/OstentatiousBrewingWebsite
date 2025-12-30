@@ -13,10 +13,10 @@
             "0.5 lb Table Sugar"
         ],
         "hops": [
-            "2 oz Citra hops (12.0% AA)",
-            "1 oz HBC 682 (Pahto) hops (5.0% AA)",
-            "1 oz McKinzie hops (10.0% AA)",
-            "1 oz Cascade Hops (5.5% AA)"
+            "2 oz Citra hops (12.08% AA)",
+            "0.5 oz HBC 682 (Pahto) hops (15.8% AA)",
+            "1 oz McKinzie hops (11.7% AA)",
+            "1 oz Cascade Hops (7.5% AA)"
         ],
         "yeast": [
             "1 yeast cake White Labs California Ale Yeast (WLP001)"
@@ -64,14 +64,14 @@
     ],
     "beer_statistics": [
         {
-            "brew_date": "TBD",
+            "brew_date": "12/29/2025",
             "target_og": "1.066",
-            "actual_og": "TBD",
+            "actual_og": "1.058",
             "target_fg": "1.012",
             "actual_fg": "TBD",
             "target_abv": "7.2%",
             "actual_abv": "TBD",
-            "calculated_ibu": "67",
+            "calculated_ibu": "77",
             "calculated_srm": "8.3",
             "cost": "TBD"
         }
