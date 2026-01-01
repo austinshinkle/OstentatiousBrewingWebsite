@@ -1,6 +1,6 @@
 {
     "name": "Ridgeline IPA",
-    "status": "in_design",
+    "status": "in_production",
     "style": "India Pale Ale",
     "group": "India Pale Ale",
     "logo": "/assets/images/beer/ridgeline_ipa.jpg",
@@ -68,12 +68,12 @@
             "target_og": "1.066",
             "actual_og": "1.058",
             "target_fg": "1.012",
-            "actual_fg": "TBD",
+            "actual_fg": "1.004",
             "target_abv": "7.2%",
-            "actual_abv": "TBD",
+            "actual_abv": "7.1%",
             "calculated_ibu": "77",
             "calculated_srm": "8.3",
-            "cost": "TBD"
+            "cost": "$35"
         }
     ],
     "fermentation_profile": [
