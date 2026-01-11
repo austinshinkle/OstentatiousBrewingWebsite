@@ -43,6 +43,15 @@ actual_abv: "9.4%"
 calculated_ibu: "102"
 calculated_srm: "6.8"
 cost: "$32.16"
+fermentation_profile:
+    day: 0
+        temp: 67
+    day: 6
+        temp: 72
+    day: 14
+        temp 36
+    day: 21
+        temp: 36
 ---
 
 ## Brewing Instructions
