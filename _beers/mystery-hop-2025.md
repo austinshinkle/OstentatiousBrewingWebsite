@@ -6,24 +6,18 @@ status: on_tap
 style: Double IPA
 group: India Pale Ale
 logo: /assets/images/beer/mystery_hop_2025.jpg
-description:
-    "I was going to brew this beer with fresh hops from a friend's garden, but I don't think I got to them in time. So,
-    I just grabbed what I had..."
-
+description: "I was going to brew this beer with fresh hops from a friend's garden, but I don't think I got to them in time. So, I just grabbed what I had..."
 malts:
     - 8 lbs 2 Row Pilsner Malt
     - 9 lbs Great Western Pale High Color Malt
     - 1 lb Caramel 20L Malt
     - 4 oz Carapils Malt
-
 hops:
     - 2 oz Elixir hops (8.6% AA)
     - 2 oz Triumph hops (7.9% AA)
     - 2 oz Mt. Hood hops (5.2% AA)
-
 yeast:
     - 1 yeast cake White Labs California Ale Yeast (WLP001)
-
 other_ingredients:
     - 15 drops FermCap
     - 2 tbsp Yeast Nutrient
@@ -32,18 +26,16 @@ other_ingredients:
     - 4 grams Epsom Salt (MgSO4)
     - 9 grams Gypsum (CaSO4)
     - 5 grams Calcium Chloride (CaCl)
-
-brew_date: 2025-11-30
-target_og: 1.080
-actual_og: 1.082
-target_fg: 1.017
-actual_fg: 1.012
-target_abv: 8.4
-actual_abv: 9.4
-calculated_ibu: 102
-calculated_srm: 6.8
-cost: 32.16
-
+brew_date: "2025-11-30"
+target_og: "1.080"
+actual_og: "1.082"
+target_fg: "1.017"
+actual_fg: "1.012"
+target_abv: "8.4%"
+actual_abv: "9.4%"
+calculated_ibu: "102"
+calculated_srm: "6.8"
+cost: "$32.16"
 brewing_instructions:
     - Add 6 gallons of water to the kettle and add brewing salts (Campden Tablet, Epsom Salt, Calcium Chloride and Gypsum)
     - Heat 6 gallons of strike water to 163°F
@@ -69,29 +61,25 @@ brewing_instructions:
     - Ferment at 65°F for 7 days
     - Cold crash to 36°F for 7 days
     - Move to keg and carbonate
-
 starter_instructions:
     - None (reuse WLP001 Yeast Cake from Elixir Smash)
-
 fermentation_profile:
     - day: 0
-        temp: 67
+      temp: 67
     - day: 6
-        temp: 72
+      temp: 72
     - day: 14
-        temp: 36
+      temp: 36
     - day: 21
-        temp: 36
-
+      temp: 36
 rating: "3.75"
-
 tasting_notes:
     - title: "Flavor is solid"
-        description: "Good hop flavor, although a but muted by the alcohol."
+      description: "Good hop flavor, although a but muted by the alcohol."
     - title: "Color looks good"
-        description: "Dark golden color, although a bit cloudy"
+      description: "Dark golden color, although a bit cloudy"
     - title: "Mouthfeel and body work"
-        description: "Nice body from the Crystal Malt, but a bit undercarbonated"
+      description: "Nice body from the Crystal Malt, but a bit undercarbonated"
     - title: "A little less alcohol"
-        description: "Recipe is good, but make it about 7% next time. Hop profiles work, but maybe add a bit more later in the boil"
+      description: "Recipe is good, but make it about 7% next time. Hop profiles work, but maybe add a bit more later in the boil"
 ---
