@@ -33,24 +33,24 @@ other_ingredients:
     - 9 grams Gypsum (CaSO4)
     - 5 grams Calcium Chloride (CaCl)
 
-brew_date: "11/30/2025"
-target_og: "1.080"
-actual_og: "1.082"
-target_fg: "1.017"
-actual_fg: "1.012"
-target_abv: "8.4%"
-actual_abv: "9.4%"
-calculated_ibu: "102"
-calculated_srm: "6.8"
-cost: "$32.16"
+brew_date: 2025-11-30
+target_og: 1.080
+actual_og: 1.082
+target_fg: 1.017
+actual_fg: 1.012
+target_abv: 8.4
+actual_abv: 9.4
+calculated_ibu: 102
+calculated_srm: 6.8
+cost: 32.16
 
 brewing_instructions:
     - Add 6 gallons of water to the kettle and add brewing salts (Campden Tablet, Epsom Salt, Calcium Chloride and Gypsum)
-    - Heat 6 gallons of strike water to 163�F
+    - Heat 6 gallons of strike water to 163°F
     - Add 6 gallons of water to the mash tun
-    - Add all grains to the mash tun and confirm mash temperature of 152�F
+    - Add all grains to the mash tun and confirm mash temperature of 152°F
     - Steep grains for 60 minutes
-    - While steeping grains, heat 4 gallons of water for lautering to 170 �F
+    - While steeping grains, heat 4 gallons of water for lautering to 170°F
     - Fly spage until wort volume of 7.3 gallons is reached
     - Begin boil and wait for hot break
     - Add 7 drops of FermCap to reduce foaming
@@ -60,39 +60,38 @@ brewing_instructions:
     - At 50 minutes, add 2.0 oz Mt. Hood hops
     - At 50 minutes, add 1 tablet Whirlfloc
     - At 50 minutes, add 0.5 tsp of yeast nutrient
-    - At 60 minutes, chil the wort to 68�F
+    - At 60 minutes, chil the wort to 68°F
     - Shake fermenter to aerate wort
     - Move wort to primary fermenter
     - Pitch yeast
-    - Ferment at 67�F for 5 days
-    - Ferment at 72�F for 2 days
-    - Ferment at 65�F for 7 days
-    - Cold crash to 36�F for 7 days
+    - Ferment at 67°F for 5 days
+    - Ferment at 72°F for 2 days
+    - Ferment at 65°F for 7 days
+    - Cold crash to 36°F for 7 days
     - Move to keg and carbonate
 
 starter_instructions:
     - None (reuse WLP001 Yeast Cake from Elixir Smash)
 
 fermentation_profile:
-  - day: 0
-    temp: 67
-  - day: 6
-    temp: 72
-  - day: 14
-    temp: 36
-  - day: 21
-    temp: 36
+    - day: 0
+        temp: 67
+    - day: 6
+        temp: 72
+    - day: 14
+        temp: 36
+    - day: 21
+        temp: 36
 
 rating: "3.75"
 
 tasting_notes:
     - title: "Flavor is solid"
-    description: "Good hop flavor, although a but muted by the alcohol."
+        description: "Good hop flavor, although a but muted by the alcohol."
     - title: "Color looks good"
-    description: "Dark golden color, although a bit cloudy"
+        description: "Dark golden color, although a bit cloudy"
     - title: "Mouthfeel and body work"
-    description: "Nice body from the Crystal Malt, but a bit undercarbonated"
+        description: "Nice body from the Crystal Malt, but a bit undercarbonated"
     - title: "A little less alcohol"
-    description: "Recipe is good, but make it about 7% next time. Hop profiles work, but maybe add a bit more later in the boil"
-
+        description: "Recipe is good, but make it about 7% next time. Hop profiles work, but maybe add a bit more later in the boil"
 ---
