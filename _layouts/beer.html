@@ -98,12 +98,17 @@ layout: default
         <!-- Brewing Instructions Column -->
         <div class="beer-column">
             <h2 class="beer-column-section-title">Brewing Instructions</h2>
-            {{ content }}
+            {% for instruction in page.brewing_instructions %}
+            <p>{{ instruction }}</p>
+            {% endfor %}
         </div>
 
         <!-- Starter Instructions / Notes Column -->
         <div class="beer-column">
-            <h2 class="beer-column-section-title">Notes</h2>
+            <h2 class="beer-column-section-title">Starter Instructions</h2>
+            {% for instruction in page.starter_instructions %}
+            <p>{{ instruction }}</p>
+            {% endfor %}
         </div>
     </section>
 
@@ -116,7 +121,6 @@ layout: default
             <canvas id="fermentationChart" width="800" height="400"></canvas>
         </div>
     </section>
-
 </div>
 
 <!-- Chart.js for Fermentation Profile -->
