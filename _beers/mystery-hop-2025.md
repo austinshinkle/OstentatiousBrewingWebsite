@@ -43,58 +43,47 @@ actual_abv: "9.4%"
 calculated_ibu: "102"
 calculated_srm: "6.8"
 cost: "$32.16"
+
+brewing_instructions:
+    - Add 6 gallons of water to the kettle and add brewing salts (Campden Tablet, Epsom Salt, Calcium Chloride and Gypsum)
+    - Heat 6 gallons of strike water to 163°F
+    - Add 6 gallons of water to the mash tun
+    - Add all grains to the mash tun and confirm mash temperature of 152°F
+    - Steep grains for 60 minutes
+    - While steeping grains, heat 4 gallons of water for lautering to 170 °F
+    - Fly spage until wort volume of 7.3 gallons is reached
+    - Begin boil and wait for hot break
+    - Add 7 drops of FermCap to reduce foaming
+    - At 0 minutes, add 2.0 oz Triumph hops
+    - At 30 minutes, add 1.0 oz Elixir hops
+    - At 40 minutes, add 1.0 oz Elixir hops
+    - At 50 minutes, add 2.0 oz Mt. Hood hops
+    - At 50 minutes, add 1 tablet Whirlfloc
+    - At 50 minutes, add 0.5 tsp of yeast nutrient
+    - At 60 minutes, chil the wort to 68°F
+    - Shake fermenter to aerate wort
+    - Move wort to primary fermenter
+    - Pitch yeast
+    - Ferment at 67°F for 5 days
+    - Ferment at 72°F for 2 days
+    - Ferment at 65°F for 7 days
+    - Cold crash to 36°F for 7 days
+    - Move to keg and carbonate
+
+starter_instructions:
+    - None (reuse WLP001 Yeast Cake from Elixir Smash)
+
 fermentation_profile:
-    day: 0
-        temp: 67
-    day: 6
-        temp: 72
-    day: 14
-        temp 36
-    day: 21
-        temp: 36
+  - day: 0
+    temp: 67
+  - day: 6
+    temp: 72
+  - day: 14
+    temp: 36
+  - day: 21
+    temp: 36
+
+rating: "3.75"
+tasting_notes: "Good hop flavor, although a but muted by the alcohol. Good golden color and nice body from the Crystal Malt. Recipe is good, but make it about 7% next time"
+
 ---
-
-## Brewing Instructions
-
-1. Add 6 gallons of water to the kettle and add brewing salts (Campden Tablet, Epsom Salt, Calcium Chloride and Gypsum)
-2. Heat 6 gallons of strike water to 163°F
-3. Add 6 gallons of water to the mash tun
-4. Add all grains to the mash tun and confirm mash temperature of 152°F
-5. Steep grains for 60 minutes
-6. While steeping grains, heat 4 gallons of water for lautering to 170 °F
-7. Fly spage until wort volume of 7.3 gallons is reached
-8. Begin boil and wait for hot break
-9. Add 7 drops of FermCap to reduce foaming
-10. At 0 minutes, add 2.0 oz Triumph hops
-11. At 30 minutes, add 1.0 oz Elixir hops
-12. At 40 minutes, add 1.0 oz Elixir hops
-13. At 50 minutes, add 2.0 oz Mt. Hood hops
-14. At 50 minutes, add 1 tablet Whirlfloc
-15. At 50 minutes, add 0.5 tsp of yeast nutrient
-16. At 60 minutes, chil the wort to 68°F
-17. Shake fermenter to aerate wort
-18. Move wort to primary fermenter
-19. Pitch yeast
-20. Ferment at 67°F for 5 days
-21. Ferment at 72°F for 2 days
-22. Ferment at 65°F for 7 days
-23. Cold crash to 36°F for 7 days
-24. Move to keg and carbonate
-
-## Starter Instructions
-
-None - reuse WLP001 Yeast Cake from Elixir Smash
-
-## Fermentation Profile
-
-| Day | Temperature (°F) |
-| --- | ---------------- |
-| 0   | 67               |
-| 6   | 72               |
-| 8   | 72               |
-| 14  | 36               |
-| 21  | 36               |
-
-## Tasting Notes
-
-TBD
