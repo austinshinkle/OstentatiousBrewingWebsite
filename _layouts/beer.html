@@ -2,119 +2,77 @@
 layout: default
 ---
 
-<!-- Link layout specific css -->
 <link rel="stylesheet" href="{{ '/assets/css/beer.css' | relative_url }}" />
 
 <div class="beer-detail-page-container">
-    <!-- Title and Style Section -->
     <div class="beer-header-container">
         <div>
             <h1>{{ page.title }}</h1>
             <h3>{{ page.style }}</h3>
         </div>
     </div>
-    <!-- Description -->
+
     <div class="beer-detail-description">
         <p>{{ page.description }}</p>
     </div>
 
-    <!-- Image and Statistics Section -->
     <div class="logo-beer-stats-container">
-        <img src="{{ page.logo }}" alt="{{ page.title }} logo" class="beer-detail-image" />
+        <img src="{{ page.logo | relative_url }}" alt="{{ page.title }} logo" class="beer-detail-image" />
 
         <div class="beer-stats-grid">
-            <div class="beer-stat-cell">
-                <span class="beer-stat-table-title">Target OG</span>
-                <span class="beer-stat-table-value">{{ page.target_og }}</span>
-            </div>
-            <div class="beer-stat-cell">
-                <span class="beer-stat-table-title">Actual OG</span>
-                <span class="beer-stat-table-value">{{ page.actual_og }}</span>
-            </div>
-            <div class="beer-stat-cell">
-                <span class="beer-stat-table-title">Target FG</span>
-                <span class="beer-stat-table-value">{{ page.target_fg }}</span>
-            </div>
-            <div class="beer-stat-cell">
-                <span class="beer-stat-table-title">Actual FG</span>
-                <span class="beer-stat-table-value">{{ page.actual_fg | default: "TBD" }}</span>
-            </div>
-            <div class="beer-stat-cell">
-                <span class="beer-stat-table-title">Target ABV</span>
-                <span class="beer-stat-table-value">{{ page.target_abv }}</span>
-            </div>
-            <div class="beer-stat-cell">
-                <span class="beer-stat-table-title">Actual ABV</span>
-                <span class="beer-stat-table-value">{{ page.actual_abv | default: "TBD" }}</span>
-            </div>
-            <div class="beer-stat-cell">
-                <span class="beer-stat-table-title">IBU</span>
-                <span class="beer-stat-table-value">{{ page.calculated_ibu }}</span>
-            </div>
-            <div class="beer-stat-cell">
-                <span class="beer-stat-table-title">SRM</span>
-                <span class="beer-stat-table-value">{{ page.calculated_srm }}</span>
-            </div>
+            {% assign stats = "Target OG,target_og|Actual OG,actual_og|Target FG,target_fg|Actual FG,actual_fg|Target ABV,target_abv|Actual ABV,actual_abv|IBU,calculated_ibu|SRM,calculated_srm" | split: "|" %}
+
+            {% for stat in stats %}
+                {% assign stat_parts = stat | split: "," %}
+                {% assign label = stat_parts[0] %}
+                {% assign key = stat_parts[1] %}
+                <div class="beer-stat-cell">
+                    <span class="beer-stat-table-title">{{ label }}</span>
+                    <span class="beer-stat-table-value">{{ page[key] | default: "TBD" }}</span>
+                </div>
+            {% endfor %}
         </div>
     </div>
 
     <hr class="horizontal-line" />
 
-    <!-- Three Column Section: Ingredients, Brewing Instructions, Starter Instructions -->
     <section class="beer-details">
-        <!-- Ingredients Column -->
         <div class="beer-column">
             <h2 class="beer-column-section-title">Ingredients</h2>
 
             <h4>Malts</h4>
             <div class="ingredients-list">
-                {% for malt in page.malts %}
-                <p>{{ malt }}</p>
-                {% endfor %}
+                {% for malt in page.malts %}<p>{{ malt }}</p>{% endfor %}
             </div>
 
             <h4>Hops</h4>
             <div class="ingredients-list">
-                {% for hop in page.hops %}
-                <p>{{ hop }}</p>
-                {% endfor %}
+                {% for hop in page.hops %}<p>{{ hop }}</p>{% endfor %}
             </div>
 
             <h4>Yeast</h4>
             <div class="ingredients-list">
-                {% for yeast in page.yeast %}
-                <p>{{ yeast }}</p>
-                {% endfor %}
-            </div>
-
-            <h4>Other</h4>
-            <div class="ingredients-list">
-                {% for ingredient in page.other_ingredients %}
-                <p>{{ ingredient }}</p>
-                {% endfor %}
+                {% for y in page.yeast %}<p>{{ y }}</p>{% endfor %}
             </div>
         </div>
 
-        <!-- Brewing Instructions Column -->
         <div class="beer-column">
             <h2 class="beer-column-section-title">Brewing Instructions</h2>
-            {% for instruction in page.brewing_instructions %}
-            <p>{{ instruction }}</p>
+            {% for step in page.brewing_instructions %}
+                <p>{{ forloop.index }}. {{ step }}</p>
             {% endfor %}
         </div>
 
-        <!-- Starter Instructions / Notes Column -->
         <div class="beer-column">
-            <h2 class="beer-column-section-title">Starter Instructions</h2>
-            {% for instruction in page.starter_instructions %}
-            <p>{{ instruction }}</p>
+            <h2 class="beer-column-section-title">Starter & Notes</h2>
+            {% for note in page.starter_instructions %}
+                <p>{{ note }}</p>
             {% endfor %}
         </div>
     </section>
 
     <hr class="horizontal-line" />
 
-    <!-- Fermentation Profile Chart Section -->
     <section class="fermentation-profile">
         <h2 class="section-title">Fermentation Profile</h2>
         <div class="fermentation-chart">
@@ -123,60 +81,35 @@ layout: default
     </section>
 </div>
 
-<!-- Chart.js for Fermentation Profile -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         const ctx = document.getElementById('fermentationChart').getContext('2d');
 
-        // Prepare data from Jekyll page front matter
         const fermentationData = [
             {% if page.fermentation_profile %}
-            {% for profile in page.fermentation_profile %}
-            { day: {{ profile.day }}, temp: {{ profile.temp }} }{% unless forloop.last %},{% endunless %}
-            {% endfor %}
+                {% for entry in page.fermentation_profile %}
+                { x: {{ entry.day }}, y: {{ entry.temp }} }{% unless forloop.last %},{% endunless %}
+                {% endfor %}
             {% endif %}
         ];
 
-        const chart = new Chart(ctx, {
+        new Chart(ctx, {
             type: 'line',
             data: {
-                labels: fermentationData.map(d => `Day ${d.day}`),
                 datasets: [{
                     label: 'Temperature (°F)',
-                    data: fermentationData.map(d => d.temp),
+                    data: fermentationData,
                     borderColor: 'rgb(75, 192, 192)',
                     backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                    tension: 0,              // Changed from 0.1 to 0 for straight lines
-                    fill: true,
-                    stepped: true            // Added this line for step chart
+                    stepped: true,
+                    fill: true
                 }]
             },
             options: {
-                responsive: true,
-                plugins: {
-                    title: {
-                        display: true,
-                        text: 'Fermentation Temperature Schedule'
-                    },
-                    legend: {
-                        display: false
-                    }
-                },
                 scales: {
-                    y: {
-                        beginAtZero: false,
-                        title: {
-                            display: true,
-                            text: 'Temperature (°F)'
-                        }
-                    },
-                    x: {
-                        title: {
-                            display: true,
-                            text: 'Fermentation Day'
-                        }
-                    }
+                    x: { type: 'linear', title: { display: true, text: 'Day' } },
+                    y: { title: { display: true, text: 'Temp (°F)' } }
                 }
             }
         });
