@@ -1,5 +1,54 @@
 ---
 layout: beer
 beer_key: mystery-hop-3000
-title: Mystery Hop 3000
+title: "Mystery Hop 3000"
+status: past_beer
+style: IPA
+group: India Pale Ale
+logo: /assets/images/beer/mystery_hop_3000.png
+description:
+    "The plan was to make an IPA to showcase the homegrown Willamette hops from 2021 but they didn't seem like they kept
+    well. This beer was a collaboration with a friend and we made a game time decision to stick with a SMaSH but use
+    Glacier hops I had. Glacier hops are featured in this beer with Pale High Color Malt from Great Western Malting."
+malts:
+    - 5 kg Pale Malt
+    - 0.5 kg Caramel Malt
+hops:
+    - 50 g Mystery Hop - 60 minutes
+    - 25 g Mystery Hop - 15 minutes
+    - 25 g Mystery Hop - 0 minutes (whirlpool)
+    - 50 g Mystery Hop - dry hop (5 days)
+yeast:
+    - 1 pack American Ale Yeast
+other_ingredients:
+    - 1 tsp Irish Moss
+brew_date: ""
+target_og: "TBD"
+actual_og: "TBD"
+target_fg: "TBD"
+actual_fg: "TBD"
+target_abv: "TBD"
+actual_abv: "TBD"
+calculated_ibu: "TBD"
+calculated_srm: "TBD"
+cost: "TBD"
+brewing_instructions:
+    - Mash the grains at 65°C (149°F) for 60 minutes
+    - Boil the wort for 60 minutes, adding hops as per the schedule
+    - Cool the wort to 20°C (68°F) and pitch the yeast
+    - Ferment at 20°C (68°F) for two weeks
+    - Dry hop for the last 5 days of fermentation
+    - Bottle or keg the beer and carbonate to desired levels
+starter_instructions:
+    - Prepare a 1-liter starter wort with a gravity of 1.040
+    - Boil the starter wort for 10 minutes and cool to 20°C (68°F)
+    - Pitch the yeast into the starter wort and let it ferment for 24-36 hours
+    - Decant the spent wort and pitch the active yeast into the main batch
+fermentation_profile:
+rating: ""
+tasting_notes:
+    - title: "Collaboration Brew"
+      description:
+          "This was a collaboration brew with a friend. Originally planned to showcase homegrown Willamette hops from
+          2021, but they didn't keep well. Made a game-time decision to use Glacier hops instead for a SMaSH-style IPA."
 ---
