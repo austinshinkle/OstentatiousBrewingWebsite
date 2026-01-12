@@ -7,9 +7,7 @@ layout: default
     <p>{{page.description}}</p>
 
     <div class="beer-grid">
-        {% for beer_file in site.data.beers %}
-            {% assign beer_name = beer_file[0] %}
-            {% assign beer = beer_file[1] %}
+        {% for beer in site.beers %}
             {% if beer.status == page.status %}
                 <div class="beer-card">
                     <div class="beer-image">
@@ -24,7 +22,7 @@ layout: default
                             <span>IBU: {{ beer.calculated_ibu }}</span>
                             <span>SRM: {{ beer.calculated_srm }}</span>
                         </div>
-                        <a href="{{ beer.beer_key }}" class="beer-link">View Details</a>
+                        <a href="{{ beer.url }}" class="beer-link">View Details</a>
                     </div>
                 </div>
             {% endif %}
@@ -33,8 +31,7 @@ layout: default
 
     {% comment %}Show message if list is empty{% endcomment %}
     {% assign list_count = 0 %}
-    {% for beer_file in site.data.beers %}
-        {% assign beer = beer_file[1] %}
+    {% for beer in site.beers %}
         {% if beer.status == page.status %}
             {% assign list_count = list_count | plus: 1 %}
         {% endif %}
