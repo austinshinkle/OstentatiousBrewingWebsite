@@ -2,37 +2,45 @@
 layout: default
 ---
 
-<!-- Link layout specific css -->
-<link rel="stylesheet" href="{{ '/assets/css/brewery.css' | relative_url }}" />
+<div class="beer-list-container">
+    <h1>{{page.title}}</h1>
+    <p>{{page.description}}</p>
 
-<div class="beer-list-page-container">
-    <div class="beer-list-title">
-        <h1>{{page.title }}</h1>
-        <p>{{page.description }}</p>
+    <div class="beer-grid">
+        {% for beer_file in site.data.beers %}
+            {% assign beer_name = beer_file[0] %}
+            {% assign beer = beer_file[1] %}
+            {% if beer.status == page.status %}
+                <div class="beer-card">
+                    <div class="beer-image">
+                        <img src="{{ beer.logo }}" alt="{{ beer.title }}">
+                    </div>
+                    <div class="beer-info">
+                        <h2>{{ beer.title }}</h2>
+                        <p class="beer-style">{{ beer.style }}</p>
+                        <p class="beer-description">{{ beer.description }}</p>
+                        <div class="beer-stats">
+                            <span>ABV: {{ beer.actual_abv | default: beer.target_abv }}</span>
+                            <span>IBU: {{ beer.calculated_ibu }}</span>
+                            <span>SRM: {{ beer.calculated_srm }}</span>
+                        </div>
+                        <a href="{{ beer.beer_key }}" class="beer-link">View Details</a>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
     </div>
 
-    <div class="beer-list-container">
-        {% for beer_file in site.data.beers %} {% assign beer_name = beer_file[0] %} {% assign beer = beer_file[1] %} {%
-        if beer.status == page.status %}
+    {% comment %}Show message if list is empty{% endcomment %}
+    {% assign list_count = 0 %}
+    {% for beer_file in site.data.beers %}
+        {% assign beer = beer_file[1] %}
+        {% if beer.status == page.status %}
+            {% assign list_count = list_count | plus: 1 %}
+        {% endif %}
+    {% endfor %}
 
-        <div class="beer-list-item">
-            <div class="beer-list-image-container">
-                <a href="/beers/{{ beer_name }}/">
-                    <img class="beer-list-image" src="{{ beer.logo }}" alt="{{ beer.name }}" />
-                </a>
-            </div>
-            <div class="beer-list-text-container">
-                <h3>{{ beer.name }}</h3>
-                <h4>{{ beer.style }}</h4>
-                <p>{{ beer.description }}</p>
-            </div>
-        </div>
-
-        {% endif %} {% endfor %}
-    </div>
+    {% if list_count == 0 %}
+        <p class="empty-message">{{ page.empty_message }}</p>
+    {% endif %}
 </div>
-{% comment %}Show message if list is empty{% endcomment %} {% assign list_count = 0 %} {% for
-beer_file in site.data.beers %} {% assign beer = beer_file[1] %} {% if beer.status == page.status %} {% assign
-list_count = list_count | plus: 1 %} {% endif %} {% endfor %} {% if list_count == 0 %}
-<p>{{ page.empty_message }}</p>
-{% endif %}
