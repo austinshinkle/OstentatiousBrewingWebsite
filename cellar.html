@@ -5,51 +5,54 @@ title: Beer Cellar
 
 <!-- Link layout specific css -->
 <link rel="stylesheet" href="{{ '/assets/css/brewery.css' | relative_url }}" />
-<link rel="stylesheet" href="{{ '/assets/css/cellar.css' | relative_url }}" />
 
-<div class="beer-list-page-container">
-    <div class="beer-list-title">
-        <h1>BEER CELLAR</h1>
+<div class="beer-list-container">
+    <div class="beer-list-header">
+        <h1>{{ page.title }}</h1>
         <p>THIS IS A LIST OF BEERS I AM STORING FOR LATER ENJOYMENT!</p>
     </div>
 
-    <div class="beer-list-container">
+    <div class="beer-list">
         {% for beer in site.data.cellar.cellar %}
+        <article class="beer-card">
+            <div class="beer-card-image">
+                <img src="{{ beer.logo }}" alt="{{ beer.name }}">
+            </div>
+            <div class="beer-card-content">
+                <div class="beer-card-header">
+                    <div>
+                        <h2>{{ beer.name }}</h2>
+                        <div
+                            style="font-size: 0.875rem; color: var(--color-secondary); font-weight: 500; margin-top: 0.25rem;">
+                            {{ beer.Brewery }}</div>
+                    </div>
+                    <span class="beer-style-badge">{{ beer.style }}</span>
+                </div>
 
-        <div class="beer-list-item">
-            <div class="cellar-image-name-container">
-                <div class="cellar-image-container">
-                    <img class="cellar-image" src="{{ beer.logo }}" alt="{{ beer.name }}" />
-                </div>
-                <div class="cellar-list-text-container">
-                    <h2>{{ beer.name }}</h2>
-                    <h3>{{ beer.Brewery }}</h3>
-                    <h5>{{ beer.style }}</h5>
-                </div>
-            </div>
-            <div class="cellar-stats-grid">
-                <div class="cellar-stat-cell">
-                    <span class="cellar-stat-table-title">CELLAR DATE</span>
-                    <span class="cellar-stat-table-value">{{ beer.cellar_date }}</span>
-                </div>
-                <div class="cellar-stat-cell">
-                    <span class="cellar-stat-table-title">VINTAGE</span>
-                    <span class="cellar-stat-table-value">{{ beer.vintage}}</span>
-                </div>
-                <div class="cellar-stat-cell">
-                    <span class="cellar-stat-table-title">VOLUME</span>
-                    <span class="cellar-stat-table-value">{{ beer.volume }}</span>
-                </div>
-                <div class="cellar-stat-cell">
-                    <span class="cellar-stat-table-title">ABV</span>
-                    <span class="cellar-stat-table-value">{{ beer.ABV }}</span>
-                </div>
-                <div class="cellar-stat-cell">
-                    <span class="cellar-stat-table-title">QUANTITY</span>
-                    <span class="cellar-stat-table-value">{{ beer.quantity }}</span>
+                <div class="beer-stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-label">Vintage</span>
+                        <span class="stat-value">{{ beer.vintage }}</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Date</span>
+                        <span class="stat-value">{{ beer.cellar_date }}</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">ABV</span>
+                        <span class="stat-value">{{ beer.ABV }}</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Volume</span>
+                        <span class="stat-value">{{ beer.volume }}</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Qty</span>
+                        <span class="stat-value">{{ beer.quantity }}</span>
+                    </div>
                 </div>
             </div>
-        </div>
+        </article>
         {% endfor %}
     </div>
 </div>
