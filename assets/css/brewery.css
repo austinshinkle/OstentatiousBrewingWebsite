@@ -49,7 +49,8 @@ body {
 /* Grid Layout */
 .beer-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+    justify-content: center;
     gap: 2rem;
 }
 
