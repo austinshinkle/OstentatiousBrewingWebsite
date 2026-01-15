@@ -1,25 +1,28 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>{{ page.title | default: site.title | default: "OSTENTATIOUS BREWING" }}</title>
-        <link rel="stylesheet" href="{{ '/assets/css/base.css' | relative_url }}" />
-        <link rel="stylesheet" href="{{ '/assets/css/header.css' | relative_url }}" />
-        <link rel="stylesheet" href="{{ '/assets/css/footer.css' | relative_url }}" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
-            rel="stylesheet" />
-    </head>
-    <body>
-        {% include header.html %}
 
-        <!-- ---------------------------   BEGIN PAGE CONTENT  ------------------------------------- -->
-        <main>{{ content }}</main>
-        <!-- ---------------------------   END PAGE CONTENT  ------------------------------------- -->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ page.title | default: site.title | default: "OSTENTATIOUS BREWING" }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/base.css' | relative_url }}" />
+    <link rel="stylesheet" href="{{ '/assets/css/header.css' | relative_url }}" />
+    <link rel="stylesheet" href="{{ '/assets/css/footer.css' | relative_url }}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+</head>
 
-        {% include footer.html %}
-    </body>
+<body>
+    {% include header.html %}
+
+    <!-- ---------------------------   BEGIN PAGE CONTENT  ------------------------------------- -->
+    <main>{{ content }}</main>
+    <!-- ---------------------------   END PAGE CONTENT  ------------------------------------- -->
+
+    {% include footer.html %}
+</body>
+
 </html>

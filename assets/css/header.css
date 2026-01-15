@@ -1,152 +1,225 @@
 /* === HEADER + NAV === */
+:root {
+    --header-height: 80px;
+    --color-primary: #2d3436;
+    --color-accent: #0984e3;
+    --color-bg-white: #ffffff;
+    --color-text-nav: #2d3436;
+    --shadow-header: 0 4px 20px rgba(0, 0, 0, 0.05);
+    --font-heading: 'Inter', sans-serif;
+}
+
 header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    padding: 0;
+    padding: 0 2rem;
     margin: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100vw;
-    min-height: 80px;
-    flex-wrap: nowrap;
-    overflow-x: hidden;
+    width: 100%;
+    height: var(--header-height);
+    background-color: var(--color-bg-white);
+    box-shadow: var(--shadow-header);
     box-sizing: border-box;
-    background-color: #555555;
+    transition: all 0.3s ease;
 }
 
 /* LOGO & TITLE */
 .logo-container {
     display: flex;
     align-items: center;
-    margin-left: 20px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    background-color: white;
-    border-radius: 50%;
+    flex-shrink: 0;
 }
 
 .logo {
-    width: 65px;
-    height: 65px;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
     object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: rotate(10deg);
 }
 
 .header_text {
-    font-size: 32px;
-    font-weight: bold;
-    color: #FFFFFF;
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--color-primary);
     text-transform: uppercase;
-    text-align: center;
-    white-space: normal;
-    line-height: 1;
-    margin: 2px 10px 0 10px;
+    text-align: left;
+    margin-left: 1rem;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
 }
 
 /* HAMBURGER BUTTON */
 .hamburger {
-    font-size: 56px;
+    display: none;
+    /* Hidden by default on desktop if we had a desktop menu, but we rely on the slide-out for now? */
+    /* The original design had a slide out menu even on desktop? 
+       Checking original: "nav { ... right: 0; width: 130px; ... visibility: hidden; }"
+       Yes, it seems it was always a hamburger menu. I will keep that pattern but modernize it.
+    */
+    font-size: 24px;
     background: none;
-    color: white;
+    color: var(--color-primary);
     border: none;
     cursor: pointer;
-    margin-right: 20px;
+    padding: 0.5rem;
     z-index: 1002;
-    padding: 0;
-    align-items: center;;
+    transition: color 0.2s ease;
+    display: flex;
+    align-items: center;
     justify-content: center;
+}
+
+.hamburger:hover {
+    color: var(--color-accent);
 }
 
 /* NAVIGATION STYLES */
 nav {
     position: fixed;
-    top: 80px;
+    top: 0;
     right: 0;
-    width: 130px;
-    background-color: #555555;
-    padding: 20px;
-    transition: transform 0.3s ease;
+    width: 300px;
+    /* Wider, more modern drawer */
+    height: 100vh;
+    background-color: var(--color-bg-white);
+    padding: 6rem 2rem 2rem;
+    /* Top padding to clear close button area */
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 1001;
-    height: auto;
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    visibility: hidden;
+    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.1);
     transform: translateX(100%);
-    opacity: 0;
+    box-sizing: border-box;
 }
 
 nav.nav-open {
     transform: translateX(0);
-    visibility: visible;
-    opacity: 1;
 }
 
 nav ul {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 1rem;
     padding: 0;
     margin: 0;
-    align-items: center;
+}
+
+nav ul li {
+    width: 100%;
+    opacity: 0;
+    transform: translateX(20px);
+    transition: all 0.4s ease;
+}
+
+nav.nav-open ul li {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Stagger animation for menu items */
+nav.nav-open ul li:nth-child(1) {
+    transition-delay: 0.1s;
+}
+
+nav.nav-open ul li:nth-child(2) {
+    transition-delay: 0.15s;
+}
+
+nav.nav-open ul li:nth-child(3) {
+    transition-delay: 0.2s;
+}
+
+nav.nav-open ul li:nth-child(4) {
+    transition-delay: 0.25s;
+}
+
+nav.nav-open ul li:nth-child(5) {
+    transition-delay: 0.3s;
+}
+
+nav.nav-open ul li:nth-child(6) {
+    transition-delay: 0.35s;
+}
+
+nav.nav-open ul li:nth-child(7) {
+    transition-delay: 0.4s;
+}
+
+nav.nav-open ul li:nth-child(8) {
+    transition-delay: 0.45s;
+}
+
+nav.nav-open ul li:nth-child(9) {
+    transition-delay: 0.5s;
 }
 
 nav ul li a {
-    color: white;
+    color: var(--color-text-nav);
+    font-family: var(--font-heading);
     text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
+    font-size: 1.125rem;
+    font-weight: 600;
     text-transform: uppercase;
-    display: block;
-    padding: 10px;
-    text-align: center;
-    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    transition: all 0.2s ease;
 }
 
 nav ul li a:hover {
-    color: black;
-    background-color: rgba(255, 255, 255, 0.1);
-    text-decoration: none;
+    color: var(--color-accent);
+    background-color: #f5f6fa;
+    transform: translateX(5px);
 }
 
-/* === MOBILE  === */
-@media screen and (max-width: 768px) {
+/* Overlay for menu */
+.nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(2px);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
 
+body.menu-open .nav-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* === RESPONSIVE === */
+@media screen and (max-width: 768px) {
     header {
-        min-height: 55px;
-    }
-    .hamburger {
-        font-size: 36px;
+        height: 60px;
+        padding: 0 1rem;
     }
 
     .header_text {
-        font-size: 20px;
+        font-size: 1rem;
     }
 
     .logo {
-        width: 35px;
-        height: 35px;
-        border-radius: 50%;
-        object-fit: cover;
+        width: 36px;
+        height: 36px;
     }
 
     nav {
-        position: fixed;
-        top: 55px;
-        left: 0;
         width: 100vw;
-        height: 100vh;
+        /* Full width on mobile */
     }
-
-    nav ul{
-        gap: 15px;
-    }
-
-    nav ul li a {
-        font-size: 24px;
-        padding: 5px;
-    }
-
 }
