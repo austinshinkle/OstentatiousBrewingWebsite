@@ -18,7 +18,9 @@ layout: default
         {% if beer.status == page.status %}
         <article class="beer-card">
             <div class="beer-card-image">
-                <img src="{{ beer.logo }}" alt="{{ beer.title }}">
+                <a href="{{ beer.url }}" style="display: contents;">
+                    <img src="{{ beer.logo }}" alt="{{ beer.title }}">
+                </a>
             </div>
             <div class="beer-card-content">
                 <div class="beer-card-header">
