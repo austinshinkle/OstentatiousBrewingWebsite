@@ -223,5 +223,35 @@ body.menu-open .nav-overlay {
     nav {
         width: 100vw;
         /* Full width on mobile */
+
+        /* Back Button */
+        .back-button-container {
+            max-width: 1200px;
+            margin: 2rem auto 0;
+            padding: 0 1.5rem;
+        }
+
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+            color: var(--color-secondary);
+            font-weight: 600;
+            font-size: 0.9375rem;
+            padding: 0.5rem 1rem;
+            background: white;
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            transition: all 0.2s ease;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .back-button:hover {
+            color: var(--color-primary);
+            border-color: var(--color-secondary);
+            transform: translateX(-2px);
+            box-shadow: var(--shadow-md);
+        }
     }
 }

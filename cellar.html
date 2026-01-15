@@ -6,6 +6,17 @@ title: Beer Cellar
 <!-- Link layout specific css -->
 <link rel="stylesheet" href="{{ '/assets/css/brewery.css' | relative_url }}" />
 
+<div class="back-button-container">
+    <a href="javascript:history.back()" class="back-button">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        Back
+    </a>
+</div>
+
 <div class="beer-list-container">
     <div class="beer-list-header">
         <h1>{{ page.title }}</h1>
