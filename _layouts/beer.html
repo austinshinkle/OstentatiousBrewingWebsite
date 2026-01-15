@@ -90,7 +90,8 @@ layout: default
     <section class="fermentation-profile">
         <h2 class="section-title">Fermentation Profile</h2>
         <div class="fermentation-chart">
-            <canvas id="fermentationChart" width="800" height="400"></canvas>
+            <canvas id="fermentationChart" width="800" height="400"
+                data-fermentation='{% if page.fermentation_profile %}{{ page.fermentation_profile | jsonify }}{% else %}[]{% endif %}'></canvas>
         </div>
     </section>
 </div>
@@ -98,34 +99,37 @@ layout: default
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-        const ctx = document.getElementById('fermentationChart').getContext('2d');
+        const canvas = document.getElementById('fermentationChart');
+        const ctx = canvas.getContext('2d');
 
-        const fermentationData = [
-            {% if page.fermentation_profile %}
-                {% for entry in page.fermentation_profile %}
-    { x: { { entry.day } }, y: { { entry.temp } } } {% unless forloop.last %}, {% endunless %}
-    {% endfor %}
-    {% endif %}
-        ];
-
-    new Chart(ctx, {
-        type: 'line',
-        data: {
-            datasets: [{
-                label: 'Temperature (°F)',
-                data: fermentationData,
-                borderColor: 'rgb(75, 192, 192)',
-                backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                stepped: true,
-                fill: true
-            }]
-        },
-        options: {
-            scales: {
-                x: { type: 'linear', title: { display: true, text: 'Day' } },
-                y: { title: { display: true, text: 'Temp (°F)' } }
+        let fermentationData = [];
+        try {
+            const rawData = JSON.parse(canvas.dataset.fermentation);
+            if (Array.isArray(rawData)) {
+                fermentationData = rawData.map(entry => ({ x: entry.day, y: entry.temp }));
             }
+        } catch (e) {
+            console.error("Error parsing fermentation data", e);
         }
-    });
+
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                datasets: [{
+                    label: 'Temperature (°F)',
+                    data: fermentationData,
+                    borderColor: 'rgb(75, 192, 192)',
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    stepped: true,
+                    fill: true
+                }]
+            },
+            options: {
+                scales: {
+                    x: { type: 'linear', title: { display: true, text: 'Day' } },
+                    y: { title: { display: true, text: 'Temp (°F)' } }
+                }
+            }
+        });
     });
 </script>
