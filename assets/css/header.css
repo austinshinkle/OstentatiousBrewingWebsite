@@ -177,7 +177,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: var(--color-accent);
+    color: black;
+    font-weight: 800;
     background-color: #f5f6fa;
     transform: translateX(5px);
 }
