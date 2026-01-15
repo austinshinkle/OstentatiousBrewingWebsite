@@ -17,19 +17,22 @@ layout: default
     </div>
 
     <div class="logo-beer-stats-container">
-        <img src="{{ page.logo | relative_url }}" alt="{{ page.title }} logo" class="beer-detail-image" />
+        <div class="beer-detail-image-wrapper">
+            <img src="{{ page.logo | relative_url }}" alt="{{ page.title }} logo" class="beer-detail-image" />
+        </div>
 
         <div class="beer-stats-grid">
-            {% assign stats = "Target OG,target_og|Actual OG,actual_og|Target FG,target_fg|Actual FG,actual_fg|Target ABV,target_abv|Actual ABV,actual_abv|IBU,calculated_ibu|SRM,calculated_srm" | split: "|" %}
+            {% assign stats = "Target OG,target_og|Actual OG,actual_og|Target FG,target_fg|Actual FG,actual_fg|Target
+            ABV,target_abv|Actual ABV,actual_abv|IBU,calculated_ibu|SRM,calculated_srm" | split: "|" %}
 
             {% for stat in stats %}
-                {% assign stat_parts = stat | split: "," %}
-                {% assign label = stat_parts[0] %}
-                {% assign key = stat_parts[1] %}
-                <div class="beer-stat-cell">
-                    <span class="beer-stat-table-title">{{ label }}</span>
-                    <span class="beer-stat-table-value">{{ page[key] | default: "TBD" }}</span>
-                </div>
+            {% assign stat_parts = stat | split: "," %}
+            {% assign label = stat_parts[0] %}
+            {% assign key = stat_parts[1] %}
+            <div class="beer-stat-cell">
+                <span class="beer-stat-table-title">{{ label }}</span>
+                <span class="beer-stat-table-value">{{ page[key] | default: "TBD" }}</span>
+            </div>
             {% endfor %}
         </div>
     </div>
@@ -59,14 +62,14 @@ layout: default
         <div class="beer-column">
             <h2 class="beer-column-section-title">Brewing Instructions</h2>
             {% for step in page.brewing_instructions %}
-                <p>{{ forloop.index }}. {{ step }}</p>
+            <p>{{ forloop.index }}. {{ step }}</p>
             {% endfor %}
         </div>
 
         <div class="beer-column">
             <h2 class="beer-column-section-title">Starter & Notes</h2>
             {% for note in page.starter_instructions %}
-                <p>{{ note }}</p>
+            <p>{{ note }}</p>
             {% endfor %}
         </div>
     </section>
@@ -83,35 +86,35 @@ layout: default
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
         const ctx = document.getElementById('fermentationChart').getContext('2d');
 
         const fermentationData = [
             {% if page.fermentation_profile %}
                 {% for entry in page.fermentation_profile %}
-                { x: {{ entry.day }}, y: {{ entry.temp }} }{% unless forloop.last %},{% endunless %}
-                {% endfor %}
-            {% endif %}
+    { x: { { entry.day } }, y: { { entry.temp } } } {% unless forloop.last %}, {% endunless %}
+    {% endfor %}
+    {% endif %}
         ];
 
-        new Chart(ctx, {
-            type: 'line',
-            data: {
-                datasets: [{
-                    label: 'Temperature (°F)',
-                    data: fermentationData,
-                    borderColor: 'rgb(75, 192, 192)',
-                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                    stepped: true,
-                    fill: true
-                }]
-            },
-            options: {
-                scales: {
-                    x: { type: 'linear', title: { display: true, text: 'Day' } },
-                    y: { title: { display: true, text: 'Temp (°F)' } }
-                }
+    new Chart(ctx, {
+        type: 'line',
+        data: {
+            datasets: [{
+                label: 'Temperature (°F)',
+                data: fermentationData,
+                borderColor: 'rgb(75, 192, 192)',
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                stepped: true,
+                fill: true
+            }]
+        },
+        options: {
+            scales: {
+                x: { type: 'linear', title: { display: true, text: 'Day' } },
+                y: { title: { display: true, text: 'Temp (°F)' } }
             }
-        });
+        }
+    });
     });
 </script>
