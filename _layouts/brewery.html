@@ -24,21 +24,23 @@ layout: default
         <p>{{page.description}}</p>
     </div>
 
-    <!-- Filter Section -->
-    {% assign current_styles = site.beers | where: "status", page.status | map: "style" | uniq | sort %}
-    {% if current_styles.size > 1 %}
+    <!-- Filter Section (Only for Recipe Archive, filtering by Group) -->
+    {% if page.title == "Recipe Archive" %}
+    {% assign current_groups = site.beers | where: "status", page.status | map: "group" | uniq | sort %}
+    {% if current_groups.size > 1 %}
     <div class="filter-container">
         <button class="filter-btn active" data-filter="all">All</button>
-        {% for style in current_styles %}
-        <button class="filter-btn" data-filter="{{ style }}">{{ style }}</button>
+        {% for group in current_groups %}
+        <button class="filter-btn" data-filter="{{ group }}">{{ group }}</button>
         {% endfor %}
     </div>
+    {% endif %}
     {% endif %}
 
     <div class="beer-list">
         {% for beer in site.beers %}
         {% if beer.status == page.status %}
-        <article class="beer-card" data-style="{{ beer.style }}">
+        <article class="beer-card" data-group="{{ beer.group }}">
             <div class="beer-card-image">
                 <a href="{{ beer.url }}">
                     <img src="{{ beer.logo }}" alt="{{ beer.title }}">
@@ -100,6 +102,9 @@ layout: default
         const filterBtns = document.querySelectorAll('.filter-btn');
         const cards = document.querySelectorAll('.beer-card');
 
+        // If no filter buttons (e.g. not on recipe archive), exit
+        if (filterBtns.length === 0) return;
+
         filterBtns.forEach(btn => {
             btn.addEventListener('click', () => {
                 // Remove active class from all
@@ -110,10 +115,9 @@ layout: default
                 const filterValue = btn.getAttribute('data-filter');
 
                 cards.forEach(card => {
-                    if (filterValue === 'all' || card.getAttribute('data-style') === filterValue) {
-                        card.style.display = ''; // Reset to default (flex/block)
-                        // Trigger reflow/animation if needed, but for now simple toggle
-                        // Try to keep it hidden property or display
+                    const cardGroup = card.getAttribute('data-group');
+                    if (filterValue === 'all' || cardGroup === filterValue) {
+                        card.style.display = '';
                     } else {
                         card.style.display = 'none';
                     }
