@@ -130,6 +130,7 @@ body {
     height: 100%;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .beer-card-image img {
