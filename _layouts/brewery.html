@@ -24,10 +24,21 @@ layout: default
         <p>{{page.description}}</p>
     </div>
 
+    <!-- Filter Section -->
+    {% assign current_styles = site.beers | where: "status", page.status | map: "style" | uniq | sort %}
+    {% if current_styles.size > 1 %}
+    <div class="filter-container">
+        <button class="filter-btn active" data-filter="all">All</button>
+        {% for style in current_styles %}
+        <button class="filter-btn" data-filter="{{ style }}">{{ style }}</button>
+        {% endfor %}
+    </div>
+    {% endif %}
+
     <div class="beer-list">
         {% for beer in site.beers %}
         {% if beer.status == page.status %}
-        <article class="beer-card">
+        <article class="beer-card" data-style="{{ beer.style }}">
             <div class="beer-card-image">
                 <a href="{{ beer.url }}">
                     <img src="{{ beer.logo }}" alt="{{ beer.title }}">
@@ -83,3 +94,31 @@ layout: default
     </div>
     {% endif %}
 </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const cards = document.querySelectorAll('.beer-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all
+                filterBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked
+                btn.classList.add('active');
+
+                const filterValue = btn.getAttribute('data-filter');
+
+                cards.forEach(card => {
+                    if (filterValue === 'all' || card.getAttribute('data-style') === filterValue) {
+                        card.style.display = ''; // Reset to default (flex/block)
+                        // Trigger reflow/animation if needed, but for now simple toggle
+                        // Try to keep it hidden property or display
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    });
+</script>
