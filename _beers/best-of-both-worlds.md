@@ -8,44 +8,66 @@ group: India Pale Ale
 logo: /assets/images/beer/best_of_both_worlds.png
 description: "This double IPA will be an experiment to overdo it. Usually, my IPA designs seem like what I want but they end up falling short. Maybe this is because I don't get the IBU I expect from them or the yeast performance isn't up to par or maybe something entirely different. This recipe is more of everything: malt, a different yeast and a ton of hops from the US and Southern Hemisphere...hopefully it truly will be the best of both worlds."
 malts:
-    - 2.27 kg 2-Row Pilsner Malt
-    - 3.16 kg Pale Malt
-    - 2.95 kg Pale High Color Malt
-    - 113 g Carapils Malt
+    - 5 lbs 2-Row Pilsner Malt
+    - 7 lbs Pale Malt
+    - 6.5 lb Pale High Color Malt
+    - 4 oz Carapils Malt
 hops:
-    - 5.7 g Galaxy Hops (15.9% AA) - 0 minutes
-    - 8.5 g Ella Hops (16.3% AA) - 0 minutes
-    - 8.5 g Rakau Hops (9.2% AA) - 0 minutes
-    - 14.2 g Pahto Hops (17.5% AA) - 0 minutes
-    - 28.4 g Loral Hops (10.4% AA) - 50 minutes
-    - 28.4 g Green Bullet Hops (13.5% AA) - 0 minutes
-    - 28.34 g Nugget Hops (13.7% AA) - 0 minutes
+    - 0.2 oz Galaxy Hops (15.9% AA) - 0 minutes
+    - 0.3 oz Ella Hops (16.3% AA) - 0 minutes
+    - 1 oz Nugget Hops (13.7% AA) - 0 minutes
+    - 0.5 oz Pahto Hops (17.5% AA) - 0 minutes
+    - 0.3 oz Rakau Hops (9.2% AA) - 0 minutes
+    - 1 oz Loral Hops (10.4% AA) - 50 minutes
+    - 1 oz Green Bullet Hops (13.5% AA) - 50 minutes
 yeast:
-    - 1 pack Imperial Labs Loki Ale Yeast (A43)
+    - 1 pack Imperial Labs Loki Ale Yeast
 other_ingredients:
-    - 1 tsp Irish Moss
-brew_date: ""
-target_og: "TBD"
-actual_og: "TBD"
-target_fg: "TBD"
-actual_fg: "TBD"
-target_abv: "TBD"
-actual_abv: "TBD"
-calculated_ibu: "TBD"
-calculated_srm: "TBD"
-cost: "TBD"
+    - 15 drops FermCap
+    - 1 tablet Whirlfloc
+    - 1/2 tsp Yeast Nutrient
+    - 9.75 gallons Water
+brew_date: "???"
+target_og: "1.080"
+actual_og: "1.086"
+target_fg: "1.012"
+actual_fg: "1.024"
+target_abv: "9.2%"
+actual_abv: "8.3%"
+calculated_ibu: "121"
+calculated_srm: "5.8"
+cost: "$30.45"
 brewing_instructions:
-    - Mash the grains at 65°C (149°F) for 60 minutes
-    - Boil the wort for 60 minutes, adding hops as per the schedule
-    - Cool the wort to 20°C (68°F) and pitch the yeast
-    - Ferment at 20°C (68°F) for two weeks
-    - Dry hop for the last 5 days of fermentation
-    - Bottle or keg the beer and carbonate to desired levels
+    - Heat 6 gallons of strike water to 160°F
+    - Add 6 gallons of water to the mash tun
+    - Add all grains to mash tun and confirm temperature of ~149°F
+    - Steep grains for 60 minutes
+    - While steeping, heat 3.75 gallons of water to 170°F for lautering
+    - Continuous sparge into boil kettle
+    - "Total wort volume should be 7.36 gallons (7.0 actual)"
+    - Bring water to a boil and wait for the hot break
+    - Begin boil
+    - At 0 minutes add 15 drops FermCap to reduce foaming
+    - At 0 minutes, add 0.2 oz Galaxy hops
+    - At 0 minutes, add 0.3 oz Ella hops
+    - At 0 minutes, add 1 oz Nugget hops
+    - At 0 minutes, add 0.5 oz Pahto hops
+    - At 0 minutes, add 0.3 oz Rakau hops
+    - At 50 minutes, add one tablet Whirlfloc
+    - At 50 minutes, add 1/2 tsp of yeast nutrient
+    - At 50 minutes, add 1 oz Loral hops
+    - At 50 minutes, add 1 oz Green Bullet hops
+    - At 60 minutes, chill the wort to approx. 68°F
+    - Aerate with pure oxygen for 1 minute
+    - "Move to the primary fermenter (5.7 gal actual)"
+    - Pitch yeast (whole starter)
+    - Ferment at 68°F for 7 days
+    - Ferment at 72°F for 7 days
+    - Rack to secondary and cold crash at 34°F for 7 days
+    - Package and carbonate
 starter_instructions:
-    - Prepare a 1-liter starter wort with a gravity of 1.040
-    - Boil the starter wort for 10 minutes and cool to 20°C (68°F)
-    - Pitch the yeast into the starter wort and let it ferment for 24-36 hours
-    - Decant the spent wort and pitch the active yeast into the main batch
+    - 1 package Imperial Labs Loki yeast
+    - 6 oz Extra Light DME in 3L water
 fermentation_profile:
 rating: ""
 tasting_notes:
