@@ -5,7 +5,7 @@ title: "Vltava Pils"
 status: in_production
 style: Czech Pilsner
 group: Pilsner
-logo: /assets/images/beer/vltava-pils.jpg
+logo: /assets/images/beer/vltava_pils.jpg
 description: "A light Czech lager for every day drinking"
 malts:
     - 9.5 lbs 2 Row Pilsner Malt
