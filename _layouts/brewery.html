@@ -38,7 +38,8 @@ layout: default
     {% endif %}
 
     <div class="beer-list">
-        {% for beer in site.beers %}
+        {% assign sorted_beers = site.beers | sort: "brew_date" | reverse %}
+        {% for beer in sorted_beers %}
         {% if beer.status == page.status %}
         <article class="beer-card" data-group="{{ beer.group }}">
             <div class="beer-card-image">
