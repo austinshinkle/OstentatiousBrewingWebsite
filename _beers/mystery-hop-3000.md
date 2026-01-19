@@ -22,16 +22,16 @@ yeast:
     - 1 pack American Ale Yeast
 other_ingredients:
     - 1 tsp Irish Moss
-brew_date: ""
-target_og: "TBD"
-actual_og: "TBD"
-target_fg: "TBD"
-actual_fg: "TBD"
-target_abv: "TBD"
-actual_abv: "TBD"
-calculated_ibu: "TBD"
-calculated_srm: "TBD"
-cost: "TBD"
+brew_date: "???"
+target_og: "1.073"
+actual_og: "1.084"
+target_fg: "1.018"
+actual_fg: "1.023"
+target_abv: "7.4%"
+actual_abv: "8.2%"
+calculated_ibu: "86"
+calculated_srm: "7.0"
+cost: "$32.50"
 brewing_instructions:
     - Mash the grains at 65°C (149°F) for 60 minutes
     - Boil the wort for 60 minutes, adding hops as per the schedule
