@@ -21,7 +21,7 @@ other_ingredients:
     - 1 tablet Whirlfloc
     - 1/2 tsp Yeast Nutrient
     - 9.5 gallons Water
-brew_date: "December 2020"
+brew_date: "2020-11-18"
 target_og: "1.091"
 actual_og: "1.088"
 target_fg: "1.023"

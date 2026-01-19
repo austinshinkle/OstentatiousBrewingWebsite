@@ -18,7 +18,7 @@ yeast:
     - 1 package White Labs California Ale WLP001
 other_ingredients:
     - 6.0 gallons Water
-brew_date: "???"
+brew_date: "2017-10-07"
 target_og: "1.050"
 actual_og: "1.045"
 target_fg: "1.015"

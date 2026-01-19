@@ -27,7 +27,7 @@ other_ingredients:
     - 0.5 tsp Yeast Nutrient
     - 1 tablet Whilfloc
     - 1 Campden Tablet (water additive)
-brew_date: "2021-08-13"
+brew_date: "2021-08-29"
 target_og: "1.064"
 actual_og: "1.069"
 target_fg: "1.014"

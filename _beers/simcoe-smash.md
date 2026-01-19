@@ -18,7 +18,7 @@ yeast:
 other_ingredients:
     - 1 tablet Whirlfloc
     - 6.25 gallons Water
-brew_date: "???"
+brew_date: "2020-06-26"
 target_og: "1.069"
 actual_og: "1.073"
 target_fg: "1.016"

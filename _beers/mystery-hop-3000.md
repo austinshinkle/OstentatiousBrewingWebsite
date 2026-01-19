@@ -22,7 +22,7 @@ yeast:
     - 1 pack American Ale Yeast
 other_ingredients:
     - 1 tsp Irish Moss
-brew_date: "???"
+brew_date: "2021-11-21"
 target_og: "1.073"
 actual_og: "1.084"
 target_fg: "1.018"

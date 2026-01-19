@@ -22,7 +22,7 @@ other_ingredients:
     - 1/2 tsp Yeast Nutrient
     - 1 campden tablet (crushed)
     - 9.25 gallons Water
-brew_date: "???"
+brew_date: "2021-02-27"
 target_og: "1.077"
 actual_og: "1.078"
 target_fg: "1.019"

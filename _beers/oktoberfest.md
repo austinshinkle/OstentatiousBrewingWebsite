@@ -19,7 +19,7 @@ other_ingredients:
     - 10 drops FermCap
     - 1 tablet Whirlfloc
     - 8.5 gallons Water
-brew_date: "???"
+brew_date: "2020-09-01"
 target_og: "1.058"
 actual_og: "1.051"
 target_fg: "1.013"

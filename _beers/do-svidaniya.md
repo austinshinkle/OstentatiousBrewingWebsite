@@ -20,7 +20,7 @@ yeast:
     - 2 packages WLP004 Irish Ale Yeast
 other_ingredients:
     - 6.5 gallons Water
-brew_date: "???"
+brew_date: "2018-01-20"
 target_og: "1.088"
 actual_og: "1.083"
 target_fg: "1.020"

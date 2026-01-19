@@ -17,7 +17,7 @@ yeast:
     - 2 packages WLP001 California Ale Yeast
 other_ingredients:
     - 4.5 gallons Water
-brew_date: "March 2020"
+brew_date: "2020-03-21"
 target_og: "1.088"
 actual_og: "1.071"
 target_fg: "1.019"

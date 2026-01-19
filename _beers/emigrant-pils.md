@@ -21,7 +21,7 @@ other_ingredients:
     - 1/2 tsp Yeast Nutrient
     - 0.5g Potassium Metabisulfate
     - 9.3 gallons Water
-brew_date: "???"
+brew_date: "2021-01-02"
 target_og: "1.050"
 actual_og: "1.046"
 target_fg: "1.009"
