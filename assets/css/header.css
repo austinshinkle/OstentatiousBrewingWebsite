@@ -224,6 +224,11 @@ body.menu-open .nav-overlay {
         width: 100vw;
         /* Full width on mobile */
     }
+
+    .back-button-container {
+        text-align: center;
+        padding: 1.5rem 1rem 0;
+    }
 }
 
 /* Back Button */
