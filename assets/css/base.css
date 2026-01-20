@@ -1,3 +1,19 @@
+:root {
+    --color-primary: #2d3436;
+    --color-secondary: #636e72;
+    --color-accent: #0984e3;
+    --color-accent-hover: #00cec9;
+    --color-bg-light: #f5f6fa;
+    --color-bg-white: #ffffff;
+    --color-border: #dfe6e9;
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    --radius-md: 12px;
+    --radius-full: 9999px;
+    --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
 /* Set base font */
 body {
     font-family: 'Inter', system-ui, -apple-system, sans-serif;

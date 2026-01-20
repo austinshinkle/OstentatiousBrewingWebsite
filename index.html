@@ -3,10 +3,51 @@ layout: default
 title: Ostentatious Brewing
 ---
 
-<div class="container">
-    <h3 style="text-align: center;">WELCOME TO OSTENTATIOUS BREWING</h3>
-    <!-- Image -->
-    <img src="{{ '/assets/images/logo/ostentatious-brewing.png' | relative_url }}" alt="Home Brewing Setup" width="40%" style="border-radius: 8px; margin-bottom: 20px; display: block; margin: 0 auto;">
-    
-    <p style="text-align: center;">WHERE WE LOVE BEER. WE LOVE TO DRINK IT. WE LOVE TO MAKE IT. WE JUST LOVE IT.</p>
+<!-- Link home page specific css -->
+<link rel="stylesheet" href="{{ '/assets/css/home.css' | relative_url }}" />
+
+<div class="home-container">
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <h1 class="hero-title">WELCOME TO OSTENTATIOUS BREWING</h1>
+        <img src="{{ '/assets/images/logo/ostentatious-brewing.png' | relative_url }}" alt="Ostentatious Brewing Logo"
+            class="hero-logo">
+        <p class="hero-subtitle">WHERE WE LOVE BEER. WE LOVE TO DRINK IT. WE LOVE TO MAKE IT. WE JUST LOVE IT.</p>
+    </section>
+
+    <!-- About Section (Image Left, Text Right) -->
+    <section class="home-section">
+        <div class="section-image-container">
+            <img src="{{ '/assets/images/about/about_prost.png' | relative_url }}" alt="About Ostentatious Brewing"
+                class="section-image">
+        </div>
+        <div class="section-content">
+            <h2>ABOUT US</h2>
+            <p>
+                OSTENTATIOUS BREWING IS A PLACE FOR LEARNING. LEARNING ABOUT BEER. LEARING ABOUT IOT TECHNOLOGY.
+                LEARNING ABOUT
+                WEB DESIGN. I AM AN ENGINEER BY TRAINING AND A BEER ENTHUSIAST. I FIND IT TO BE A PERFECT BLEND OF
+                SCIENCE AND
+                ART AND IT IS FUN TO DRINK THE END PRODUCT! TAKE A LOOK AROUND OR FOLLOW US ON INSTAGRAM AND FEEL FREE
+                TO USE
+                ANY OF THE CONTENT! PROST!
+            </p>
+        </div>
+    </section>
+
+    <!-- Brew Setup Section (Image Right, Text Left) -->
+    <section class="home-section">
+        <div class="section-content">
+            <h2>BREW SETUP</h2>
+            <p>
+                THIS PAGE IS UNDER CONSTRUCTION. WE ARE CURRENTLY DOCUMENTING OUR BREWING HARDWARE, IOT MONITORS, AND
+                PROCESSES TO SHARE WITH THE COMMUNITY. STAY TUNED FOR DEEP DIVES INTO OUR FERMENTATION CHAMBERS,
+                BOIL KETTLES, AND MASH TUN SETUPS.
+            </p>
+        </div>
+        <div class="section-image-container">
+            <img src="{{ '/assets/images/other/brewery_under_construction.jpeg' | relative_url }}" alt="Brewery Setup"
+                class="section-image">
+        </div>
+    </section>
 </div>
