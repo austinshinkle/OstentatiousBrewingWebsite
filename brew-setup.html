@@ -3,13 +3,142 @@ layout: default
 title: Brew Setup
 ---
 
-<div class="container">
-    <h3 style="text-align: center">BREW SETUP</h3>
-    <p style="text-align: center">THIS PAGE IS UNDER CONSTRUCTION.</p>
-    <!-- Image -->
-    <img
-        src="{{ '/assets/images/other/brewery_under_construction.jpeg' | relative_url }}"
-        alt="Home Brewing Setup"
-        width="40%"
-        style="border-radius: 8px; margin-bottom: 20px; display: block; margin: 0 auto" />
+<!-- Link Brew Setup specific css -->
+<link rel="stylesheet" href="{{ '/assets/css/brew-setup.css' | relative_url }}" />
+
+<div class="setup-container">
+    <div class="setup-header">
+        <h1>OUR BREW SETUP</h1>
+        <p>A look into the equipment and processes that power Ostentatious Brewing. From precision temperature control
+            to manual wort management, here's how we craft our beer.</p>
+    </div>
+
+    <section class="equipment-section">
+        <h2 class="section-title">THE GEAR</h2>
+        <div class="equipment-grid">
+            <!-- Kettle -->
+            <div class="equipment-card">
+                <div class="equipment-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M2 12h20" />
+                        <path d="M7 12V7a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v5" />
+                        <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7" />
+                    </svg>
+                </div>
+                <h3>Boil Kettle</h3>
+                <p>A Blichmann 10-gallon G2 Boilermaker kettle paired with a Blichmann Hellfire burner. This setup
+                    provides rapid heating and precise boil control, essential for consistent hop extraction.</p>
+            </div>
+
+            <!-- Mash Tun -->
+            <div class="equipment-card">
+                <div class="equipment-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="4" y="4" width="16" height="16" rx="2" />
+                        <path d="M9 4v16" />
+                        <path d="M15 4v16" />
+                    </svg>
+                </div>
+                <h3>Mash Tun</h3>
+                <p>A modified 10-gallon Rubbermaid cooler serves as our mash tun. Its excellent insulation maintains
+                    temperatures within 1°F over a 60-minute mash, critical for proper enzymatic conversion.</p>
+            </div>
+
+            <!-- Fermentation -->
+            <div class="equipment-card">
+                <div class="equipment-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2v20" />
+                        <path d="M8 5a4 4 0 0 0 0 8 4 4 0 0 0 0-8Z" />
+                        <path d="M16 5a4 4 0 0 1 0 8 4 4 0 0 1 0-8Z" />
+                    </svg>
+                </div>
+                <h3>Fermentation Vessels</h3>
+                <p>We utilize Spiedel 30L plastic fermenters. They are food grade, lightweight, and durable. A 30L
+                    fermentation vessel is ideal for a 5 gallon batch as there is plenty of room for the krausen to rise
+                    and settle.</p>
+            </div>
+
+            <!-- Yeast Starter -->
+            <div class="equipment-card">
+                <div class="equipment-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4.5 3h15" />
+                        <path d="M6 3v16a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V3" />
+                        <path d="M6 14h12" />
+                    </svg>
+                </div>
+                <h3>Yeast Starters & Stir Plate</h3>
+                <p>Healthy yeast is the secret to great beer. We use a Maelstrom stir plate and Erlenmeyer flasks to
+                    grow high cell counts, ensuring vigorous fermentations even for high-gravity stouts and IPAs.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="tips-section">
+        <h2 class="section-title">TIPS & LESSONS LEARNED</h2>
+        <div class="tips-grid">
+            <div class="tip-item">
+                <h4>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10" />
+                        <line x1="12" y1="16" x2="12" y2="12" />
+                        <line x1="12" y1="8" x2="12.01" y2="8" />
+                    </svg>
+                    Pitching Rates Matter
+                </h4>
+                <p>High ABV beers often struggle if you don't pitch enough yeast, but every beer benefits from a healthy
+                    pitch of yeast. I use starters for every beer to ensure maximum fermentation. Pitching on a previous
+                    yeast cake is a pro move for extreme gravity beers.</p>
+            </div>
+
+            <div class="tip-item">
+                <h4>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m21 16-4 4-4-4" />
+                        <path d="M17 20V4" />
+                        <path d="m3 8 4-4 4 4" />
+                        <path d="M7 4v16" />
+                    </svg>
+                    Temperature Control
+                </h4>
+                <p>Fermentation temperature is the biggest difference between good beer and great beer. Keeping a stable
+                    temperature avoids off-flavors (fusels, esters) that can ruin a clean lager or pale ale.</p>
+            </div>
+
+            <div class="tip-item">
+                <h4>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />
+                    </svg>
+                    Oxygenation
+                </h4>
+                <p>Aerating with pure oxygen for 60 seconds before pitching yeast leads to a much healthier lag phase.
+                    This is especially important when using starters, as the yeast needs oxygen to build strong cell
+                    walls. Use a diffuser connected to an oxygen torch canister for to give the yeast a healthy infusion
+                    of oxygen.</p>
+            </div>
+
+            <div class="tip-item">
+                <h4>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76Z" />
+                    </svg>
+                    Yeast Cakes
+                </h4>
+                <p>Pitching a new, compatible beer on a yeast cake from a previous batch is a great way save money, and
+                    a perfect way to brew a high gravity beer. Pitch a Doppelbock onto the yeast cake of a Maibock or
+                    Helles Bock to maximize cost and brewing efficiency.</p>
+            </div>
+        </div>
+    </section>
 </div>
