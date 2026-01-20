@@ -6,7 +6,7 @@ status: in_production
 style: Czech Pilsner
 group: Pilsner
 logo: /assets/images/beer/vltava_pils.jpg
-description: "A light Czech lager for every day drinking"
+description: "A light Czech lager for every day drinking. Named after the river that flows through Prague, it should remind you of water on a summer day."
 malts:
     - 9.5 lbs 2 Row Pilsner Malt
     - 0.5 lbs Vienna Malt

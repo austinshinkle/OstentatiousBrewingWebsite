@@ -6,7 +6,7 @@ status: in_production
 style: India Pale Ale
 group: India Pale Ale
 logo: /assets/images/beer/ridgeline_ipa.jpg
-description: "Classic Northwest IPA with woody, pine and citrus flavors"
+description: "Classic Northwest IPA with woody, pine and citrus flavors. So grab a beer and hit the trail!"
 malts:
     - 11.5 lbs Great Western 2 Row Malt
     - 1 lb Crystal (20L) Malt
