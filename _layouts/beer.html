@@ -20,7 +20,7 @@ layout: default
         <div>
             <h1>{{ page.title }}</h1>
             <h3>{{ page.style }}</h3>
-            <p class="brew-date">Brewed on: {{ page.brew_date }}</p>
+            <p class="brew-date">Brewed on: {{ page.brew_date | date: "%B %e, %Y" }}</p>
         </div>
     </div>
 
