@@ -5,7 +5,7 @@ title: "Zlatý Ležák"
 status: in_design
 style: Czech Pilsner
 group: Pilsner
-logo: /assets/images/beer/zlaty_lezak.jpg
+logo: /assets/images/beer/zlaty_lezak.png
 description: "A golden Czech lager made from the yeast cake from Vltava Pils. A golden Bohlemian lager that is simple but delicious."
 malts:
     - 11 lbs 2 Row Pilsner Malt
