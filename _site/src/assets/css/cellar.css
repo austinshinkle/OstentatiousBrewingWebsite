@@ -1,0 +1,60 @@
+/* Build for desktop first: wrap mobile or small screen content using @media max-width rules */
+
+.cellar-image-container {
+}
+.cellar-image {
+    max-height: 150px;
+    max-width: 150px;
+    width: auto;
+    height: auto;
+    margin: 25px;
+}
+.cellar-stats-grid {
+    display: grid;
+    align-content: center;
+    row-gap: 15px;
+    column-gap: 25px;
+    grid-template-columns: 125px 125px;
+    margin: 10px;
+}
+
+.cellar-stat-cell {
+    display: flex;
+    flex-direction: column;
+}
+
+.cellar-image-name-container {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    flex-grow: 2;
+    align-items: center;
+}
+
+.cellar-list-text-container {
+}
+
+/* Table Styling */
+.cellar-stat-table-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.cellar-stat-table-value {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+    color: #777777; /* Dark Gray */
+}
+
+@media (max-width: 768px) {
+    .cellar-image {
+        max-height: 100px;
+        max-width: 100px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}

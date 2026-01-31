@@ -1,0 +1,15 @@
+services:
+  jekyll:
+    image: jekyll/jekyll:4.2.0
+    # On Apple Silicon: use linux/amd64 for the image you already pulled, or remove platform entirely
+    # To use native arm64 instead, first run: docker pull --platform linux/arm64 jekyll/jekyll:4.2.0
+    platform: linux/amd64
+    working_dir: /srv/jekyll
+    volumes:
+      - ./src:/srv/jekyll:delegated
+      - ./src/.bundle:/usr/local/bundle
+    ports:
+      - "4000:4000"
+    environment:
+      - JEKYLL_ENV=development
+    command: bash -lc "bundle config set --local path '/usr/local/bundle' && bundle install && bundle exec jekyll serve --host 0.0.0.0 --disable-disk-cache"

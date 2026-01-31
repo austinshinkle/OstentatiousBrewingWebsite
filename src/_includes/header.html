@@ -6,7 +6,7 @@
         <h5 class="header_text">OSTENTATIOUS BREWING</h5>
     </a>
 
-    <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle Menu">
+    <button class="hamburger" type="button" aria-label="Toggle menu" aria-controls="site-navigation" aria-expanded="false">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
             stroke-linecap="round" stroke-linejoin="round">
             <line x1="3" y1="12" x2="21" y2="12"></line>
@@ -15,9 +15,9 @@
         </svg>
     </button>
 
-    <div class="nav-overlay" onclick="toggleMenu()"></div>
+    <button class="nav-overlay" type="button" onclick="toggleMenu(false)" aria-hidden="true" tabindex="-1"></button>
 
-    <nav>
+    <nav id="site-navigation" role="navigation" aria-label="Main Navigation">
         <ul>
             <li><a href="{{ '/' | relative_url }}">HOME</a></li>
             <li><a href="{{ '/brewery/on-tap' | relative_url }}">ON TAP</a></li>
@@ -32,19 +32,51 @@
 </header>
 
 <script>
-    function toggleMenu() {
-        const nav = document.querySelector("nav");
-        const body = document.body;
-        nav.classList.toggle("nav-open");
-        body.classList.toggle("menu-open");
-    }
+    (function () {
+        const nav = document.getElementById('site-navigation');
+        const btn = document.querySelector('.hamburger');
+        const overlay = document.querySelector('.nav-overlay');
 
-    // Close mobile menu if screen gets resized wider
-    window.addEventListener("resize", () => {
-        const nav = document.querySelector("nav");
-        if (window.innerWidth > 1024 && nav.classList.contains("nav-open")) {
-            nav.classList.remove("nav-open");
-            document.body.classList.remove("menu-open");
+        function handleKeydown(e) {
+            if (e.key === 'Escape') {
+                toggleMenu(false);
+            }
         }
-    });
+
+        window.toggleMenu = function (open) {
+            const isOpen = typeof open === 'boolean' ? open : !nav.classList.contains('nav-open');
+            nav.classList.toggle('nav-open', isOpen);
+            document.body.classList.toggle('menu-open', isOpen);
+            btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            overlay.setAttribute('aria-hidden', isOpen ? 'false' : 'true');
+
+            if (isOpen) {
+                // focus first link in nav for keyboard users
+                const firstLink = nav.querySelector('a');
+                if (firstLink) firstLink.focus();
+                document.addEventListener('keydown', handleKeydown);
+            } else {
+                document.removeEventListener('keydown', handleKeydown);
+                btn.focus();
+            }
+        };
+
+        // Close mobile menu if screen gets resized wider
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 1024 && nav.classList.contains('nav-open')) {
+                window.toggleMenu(false);
+            }
+        });
+
+        // Toggle compact header on scroll
+        const headerEl = document.querySelector('header');
+        function handleScroll() {
+            if (window.scrollY > 12) headerEl.classList.add('scrolled');
+            else headerEl.classList.remove('scrolled');
+        }
+
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        // initialize state on load
+        handleScroll();
+    })();
 </script>
