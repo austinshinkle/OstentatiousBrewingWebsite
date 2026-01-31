@@ -183,3 +183,21 @@ Redesigned the base layout and navigation system to improve accessibility, maint
 **Implementation by**: GitHub Copilot  
 **Time invested**: Feature planning + 8 implementation tasks  
 **Quality**: Production-ready, accessibility-compliant, fully responsive
+
+## 2026-01-31 — Recent UI adjustments (summary)
+
+- Reduced general heading sizes and tightened typography scale to improve visual hierarchy and reduce perceived bulk across pages.
+- Made the hamburger menu the primary navigation control across all breakpoints (now visible and collapsible on all screen sizes); removed the desktop-only inline nav behavior.
+- Reduced header height and spacing; decreased logo size and aligned brewery text vertically with the logo.
+
+Files updated:
+- `src/assets/css/base.css` — typography token adjustments (smaller `--fs-*` values), `--header-height` reduction
+- `src/assets/css/header.css` — header height, logo size, header text alignment, nav spacing, hamburger visibility rules
+- `src/_includes/header.html` — added hamburger click handler; focus/overlay behavior verified
+
+Rationale: these small visual adjustments improve balance and make the navigation interaction consistent across devices; collapsing the menu everywhere reduces ambiguity for users and simplifies testing.
+
+How to verify:
+- Resize the browser and confirm hamburger is visible at all widths and toggles the navigation drawer.
+- Click the hamburger to open/close the drawer; overlay should appear and background scrolling should be disabled while open.
+- Confirm headings appear smaller across pages and header logo/text are vertically centered.
