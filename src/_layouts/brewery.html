@@ -26,12 +26,12 @@ layout: default
 
     <!-- Filter Section (Only for Recipe Archive, filtering by Group) -->
     {% if page.title == "Recipe Archive" %}
-    {% assign current_groups = site.beers | where: "status", page.status | map: "group" | uniq | sort %}
+    {% assign current_groups = site.beers | where: "status", page.status | where_exp: "b", "b.group and b.group != ''" | map: "group" | uniq | sort %}
     {% if current_groups.size > 1 %}
-    <div class="filter-container">
-        <button class="filter-btn active" data-filter="all">All</button>
+    <div class="filter-container" role="toolbar" aria-label="Filter recipes by group">
+        <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
         {% for group in current_groups %}
-        <button class="filter-btn" data-filter="{{ group }}">{{ group }}</button>
+        <button class="filter-btn" data-filter="{{ group }}" aria-pressed="false">{{ group }}</button>
         {% endfor %}
     </div>
     {% endif %}
@@ -43,29 +43,29 @@ layout: default
         {% if beer.status == page.status %}
         <article class="beer-card" data-group="{{ beer.group }}">
             <div class="beer-card-image">
-                <a href="{{ beer.url }}">
-                    <img src="{{ beer.logo | default: '/assets/images/beer/placeholder.svg' | relative_url }}" alt="{{ beer.title }}">
+                <a href="{{ beer.url | relative_url }}">
+                    <img src="{{ beer.logo | default: '/assets/images/beer/placeholder.svg' | relative_url }}" alt="{{ beer.title | default: 'Beer' }}" loading="lazy" decoding="async">
                 </a>
             </div>
             <div class="beer-card-content">
                 <div class="beer-card-header">
-                    <h2>{{ beer.title }}</h2>
-                    <span class="beer-style-badge">{{ beer.style }}</span>
+                    <h2>{{ beer.title | default: 'Untitled' }}</h2>
+                    <span class="beer-style-badge">{{ beer.style | default: 'Unknown' }}</span>
                 </div>
-                <p class="beer-description">{{ beer.description }}</p>
+                <p class="beer-description">{{ beer.description | default: '' }}</p>
 
                 <div class="beer-stats-grid">
                     <div class="stat-item">
                         <span class="stat-label">ABV</span>
-                        <span class="stat-value">{{ beer.actual_abv | default: beer.target_abv }}</span>
+                        <span class="stat-value">{{ beer.actual_abv | default: beer.target_abv | default: '—' }}</span>
                     </div>
                     <div class="stat-item">
                         <span class="stat-label">IBU</span>
-                        <span class="stat-value">{{ beer.calculated_ibu }}</span>
+                        <span class="stat-value">{{ beer.calculated_ibu | default: '—' }}</span>
                     </div>
                     <div class="stat-item">
                         <span class="stat-label">SRM</span>
-                        <span class="stat-value">{{ beer.calculated_srm }}</span>
+                        <span class="stat-value">{{ beer.calculated_srm | default: '—' }}</span>
                     </div>
                 </div>
             </div>
