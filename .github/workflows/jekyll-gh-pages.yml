@@ -32,16 +32,20 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.1'
-          bundler-cache: true
-          cache-version: 0
-          working-directory: '${{ github.workspace }}/src'
+      
+      - name: Install dependencies
+        run: |
+          cd src
+          bundle install
       
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
       
       - name: Build with Jekyll
-        run: bundle exec jekyll build --source ./src --destination ./_site --baseurl "${{ steps.pages.outputs.base_path }}"
+        run: |
+          cd src
+          bundle exec jekyll build --destination ../_site --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
       
