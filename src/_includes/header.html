@@ -61,6 +61,11 @@
             }
         };
 
+        // Click handler for hamburger button
+        btn.addEventListener('click', () => {
+            toggleMenu();
+        });
+
         // Close mobile menu if screen gets resized wider
         window.addEventListener('resize', () => {
             if (window.innerWidth > 1024 && nav.classList.contains('nav-open')) {
