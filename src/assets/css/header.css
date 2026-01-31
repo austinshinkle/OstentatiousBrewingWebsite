@@ -247,42 +247,6 @@ body.menu-open {
     }
 }
 
-/* Desktop: show navigation inline and hide the drawer behavior */
-@media screen and (min-width: 1025px) {
-    nav {
-        position: static;
-        transform: none;
-        height: auto;
-        width: auto;
-        padding: 0;
-        box-shadow: none;
-        background: transparent;
-        display: block;
-    }
-
-    nav ul {
-        flex-direction: row;
-        gap: 1.5rem;
-        align-items: center;
-    }
-
-    nav ul li {
-        opacity: 1;
-        transform: none;
-        transition: none;
-    }
-
-    nav ul li a {
-        background: transparent;
-        color: var(--color-primary);
-        font-weight: var(--fw-semibold);
-        padding: 0.25rem 0.5rem;
-        text-transform: uppercase;
-    }
-
-    .nav-overlay { display: none; }
-}
-
 /* Back Button */
 .back-button-container {
     max-width: 1280px;
