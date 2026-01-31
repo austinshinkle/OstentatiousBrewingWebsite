@@ -211,12 +211,6 @@ body.menu-open {
     overflow: hidden;
 }
 
-/* Focus styles for accessibility */
-nav ul li a:focus {
-    outline: 3px solid var(--color-accent);
-    outline-offset: 3px;
-}
-
 /* === RESPONSIVE === */
 @media screen and (max-width: 768px) {
     header {
