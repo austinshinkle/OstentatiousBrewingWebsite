@@ -125,5 +125,40 @@ layout: default
                 });
             });
         });
+
+        // Back navigation: save scroll position when navigating to a beer detail
+        try {
+            const pageStatus = '{{ page.status | escape }}';
+            const linkSelectors = document.querySelectorAll('.beer-card a, .beer-link');
+            linkSelectors.forEach(link => {
+                link.addEventListener('click', () => {
+                    try {
+                        const payload = { status: pageStatus, scrollY: window.scrollY };
+                        sessionStorage.setItem('brewery-scroll', JSON.stringify(payload));
+                    } catch (e) { /* ignore storage errors */ }
+                });
+            });
+
+            // Restore scroll when returning to this page
+            function tryRestoreScroll() {
+                try {
+                    const raw = sessionStorage.getItem('brewery-scroll');
+                    if (!raw) return;
+                    const obj = JSON.parse(raw);
+                    if (obj && obj.status === pageStatus && typeof obj.scrollY === 'number') {
+                        // Use requestAnimationFrame to ensure content is painted
+                        requestAnimationFrame(() => window.scrollTo(0, obj.scrollY));
+                        sessionStorage.removeItem('brewery-scroll');
+                    }
+                } catch (e) { /* ignore parse errors */ }
+            }
+
+            // pageshow covers bfcache restores as well as normal loads
+            window.addEventListener('pageshow', tryRestoreScroll);
+            // try immediate restore on load as well
+            tryRestoreScroll();
+        } catch (e) {
+            // no-op
+        }
     });
 </script>
