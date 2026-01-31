@@ -44,7 +44,7 @@ layout: default
         <article class="beer-card" data-group="{{ beer.group }}">
             <div class="beer-card-image">
                 <a href="{{ beer.url }}">
-                    <img src="{{ beer.logo }}" alt="{{ beer.title }}">
+                    <img src="{{ beer.logo | default: '/assets/images/beer/placeholder.svg' | relative_url }}" alt="{{ beer.title }}">
                 </a>
             </div>
             <div class="beer-card-content">
