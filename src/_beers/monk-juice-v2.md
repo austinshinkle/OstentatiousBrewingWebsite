@@ -25,14 +25,14 @@ other_ingredients:
     - 1 Campden Tablet (water additive)
 brew_date: "TBD"
 target_og: "1.064"
-actual_og: "TBD"
+actual_og: "TBA"
 target_fg: "1.008"
-actual_fg: "TBD"
+actual_fg: "TBA"
 target_abv: "7.4%"
 actual_abv: "TBD"
 calculated_ibu: "18.1"
 calculated_srm: "5.2"
-cost: "TBD"
+cost: "TBA"
 brewing_instructions:
     - Add 6 gallons of water to the kettle and add 1 Campden Tablet
     - Heat 6 gallons of strike water to 161°F

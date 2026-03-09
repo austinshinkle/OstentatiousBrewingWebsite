@@ -28,8 +28,8 @@ target_fg: "1.014"
 actual_fg: "TBA"
 target_abv: "5.5%"
 actual_abv: "TBA"
-calculated_ibu: "TBA"
-calculated_srm: "TBA"
+calculated_ibu: "39"
+calculated_srm: "3.8"
 cost: "TBA"
 brewing_instructions:
     - Add 6 gallons of water to the kettle and brewing salts
