@@ -5,7 +5,7 @@
     --color-accent: #0984e3;
     --color-accent-hover: #00cec9;
     --color-bg-light: #181a1b;
-    --color-bg-white: #232526;
+    --color-bg-white: #ffffff;
     --color-border: #dfe6e9;
 
     /* Shadows */
@@ -77,7 +77,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: #fff;
+    color: var(--color-primary);
     font-weight: var(--fw-extrabold);
     margin-top: 0;
     margin-bottom: var(--space-3);
@@ -107,13 +107,9 @@ h6 { font-size: var(--fs-2); }
         background-color: var(--color-bg-light);
         color: var(--color-primary);
     }
-    .container {
-        background-color: var(--color-bg-white);
-        border-color: var(--color-border);
-        box-shadow: none;
-    }
+    /* Do not override card/header/footer backgrounds here */
     h1, h2, h3, h4, h5, h6 {
-        color: #fff;
+        color: var(--color-primary);
     }
 }
 

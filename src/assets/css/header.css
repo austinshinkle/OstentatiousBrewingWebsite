@@ -53,7 +53,7 @@ header.scrolled {
     font-family: var(--font-heading);
     font-size: 1rem;
     font-weight: 800;
-    color: #fff;
+    color: var(--color-primary);
     text-transform: uppercase;
     text-align: left;
     margin: 0 0 0 1rem;
