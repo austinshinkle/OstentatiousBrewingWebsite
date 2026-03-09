@@ -33,7 +33,7 @@
 .hero-title {
     font-size: 3rem;
     font-weight: 800;
-    color: var(--color-primary);
+    color: #fff;
     margin-bottom: 1rem;
     letter-spacing: -0.03em;
 }
