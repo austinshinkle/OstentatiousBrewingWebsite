@@ -4,7 +4,7 @@
     --color-secondary: #636e72;
     --color-accent: #0984e3;
     --color-accent-hover: #00cec9;
-    --color-bg-light: #181a1b;
+    --color-bg-light: #f5f6fa;
     --color-bg-white: #ffffff;
     --color-border: #dfe6e9;
 
@@ -99,17 +99,21 @@ h6 { font-size: var(--fs-2); }
         --color-secondary: #cfd8dc;
         --color-accent: #4fb3ff;
         --color-accent-hover: #7fd6e6;
-        --color-bg-light: #181a1b;
-        --color-bg-white: #232526;
+        --color-bg-light: #0f1112;
+        --color-bg-white: #0b0b0b;
         --color-border: #1f2a2e;
     }
     body {
         background-color: var(--color-bg-light);
         color: var(--color-primary);
     }
-    /* Do not override card/header/footer backgrounds here */
+    .container {
+        background-color: var(--color-bg-white);
+        border-color: var(--color-border);
+        box-shadow: none;
+    }
     h1, h2, h3, h4, h5, h6 {
-        color: var(--color-primary);
+        color: #fff;
     }
 }
 
