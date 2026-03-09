@@ -69,6 +69,10 @@ layout: default
             <div class="ingredients-list">
                 {% for y in page.yeast %}<p>{{ y }}</p>{% endfor %}
             </div>
+               <h4>Other</h4>
+               <div class="ingredients-list">
+                   {% for other in page.other_ingredients %}<p>{{ other }}</p>{% endfor %}
+               </div>
         </div>
 
         <div class="beer-column">

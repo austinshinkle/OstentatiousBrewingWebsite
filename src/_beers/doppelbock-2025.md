@@ -47,7 +47,7 @@ brewing_instructions:
     - At 65 minutes, add 1.0 oz Mt. Hood hops
     - At 65 minutes, add 1 tablet Whirlfloc
     - At 65 minutes, add 0.5 tsp of yeast nutrient
-    - At 75 minutes, chil the wort to 68°F
+    - At 75 minutes, chill the wort to 68°F
     - Aerate wort with pure Oxygen for 1 minute
     - Move wort to primary fermenter
     - Pitch yeast

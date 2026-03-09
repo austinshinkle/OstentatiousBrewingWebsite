@@ -51,7 +51,7 @@ brewing_instructions:
     - At 50 minutes, add 1.0 oz Hallertauer Mittelfrüh hops
     - At 50 minutes, add 1 tablet Whirlfloc
     - At 50 minutes, add 0.5 tsp of yeast nutrient
-    - At 60 minutes, chil the wort to 68°F
+    - At 60 minutes, chill the wort to 68°F
     - Shake fermenter to aerate wort
     - Move wort to primary fermenter
     - Pitch yeast
