@@ -2,7 +2,7 @@
 layout: beer
 beer_key: elixir-smash
 title: "Elixir SMaSH"
-status: on_tap
+status: past_beer
 style: Double IPA
 group: India Pale Ale
 logo: /assets/images/beer/elixir_smash.jpeg
