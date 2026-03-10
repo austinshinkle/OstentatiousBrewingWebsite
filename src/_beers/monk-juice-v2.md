@@ -34,12 +34,18 @@ calculated_ibu: "18.1"
 calculated_srm: "5.2"
 cost: "TBA"
 brewing_instructions:
-    - Add 6 gallons of water to the kettle and add 1 Campden Tablet
-    - Heat 6 gallons of strike water to 161°F
-    - Add 6 gallons of water to the mash tun
-    - Add all grains to the mash tun and confirm mash temperature of 153°F
-    - Steep grains for 60 minutes
-    - While steeping grains, heat 4 gallons of water for lautering to 170 °F
+    - Add 10 gallons of water to the kettle and add 1 Campden Tablet
+    - Remove 6 gallons of water
+    - Heat 4 gallons of strike water to 159°F
+    - Add 4 gallons of water to the mash tun
+    - Add all grains to the mash tun and confirm mash temperature of 148°F
+    - Steep grains for 40 minutes
+    - While steeping grains, heat 2 gallons of water to 188°F
+    - Add 2 gallons of water to the mash tun and confirm temperature of 158°F
+    - Steep grains for 20 minutes
+    - While steeping grains, heat 2 gallons of water to 208°F
+    - Add 2 gallons of water to the mash tun and confirm temperature of 168°F
+    - Mash out for 10 minutes
     - Fly spage until wort volume of 7.3 gallons is reached
     - Begin boil and wait for hot break
     - At 0 minutes, add 7 drops of FermCap to reduce foaming

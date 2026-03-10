@@ -24,9 +24,9 @@ other_ingredients:
 brew_date: "TBA"
 target_og: "1.056"
 actual_og: "TBA"
-target_fg: "1.014"
+target_fg: "1.016"
 actual_fg: "TBA"
-target_abv: "5.5%"
+target_abv: "5.3%"
 actual_abv: "TBA"
 calculated_ibu: "39"
 calculated_srm: "3.8"
@@ -35,8 +35,9 @@ brewing_instructions:
     - Add 6 gallons of water to the kettle and brewing salts
     - Heat 6 gallons of strike water to 158°F
     - Add 6 gallons of water to the mash tun
-    - Add all grains to the mash tun and confirm mash temperature of 152°F
+    - Add all grains to the mash tun and confirm mash temperature of 155°F
     - Steep grains for 60 minutes
+    - Mash out at 168°F for 10 minutes
     - While steeping grains, heat 4 gallons of water for lautering to 170 °F
     - Fly spage until wort volume of 7.4 gallons is reached
     - Begin boil and wait for hot break
@@ -45,7 +46,7 @@ brewing_instructions:
     - At 50 minutes, add 2.0 oz Tettnang hops
     - At 50 minutes, add 1 tablet Whirlfloc
     - At 50 minutes, add 0.5 tsp of yeast nutrient
-    - At 60 minutes, chill the wort to 68°F
+    - At 60 minutes, chill the wort to 54°F
     - Shake fermenter to aerate wort
     - Move wort to primary fermenter
     - Pitch yeast
