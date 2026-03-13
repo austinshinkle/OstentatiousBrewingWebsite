@@ -80,6 +80,12 @@ fermentation_profile:
       temp: 36
 rating: "2.5"
 tasting_notes:
-    - title: "Ok, but not great"
-      description: "The beer ended up with a classic NW IPA profile, but less hoppy that I would have imagined. It was amber colored and cloudy, most likely from the Crystal Malt. In general, that is what I was going for, but the hop profile was quite muted. I wonder also, if the 3rd generation yeast cake had an adverse effect as I was reading that pitching right on the yeast cake can bring in off flavors from the trub."
+    - title: "Classic NW IPA malt, too little hops"
+      description: "Crystal Malt. Need I say more. Hoppiness was less than expected."
+    - title: "Yeast cake caused problems?"
+      description: "Pitching on a 3rd gen yeast cake without washing the yeast most likely caused adverse effects"
+    - title: "Mouthfeel and body work"
+      description: "Nice body from the Crystal Malt, perfect carbonation"
+    - title: "Alcohol right on"
+      description: "Good amount of alcohol, could feel it slightly but not overpowering"
 ---
