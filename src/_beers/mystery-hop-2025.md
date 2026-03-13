@@ -2,7 +2,7 @@
 layout: beer
 beer_key: mystery-hop-2025
 title: "Mystery Hop 2025"
-status: on_tap
+status: past_beer
 style: Double IPA
 group: India Pale Ale
 logo: /assets/images/beer/mystery_hop_2025.jpg
