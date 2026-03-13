@@ -78,8 +78,8 @@ fermentation_profile:
       temp: 36
     - day: 21
       temp: 36
-rating: "TBD"
+rating: "2.5"
 tasting_notes:
-    - title: "To Be Determined"
-      description: "TBD"
+    - title: "Ok, but not great"
+      description: "The beer ended up with a classic NW IPA profile, but less hoppy that I would have imagined. It was amber colored and cloudy, most likely from the Crystal Malt. In general, that is what I was going for, but the hop profile was quite muted. I wonder also, if the 3rd generation yeast cake had an adverse effect as I was reading that pitching right on the yeast cake can bring in off flavors from the trub."
 ---
