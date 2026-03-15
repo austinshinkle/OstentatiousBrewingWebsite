@@ -13,7 +13,7 @@ malts:
 hops:
     - 4 oz Tettnang hops (4.2% AA)
 yeast:
-    - Yeast Cake from Vltava Pils (Imperial Urkel Yeast)
+    - Imperial Urkel Yeast - 2nd generation
 other_ingredients:
     - 15 drops FermCap
     - 0.5 tsp Yeast Nutrient
