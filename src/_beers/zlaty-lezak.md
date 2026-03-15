@@ -6,7 +6,7 @@ status: in_design
 style: Czech Pilsner
 group: Pilsner
 logo: /assets/images/beer/zlaty_lezak.png
-description: "A golden Czech lager made from the yeast cake from Vltava Pils. A golden Bohlemian lager that is simple but delicious."
+description: "Czech for Golden Lager, a golden Czech lager made from the yeast cake from Vltava Pils. A golden Bohlemian lager that is simple but delicious."
 malts:
     - 11 lbs 2 Row Pilsner Malt
     - 0.5 lb Cara-Pils/Dextrine
@@ -30,7 +30,7 @@ target_abv: "5.3%"
 actual_abv: "TBA"
 calculated_ibu: "39"
 calculated_srm: "3.8"
-cost: "TBA"
+cost: "$24.23"
 brewing_instructions:
     - Add 6 gallons of water to the kettle and brewing salts
     - Heat 6 gallons of strike water to 158°F
