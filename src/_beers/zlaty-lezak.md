@@ -57,7 +57,8 @@ brewing_instructions:
     - Condition at 34°F for 14 days
     - Move to keg and carbonate
 starter_instructions:
-    - None - reuse yeast cake from Vltava Pils
+    - 150g Extra Light DME
+    - 2L water
 fermentation_profile:
     - day: 0
       temp: 54
