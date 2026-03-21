@@ -21,9 +21,9 @@ other_ingredients:
     - 1 Campden Tablet (water additive)
     - 0.8 g Calcium Chloride
     - 0.3 g Gypsum
-brew_date: "TBA"
+brew_date: "03/21/2026"
 target_og: "1.056"
-actual_og: "TBA"
+actual_og: "1.055"
 target_fg: "1.016"
 actual_fg: "TBA"
 target_abv: "5.3%"
@@ -35,7 +35,7 @@ brewing_instructions:
     - Add 6 gallons of water to the kettle and brewing salts
     - Heat 6 gallons of strike water to 158°F
     - Add 6 gallons of water to the mash tun
-    - Add all grains to the mash tun and confirm mash temperature of 155°F
+    - Add all grains to the mash tun and confirm mash temperature of 155°F (149.9°F actual)
     - Steep grains for 60 minutes
     - Mash out at 168°F for 10 minutes
     - While steeping grains, heat 4 gallons of water for lautering to 170 °F
