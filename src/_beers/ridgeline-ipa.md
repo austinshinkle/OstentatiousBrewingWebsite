@@ -2,7 +2,7 @@
 layout: beer
 beer_key: ridgeline-ipa
 title: "Ridgeline IPA"
-status: on_tap
+status: past_beer
 style: India Pale Ale
 group: India Pale Ale
 logo: /assets/images/beer/ridgeline_ipa.jpg

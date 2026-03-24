@@ -2,7 +2,7 @@
 layout: beer
 beer_key: vltava-pils
 title: "Vltava Pils"
-status: in_production
+status: on_tap
 style: Czech Pilsner
 group: Pilsner
 logo: /assets/images/beer/vltava_pils.jpg
