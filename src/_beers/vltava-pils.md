@@ -88,10 +88,15 @@ fermentation_profile:
       temp: 34
     - day: 42
       temp: 34
-rating: "TBD"
+rating: "3.75"
 tasting_notes:
-    - title: "Mash Temperature Issue"
+    - title: "Clean lager"
       description:
-          "I believe the mash temperature was too high so this should be checked with an accurate thermometer to ensure
-          proper sugar extraction"
+          "Fermentation was very clean and the beer is a clean and clear profile!"
+    - title: "Storage not an issue"
+      description:
+          "I learned a lesson that lagering is not an issue as I didn't immediately have space for it, so I left it over 3 months in the fermenter without any off flavors"
+    - title: "Too thin"
+      description:
+          "The beer came out a bit thin and has good malty flavor, but could use a bit more"
 ---

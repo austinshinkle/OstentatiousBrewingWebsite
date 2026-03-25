@@ -90,51 +90,19 @@ layout: default
         </div>
     </section>
 
+    {% if page.tasting_notes and page.tasting_notes.size > 0 %}
     <hr class="horizontal-line" />
 
-    <section class="fermentation-profile">
-        <h2 class="section-title">Fermentation Profile</h2>
-        <div class="fermentation-chart">
-            <canvas id="fermentationChart" width="800" height="400"
-                data-fermentation='{% if page.fermentation_profile %}{{ page.fermentation_profile | jsonify }}{% else %}[]{% endif %}'></canvas>
+    <section class="tasting-notes">
+        <h2 class="section-title">Tasting Notes</h2>
+        <div class="tasting-notes-list">
+            {% for note in page.tasting_notes %}
+            <div class="tasting-note">
+                <h4 class="tasting-note-title">{{ note.title }}</h4>
+                <p class="tasting-note-description">{{ note.description }}</p>
+            </div>
+            {% endfor %}
         </div>
     </section>
+    {% endif %}
 </div>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const canvas = document.getElementById('fermentationChart');
-        const ctx = canvas.getContext('2d');
-
-        let fermentationData = [];
-        try {
-            const rawData = JSON.parse(canvas.dataset.fermentation);
-            if (Array.isArray(rawData)) {
-                fermentationData = rawData.map(entry => ({ x: entry.day, y: entry.temp }));
-            }
-        } catch (e) {
-            console.error("Error parsing fermentation data", e);
-        }
-
-        new Chart(ctx, {
-            type: 'line',
-            data: {
-                datasets: [{
-                    label: 'Temperature (°F)',
-                    data: fermentationData,
-                    borderColor: 'rgb(75, 192, 192)',
-                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                    stepped: true,
-                    fill: true
-                }]
-            },
-            options: {
-                scales: {
-                    x: { type: 'linear', title: { display: true, text: 'Day' } },
-                    y: { title: { display: true, text: 'Temp (°F)' } }
-                }
-            }
-        });
-    });
-</script>

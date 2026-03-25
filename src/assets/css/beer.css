@@ -181,13 +181,39 @@ body {
     border-left: 3px solid var(--color-border);
 }
 
-/* Fermentation Chart */
-.fermentation-profile {
+/* Tasting Notes */
+.tasting-notes {
     background: var(--color-bg-white);
     padding: 2rem;
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-md);
     border: 1px solid var(--color-border);
+}
+
+.tasting-notes-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.tasting-note {
+    padding: 1rem 1.25rem;
+    border-left: 4px solid var(--color-primary);
+    background: var(--color-bg-light, #f9f9f9);
+    border-radius: 0 var(--radius-sm, 4px) var(--radius-sm, 4px) 0;
+}
+
+.tasting-note-title {
+    margin: 0 0 0.4rem 0;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.tasting-note-description {
+    margin: 0;
+    color: var(--color-text, #333);
+    line-height: 1.6;
 }
 
 .section-title {
