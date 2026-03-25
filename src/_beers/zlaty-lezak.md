@@ -82,7 +82,7 @@ fermentation_profile:
       temp: 34
 rating: "TBD"
 brewers_notes:
-    - title: "TBA"
+    - title: "OG right on!"
       description:
-          "TBA"
+          "I was aiming for a 1.056 and got 1.055, which is a win in my book"
 ---
