@@ -90,7 +90,7 @@ fermentation_profile:
     - day: 42
       temp: 34
 rating: ""
-tasting_notes:
+brewers_notes:
     - title: "Mash Temperature Issue"
       description:
           "I believe the mash temperature was too high so this should be checked with an accurate thermometer to ensure

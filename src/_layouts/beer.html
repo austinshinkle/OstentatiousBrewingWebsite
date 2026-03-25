@@ -90,16 +90,16 @@ layout: default
         </div>
     </section>
 
-    {% if page.tasting_notes and page.tasting_notes.size > 0 %}
+    {% if page.brewers_notes and page.brewers_notes.size > 0 %}
     <hr class="horizontal-line" />
 
-    <section class="tasting-notes">
-        <h2 class="section-title">Tasting Notes</h2>
-        <div class="tasting-notes-list">
-            {% for note in page.tasting_notes %}
-            <div class="tasting-note">
-                <h4 class="tasting-note-title">{{ note.title }}</h4>
-                <p class="tasting-note-description">{{ note.description }}</p>
+    <section class="brewers-notes">
+        <h2 class="brewers-notes-section-title">Brewer's Notes</h2>
+        <div class="brewers-notes-list">
+            {% for note in page.brewers_notes %}
+            <div class="brewers-note">
+                <h4 class="brewers-note-title">{{ note.title }}</h4>
+                <p class="brewers-note-description">{{ note.description }}</p>
             </div>
             {% endfor %}
         </div>

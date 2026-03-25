@@ -60,5 +60,5 @@ starter_instructions:
     - Let sit for 36 hours
 fermentation_profile:
 rating: ""
-tasting_notes: []
+brewers_notes: []
 ---

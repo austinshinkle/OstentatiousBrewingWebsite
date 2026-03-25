@@ -53,5 +53,5 @@ starter_instructions:
     - None
 fermentation_profile:
 rating: ""
-tasting_notes: []
+brewers_notes: []
 ---

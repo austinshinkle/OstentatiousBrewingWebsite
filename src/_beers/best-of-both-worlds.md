@@ -70,7 +70,7 @@ starter_instructions:
     - 6 oz Extra Light DME in 3L water
 fermentation_profile:
 rating: ""
-tasting_notes:
+brewers_notes:
     - title: "Experimental Recipe"
       description: "This recipe was designed to push the limits with more of everything - more malt, different yeast, and tons of hops from both US and Southern Hemisphere."
 ---

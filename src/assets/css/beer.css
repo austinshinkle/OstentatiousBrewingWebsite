@@ -181,38 +181,54 @@ body {
     border-left: 3px solid var(--color-border);
 }
 
-/* Tasting Notes */
-.tasting-notes {
+/* Brewer's Notes */
+.brewers-notes {
     background: var(--color-bg-white);
     padding: 2rem;
     border-radius: var(--radius-md);
-    box-shadow: var(--shadow-md);
+    box-shadow: var(--shadow-sm);
     border: 1px solid var(--color-border);
 }
 
-.tasting-notes-list {
-    display: flex;
-    flex-direction: column;
+.brewers-notes-section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 1.5rem;
+    text-align: center;
+    border-bottom: 2px solid var(--color-accent);
+    padding-bottom: 0.5rem;
+    display: inline-block;
+    width: 100%;
+}
+
+.brewers-notes-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     gap: 1.25rem;
 }
 
-.tasting-note {
-    padding: 1rem 1.25rem;
-    border-left: 4px solid var(--color-primary);
-    background: var(--color-bg-light, #f9f9f9);
-    border-radius: 0 var(--radius-sm, 4px) var(--radius-sm, 4px) 0;
+.brewers-note {
+    padding: 1.25rem;
+    background: var(--color-bg-light);
+    border-radius: 8px;
+    border: 1px solid var(--color-border);
+    border-top: 3px solid var(--color-accent);
 }
 
-.tasting-note-title {
-    margin: 0 0 0.4rem 0;
-    font-size: 1rem;
+.brewers-note-title {
+    margin: 0 0 0.6rem 0;
+    font-size: 0.95rem;
     font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
     color: var(--color-primary);
 }
 
-.tasting-note-description {
+.brewers-note-description {
     margin: 0;
-    color: var(--color-text, #333);
+    font-size: 0.95rem;
+    color: var(--color-secondary);
     line-height: 1.6;
 }
 

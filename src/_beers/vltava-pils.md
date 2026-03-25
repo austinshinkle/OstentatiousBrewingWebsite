@@ -89,7 +89,7 @@ fermentation_profile:
     - day: 42
       temp: 34
 rating: "3.75"
-tasting_notes:
+brewers_notes:
     - title: "Clean lager"
       description:
           "Fermentation was very clean and the beer is a clean and clear profile!"

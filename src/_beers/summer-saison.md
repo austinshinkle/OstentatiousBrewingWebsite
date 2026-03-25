@@ -73,7 +73,7 @@ fermentation_profile:
     - day: 13
       temp: 35
 rating: ""
-tasting_notes:
+brewers_notes:
     - title: "To Be Determined"
       description: "TBD"
 ---

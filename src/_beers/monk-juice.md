@@ -83,7 +83,7 @@ fermentation_profile:
     - day: 21
       temp: 36
 rating: ""
-tasting_notes:
+brewers_notes:
     - title: "Return to Brewing After 3 Years"
       description:
           "The beer came out a little heavy, most likely due to too much unfermentable sugar. I believe this is due to

@@ -76,7 +76,7 @@ fermentation_profile:
     - day: 13
       temp: 35
 rating: ""
-tasting_notes:
+brewers_notes:
     - title: "Great Belgian Character"
       description:
           "The beer came out great! Good color, very dry and warming alcohol but not over the top. It has good Belgian

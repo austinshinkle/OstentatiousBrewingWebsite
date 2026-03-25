@@ -81,7 +81,7 @@ fermentation_profile:
     - day: 21
       temp: 36
 rating: ""
-tasting_notes:
+brewers_notes:
     - title: "Less is more"
       description: "I would reduce the alcohol to about 6% let the hops really shine!"
 ---

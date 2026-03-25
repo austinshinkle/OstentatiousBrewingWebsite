@@ -94,7 +94,7 @@ fermentation_profile:
     - day: 42
       temp: 34
 rating: ""
-tasting_notes:
+brewers_notes:
     - title: "Original 2021 Version"
       description:
           "Brewed in 2021 using harvested yeast from Helles Bock and Doppelbock V2. Higher than expected OG (1.062 vs

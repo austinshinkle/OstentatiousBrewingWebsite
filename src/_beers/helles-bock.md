@@ -67,5 +67,5 @@ starter_instructions:
     - Start stir plate
 fermentation_profile:
 rating: ""
-tasting_notes: []
+brewers_notes: []
 ---

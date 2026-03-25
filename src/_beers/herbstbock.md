@@ -94,7 +94,7 @@ fermentation_profile:
     - day: 42
       temp: 34
 rating: ""
-tasting_notes:
+brewers_notes:
     - title: "Predecessor to Herbstbock 2025"
       description:
           "This is the original Herbstbock from 2021, which preceded the 2025 version. Brewed to get more roasty, bready

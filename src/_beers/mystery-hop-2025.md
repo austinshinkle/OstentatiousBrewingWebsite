@@ -73,7 +73,7 @@ fermentation_profile:
     - day: 21
       temp: 36
 rating: "3.75"
-tasting_notes:
+brewers_notes:
     - title: "Flavor is solid"
       description: "Good hop flavor, although a but muted by the alcohol."
     - title: "Color looks good"

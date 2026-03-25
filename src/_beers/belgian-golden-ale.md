@@ -86,7 +86,7 @@ fermentation_profile:
     - day: 19
       temp: 36
 rating: ""
-tasting_notes:
+brewers_notes:
     - title: "Past Beer"
       description: "This beer was brewed in 2021 and is no longer available."
 ---

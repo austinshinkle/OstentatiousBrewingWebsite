@@ -75,7 +75,7 @@ fermentation_profile:
     - day: 21
       temp: 35
 rating: ""
-tasting_notes:
+brewers_notes:
     - title: "Increased Efficiency"
       description:
           "This is the second beer I have brewed with the decreased mill gap and got increased efficiency. The actual OG

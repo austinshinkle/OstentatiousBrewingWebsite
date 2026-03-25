@@ -79,7 +79,7 @@ fermentation_profile:
     - day: 21
       temp: 36
 rating: "2.5"
-tasting_notes:
+brewers_notes:
     - title: "Classic NW IPA malt, too little hops"
       description: "Crystal Malt. Need I say more. Hoppiness was less than expected."
     - title: "Yeast cake caused problems?"

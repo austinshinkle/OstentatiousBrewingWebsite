@@ -82,7 +82,7 @@ fermentation_profile:
     - day: 19
       temp: 36
 rating: ""
-tasting_notes:
+brewers_notes:
     - title: "Southern Hemisphere Showcase"
       description:
           "Brewed in 2021 to showcase Australian and New Zealand hops from Yakima Valley Hops. Features juicy,

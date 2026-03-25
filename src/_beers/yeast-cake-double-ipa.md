@@ -52,7 +52,7 @@ starter_instructions:
     - None (WLP001 yeast cake from Simcoe SMaSH)
 fermentation_profile:
 rating: ""
-tasting_notes:
+brewers_notes:
     - title: "Experimental Yeast Cake Beer"
       description: "First experiment pitching directly onto a yeast cake from Simcoe SMaSH. Used up existing ingredients including Noble hops (Saaz, Hallertau, Tettnang) for a crisper profile. Came out stronger than expected at 10.2% ABV with 105 IBUs."
 ---

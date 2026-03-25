@@ -81,7 +81,7 @@ fermentation_profile:
     - day: 42
       temp: 34
 rating: "TBD"
-tasting_notes:
+brewers_notes:
     - title: "TBA"
       description:
           "TBA"

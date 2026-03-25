@@ -46,7 +46,7 @@ starter_instructions:
     - Decant the spent wort and pitch the active yeast into the main batch
 fermentation_profile:
 rating: ""
-tasting_notes:
+brewers_notes:
     - title: "Collaboration Brew"
       description:
           "This was a collaboration brew with a friend. Originally planned to showcase homegrown Willamette hops from

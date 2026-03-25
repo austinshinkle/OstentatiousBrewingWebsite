@@ -50,5 +50,5 @@ starter_instructions:
     - "For this recipe, do this twice as there was left over yeast from a canceled brew day"
 fermentation_profile:
 rating: ""
-tasting_notes: []
+brewers_notes: []
 ---

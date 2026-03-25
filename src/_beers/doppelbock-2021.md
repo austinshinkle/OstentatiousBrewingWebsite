@@ -60,5 +60,5 @@ starter_instructions:
     - "None - WLP833 yeast cake from Helles Bock"
 fermentation_profile:
 rating: ""
-tasting_notes: []
+brewers_notes: []
 ---

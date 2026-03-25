@@ -78,7 +78,7 @@ fermentation_profile:
     - day: 28
       temp: 36
 rating: ""
-tasting_notes:
+brewers_notes:
     - title: "Light and Refreshing"
       description:
           "Quite thin and not too sour. Light and refreshing, but not as much funk as I wanted. Could be a touch hoppier

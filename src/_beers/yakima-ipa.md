@@ -95,7 +95,7 @@ fermentation_profile:
     - day: 19
       temp: 36
 rating: ""
-tasting_notes:
+brewers_notes:
     - title: "Vacation-Inspired IPA"
       description:
           "Inspired by a vacation to Yakima, Washington. All hops from Yakima Valley Hops. Designed with a light body,

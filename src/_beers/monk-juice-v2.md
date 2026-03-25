@@ -87,7 +87,7 @@ fermentation_profile:
     - day: 21
       temp: 36
 rating: ""
-tasting_notes:
+brewers_notes:
     - title: "Better the second time around?"
       description:
           "TBD"

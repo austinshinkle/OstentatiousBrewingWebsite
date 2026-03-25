@@ -74,7 +74,7 @@ fermentation_profile:
     - day: 21
       temp: 36
 rating: ""
-tasting_notes:
+brewers_notes:
     - title: "Not Dark Enough"
       description:
           "Definitely not dark enough...not sure why. Lacks a lot of deep rich flavor, very dry. I think that since I
