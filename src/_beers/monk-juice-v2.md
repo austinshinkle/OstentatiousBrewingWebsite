@@ -9,14 +9,14 @@ logo: /assets/images/beer/monk_juice.jpeg
 description:
     "2nd try at Monk Juice after learning that my thermometer on my kettle was out of calibration on the high side. I believe that is why the FG ended up too high, as there was too much non-fermentable sugars"
 malts:
-    - 7 lbs Franco-Belges Pilsner Malt
+    - 7 lbs Pure Idaho Malt
     - 4 lbs Vienna Malt
     - 1 lb Munich Malt
     - 1 lb Carafoam Malt
 hops:
     - 3 oz Hallertauer Mittelfrüh hops (3.1% AA)
 yeast:
-    - 1 package WLP550 Belgian Ale Yeast
+    - 1 package Imperial Labs Napoleon Yeast
 other_ingredients:
     - 1 lb Extra Light Candi Sugar
     - 15 drops FermCap
