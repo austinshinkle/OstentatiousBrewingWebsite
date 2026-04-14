@@ -24,15 +24,15 @@ other_ingredients:
     - 1 tablet Whilfloc
     - 1 Campden Tablet (water additive)
 brew_date: "TBD"
-target_og: "1.064"
+target_og: "1.065"
 actual_og: "TBA"
-target_fg: "1.008"
+target_fg: "1.005"
 actual_fg: "TBA"
-target_abv: "7.4%"
+target_abv: "7.9%"
 actual_abv: "TBD"
-calculated_ibu: "18.1"
-calculated_srm: "5.2"
-cost: "TBA"
+calculated_ibu: "17.7"
+calculated_srm: "5.1"
+cost: "$54"
 brewing_instructions:
     - Add 10 gallons of water to the kettle and add 1 Campden Tablet
     - Remove 6 gallons of water
