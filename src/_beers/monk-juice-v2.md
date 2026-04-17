@@ -82,4 +82,7 @@ brewers_notes:
     - title: "Better the second time around?"
       description:
           "TBD"
+    - title: "Finish strong!"
+      description:
+          "The fermentation profile is updated to finish warmer to allow the yeast to ferment complely and create a dry finish"
 ---
