@@ -59,9 +59,9 @@ brewing_instructions:
     - Shake fermenter to aerate wort
     - Move wort to primary fermenter
     - Pitch yeast
-    - Ferment at 67°F for 5 days
-    - Ferment at 72°F for 2 days
-    - Ferment at 65°F for 7 days
+    - Ferment at 67°F for 3 days
+    - Ferment at 72°F for 4 days
+    - Ferment at 75°F for 7 days
     - Cold crash to 36°F for 7 days
     - Move to keg and carbonate
 starter_instructions:
