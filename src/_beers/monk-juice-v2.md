@@ -65,16 +65,7 @@ brewing_instructions:
     - Cold crash to 36°F for 7 days
     - Move to keg and carbonate
 starter_instructions:
-    - Add 3L of water to Ehrlenmeyer Flask
-    - Add 6 oz Extra Light Dry Malt Extract
-    - Begin boil
-    - Add 2 drops FermCap to reduce foaming as needed
-    - At 10 minutes, chill wort to 72°F
-    - Add stir bar to wort
-    - Pitch yeast
-    - Place on stir plate
-    - Allow yeast to multiply for 24 hours
-    - Chill to 36°F for 18 hours
+    - None. Pitch a fresh package of yeast direct into the wort.
 fermentation_profile:
     - day: 0
       temp: 67
