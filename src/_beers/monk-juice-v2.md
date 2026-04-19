@@ -2,7 +2,7 @@
 layout: beer
 beer_key: monk-juice
 title: "Monk Juice (Version 2)"
-status: in_design
+status: in_production
 style: Belgian Dubbel
 group: Belgian
 logo: /assets/images/beer/monk_juice.jpeg
