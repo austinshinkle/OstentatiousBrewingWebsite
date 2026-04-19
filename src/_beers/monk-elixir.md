@@ -1,20 +1,20 @@
 ---
 layout: beer
-beer_key: monk-juice
-title: "Monk Juice (Version 2)"
-status: in_production
+beer_key: monk-elixir
+title: "Monk Elixir"
+status: in_design
 style: Belgian Dubbel
 group: Belgian
-logo: /assets/images/beer/monk_juice.jpeg
+logo: /assets/images/beer/monk_elixir.png
 description:
-    "2nd try at Monk Juice after learning that my thermometer on my kettle was out of calibration on the high side. I believe that is why the FG ended up too high, as there was too much non-fermentable sugars"
+    "Remix on Monk Juice v2 but changing the hops to Elixir hops to see if it would make much of a difference and to use up more of the hops that I have already."
 malts:
     - 7 lbs Pure Idaho Malt
     - 4 lbs Vienna Malt
     - 1 lb Munich Malt
     - 1 lb Carafoam Malt
 hops:
-    - 3 oz Hallertauer Mittelfrüh hops (3.1% AA)
+    - 1 oz Elixir hops (8.6% AA)
 yeast:
     - 1 package Imperial Labs Napoleon Yeast
 other_ingredients:
@@ -23,16 +23,16 @@ other_ingredients:
     - 0.5 tsp Yeast Nutrient
     - 1 tablet Whilfloc
     - 1 Campden Tablet (water additive)
-brew_date: "2026-04-19"
+brew_date: "TBD"
 target_og: "1.065"
-actual_og: "1.066"
+actual_og: "1.TBD"
 target_fg: "1.005"
 actual_fg: "TBA"
 target_abv: "7.9%"
 actual_abv: "TBD"
-calculated_ibu: "17.7"
+calculated_ibu: "28.4"
 calculated_srm: "5.1"
-cost: "$51.95"
+cost: "TBD"
 brewing_instructions:
     - Add 10 gallons of water to the kettle and add 1 Campden Tablet
     - Remove 6 gallons of water
@@ -50,8 +50,7 @@ brewing_instructions:
     - Fly spage until wort volume of 7.3 gallons is reached
     - Begin boil and wait for hot break
     - At 0 minutes, add 7 drops of FermCap to reduce foaming
-    - At 0 minutes, add 1.0 oz Hallertauer Mittelfrüh hops
-    - At 40 minutes, add 1.0 oz Hallertauer Mittelfrüh hops
+    - At 30 minutes, add 1.0 oz Elixir hops
     - At 45 minutes, add 1.0 lb Candi Sugar
     - At 50 minutes, add 1.0 oz Hallertauer Mittelfrüh hops
     - At 50 minutes, add 1 tablet Whirlfloc
@@ -82,11 +81,8 @@ rating: ""
 brewers_notes:
     - title: "Better the second time around?"
       description:
-          "Another version of Monk Juice with dialed in equipment"
-    - title: "Finish strong!"
+          "TBD"
+    - title: "Remix of a classic"
       description:
-          "The fermentation profile is updated to finish warmer to allow the yeast to ferment complely and create a dry finish"
-    - title: "More complicated mash"
-      description:
-          "I went with a two step mash for this beer and a mash out. Let's see if it makes any difference to the final product"
+          "Another version of Monk Juice but with Elixir hops instead of the traditional Hallertauer Mittelfrüh"
 ---
