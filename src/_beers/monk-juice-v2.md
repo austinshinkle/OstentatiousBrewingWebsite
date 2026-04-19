@@ -23,16 +23,16 @@ other_ingredients:
     - 0.5 tsp Yeast Nutrient
     - 1 tablet Whilfloc
     - 1 Campden Tablet (water additive)
-brew_date: "TBD"
+brew_date: "2026-04-19"
 target_og: "1.065"
-actual_og: "TBA"
+actual_og: "1.066"
 target_fg: "1.005"
 actual_fg: "TBA"
 target_abv: "7.9%"
 actual_abv: "TBD"
 calculated_ibu: "17.7"
 calculated_srm: "5.1"
-cost: "$54"
+cost: "$51.95"
 brewing_instructions:
     - Add 10 gallons of water to the kettle and add 1 Campden Tablet
     - Remove 6 gallons of water
@@ -46,6 +46,7 @@ brewing_instructions:
     - While steeping grains, heat 2 gallons of water to 208°F
     - Add 2 gallons of water to the mash tun and confirm temperature of 168°F
     - Mash out for 10 minutes
+    - While mashing out, heat 2 gallons of water to 180°F
     - Fly spage until wort volume of 7.3 gallons is reached
     - Begin boil and wait for hot break
     - At 0 minutes, add 7 drops of FermCap to reduce foaming
