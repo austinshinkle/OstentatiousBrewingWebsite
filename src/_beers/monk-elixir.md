@@ -14,7 +14,7 @@ malts:
     - 1 lb Munich Malt
     - 1 lb Carafoam Malt
 hops:
-    - 1 oz Elixir hops (8.6% AA)
+    - 2 oz Elixir hops (8.6% AA)
 yeast:
     - 1 package Imperial Labs Napoleon Yeast
 other_ingredients:
