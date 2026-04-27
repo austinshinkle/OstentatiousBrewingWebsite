@@ -1,7 +1,7 @@
 ---
 layout: beer
 beer_key: monk-juice
-title: "Monk Juice (Version 2)"
+title: "Monk's Juice (Version 2)"
 status: in_production
 style: Belgian Dubbel
 group: Belgian
@@ -89,4 +89,7 @@ brewers_notes:
     - title: "More complicated mash"
       description:
           "I went with a two step mash for this beer and a mash out. Let's see if it makes any difference to the final product"
+    - title: "What's in a name?"
+      description:
+          "I decided to change the name slightly since I am going to make this a series with normal hops, Elixir, and Triumph hops and it just sounds better"
 ---

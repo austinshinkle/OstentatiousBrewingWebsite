@@ -1,7 +1,7 @@
 ---
 layout: beer
 beer_key: monk-elixir
-title: "Monk Elixir"
+title: "Monk's Elixir"
 status: in_design
 style: Belgian Dubbel
 group: Belgian
