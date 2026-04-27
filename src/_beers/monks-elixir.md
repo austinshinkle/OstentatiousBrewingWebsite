@@ -1,13 +1,13 @@
 ---
 layout: beer
-beer_key: monk-elixir
+beer_key: monks-elixir
 title: "Monk's Elixir"
 status: in_design
 style: Belgian Dubbel
 group: Belgian
-logo: /assets/images/beer/monk_elixir.png
+logo: /assets/images/beer/monks_elixir.png
 description:
-    "Remix on Monk Juice v2 but changing the hops to Elixir hops to see if it would make much of a difference and to use up more of the hops that I have already."
+    "Remix on Monk's Juice v2 but changing the hops to Elixir hops to see if it would make much of a difference and to use up more of the hops that I have already."
 malts:
     - 7 lbs Pure Idaho Malt
     - 4 lbs Vienna Malt
@@ -52,7 +52,7 @@ brewing_instructions:
     - At 0 minutes, add 7 drops of FermCap to reduce foaming
     - At 30 minutes, add 1.0 oz Elixir hops
     - At 45 minutes, add 1.0 lb Candi Sugar
-    - At 50 minutes, add 1.0 oz Hallertauer Mittelfrüh hops
+    - At 50 minutes, add 1.0 oz Elixir hops
     - At 50 minutes, add 1 tablet Whirlfloc
     - At 50 minutes, add 0.5 tsp of yeast nutrient
     - At 60 minutes, chill the wort to 68°F
