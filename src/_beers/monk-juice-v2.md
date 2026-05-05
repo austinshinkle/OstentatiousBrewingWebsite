@@ -27,9 +27,9 @@ brew_date: "2026-04-19"
 target_og: "1.065"
 actual_og: "1.066"
 target_fg: "1.005"
-actual_fg: "TBA"
+actual_fg: "1.006"
 target_abv: "7.9%"
-actual_abv: "TBD"
+actual_abv: "7.9%"
 calculated_ibu: "17.7"
 calculated_srm: "5.1"
 cost: "$51.95"
@@ -92,4 +92,7 @@ brewers_notes:
     - title: "What's in a name?"
       description:
           "I decided to change the name slightly since I am going to make this a series with normal hops, Elixir, and Triumph hops and it just sounds better"
+    - title: "Numbers are right on!"
+      description:
+          "Let's see how it tastes, but the number were 1 point away and the ABV is perfect!"
 ---
