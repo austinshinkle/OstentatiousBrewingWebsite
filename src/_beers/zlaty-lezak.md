@@ -2,7 +2,7 @@
 layout: beer
 beer_key: zlaty-lezak
 title: "Zlatý Ležák"
-status: in_production
+status: on_tap
 style: Czech Pilsner
 group: Pilsner
 logo: /assets/images/beer/zlaty_lezak.png
@@ -25,9 +25,9 @@ brew_date: "03/21/2026"
 target_og: "1.056"
 actual_og: "1.055"
 target_fg: "1.016"
-actual_fg: "TBA"
+actual_fg: "1.010"
 target_abv: "5.3%"
-actual_abv: "TBA"
+actual_abv: "6.1%"
 calculated_ibu: "39"
 calculated_srm: "3.8"
 cost: "$24.23"
@@ -85,4 +85,10 @@ brewers_notes:
     - title: "OG right on!"
       description:
           "I was aiming for a 1.056 and got 1.055, which is a win in my book"
+    - title: "Hydrometer needs calibration"
+      description:
+          "According to the Tilt, the FG is 0.998, which I can't believe. I called it 1.010"
+    - title: "Golden and Bright"
+      description:
+          "The beer is a nice crisp, clean, golden color"
 ---
