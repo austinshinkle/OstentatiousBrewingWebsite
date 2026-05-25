@@ -80,10 +80,10 @@ fermentation_profile:
       temp: 36
 rating: ""
 brewers_notes:
-    - title: "Better the second time around?"
+    - title: "Another Belgian"
       description:
-          "TBD"
+          "It's a good thing I like the style :)"
     - title: "Remix of a classic"
       description:
-          "Another version of Monk Juice but with Elixir hops instead of the traditional Hallertauer Mittelfrüh"
+          "Another version of in the Monk series but with Triumph hops instead of the traditional Hallertauer Mittelfrüh. It should be a little hoppier and spicier."
 ---
