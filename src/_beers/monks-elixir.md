@@ -2,7 +2,7 @@
 layout: beer
 beer_key: monks-elixir
 title: "Monk's Elixir"
-status: in_production
+status: in_design
 style: Belgian Dubbel
 group: Belgian
 logo: /assets/images/beer/monks_elixir.png
@@ -23,16 +23,16 @@ other_ingredients:
     - 0.5 tsp Yeast Nutrient
     - 1 tablet Whilfloc
     - 1 Campden Tablet (water additive)
-brew_date: "2026-05-24"
+brew_date: "TBD"
 target_og: "1.065"
-actual_og: "1.062"
+actual_og: "TBA"
 target_fg: "1.005"
 actual_fg: "TBA"
 target_abv: "7.9%"
 actual_abv: "TBD"
 calculated_ibu: "28.4"
 calculated_srm: "5.1"
-cost: "$36.96"
+cost: "TBA"
 brewing_instructions:
     - Add 10 gallons of water to the kettle and add 1 Campden Tablet
     - Remove 6 gallons of water
