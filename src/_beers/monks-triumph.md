@@ -2,7 +2,7 @@
 layout: beer
 beer_key: monks-triumph
 title: "Monk's Triumph"
-status: in_production
+status: on_tap
 style: Belgian Dubbel
 group: Belgian
 logo: /assets/images/beer/monks_triumph.png
@@ -29,7 +29,7 @@ actual_og: "1.062"
 target_fg: "1.005"
 actual_fg: "TBA"
 target_abv: "7.9%"
-actual_abv: "TBD"
+actual_abv: "8.3%"
 calculated_ibu: "28.4"
 calculated_srm: "5.1"
 cost: "$36.96"
