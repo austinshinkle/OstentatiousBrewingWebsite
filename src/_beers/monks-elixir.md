@@ -32,7 +32,7 @@ target_abv: "7.9%"
 actual_abv: "TBD"
 calculated_ibu: "28.4"
 calculated_srm: "5.1"
-cost: "TBA"
+cost: "$37.46"
 brewing_instructions:
     - Add 10 gallons of water to the kettle and add 1 Campden Tablet
     - Remove 6 gallons of water
