@@ -2,7 +2,7 @@
 layout: beer
 beer_key: monk-juice
 title: "Monk's Juice (Version 2)"
-status: on_tap
+status: past_beer
 style: Belgian Dubbel
 group: Belgian
 logo: /assets/images/beer/monk_juice.jpeg
