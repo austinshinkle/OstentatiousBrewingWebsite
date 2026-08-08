@@ -1,5 +1,5 @@
 ---
-layout: brewery
+layout: brewery-in-development
 status: in_design
 title: Recipe Design
 description: These are the recipes being designed but not yet in the brewery.

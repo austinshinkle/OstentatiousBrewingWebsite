@@ -1,5 +1,5 @@
 ---
-layout: brewery
+layout: brewery-in-production
 status: in_production
 title: In Production
 description: This is what is currently being produced!
