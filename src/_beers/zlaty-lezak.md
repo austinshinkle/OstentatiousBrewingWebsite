@@ -2,7 +2,7 @@
 layout: beer
 beer_key: zlaty-lezak
 title: "Zlatý Ležák"
-status: on_tap
+status: past_beer
 style: Czech Pilsner
 group: Pilsner
 logo: /assets/images/beer/zlaty_lezak.png
