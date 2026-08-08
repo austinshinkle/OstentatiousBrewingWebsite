@@ -20,7 +20,7 @@ other_ingredients:
     - 2 tbsp BSG Fermax Yeast Nutrient
     - 1 tablet Whilfloc
     - 1 Campden Tablet (water additive)
-brew_date: "TBD"
+brew_date: "8/8/2026"
 target_og: "1.058"
 actual_og: "TBD"
 target_fg: "1.014"
@@ -36,7 +36,8 @@ brewing_instructions:
     - Add 6 gallons of water to the mash tun
     - Add all grains to the mash tun and confirm mash temperature of 151°F
     - Steep grains for 60 minutes
-    - While steeping grains, heat 4 gallons of water for lautering to 170 °F
+    - While steeping grains, add 4 gallons of water to the kettle and add 1 Campden Tablet
+    - Heat 4 gallons of water for lautering to 170 °F
     - Fly spage until wort volume of 7.4 gallons is reached
     - Begin boil and wait for hot break
     - At 0 minutes, add 15 drops of FermCap to reduce foaming
