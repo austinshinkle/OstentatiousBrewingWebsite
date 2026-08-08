@@ -12,7 +12,7 @@ malts:
     - 2 lbs Vienna Malt
     - 4 oz Victory Malt
 hops:
-    - 4 oz Hallertauer Mittelfrüh hops (3.1% AA)
+    - 3 oz Tettnang hops (4.2% AA)
 yeast:
     - 1 package Imperial Labs Harvest Yeast (L17)
 other_ingredients:
@@ -41,10 +41,10 @@ brewing_instructions:
     - Fly spage until wort volume of 7.4 gallons is reached
     - Begin boil and wait for hot break
     - At 0 minutes, add 15 drops of FermCap to reduce foaming
-    - At 0 minutes, add 2.5 oz Hallertauer Mittelfrüh hops
+    - At 0 minutes, add 1 oz Tettnang hops
     - At 50 minutes, add 1 tablet Whirlfloc
     - At 50 minutes, add 2 tbsp of yeast nutrient
-    - At 50 minutes, add 1.5 oz Hallertauer Mittelfrüh hops
+    - At 50 minutes, add 2 oz Tettnang hops
     - At 60 minutes, chill the wort to 68°F
     - Shake fermenter to aerate wort
     - Move wort to primary fermenter

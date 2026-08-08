@@ -26,7 +26,8 @@ layout: default
 
     <!-- Filter Section (Only for Recipe Archive, filtering by Group) -->
     {% if page.title == "Recipe Archive" %}
-    {% assign current_groups = site.beers | where: "status", page.status | where_exp: "b", "b.group and b.group != ''" | map: "group" | uniq | sort %}
+    {% assign current_groups = site.beers | where: "status", page.status | where_exp: "b", "b.group and b.group != ''" |
+    map: "group" | uniq | sort %}
     {% if current_groups.size > 1 %}
     <div class="filter-container" role="toolbar" aria-label="Filter recipes by group">
         <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
@@ -44,7 +45,8 @@ layout: default
         <article class="beer-card" data-group="{{ beer.group }}">
             <div class="beer-card-image">
                 <a href="{{ beer.url | relative_url }}">
-                    <img src="{{ beer.logo | default: '/assets/images/beer/placeholder.svg' | relative_url }}" alt="{{ beer.title | default: 'Beer' }}" loading="lazy" decoding="async">
+                    <img src="{{ beer.logo | default: '/assets/images/beer/placeholder.svg' | relative_url }}"
+                        alt="{{ beer.title | default: 'Beer' }}" loading="lazy" decoding="async">
                 </a>
             </div>
             <div class="beer-card-content">

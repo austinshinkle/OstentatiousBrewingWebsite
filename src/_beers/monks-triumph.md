@@ -27,7 +27,7 @@ brew_date: "2026-05-24"
 target_og: "1.065"
 actual_og: "1.062"
 target_fg: "1.005"
-actual_fg: "TBA"
+actual_fg: "1.000"
 target_abv: "7.9%"
 actual_abv: "8.3%"
 calculated_ibu: "28.4"
@@ -86,4 +86,7 @@ brewers_notes:
     - title: "Remix of a classic"
       description:
           "Another version of in the Monk series but with Triumph hops instead of the traditional Hallertauer Mittelfrüh. It should be a little hoppier and spicier."
+    - title: "Crisp and Clean"
+      description:
+          "Clear"
 ---
